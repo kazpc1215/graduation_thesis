@@ -1,0 +1,640 @@
+\documentclass[11pt,a4paper,oneside,onecolumn]{jarticle}
+%
+\usepackage[dvipdfmx]{graphicx,color}
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+\usepackage{graphicx}
+
+\usepackage{caption}
+\usepackage{here}
+\captionsetup[figure]{format=plain, labelformat=simple, labelsep=period, font=normalsize}
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+\counterwithin{equation}{section}
+
+\usepackage{ascmac}
+\usepackage[top=25truemm,bottom=25truemm,left=25truemm,right=25truemm]{geometry}
+\usepackage{indentfirst}
+\usepackage{fancyhdr}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+
+\def\id#1{\def\@id{#1}}
+\def\department#1{\def\@department{#1}}
+\def\abst#1{
+\if@twocolumn
+  \twocolumn[
+\fi
+  \begin{center}
+    \let\footnote\thanks
+    {\LARGE \bf \@title \par}%
+\vspace{5truemm}
+  %
+%    {\normalsize \@date}%
+%    \vskip 0.01em
+    {\@department \par} % 所属部分
+    {\large\@author\par}
+    \vspace{3truemm}
+  {\small (\@date)\par} % 提出年月日部分
+  \vspace{7truemm}
+    \textbf{\large{\bf Abstract}}\par
+  \begin{quotation}
+     {\small \noindent #1}
+  \end{quotation}
+\end{center}
+\par\vskip 1.5em
+\if@twocolumn
+  ]
+\fi
+}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{巨大惑星の移動に伴う小天体の力学的進化}
+\date{\today}
+\department{
+名古屋大学 理学部物理学科 4年\\
+理論宇宙物理学研究室 (Ta 研)
+}
+\author{磯谷和秀}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%\maketitle
+
+\abst{
+ あいうえお
+ }
+
+\tableofcontents
+\clearpage
+
+\section{背景}
+あいうえお
+
+\footnote[1]{あいうえお}
+
+
+\section{2 体問題}
+2体問題とは，万有引力の法則で記述される2つの質点の相互作用による運動を考える問題である．2体問題は太陽系力学の中で最も単純で，かつ解析的に解くことができる．また，太陽系には様々な質量の物体があるが，2体問題に近似して考えることができる場面が多く，通常3体目の天体との相互作用は2体の系に対する摂動として扱う．
+\subsection{運動方程式}
+2体問題の例として，質量がそれぞれ $m_1, m_2$ の2つの質点を考える．各点の位置ベクトルは ${\bm r}_1, {\bm r}_2$ である．また，$m_1$ を基準とした $m_2$ の相対ベクトルは ${\bm r} = {\bm r}_2 - {\bm r}_1$ と書ける (図 \ref{fig:A})．2つの質点の運動方程式は以下のように書ける．
+\begin{equation}
+{\bm F}_1 = + G \frac{m_1 m_2}{r^3} {\bm r} = m_1 \ddot{{\bm r}}_1 \quad {\rm and} \quad {\bm F}_2 = - G \frac{m_1 m_2}{r^3} {\bm r} = m_2 \ddot{{\bm r}}_2. \label{eq:F}
+\end{equation}
+$G = 6.67260 \times 10^{-11} {\rm N m^2 kg^{-2}}$ は重力定数．これらから，
+\begin{equation}
+m_1 \ddot{{\bm r}}_1 + m_2 \ddot{{\bm r}}_2 = 0. \label{eq:mr}
+\end{equation}
+が求まる．
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{./image/sec2_1.pdf}
+\caption{\label{fig:A}}
+\end{figure}
+
+(\ref{eq:mr}) 式を両辺2階積分する．
+\begin{equation}
+m_1 \dot{{\bm r}}_1 + m_2 \dot{{\bm r}}_2 = {\bm a} \quad {\rm and} \quad m_1 {\bm r}_1 + m_2 {\bm r}_2 = {\bm a} t + {\bm b}.
+\end{equation}
+${\bm a}, {\bm b}$ は定数ベクトル．${\bm R} = (m_1 {\bm r}_1 + m_2 {\bm r}_2)/(m_1 + m_2)$ を使って重心の位置ベクトルを表現する．
+\begin{equation}
+\dot{{\bm R}} = \frac{{\bm a}}{m_1 + m_2} \quad {\rm and} \quad {\bm R} = \frac{{\bm a} t + {\bm b}}{m_1 + m_2}.
+\end{equation}
+この式から，2体が互いの重力のみで運動している場合，その重心の運動は静止しているか，等速直線運動を行っているかのどちらかということになる．ここで，相対ベクトル ${\bm r}$ を使って運動方程式を書き直す．$\ddot{{\bm r}} = \ddot{{\bm r}}_2 - \ddot{{\bm r}}_1$ とすると (\ref{eq:F}) 式は，
+\begin{equation}
+\frac{d^2 {\bm r}}{dt^2} + \mu \frac{{\bm r}}{r^3} = 0. \label{eq:raletive}
+\end{equation}
+($\mu = G (m_1 + M_2)$) となり，相対運動の方程式となる．この方程式を解き $m_2$ の $m_1$ に対する相対軌道を得るためには，相対運動におけるいくつかの定数を求める必要がある． ここではまずそれらの運動の定数の一つである角運動量ベクトルについて述べる．
+
+(\ref{eq:raletive}) 式の両辺と ${\bm r}$ の外積をとると，${\bm r} \times \ddot{{\bm r}} = 0$．さらに両辺積分すると，
+\begin{equation}
+{\bm r} \times \dot{{\bm r}} = {\bm h} \label{eq:angmom}
+\end{equation}
+${\bm h}$ は角運動量ベクトルであり，${\bm r}, \dot{{\bm r}}$ に垂直である定数ベクトルである．つまり，$m_2$ の相対運動は，${\bm r}, \dot{{\bm r}}$ に垂直な平面内に限定されることがわかる．この平面を軌道平面という．$m_2 \ll m_1$ とすれば $h = |{\bm h}|$ は単位質量あたりの $m_2$ の角運動量として近似できる．
+
+ここで，${\bm r}$ を極座標で表現してみよう．座標原点は $m_1$ とし，$\theta = 0$ となる基準線は任意の位置でとることとする．また $m_1, m_2$ の重心は慣性系を運動しているが，$\theta = 0$ の基準線の方向は一定とする．動径方向の単位ベクトルを $\hat{{\bm r}}$，角度方向の単位ベクトルを $\hat{{\bm \theta}}$ として，位置，速度，加速度を表現すると以下のようになる．
+\begin{equation}
+{\bm r} = r \hat{{\bm r}}, \quad \dot{{\bm r}} = \dot{r} \hat{{\bm r}} + r \dot{\theta} \hat{{\bm \theta}}, \quad \ddot{{\bm r}} = (\ddot{r} - r \dot{\theta}^2) \hat{{\bm r}} + \left[ \frac{1}{r} \frac{d}{dt} (r^2 \dot{\theta})\right] \hat{{\bm \theta}}. \label{eq:polar}
+\end{equation}
+
+(\ref{eq:angmom}) 式に上記の ${\bm r}, \dot{{\bm r}}$ を代入すると，${\bm h} = r^2 \dot{\theta} \hat{{\bm z}}$ となる．$\hat{{\bm z}}$ は軌道平面に垂直な単位ベクトルであり，向きは ${\bm r}$ から ${\bm \theta}$ へ右ねじを回したときに進む方向である．これより，
+\begin{equation}
+h = r^2 \dot{\theta}.
+\end{equation}
+この式からわかることは以下の通りである．
+
+質点 $m_2$ が微小時間 $\delta t$ の間だけ運動したとする．$t = 0$ のとき $m_2$ の座標が ($r, \theta$) とすれば，$t = \delta t$ の座標は ($r + \delta r, \theta + \delta \theta$) である．その間に動径ベクトルが横切る領域の面積は，
+\begin{equation}
+\delta A \approx \frac{1}{2} r (r + \delta r) \sin (\delta \theta) \approx \frac{1}{2} r^2 \delta \theta. 
+\end{equation}
+両辺を $\delta t$ で割り，$\delta t \rightarrow 0$ の極限をとると，
+\begin{equation}
+\frac{dA}{dt} = \frac{1}{2} r^2 \frac{d \theta}{dt} = \frac{1}{2} r^2 \dot{\theta} = \frac{1}{2} h. \label{eq:kepler2}
+\end{equation}
+$h$ は定数であるので，動径が一定時間に横切る軌道面の面積は常に一定であることがわかる．つまり (\ref{eq:kepler2}) は Kepler の第2法則 と等価である．しかし，このことは万有引力に対してのみ成り立つ訳ではなく，2物体の間に引力が働いていれば成り立つ．
+
+\subsection{軌道と速度}
+(\ref{eq:polar}) 式の $\ddot{{\bm r}}$ を (\ref{eq:raletive}) 式に代入することで，相対運動のスカラー方程式を求めることができる．$r$ 成分を比べると，
+\begin{equation}
+\ddot{r} - r \dot{\theta}^2 = - \frac{\mu}{r^2}. \label{eq:scalar}
+\end{equation}
+$\theta$ の関数としての $r$ の解を求めるため，$u = 1/r$ として代入し，定数 $h = r^2 \dot{\theta}$ を使って時間 $t$を消去する必要がある．$r$ を時間微分すると，
+\begin{equation}
+\dot{r} = - \frac{1}{u^2} \frac{du}{d \theta} \dot{\theta} \quad {\rm and} \quad \ddot{r} = - h \frac{d^2 u}{d \theta^2} \dot{\theta} = - h^2 u^2 \frac{d^2 u}{d \theta^2}. 
+\end{equation}
+したがって (\ref{eq:scalar}) 式を書き換えると，
+\begin{equation}
+\frac{d^2 u}{d \theta^2} + u = \frac{\mu}{h^2}.
+\end{equation}
+この2階線形微分方程式の一般解は，
+\begin{equation}
+u =\frac{\mu}{h^2} \left[ 1+ e \cos (\theta - \varpi) \right].
+\end{equation}
+ここで振幅 $e$，位相 $\varpi$ は積分定数．よって $r$ は，
+\begin{equation}
+r =\frac{p}{1+ e \cos (\theta - \varpi)}.
+\end{equation}
+$p = h^2 / \mu$ は半直弦 ($\theta - \varpi = \pi / 2$ における $r$ の大きさ)，$e$ は離心率と呼ばれる．この式は円錐曲線と呼ばれる．
+
+円錐曲線から得られる曲線は $e$ によって区別され，4種類ある．
+\begin{equation}
+\begin{split}
+円 &: \quad e = 0, \quad p = a; \\
+楕円 &: \quad 0 < e < 1, \quad p = a(1-e^2); \\
+放物線 &: \quad e = 1, \quad p = 2q; \\
+双曲線 &: \quad e > 1, \quad p = a(e^2-1). 
+\end{split}
+\end{equation}
+$a$ は軌道長半径．放物線の場合は $p$ を $q$ (放物線の近点距離) で定義する．
+
+この2体問題の解から，太陽系の惑星の軌道は楕円の形をしており，閉じた軌道を描くと
+考えられる．したがって Kepler の第1法則は逆2乗則の結果ととらえることができる．
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{./image/sec2_5.pdf}
+\caption{\label{fig:ellipse}}
+\end{figure}
+
+彗星はその多くが $e \approx 1$ の値を持つのに対して，冥王星 ($e = 0.25$)，水星 ($e = 0.21$)，そして海王星の衛星 Nereid ($e = 0.75$) という例外があるが，太陽系の主な天体のほとんどは $e \ll 1$ である．したがって，以下の議論では楕円運動に焦点を当てる．
+
+楕円運動では $a, e$ には以下のような関係がある．
+\begin{equation}
+b^2 = a^2 (1 - e^2).
+\end{equation}
+ここで $b$ は軌道短半径である (図 \ref{fig:ellipse})．また $r$ は，
+\begin{equation}
+r =\frac{a (1 - e^2)}{1+ e \cos (\theta - \varpi)}.
+\end{equation}
+$\theta$ は黄経 (黄道座標の経度にあたり，春分点を0度としている) と呼ばれる．天体力学では，慣性系において固定された基準線からの角度を測るときに，慣習的に黄経を用いる．$\theta = \varpi, \theta = \varpi + \pi$ のときに，それぞれ $r$ の最小値 $r_{\rm p} = a (1 - e)$，最大値 $r_{\rm a} = a (1 + e)$ をとる．これらの点はそれぞれ近点，遠点と呼ばれる．楕円の中心からどちらかの焦点までの距離は $a e$ で与えられる．$\varpi$ は近点引数と呼ばれ，近点の黄経である．2体問題では $\varpi$ は定数であるが，他の摂動が入る場合は時間とともに変化する．大抵は黄経よりも $\varpi$ から測った角度の方がより扱いやすく，真近点離角 $f = \theta - \varpi$ を導入する．$f, \theta$ は $2 \pi$ の周期を持つ．よって $r$ は，
+\begin{equation}
+r = \frac{a (1 - e^2)}{1+ e \cos f}. \label{eq:rf}
+\end{equation}
+ここで，$m_1$ を中心として近点方向に $x$ 軸をとる直交座標を考えると，位置ベクトルの成分は，
+\begin{equation}
+x = r \cos f \quad {\rm and} \quad y = r \sin f. \label{eq:xy}
+\end{equation}
+
+ある軌道周期 $T$ で楕円上を一周するときに位置ベクトルが横切る面積は単純に $A = \pi a b$ である．(\ref{eq:kepler2}) 式よりこの面積は $h T / 2$ と等しい．ゆえに $h^2 = \mu p = \mu a (1 - e^2)$ より，
+\begin{equation}
+T^2 = \frac{4 \pi^2}{\mu} a^3. \label{eq:kepler3}
+\end{equation}
+これは Kepler の第3法則と等価である．この式から軌道周期 $T$ は離心率 $e$ に依存せず，軌道長半径 $a$ のみに依存することがわかる．
+
+$\theta$ は 1周期につき $2 \pi$ だけ周期的に変化するため，平均運動 $n$ を次のように定義する．
+\begin{equation}
+n = \frac{2 \pi}{T}. \label{eq:n}
+\end{equation}
+さらに，(\ref{eq:kepler3}) 式より，
+\begin{equation}
+\mu = n^2 a^3 \quad {\rm and} \quad h = n a^2 \sqrt{1 - e^2} = \sqrt{\mu a (1 - e^2)}.
+\end{equation}
+平均運動の値は2体問題では定数であるが，実際の角速度 $\dot{f}$ は経度の関数である．
+
+運動に関するもう一つの定数を導出するため，$\dot{{\bm r}}$ と (\ref{eq:raletive}) 式の内積をとり，(\ref{eq:polar}) 式の ${\bm r}, \ddot{{\bm r}}$ の値を代入すると，
+\begin{equation}
+{\bm r} \cdot \ddot{{\bm r}} + \mu \frac{\dot{{\bm r}}}{r^2} = 0.
+\end{equation}
+これを両辺 $t$ で積分すると，
+\begin{equation}
+\frac{1}{2} v^2 - \frac{\mu}{r} = C. \label{eq:energyC}
+\end{equation}
+ここで $v^2 = \dot{{\bm r}} \cdot \dot{{\bm r}}$ は速度の2乗，$C$ は積分定数である．
+(\ref{eq:energyC}) 式はエネルギー積分とも呼ばれ，単位質量あたりの天体のエネルギーが保存することを示している．ここまでの結果より，2体問題には4つの定数が保存する : エネルギー積分 $C$ と角運動量 ${\bm h}$ の3成分である．\underline{section ?} で導出するが，これらは軌道要素や離心率ベクトルのような別の量で表現することもできる．
+
+$v^2$ の別の表式を見つけ， $C$ の別の表式を導出する．$\varpi$ は固定されているので，$\dot{\theta} = d (f + \varpi) / dt = \dot{f}$ であり，(\ref{eq:polar}) 式の ${\bm r}$ の定義を用いると，
+\begin{equation}
+v^2 = \dot{{\bm r}} \cdot \dot{{\bm r}} = \dot{r}^2 + r^2 \dot{f}^2. \label{eq:v2}
+\end{equation}
+(\ref{eq:rf}) 式を微分すると，
+\begin{equation}
+\dot{r} = \frac{r \dot{f} e \sin f}{1+ e \cos f}.
+\end{equation}
+$r^2 \dot{f} = h = n a^2 \sqrt{1 - e^2}$ を使うと，
+\begin{eqnarray}
+\dot{r} & = & \frac{n a}{\sqrt{1 - e^2}} e \sin f, \label{eq:rdot} \\
+r \dot{f} & = & \frac{n a}{\sqrt{1 - e^2}} (1+ e \cos f). \label{eq:rfdot}
+\end{eqnarray}
+この2つの式から (\ref{eq:v2}) 式を書き換えると，
+\begin{equation}
+v^2 = \frac{n a^2}{1 - e^2} (1 + 2 e \cos f + e^2) = \frac{n a^2}{1 - e^2} \left( \frac{2 a (1 - e^2)}{r} - (1 - e^2) \right).
+\end{equation}
+したがって，
+\begin{equation}
+v^2 = \mu \left( \frac{2}{r} - \frac{1}{a} \right). \label{eq:v2new}
+\end{equation}
+この式から，天体の速度は近点 ($f = 0$) で最大値，遠点 ($f = \pi$) で最小値をとる．それぞれの値は，
+\begin{equation}
+v_{\rm p} = n a \sqrt{\frac{1 + e}{1 - e}} \quad {\rm and} \quad v_{\rm a} = n a \sqrt{\frac{1 - e}{1 + e}}.
+\end{equation}
+
+また，(\ref{eq:xy}) 式をそれぞれ時間微分し，(\ref{eq:rdot}),  (\ref{eq:rfdot}) 式を代入して，速度の $x, y$ 成分を求めると，
+\begin{equation}
+\dot{x} = - \frac{n a}{\sqrt{1 - e^2}} \sin f \quad {\rm and} \quad  \dot{y} = + \frac{n a}{\sqrt{1 - e^2}} (e^2 + \cos f). \label{eq:xdotydot}
+\end{equation}
+
+(\ref{eq:v2new}) 式と (\ref{eq:energyC}) 式を比較すると，エネルギー積分 C は以下の形で表される．
+\begin{equation}
+C = - \frac{\mu}{2 a}. \label{eq:C}
+\end{equation}
+したがって，楕円軌道のエネルギーは軌道長半径のみの関数であり，離心率には依存しない．放物線軌道と双曲線軌道のエネルギーも同様に示すことができる．
+\begin{equation}
+C_{{\rm para}} = 0, \quad {\rm and} \quad C_{{\rm hyper}} = \frac{\mu}{2 a}.
+\end{equation}
+
+\subsection{平均近点離角と離心近点離角}
+前節において，軌道長半径と離心率がわかっている場合に，真近点離角 $f$ が与えられれば，軌道の距離と速度を計算できることを示した．しかし，通常は任意の時間での天体の位置を計算したいと考えるのが普通である．$f$ と $r$ は $t$ の関数であるが，前節では依存性を示していない．
+
+$2 \pi$ 周期かつ時間に関して線形な関数である角度を導入する．この角度は，後にさまざまな量の時間平均を計算するときに特に有益となる．(\ref{eq:n}) 式の平均運動 $n$ の定義を用いて，平均近点離角 $M$ を定義する．
+\begin{equation}
+M = n (t - \tau). \label{eq:M}
+\end{equation}
+ここで，$\tau$ は近点通過時刻．$M$ は角度の次元であり，平均運動と等しい一定の割合で線形的に増加するが，幾何学的に意味のある値ではない．しかし，$M$ の定義と (\ref{eq:rf}) 式から，$t = \tau$ (近点を通過) や $t = \tau + T / 2$ (遠点を通過) のとき，それぞれ $M = f =0, M = f = \pi$ となることは明らかである．$t$ が周期の整数倍のときも同様の関係を持つ．
+
+$M$ は幾何学的に意味のある値ではないが，ある角度と関係がある．半径 $a$ の円を，軌道長半径 $a$，離心率 $e$ の楕円に外接させ (図 \ref{fig:Ef} (a))，その楕円の長軸に垂直な直線を引き，外接円に交差させる． すると，$f = 0$ の基準線と，楕円の中心からその外接円上の交点までを結ぶ直線とのなす角で定義される，離心近点離角 $E$ という角度を決めることができる (図 \ref{fig:Ef} (b))．したがって，$E = 0$ は $f = 0$ と一致し，したがって，$E = \pi$ は $f = \pi$ と一致する．
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{./image/sec2_7.pdf}
+\caption{\label{fig:Ef}}
+\end{figure}
+
+図 \ref{fig:Ef} (b) 中の $\bar{x}, \bar{y}$ のように楕円中心を原点にとる直交座標系での楕円の方程式は，
+\begin{equation}
+\left( \frac{\bar{x}}{a} \right)^2 + \left( \frac{\bar{y}}{b} \right)^2 = 1.
+\end{equation}
+$\bar{x} = e \cos E$ から $\bar{y}^2 = b^2 \sin^2 E$ が求まり，$b^2 = a^2 (1 - e^2)$ の関係から $\bar{y} = a \sqrt{1 - e^2} \sin E$ が求まる．したがって外接円への $r$ の水平方向と垂直方向の射影は，$E$ を用いて表すと，
+\begin{equation}
+x = a (\cos E - e) \quad {\rm and} \quad y = a \sqrt{1 - e^2} \sin E. \label{eq:xEyE}
+\end{equation}
+これらの2乗和の平方根をとると，
+\begin{eqnarray}
+r & = & a (1 - e \cos E), \label{eq:rE} \\
+\cos f & = & \frac{\cos E - e}{1 - e \cos E}. \label{eq:fE}
+\end{eqnarray}
+さらに，離心近点離角 $E$ と真近点離角 $f$ の関係のより簡単な表式が導出できる．
+\begin{equation}
+1 - \cos f = \frac{(1 + e) (1 - \cos E)}{1 - e \cos E}, \quad 1 + \cos f = \frac{(1 - e) (1 + \cos E)}{1 - e \cos E}.
+\end{equation}
+三角関数の2倍角の公式を使えば，
+\begin{equation}
+2 \sin^2 \frac{f}{2} = \frac{1 + e}{1 - e \cos E} 2 \sin^2 \frac{E}{2}, \quad 2 \cos^2 \frac{f}{2} = \frac{1 - e}{1 - e \cos E} 2 \cos^2 \frac{E}{2}.
+\end{equation}
+ゆえに，
+\begin{equation}
+\tan \frac{f}{2} = \sqrt{\frac{1 + e}{1 - e}} \tan \frac{E}{2}. \label{eq:fEnew}
+\end{equation}
+したがって，$E$ がわかっているとき，(\ref{eq:rE}) 式を使えば $r$ を，(\ref{eq:fE}) 式または (\ref{eq:fEnew}) 式を使えば $f$ を決定することができる．しかし，任意の時間 $t$ における天体の位置を知るには，$M$ と $E$ の関係を明らかにする必要がある．
+
+$v^2 = \dot{r}^2 + (r \dot{f})^2$ と (\ref{eq:rfdot}), (\ref{eq:v2new}) 式を使うと，
+\begin{eqnarray}
+\dot{r}^2 & = & n^2 a^3 \left( \frac{2}{r} - \frac{1}{a} \right) - \frac{n^2 a^4 (1 - e^2)}{r^2}, \\
+\frac{dr}{dt} & = & \frac{na}{r} \sqrt{a^2 e^2 - (r - a)^2}. \label{eq:drdt}
+\end{eqnarray}
+この式は (\ref{eq:rE}) 式を用いた以下の置き換えで積分可能となる．
+\begin{equation}
+r - a = - a e \cos E.
+\end{equation}
+よって (\ref{eq:drdt}) 式は，
+\begin{equation}
+\frac{dE}{dt} = \frac{n}{1 - e \cos E}. \label{eq:dEdt}
+\end{equation}
+この式は (\ref{eq:xEyE}) 式をそれぞれ時間微分し，${\bm r} \times \dot{{\bm r}} = h ( = n a^2 \sqrt{1 - e^2} )$ に代入することでも求めることができる．(\ref{eq:dEdt}) 式は簡単に積分できて，
+\begin{equation}
+n (t - \tau) = E - e \sin E.
+\end{equation}
+$t = \tau$ のとき $E = 0$．したがって(\ref{eq:M}) 式は，
+\begin{equation}
+M = E - e \sin E. \label{eq:keplereq}
+\end{equation}
+この式は Kepler 方程式と呼ばれ，その解は，任意の時間における軌道上の位置を求める際になくてはならないものである．ある時間が与えられたとき，(i) (\ref{eq:M}) 式から $M$ を求め，(ii) $E$ について (\ref{eq:keplereq}) 式を解き，(iii) (\ref{eq:xEyE}) 式または (\ref{eq:fE}) 式と，(\ref{eq:rf}) 式を使って$r, f$ を決める．
+
+\subsection{軌道要素}
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{./image/sec2_13.pdf}
+\caption{\label{}}
+\end{figure}
+
+\begin{equation}
+\begin{pmatrix}
+a & b \\
+c & d \\
+\end{pmatrix}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{./image/sec2_14.pdf}
+\caption{\label{}}
+\end{figure}
+
+
+
+
+\section{3 体問題}
+\subsection{基礎方程式}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{./image/sec3_1.pdf}
+\caption{\label{}}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{./image/sec3_2.pdf}
+\caption{\label{}}
+\end{figure}
+
+
+\section{摂動関数}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{./image/sec6_1.pdf}
+\caption{\label{}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{./image/sec6_2.pdf}
+\caption{\label{}}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{./image/sec7_2.pdf}
+\caption{\label{}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{./image/sec7_3.pdf}
+\caption{\label{}}
+\end{figure}
+
+\section{手法}
+\subsection{4次のエルミート法 \label{sec:Hermite}}
+\subsubsection{手順}
+\begin{enumerate}
+\item t での${\bm x}_j (t)$, ${\bm v}_j (t)$ ($\to {\bm x}_{0,j} , {\bm v}_{0,j}$) と加速度 ${\bm a}_j (t)$ ($\to {\bm a}_{0,j}$) とその時間微分 $\dot{{\bm a}}_j (t)$ ($\to \dot{{\bm a}}_{0,j}$) から，$t + \Delta t$ における位置と速度 (${\bm x}_{p,j} , {\bm v}_{p,j}$) を予測する．これらを予測子 (predictor) と呼ぶ．
+\item 予測子を使って，加速度 ${\bm a}_{1,j}$ とその時間微分 $\dot{{\bm a}}_{1,j}$ を求める．
+\item 修正子 : 必要な回数だけ (a),(b),(c) を繰り返す．
+\begin{description}
+\item[(a)] ${\bm a}_{0,j}$, $\dot{{\bm a}}_{0,j}$ と ${\bm a}_{1,j}$, $\dot{{\bm a}}_{1,j}$ から加速度の2階微分と3階微分 (${\bm a}_{0,j}^{(2)}$, ${\bm a}_{0,j}^{(3)}$) を計算する．
+\item[(b)] ${\bm a}_{0,j}^{(2)}$, ${\bm a}_{0,j}^{(3)}$ を使い，予測子を修正する (${\bm x}_{c,j} , {\bm v}_{c,j}$)．これらを修正子 (corrector) と呼ぶ．
+\item[(c)] ${\bm x}_{c,j} , {\bm v}_{c,j}$ での加速度 (${\bm a}_{1,j}^{{\rm new}}$) とその時間微分 ($\dot{{\bm a}}_{1,j}^{{\rm new}}$) を計算し，(a) に戻る．
+\end{description}
+\item 次のステップの準備をする．3. のループの最後の ${\bm a}_{1,j}^{{\rm new}}$, $\dot{{\bm a}}_{1,j}^{{\rm new}}$ を次のステップのための ${\bm a}_{0,j}$ と $\dot{{\bm a}}_{0,j}$ に更新し，次のステップの $\Delta t$ を求める．1. に戻る．
+\end{enumerate}
+
+\subsubsection{予測子を求める \label{sec:predictor}}
+$t + \Delta t$ での粒子の位置，速度を次のように予測する．
+\begin{eqnarray}
+{\bm x}_{p,j} & = & {\bm x}_{0,j} + \Delta t {\bm v}_{0,j} + \frac{\Delta t ^2}{2} {\bm a}_{0,j} + \frac{\Delta t ^3}{6} \dot{{\bm a}}_{0,j}, \\
+{\bm v}_{p,j} & = & {\bm v}_{0,j} + \Delta t {\bm a}_{0,j} + \frac{\Delta t ^2}{2} \dot{{\bm a}}_{0,j}. 
+\end{eqnarray}
+
+$\Delta t$ に対して ${\bm x}_{p,j}$ は3次，${\bm v}_{p,j}$ は2次の精度．予測子全体の精度は2次なので，本来，${\bm x}_{p,j}$ も2次まででいいのだが，$\dot{{\bm a}}_{0,j}$ が与えられているので，3次まで付け加えておく．
+
+\subsubsection{予測子から加速度と加速度の時間微分を求める}
+${\bm x}_{p,j}, {\bm v}_{p,j}$ を使い，$t + \Delta t$ での加速度 ${\bm a}_{1,j}$ とその時間微分 $\dot{{\bm a}}_{1,j}$ は以下のように計算される．
+\begin{eqnarray}
+{\bm a}_{1,j} & = & - \sum_{k \not= j} G m_k \frac{{\bm r}_{jk}}{(r_{jk}^2 + \epsilon^2)^{3/2}}, \label{eq:a1j}\\
+\dot{{\bm a}}_{1,j} & = & - \sum_{j} G m_k \left[ \frac{{\bm v}_{jk}}{(r_{jk}^2 + \epsilon^2)^{3/2}} - \frac{3 ( {\bm v}_{jk} \cdot {\bm r}_{jk} ) {\bm r}_{jk} }{(r_{jk}^2 + \epsilon^2)^{5/2}} \right]. \label{eq:a2j}
+\end{eqnarray}
+
+ここで，
+\begin{eqnarray}
+{\bm r}_{jk} & = & {\bm x}_{p,j} - {\bm x}_{p,k}, \\
+{\bm v}_{jk} & = & {\bm v}_{p,j} - {\bm v}_{p,k}. 
+\end{eqnarray}
+
+$\epsilon$ は計算上の発散を抑えるための softning parameter で，近接相互作用について必要な計算精度に応じてとる．
+
+${\bm a}_{1,j}$ は3次精度，$\dot{{\bm a}}_{1,j}$ は2次精度である．
+
+\subsubsection{${\bm a}^{(2)}, {\bm a}^{(3)}$ を求める．\label{sec:corrector}}
+Taylor 展開により，
+\begin{eqnarray}
+{\bm a}_{1,j} & = & {\bm a}_{0,j} + \Delta t \dot{{\bm a}}_{0,j} + \frac{\Delta t ^2}{2} {\bm a}_{0,j}^{(2)} + \frac{\Delta t ^3}{6} {\bm a}_{0,j}^{(3)}, \\
+\dot{{\bm a}}_{1,j} & = & \dot{{\bm a}}_{0,j} + \Delta t {\bm a}_{0,j}^{(2)} + \frac{\Delta t ^2}{2} {\bm a}_{0,j}^{(3)}. 
+\end{eqnarray}
+なので，この2式を逆に解くと，
+\begin{eqnarray}
+{\bm a}_{0,j}^{(2)} & = & \frac{- 6 ({\bm a}_{0,j} - {\bm a}_{1,j}) - \Delta t (4 \dot{{\bm a}}_{0,j} + 2 \dot{{\bm a}}_{1,j})}{\Delta t ^2}, \\
+{\bm a}_{0,j}^{(3)} & = & \frac{12 ({\bm a}_{0,j} - {\bm a}_{1,j}) + 6 \Delta t (\dot{{\bm a}}_{0,j} + \dot{{\bm a}}_{1,j})}{\Delta t ^3}. 
+\end{eqnarray}
+を得る．
+
+\subsubsection{予測子の修正}
+この ${\bm a}_{0,j}^{(2)}, {\bm a}_{0,j}^{(3)}$ を使って，位置と速度の予測子 (${\bm x}_{p,j}, {\bm v}_{p,j}$) を以下のように修正する．
+\begin{eqnarray}
+{\bm x}_{c,j} (t + \Delta t) & = & {\bm x}_{p,j} (t + \Delta t) +  \frac{\Delta t ^4}{24} {\bm a}_{0,j}^{(2)} + \alpha \frac{\Delta t ^5}{120} {\bm a}_{0,j}^{(3)}, \\
+{\bm v}_{c,j} (t \Delta t) & = & {\bm v}_{p,j} (t +\Delta t) + \frac{\Delta t ^3}{6} {\bm a}_{0,j}^{(2)} + \frac{\Delta t ^4}{24} {\bm a}_{0,j}^{(3)}. 
+\end{eqnarray}
+ここで，普通にTaylor 展開を考えれば，$\alpha = 1$．ただし，$\alpha \not= 1$ とすることもある．この修正により，$\Delta t$ に対して，${\bm x}_j$ は5次，${\bm v}_j$ は4次の精度になる．積分全体の精度は4次．(${\bm a}_{0,j}^{(3)}$ が与えられているので，${\bm x}_j$ は5次まで書いておくが，係数には自由度がある．)
+
+\subsubsection{修正された予測子を使って加速度および加速度の時間
+微分を求める}
+${\bm x}_{c,j}, {\bm v}_{c,j}$ での加速度 (${\bm a}_{1,j}^{\rm new}$) とその時間微分 ($\dot{{\bm a}}_{1,j}^{\rm new}$) を計算する．これらは，式 (\ref{eq:a1j}), (\ref{eq:a2j}) で，
+\begin{eqnarray}
+{\bm r}_{jk} & = & {\bm x}_{c,j} - {\bm x}_{c,k}, \\
+{\bm v}_{jk} & = & {\bm v}_{c,j} - {\bm v}_{c,k}. 
+\end{eqnarray}
+とすれば求まる．
+
+${\bm a}_{1,j}^{\rm new}, \dot{{\bm a}}_{1,j}^{\rm new}$ を ${\bm a}_{1,j}, \dot{{\bm a}}_{1,j}$ として，\ref{sec:corrector} に戻る．必要な回数だけこれを繰り返す (iteration)．このループでは ${\bm x}_{p,j}, {\bm v}_{p,j}$ は更新しないことに注意．
+
+\subsubsection{次のステップの準備}
+ループが終わったら，最後の ${\bm a}_{1,j}^{\rm new}, \dot{{\bm a}}_{1,j}^{\rm new}$ を次のステップのための ${\bm a}_{0,j}, \dot{{\bm a}}_{0,j}$ に更新する．
+
+\ref{sec:timestep} でも述べるが，次のステップの $\Delta t$ は，
+\begin{equation}
+\Delta t_j = \eta \sqrt{\frac{| {\bm a}_{1,j} | | {\bm a}_{1,j}^{(2)} | + | \dot{{\bm a}}_{1,j} | ^2}{| \dot{{\bm a}}_{1,j} | | {\bm a}_{1,j}^{(3)} | + | {\bm a}_{1,j}^{(2)} | ^2}}.
+\end{equation}
+で与えることが多い．$\eta$ は積分の精度を決めるパラメータで，1より小さな数で与える (例えば，$\eta = 0.01 - 0.05$)．$\eta$ を小さくすると積分精度が良くなるが，計算は遅くなる．必要な精度を満たすようになるべく小さく，一方，計算時間が長くならないようになるべく大きく，という観点で最適な $\eta$ を選ぶ．
+
+加速度の2階微分 (${\bm a}_{1,j}^{(2)}$) と 3階微分 (${\bm a}_{1,j}^{(3)}$) は，
+\begin{eqnarray}
+{\bm a}_{1,j}^{(3)} & = & {\bm a}_{0,j}^{(3)}, \\
+{\bm a}_{1,j}^{(2)} & = & {\bm a}_{0,j}^{(2)} + {\bm a}_{0,j}^{(3)} \Delta t. 
+\end{eqnarray}
+のように見積もる．これは3次の精度で正しい．(Indiividual timestep ではこのまま進み，Shared timestep では $\Delta t_j$ で最小のものを $\Delta t$ とする．(\ref{sec:timestep} 参照))
+
+そして，\ref{sec:predictor} に戻る．
+
+$t = 0$ では，加速度の2階微分と3階微分は計算できないので，${\bm x}_j,{\bm v}_j$ での加速度 (${\bm a}_{0,j}$) とその時間微分を求め，
+\begin{equation}
+\Delta t_j = \eta \frac{|{\bm a}_j|}{|\dot{{\bm a}}_j|}.
+\end{equation}
+のようにしてから，\ref{sec:predictor} に戻る．
+
+\subsection{中心星重力}
+中心星の周りに微惑星が回っている場合，中心星重力がほとんどの時間で圧倒的に大きい場合が多いので，中心星重力を別にして計算することが多い．簡単のため，中心星 ($j = 0$) とその周りを回る2つの天体 ($j = 1, 2$) の3体問題を考える．3天体の重心を原点にとった座標系 (慣性系) での運動方程式は，
+\begin{eqnarray}
+{\bm a}_0 & = & G m_1 \frac{{\bm r}_1 - {\bm r}_0}{|{\bm r}_1 - {\bm r}_0|^3} + G m_2  \frac{{\bm r}_2 - {\bm r}_0}{|{\bm r}_2 - {\bm r}_0|^3}, \label{eq:a0}\\
+{\bm a}_1 & = & G m_0 \frac{{\bm r}_0 - {\bm r}_1}{|{\bm r}_10- {\bm r}_1|^3} + G m_2  \frac{{\bm r}_2 - {\bm r}_1}{|{\bm r}_2 - {\bm r}_1|^3}, \label{eq:a1}\\
+{\bm a}_2 & = & G m_0 \frac{{\bm r}_0 - {\bm r}_2}{|{\bm r}_0 - {\bm r}_2|^3} + G m_1  \frac{{\bm r}_1 - {\bm r}_2}{|{\bm r}_1 - {\bm 2}_0|^3}. \label{eq:a2}
+\end{eqnarray}
+
+中心星を中心とした運動方程式を作る．式 (\ref{eq:a1}), (\ref{eq:a2}) から (\ref{eq:a0}) を辺々引くと，
+\begin{eqnarray}
+{\bm a}_1 & = & G (m_0 + m_1) \frac{{\bm r}_1}{|{\bm r}_1|^3} + G m_2 \frac{{\bm r}_1 - {\bm r}_2}{|{\bm r}_1 - {\bm r}_2|^3} - G m_2 \frac{{\bm r}_2}{|{\bm r}_2|^3}, \\
+{\bm a}_2 & = & G (m_0 + m_2) \frac{{\bm r}_2}{|{\bm r}_2|^3} + G m_1 \frac{{\bm r}_2 - {\bm r}_1}{|{\bm r}_2 - {\bm r}_1|^3} - G m_1 \frac{{\bm r}_1}{|{\bm r}_1|^3}. 
+\end{eqnarray}
+それぞれの式の第1項が中心星からの重力，第2項が相互作用，第3項が indirect 項となっている．これらの時間微分は，
+\begin{eqnarray}
+\begin{split}
+\dot{{\bm a}}_1 = & - G (m_0 + m_1) \left[ \frac{{\bm v}_1}{|{\bm r}_1|^3} - 3 \frac{({\bm v}_1 \cdot {\bm r}_1) {\bm r}_1}{|{\bm r}_1|^5} \right] \\
+& - G m_2 \left[ \frac{{\bm v}_1 - {\bm v}_2}{|{\bm r}_1 - {\bm r}_2|^3} - 3 \frac{[({\bm v}_1 - {\bm v}_2) \cdot ({\bm r}_1 - {\bm r}_2)] ({\bm r}_1 - {\bm r}_2)}{|{\bm r}_1 - {\bm r}_2|^5} \right] \\
+& - G m_2 \left[ \frac{{\bm v}_2}{|{\bm r}_2|^3} - 3 \frac{{\bm v}_2 \cdot {\bm r}_2}{|{\bm r}_2|^5} {\bm r}_2 \right], 
+\end{split}
+\\
+\begin{split}
+\dot{{\bm a}}_2 = & - G (m_0 + m_2) \left[ \frac{{\bm v}_2}{|{\bm r}_2|^3} - 3 \frac{({\bm v}_2 \cdot {\bm r}_2) {\bm r}_2}{|{\bm r}_2|^5} \right] \\
+& - G m_1 \left[ \frac{{\bm v}_2 - {\bm v}_1}{|{\bm r}_2 - {\bm r}_1|^3} - 3 \frac{[({\bm v}_2 - {\bm v}_1) \cdot ({\bm r}_2 - {\bm r}_1)] ({\bm r}_2 - {\bm r}_1)}{|{\bm r}_2 - {\bm r}_1|^5} \right] \\
+& - G m_1 \left[ \frac{{\bm v}_1}{|{\bm r}_1|^3} - 3 \frac{{\bm v}_1 \cdot {\bm r}_1}{|{\bm r}_1|^5} {\bm r}_1 \right].
+\end{split}
+\end{eqnarray}
+第1項，第2項，第3項は，加速度のそれぞれの項の時間微分に対応している．
+
+N 体問題の場合に拡張して考えると，$i, j = 1, 2, 3, \cdots, N$ に対して，
+\begin{eqnarray}
+{\bm a}_i & = & - G m_0 \frac{{\bm r}_i}{|{\bm r}_i|^3}  + \sum_{j \not= i} G m_j \frac{{\bm r}_{ij}}{|{\bm r}_{ij} |^3} - \sum_j G m_j \frac{{\bm r}_j}{|{\bm r}_j|^3}, \label{eq:ai} \\
+\dot{{\bm a}}_j & = & - G m_0 \left[ \frac{{\bm v}_i}{|{\bm r}_i|^3} - 3 \frac{({\bm v}_i \cdot {\bm r}_i) {\bm r}_i}{|{\bm r}_i|^5} \right] \nonumber \\ 
+& & - \sum_{j \not= i} G m_j \left[ \frac{{\bm v}_{ij}}{|{\bm r}_{ij}|^3} - 3 \frac{[{\bm v}_{ij} \cdot {\bm r}_{ij}] {\bm r}_{ij}}{|{\bm r}_{ij}|^5} \right] - \sum_j G m_j \left[ \frac{{\bm v}_j}{|{\bm r}_j|^3} - 3 \frac{{\bm v}_j \cdot {\bm r}_j}{|{\bm r}_j|^5} {\bm r}_j \right]. \label{eq:adoti}
+\end{eqnarray}
+となる．ここで，
+\begin{eqnarray}
+{\bm r}_{ij} & = & {\bm r}_{i} - {\bm r}_{j}, \\
+{\bm v}_{ij} & = & {\bm v}_{i} - {\bm v}_{j}.
+\end{eqnarray}
+(\ref{eq:ai}), (\ref{eq:adoti}) 式の indirect 項は i にはよらないので，一度計算しておけば，全ての粒子 i に対して使えることに注意．
+
+回っている天体の質量が中心星に対して非常に小さい場合は，(\ref{eq:ai}), (\ref{eq:adoti}) 式の第3項の indirect 項は第1項の中心星重力項に比べて無視できる．そのようなときには第3項の indirect 項を落とし，中心星の動きは無視して，中心星重力は外場として扱うことも多い．
+\begin{eqnarray}
+{\bm a}_i & = & - G m_0 \frac{{\bm r}_i}{|{\bm r}_i|^3}  + \sum_{j \not= i} G m_j \frac{{\bm r}_{ij}}{|{\bm r}_{ij} |^3},  \\
+\dot{{\bm a}}_j & = & - G m_0 \left[ \frac{{\bm v}_i}{|{\bm r}_i|^3} - 3 \frac{({\bm v}_i \cdot {\bm r}_i) {\bm r}_i}{|{\bm r}_i|^5} \right] - \sum_{j \not= i} G m_j \left[ \frac{{\bm v}_{ij}}{|{\bm r}_{ij}|^3} - 3 \frac{[{\bm v}_{ij} \cdot {\bm r}_{ij}] {\bm r}_{ij}}{|{\bm r}_{ij}|^5} \right].
+\end{eqnarray}
+このほうが計算コストはずっと軽くなる．
+
+以下のテスト計算，本計算では，中心星重力を外場として扱うことにした．
+
+\subsection{タイムステップ \label{sec:timestep}}
+\subsubsection{Variable Timestep (可変タイムステップ) \label{sec:variable}}
+軌道計算の $\Delta t$ が大きすぎると数値的な誤差が大きくなり，逆に小さすぎても計算コストがかかる．したがって，取り扱う問題やその時の状態に合った $\Delta t$ を選ぶ必要がある．特に，時々刻々と状態が大きく変化するような現象 (近接相互作用など) を取り扱う場合は，$\Delta t$ を可変にするべきである．
+
+$\Delta t$ をどのように決めればよいかを考える．ある時刻 $t$ での粒子の位置を $x (t)$ とすると，$t + \Delta t$ での位置は，
+\begin{equation}
+x (t + \Delta t)  =  x (t) + v (t) \Delta t + \frac{1}{2!} a (t) (\Delta t)^2 + \cdots \label{eq:xt}
+\end{equation}
+と書ける．数値計算では (\ref{eq:xt}) 式の展開を有限項で打ち切ったものを使うため，精度の良い計算をするためには，$\Delta t$ が十分小さい必要がある．1次精度，2次精度のそれぞれの $\Delta t$ に関しての条件式が得られる．
+\begin{eqnarray}
+1次精度 : \Delta t & \ll & \frac{|x (t)|}{|v (t)|}, \label{eq:1storder} \\
+2次精度 : \Delta t & \ll & {\rm min} \left( \frac{|x (t)|}{|v (t)|}, \frac{|v (t)|}{|a (t)|} \right). \label{eq:2ndorder}
+\end{eqnarray}
+$\Delta t$ は常に (\ref{eq:1storder})，(\ref{eq:2ndorder}) 式を満たすように決めなければならない．例えば，係数 $\eta (\ll 1)$ を用いて，時刻 $t$ での $\Delta t$ を
+\begin{eqnarray}
+1次精度 : \Delta t & = & \eta \frac{|x (t)|}{|v (t)|}, \label{eq:1storder} \\
+2次精度 : \Delta t & = & \eta \frac{1}{\sqrt{\left( \frac{v (t)}{x (t)} \right)^2 + \left( \frac{a (t)}{v (t)} \right)^2}}. \label{eq:2ndorder}
+\end{eqnarray}
+ととればよい．
+
+\ref{sec:Hermite} のエルミート法は4次精度である．${\bm x}, {\bm v}$ の6変数の4次の場合，上と同様に考えるとタイムステップの標識が繁雑になるので，もっと簡単な近似的な表式が用いられることが多い．よく用いられる表式は，
+\begin{equation}
+\Delta t  =  \eta \frac{|{\bm a}|}{|\dot{{\bm a}}|},
+\end{equation}
+または
+\begin{equation}
+\Delta t  =  \eta \sqrt{\frac{| {\bm a}| | {\bm a}^{(2)} | + | \dot{{\bm a}}| ^2}{| \dot{{\bm a}}| | {\bm a}^{(3)} | + | {\bm a}^{(2)} | ^2}} \label{eq:Aarseth}
+\end{equation}
+である．(\ref{eq:Aarseth}) 式は Aarseth によるもので，簡単でありながら非常に
+効率がよいタイムステップの表式であることが知られている．
+
+\subsubsection{Shared Timestep (共有タイムステップ) とその限界}
+N 体計算では，各粒子 $j$ について，\ref{sec:variable} でやったようにして，$\Delta t_j (j = 1, 2, 3, \cdots , N)$ を計算する．例えば，その最小値
+\begin{equation}
+\Delta t  =  {\rm min} (\Delta t_j) ; j = 1, \cdots , N
+\end{equation}
+を全粒子の $\Delta t$ に採用して積分すれば，精度が保てる．このようなタイムステップの決め方を "shared timestep" と呼ぶ．
+
+しかしながら，粒子同士の近接相互作用や衝突がしばしば起こり，その近接相互作用や衝突が重要なプロセスになる「衝突系」の場合 (惑星形成のシミュレーションや銀河や星団の準静的進化のシュミレーションはそういう場合に対応する) では，"shared timestep" では非常に効率が悪い．そこで考えだされたのが，以下に述べる "individual timestep" である．これは「力学的に本来必要な timestep」で切っていこうという方法である．
+
+また，global な計算領域を持つ場合も事情は似ている．例えば水星領域から土星領域までを含む計算の場合，水星領域での太陽まわりのケプラー時間と土星領域でのそれは 100 倍も異なる．近接相互作用をしていない粒子は太陽まわりのケプラー時間に比例した timestep で切ることになるので，"shared timestep" では水星領域でのケプラー時間を基準にして土星領域の計算をするので，効率が悪い．この場合も "individual timestep" が有効になる．
+
+\subsubsection{Individual Timestep (独立タイムステップ) }
+"individual timestep" では，粒子は各々別の時間 $t_j$を持ち，別々に時間発展していく．計の時間 ("system time" または "global time") は $t_j + \Delta t_j$ が最小になる粒子 (進めた先が一番遅れている粒子) と共に進んでいく．
+
+粒子は各々別の時間 $t_j$ での位置 ${\bm x}_j (t_j)$，速度 ${\bm v}_j (t_j)$，加速度 ${\bm a}_j (t_j)$，加速度の時間微分 $\dot{{\bm a}}_j (t_j)$ の情報を持っていて，ある与えられた精度 ($\eta$) で次に進むことができる timestep $\Delta t_j$ が計算されているとする．
+
+\begin{enumerate}
+\item $t_j + \Delta t_j$ が最小となる粒子 $j_{{\rm sys}}$ を選び，その時間を system time $t_{{\rm sys}}$ とする．
+\item $t_{{\rm sys}}$ における全ての粒子の予測子を計算する．
+\item 予測子を使って，$t_{{\rm sys}}$ での $j_{{\rm sys}}$ 粒子の ${\bm a}_{j_{{\rm sys}}}(t_{j_{{\rm sys}}}), \dot{{\bm a}}_{j_{{\rm sys}}} (t_{j_{{\rm sys}}})$ を計算する．
+\item $j_{{\rm sys}}$ 粒子のみを修正する．iteration をする場合も $j_{{\rm sys}}$ 粒子以外は予測子を使う．
+\item 新たな $\Delta t_{j_{{\rm sys}}}$  を計算し，$t_{j_{{\rm sys}}} + \Delta t_{j_{{\rm sys}}}$ を新たな $t_{j_{{\rm sys}}}$ として更新し，ステップ1に戻る．$j_{{\rm sys}}$ 粒子以外は予測子を捨ててもとに戻る．
+\end{enumerate}
+
+N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相互重力計算である．予測子はすでに持っている ${\bm x}_j (t_j), {\bm v}_j (t_j), {\bm a}_j (t_j), \dot{{\bm a}}_j (t_j)$ を使って，$t_{{\rm sys}} - t_j$ の時間分だけ予測すればいいので，$\mathcal{O} (N)$ の計算である．すなわち，進める (update する) 粒子がどんなに細かい $\Delta t_j$ でステップを切っていっても，他の粒子は実際上進むことはせず，"shared timestep" のときのように $\mathcal{O} (N^2)$ の無駄な計算を繰り返すことはない．このことにより，"individual timestep" を使うと計算が大幅に加速されることがわかる．
+
+\section{重力散乱テスト計算}
+\subsection{1体のケプラー運動 (エネルギー，角運動量とタイムステップの関係)}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{./image/raletive_error.pdf}
+\caption{\label{}}
+\end{figure}
+
+\subsection{円軌道の惑星と微惑星の重力散乱}
+
+\subsection{ピタゴラス問題}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{./image/pythagoras_1.pdf}
+\caption{\label{}}
+\end{figure}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{thebibliography}{9}
+  \bibitem{1} Carl D. Murray and Stanley F. Dermott 1999, Solar System Dynamics
+  \bibitem{2} 富坂幸治, 花輪知幸, 牧野淳一郎 2007, シリーズ現代の天文学 14 シミュ レーション天文学
+  \bibitem{3} 木下宙, 天体と軌道の力学
+\end{thebibliography}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
