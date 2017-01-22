@@ -210,7 +210,7 @@ n = \frac{2 \pi}{T}. \label{eq:n}
 \end{equation}
 さらに，(\ref{eq:kepler3}) 式より，
 \begin{equation}
-\mu = n^2 a^3 \quad {\rm and} \quad h = n a^2 \sqrt{1 - e^2} = \sqrt{\mu a (1 - e^2)}.
+\mu = n^2 a^3 \quad {\rm and} \quad h = n a^2 \sqrt{1 - e^2} = \sqrt{\mu a (1 - e^2)}. \label{eq:mu}
 \end{equation}
 平均運動の値は2体問題では定数であるが，実際の角速度 $\dot{f}$ は経度の関数である．
 
@@ -324,7 +324,7 @@ r - a = - a e \cos E.
 \end{equation}
 この式は (\ref{eq:xEyE}) 式をそれぞれ時間微分し，${\bm r} \times \dot{{\bm r}} = h ( = n a^2 \sqrt{1 - e^2} )$ に代入することでも求めることができる．(\ref{eq:dEdt}) 式は簡単に積分できて，
 \begin{equation}
-n (t - \tau) = E - e \sin E.
+n (t - \tau) = E - e \sin E. \label{eq:tauE}
 \end{equation}
 $t = \tau$ のとき $E = 0$．したがって(\ref{eq:M}) 式は，
 \begin{equation}
@@ -463,33 +463,82 @@ r \sin f\\
 \sin \Omega \cos (\omega + f) + \cos \Omega \sin (\omega + f) \cos I\\
 \sin (\omega + f) \sin I\\
 \end{pmatrix}
+\label{eq:xyzXYZ}
 \end{equation}
 回転変換では長さは保存されるため，$a, e$ の値は変化しない．
 
 これで時間 $t$ での楕円運動をする天体の基準面の座標系における位置 ($X, Y, Z$) と速度 ($\dot{X}, \dot{Y}, \dot{Z}$) を，6つの軌道要素 $a, e, I, \Omega, \omega, f$ と近点通過時刻 $\tau$ に変換することができるようになった．中心星とそのまわりを回る天体の質量をそれぞれ $m_1, m_2$ とすると，
 \begin{eqnarray}
-R^2 & = & X^2 + Y^2 + Z^2, \\
-V^2 & = & \dot{X}^2 + \dot{Y}^2 + \dot{Z}^2, \\
+R^2 & = & X^2 + Y^2 + Z^2, \label{eq:R}\\
+V^2 & = & \dot{X}^2 + \dot{Y}^2 + \dot{Z}^2, \label{eq:Rdot}\\
 {\bm R} \cdot \dot{{\bm R}} & = & X \dot{X} + Y \dot{Y} + Z \dot{Z}, \\
 {\bm h} & = & (Y \dot{Z} - Z \dot{Y}, Z \dot{X} - X \dot{Z}, X \dot{Y} - Y \dot{X}), \\
 \dot{R} & = & \pm \sqrt{V^2 - \frac{h^2}{R^2}}.
 \end{eqnarray}
 ここで $R = r$ は動径ベクトルの長さ，$\dot{R}$ はその変化率を示している．$R$ は常に正なので，$\dot{R}$ の符号は ${\bm R} \cdot \dot{{\bm R}}$ の符号と一致する．${\bm h} = (h_X, h_Y, h_Z)$ のそれぞれの成分は，
 \begin{eqnarray}
-h \cos I & = & h_Z, \\
+h \cos I & = & h_Z, \label{eq:h_Z}\\
 h \sin I \sin \Omega & = & \pm h_X, \label{eq:h_X}\\
 h \sin I \cos \Omega & = & \mp h_Y. \label{eq:h_Y}
 \end{eqnarray}
 ここで，$h_Z$ の符号が正のとき (\ref{eq:h_X})，(\ref{eq:h_Y}) 式の上の符号，$h_Z$ の符号が負のとき下の符号をとる．
 
+軌道要素を求める過程を以下に示す．
+
+\begin{description}
+\item[1)] (\ref{eq:v2new})，(\ref{eq:R})，(\ref{eq:Rdot}) 式から $a$ を求める．
+\begin{equation}
+a = \left( \frac{2}{R} -\frac{V^2}{G (m_1 + m_2)} \right)^{-1} \label{eq:axis}
+\end{equation}
+\item[2)] (\ref{eq:mu})，(\ref{eq:axis}) 式から $e$ を求める．
+\begin{equation}
+e = \sqrt{1- \frac{h^2}{G (m_1 + m_2) a}} \label{eq:ecc}
+\end{equation}
+\item[3)] (\ref{eq:h_Z}) 式から $I$ を求める．
+\begin{equation}
+I = \cos^{-1} \left( \frac{h_Z}{h} \right) \label{eq:inc}
+\end{equation}
+\item[4)] (\ref{eq:h_X})，(\ref{eq:h_Y}) 式から $\sin \Omega，\cos \Omega$ の形で $\Omega$ を求める．
+\begin{equation}
+\sin \Omega = \frac{\pm h_X}{h \sin I} \quad {\rm and} \quad \cos \Omega = \frac{\mp h_Y}{h \sin I}. \label{eq:OMEGA}
+\end{equation}
+符号は $h_Z$ の符号によって決まる．
+\item[5)] (\ref{eq:xyzXYZ}) 式の $Z/R, X/R$ の表式から $\omega + f$ を求める．
+\begin{equation}
+\sin (\omega + f) = \frac{Z}{R \sin I} \quad {\rm and} \quad \cos (\omega + f) = \frac{1}{\cos \Omega} \left( \frac{X}{R} + \sin \Omega \sin (\omega + f) \cos I \right). \label{eq:omega+f}
+\end{equation}
+\item[6)] (\ref{eq:rf})，(\ref{eq:rdot}) 式から得られる $\sin f$ と $\cos f$ の表式から $f, \omega$ を求める．$\dot{r} = \dot{R}$ と置き換えると，
+\begin{equation}
+\sin f = \frac{a (1 - e^2)}{h e} \dot{R} \quad {\rm and} \quad \cos f = \frac{1}{e} \left( \frac{a (1 - e^2)}{R} - 1 \right). \label{eq:f}
+\end{equation}
+\item[7)] (\ref{eq:rE}) 式から $E$を計算し，(\ref{eq:mu})，(\ref{eq:tauE}) 式を用いて $\tau$ を求める．
+\begin{equation}
+\tau = t - \frac{E - e \sin E}{\sqrt{G (m_1 + m_2) a^{-3}}} \label{eq:tau}
+\end{equation}
+\end{description}
+
+これらの式は軌道要素を求める正しい方法であるが，数値計算において，SI単位系や他の標準的な単位系よりも実用的な単位系を用いて，$G (m_1 + m_2) = 1$ とするように，すなわち時間 $t$ を $\sqrt{\mu} = \sqrt{G (m_1 + m_2)}$ でスケーリングし， 新たな時間 $\bar{t}$ を用いることがある．
+\begin{equation}
+\sqrt{\mu} dt = d \bar{t} \label{eq:tbar}
+\end{equation}
+
+(\ref{eq:raletive}) 式から，これは $\mu = 1$ としたときと同じである．加えて，単位長さを $a = 1$ と選ぶと，2体問題は単位平均運動 $n = 1$ と単位周期 $T = 2 \pi$ のケプラー運動として扱うことができる．これは円制限3体問題を扱う際にも同様の形で適用できる．
+
+
+\section{制限3体問題}
+
+
+\subsection{運動方程式}
 
 
 
 
 
 
-\section{3 体問題}
-\subsection{基礎方程式}
+
+
+
+
 
 \begin{figure}[H]
 \centering
