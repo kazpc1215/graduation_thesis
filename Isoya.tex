@@ -189,7 +189,7 @@ b^2 = a^2 (1 - e^2).
 \begin{equation}
 r =\frac{a (1 - e^2)}{1+ e \cos (\theta - \varpi)}.
 \end{equation}
-$\theta$ は黄経 (黄道座標の経度にあたり，春分点を0度としている) と呼ばれる．天体力学では，慣性系において固定された基準線からの角度を測るときに，慣習的に黄経を用いる．$\theta = \varpi, \theta = \varpi + \pi$ のときに，それぞれ $r$ の最小値 $r_{\rm p} = a (1 - e)$，最大値 $r_{\rm a} = a (1 + e)$ をとる．これらの点はそれぞれ近点，遠点と呼ばれる．楕円の中心からどちらかの焦点までの距離は $a e$ で与えられる．$\varpi$ は近点引数と呼ばれ，近点の黄経である．2体問題では $\varpi$ は定数であるが，他の摂動が入る場合は時間とともに変化する．大抵は黄経よりも $\varpi$ から測った角度の方がより扱いやすく，真近点離角 $f = \theta - \varpi$ を導入する．$f, \theta$ は $2 \pi$ の周期を持つ．よって $r$ は，
+$\theta$ は黄経 (黄道座標の経度にあたり，春分点を0度としている) と呼ばれる．天体力学では，慣性系において固定された基準線からの角度を測るときに，慣習的に黄経を用いる．$\theta = \varpi, \theta = \varpi + \pi$ のときに，それぞれ $r$ の最小値 $r_{\rm p} = a (1 - e)$，最大値 $r_{\rm a} = a (1 + e)$ をとる．これらの点はそれぞれ近点，遠点と呼ばれる．楕円の中心からどちらかの焦点までの距離は $a e$ で与えられる．$\varpi$ ("curly pi" と発音) は近日点経度と呼ばれ，近点の黄経である．2体問題では $\varpi$ は定数であるが，他の摂動が入る場合は時間とともに変化する．大抵は黄経よりも $\varpi$ から測った角度の方がより扱いやすく，真近点離角 $f = \theta - \varpi$ を導入する．$f, \theta$ は $2 \pi$ の周期を持つ．よって $r$ は，
 \begin{equation}
 r = \frac{a (1 - e^2)}{1+ e \cos f}. \label{eq:rf}
 \end{equation}
@@ -223,7 +223,7 @@ n = \frac{2 \pi}{T}. \label{eq:n}
 \frac{1}{2} v^2 - \frac{\mu}{r} = C. \label{eq:energyC}
 \end{equation}
 ここで $v^2 = \dot{{\bm r}} \cdot \dot{{\bm r}}$ は速度の2乗，$C$ は積分定数である．
-(\ref{eq:energyC}) 式はエネルギー積分とも呼ばれ，単位質量あたりの天体のエネルギーが保存することを示している．ここまでの結果より，2体問題には4つの定数が保存する : エネルギー積分 $C$ と角運動量 ${\bm h}$ の3成分である．\underline{section ?} で導出するが，これらは軌道要素や離心率ベクトルのような別の量で表現することもできる．
+(\ref{eq:energyC}) 式はエネルギー積分とも呼ばれ，単位質量あたりの天体のエネルギーが保存することを示している．ここまでの結果より，2体問題には4つの定数が保存する : エネルギー積分 $C$ と角運動量 ${\bm h}$ の3成分である．\ref{sec:elements} 節で導出するが，これらは軌道要素や離心率ベクトルのような別の量で表現することもできる．
 
 $v^2$ の別の表式を見つけ， $C$ の別の表式を導出する．$\varpi$ は固定されているので，$\dot{\theta} = d (f + \varpi) / dt = \dot{f}$ であり，(\ref{eq:polar}) 式の ${\bm r}$ の定義を用いると，
 \begin{equation}
@@ -332,8 +332,8 @@ M = E - e \sin E. \label{eq:keplereq}
 \end{equation}
 この式は Kepler 方程式と呼ばれ，その解は，任意の時間における軌道上の位置を求める際になくてはならないものである．ある時間が与えられたとき，(i) (\ref{eq:M}) 式から $M$ を求め，(ii) $E$ について (\ref{eq:keplereq}) 式を解き，(iii) (\ref{eq:xEyE}) 式または (\ref{eq:fE}) 式と，(\ref{eq:rf}) 式を使って$r, f$ を決める．
 
-\subsection{軌道要素}
- \ref{sec:EoM} 節では，m1 に対する m2 の相対位置ベクトルと速度ベクトルが，常に角運動量ベクトルに垂直な平面上に存在することを示した．m2 の ${\bm r} = (x, y)$ と $\dot{\bm r} = (\dot{x}, \dot{y})$ は3つの定数 $a, e, \varpi$ と変数 $f$ によって固有の値をもつ．ここまでの解析では軌道面上の運動を理解してきた．しかし，太陽系の天体の運動は単一の基準面上で起こるものではなく，ここからは軌道の3次元表現を考えていく (図 \ref{fig:elements_SSD})．
+\subsection{軌道要素 \label{sec:elements}}
+ \ref{sec:EoM} 節では，$m_1$ に対する $m_2$ の相対位置ベクトルと速度ベクトルが，常に角運動量ベクトルに垂直な平面上に存在することを示した．$m_2$ の ${\bm r} = (x, y)$ と $\dot{\bm r} = (\dot{x}, \dot{y})$ は3つの定数 $a, e, \varpi$ と変数 $f$ によって固有の値をもつ．ここまでの解析では軌道面上の運動を理解してきた．しかし，太陽系の天体の運動は単一の基準面上で起こるものではなく，ここからは軌道の3次元表現を考えていく (図 \ref{fig:elements_SSD})．
  
 任意の位置が位置ベクトル ${\bm r} = (x, y, z) = x \hat{\bm x} + y \hat{\bm y} + z \hat{\bm z}$ で表現される3次元直交座標系を考える．3つの軸が右手系をなすように，$x$ 軸は楕円軌道の長軸上の近点の方向，$y$ 軸は 軌道面上の$x$ 軸に垂直な方向，そして $z$ 軸は $x, y$ 軸両方に垂直で $\hat{\bm x} \times \hat{\bm y}$ の方向にとる．
 
@@ -353,24 +353,17 @@ $I \to 0$ の極限では軌道面は基準面と同一平面上に存在し，
 \begin{equation}
 \varpi = \Omega + \omega \label{eq:varpi}
 \end{equation}
-ここで $\varpi$ は \ref{sec:position&velocity} 節で導入した近日点経度である．しかし $\Omega$ と $\omega$ は異なる平面上の角度でにも関わらず， (\ref{eq:varpi}) の $\varpi$ の定義は軌道が傾いている場合にも使われる．ゆえに，$\varpi$ は "dogleg" 角
+ここで $\varpi$ は \ref{sec:position&velocity} 節で導入した近日点経度である．しかし $\Omega$ と $\omega$ は異なる平面上で定義される角度にも関わらず， (\ref{eq:varpi}) の $\varpi$ の定義は軌道が傾いている場合にも使われる．ゆえに，$\varpi$ は一般に "曲がった" 角 ("dogleg" angle) とも呼ばれる．
 
+図 \ref{fig:xyzXYZ} は軌道面の座標系と基準面の座標系の関係を示している．1つの座標系は，他の座標系を軸に沿って回転させることで表現できることがわかる．
 
-
-\begin{equation}
-\begin{pmatrix}
-a & b \\
-c & d \\
-\end{pmatrix}
-\end{equation}
+軌道面の座標系 ($x, y, z$) から基準面の座標系 ($X, Y, Z$) へ変換するためには，(i) $x$ 軸が交線 (line of nodes) と一致するように $z$ 軸を中心に $\omega$ だけ回転させ，(ii) 次に2つの平面が一致するように $x$ 軸を中心に $I$ だけ回転させ，(iii) 最後に $z$ 軸を中心に $\Omega$ だけ回転させる (図 \ref{fig:elements_SSD}，\ref{fig:xyzXYZ}，\ref{fig:grapher} 参照)．
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{./image/sec2_14.pdf}
-\caption{\label{}}
+\caption{\label{fig:xyzXYZ}}
 \end{figure}
-
-
 
 \begin{figure}[H]
 \begin{tabular}{cc}
@@ -397,8 +390,98 @@ c & d \\
 \end{minipage}
 %
 \end{tabular}
-\caption{\label{}}
+\caption{\label{fig:grapher}}
 \end{figure}
+
+これらのような3次元座標系の変換は，それぞれ ${\rm{\bm P}}_1，{\rm{\bm P}}_2，{\rm{\bm P}}_3$ のような3 $\times$ 3回転行列で表現できる．
+
+\begin{equation}
+{\rm{\bm P}}_1 =
+\begin{pmatrix}
+\cos \omega & - \sin \omega & 0\\
+\sin \omega & \cos \omega & 0 \\
+0 & 0 & 1\\
+\end{pmatrix}
+, \quad {\rm{\bm P}}_2 =
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & \cos I & - \sin I\\
+0 & \sin I & \cos I\\
+\end{pmatrix}
+, \quad {\rm{\bm P}}_3 =
+\begin{pmatrix}
+\cos \Omega & - \sin \Omega & 0\\
+\sin \Omega & \cos \Omega & 0 \\
+0 & 0 & 1\\
+\end{pmatrix}
+\end{equation}
+
+これらを使うと，
+\begin{equation}
+\begin{pmatrix}
+X\\
+Y\\
+Z\\
+\end{pmatrix}
+= {\rm{\bm P}}_3 {\rm{\bm P}}_2 {\rm{\bm P}}_1
+\begin{pmatrix}
+x\\
+y\\
+z\\
+\end{pmatrix}
+\quad {\rm and} \quad
+\begin{pmatrix}
+x\\
+y\\
+z\\
+\end{pmatrix}
+= {\rm{\bm P}}_1^{-1} {\rm{\bm P}}_2^{-1} {\rm{\bm P}}_3^{-1}
+\begin{pmatrix}
+X\\
+Y\\
+Z\\
+\end{pmatrix}
+\end{equation}
+ここで ${\rm{\bm P}}^{-1}$ は ${\rm{\bm P}}$ の逆行列である．すべての回転行列は直交行列であるため，逆行列は転置行列と等しい．
+
+軌道面の座標系を基準面の座標系で表すと，
+\begin{equation}
+\begin{pmatrix}
+X\\
+Y\\
+Z\\
+\end{pmatrix}
+= {\rm{\bm P}}_3 {\rm{\bm P}}_2 {\rm{\bm P}}_1
+\begin{pmatrix}
+r \cos f\\
+r \sin f\\
+0\\
+\end{pmatrix}
+= r 
+\begin{pmatrix}
+\cos \Omega \cos (\omega + f) - \sin \Omega \sin (\omega + f) \cos I\\
+\sin \Omega \cos (\omega + f) + \cos \Omega \sin (\omega + f) \cos I\\
+\sin (\omega + f) \sin I\\
+\end{pmatrix}
+\end{equation}
+回転変換では長さは保存されるため，$a, e$ の値は変化しない．
+
+これで時間 $t$ での楕円運動をする天体の基準面の座標系における位置 ($X, Y, Z$) と速度 ($\dot{X}, \dot{Y}, \dot{Z}$) を，6つの軌道要素 $a, e, I, \Omega, \omega, f$ と近点通過時刻 $\tau$ に変換することができるようになった．中心星とそのまわりを回る天体の質量をそれぞれ $m_1, m_2$ とすると，
+\begin{eqnarray}
+R^2 & = & X^2 + Y^2 + Z^2, \\
+V^2 & = & \dot{X}^2 + \dot{Y}^2 + \dot{Z}^2, \\
+{\bm R} \cdot \dot{{\bm R}} & = & X \dot{X} + Y \dot{Y} + Z \dot{Z}, \\
+{\bm h} & = & (Y \dot{Z} - Z \dot{Y}, Z \dot{X} - X \dot{Z}, X \dot{Y} - Y \dot{X}), \\
+\dot{R} & = & \pm \sqrt{V^2 - \frac{h^2}{R^2}}.
+\end{eqnarray}
+ここで $R = r$ は動径ベクトルの長さ，$\dot{R}$ はその変化率を示している．$R$ は常に正なので，$\dot{R}$ の符号は ${\bm R} \cdot \dot{{\bm R}}$ の符号と一致する．${\bm h} = (h_X, h_Y, h_Z)$ のそれぞれの成分は，
+\begin{eqnarray}
+h \cos I & = & h_Z, \\
+h \sin I \sin \Omega & = & \pm h_X, \label{eq:h_X}\\
+h \sin I \cos \Omega & = & \mp h_Y. \label{eq:h_Y}
+\end{eqnarray}
+ここで，$h_Z$ の符号が正のとき (\ref{eq:h_X})，(\ref{eq:h_Y}) 式の上の符号，$h_Z$ の符号が負のとき下の符号をとる．
+
 
 
 
@@ -938,6 +1021,13 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 \caption{\label{}}
 \end{figure}
 
+
+\subsection{計算コードの見直し}
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{./image/Nbody_test.pdf}
+\caption{\label{}}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{thebibliography}{9}
