@@ -526,25 +526,141 @@ I = \cos^{-1} \left( \frac{h_Z}{h} \right) \label{eq:inc}
 
 
 \section{制限3体問題}
-
+この章では3体の物体が重力相互作用をした場合に拡張して考える．特に，3体目の質量が他の2つに比べ無視できるほど小さいときの3体目の物体の運動について考える．この問題は「制限3体問題」と呼ばれる．また，1,2体目の物体がそれらの共通重心を中心に円運動をし，3体目の物体がそれと同一な平面上を運動する場合，「円制限3体問題」と呼ばれる．一見すると，太陽系の天体運動に対して円制限3体問題はほとんど応用できないと思えるかもしれない．やはり観測された太陽系の天体は，同一平面上を運動せず円運動もしていない．しかし，太陽系の天体の軌道と質量の階層構造 (太陽，惑星，衛星，リングなど) は，制限3体問題がよい近似であり，比較的簡単な解析で定性的に天体の運動の振る舞いを理解できることを示している．
 
 \subsection{運動方程式}
+2つの質量 $m_1, m_2$ の物体の重力の影響下で，質量が無視できるほど小さい粒子の運動を考える．粒子は2つの物体に影響を与えないが，2つの物体は共通重心を中心に円運動をして粒子に力を及ぼすと仮定する．
 
-
-
-
-
-
-
-
-
-
+$\xi, \eta, \zeta$ の軸を持ち，2つの物体の重心を原点にとる慣性座標系を考える (図 \ref{fig:xi_eta_zeta})．時刻 $t = 0$ で $m_1$ から $m_2$ に沿った方向に $\xi$ 軸，軌道平面上で $\xi$ 軸と垂直な方向に $\eta$ 軸，そして $\xi - \eta$ 平面に垂直な，角運動量ベクトルの方向に $\zeta$ 軸をとる．この慣性座標系での2つの物体の座標を ($\xi_1, \eta_1, \zeta_1$) ，($\xi_2, \eta_2, \zeta_2$) とし，距離は一定で，同じ角速度で共通重心のまわりを回っているとする．また単位質量を $\mu = G (m_1 + m_2) = 1$ となるように選ぶ．$m_1 > m_2$ と仮定し，
+\begin{equation}
+\bar{\mu} = \frac{m_2}{m_1 + m_2}
+\end{equation}
+と定義すると，この単位系での2つの物体の質量は，
+\begin{equation}
+\mu_1 = G m_1 = 1 - \bar{\mu} \quad {\rm and} \quad \mu_2 = G m_2 = \bar{\mu}, \label{eq:mu1mu2}
+\end{equation}
+となり，ここで仮定より $\bar{\mu} < 1/2$ である．単位長さは，2つの物体間の距離が1となるように選ぶ．そうすると，共通の平均運動 $n$ も1となる．
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{./image/sec3_1.pdf}
-\caption{\label{}}
+\caption{\label{fig:xi_eta_zeta}}
 \end{figure}
+
+慣性座標系，もしくは sidereal 座標系での粒子の座標を ($\xi, \eta, \zeta$) とする．逆2乗則のベクトル形式を用いると，
+粒子の運動方程式は，
+\begin{eqnarray}
+\ddot{\xi} & = & \mu_1 \frac{\xi_1 - \xi}{r_1^3} + \mu_2 \frac{\xi_2 - \xi}{r_2^3}, \label{eq:xiddot}\\
+\ddot{\eta} & = & \mu_1 \frac{\eta_1 - \eta}{r_1^3} + \mu_2 \frac{\eta_2 - \eta}{r_2^3}, \label{eq:etaddot}\\
+\ddot{\zeta} & = & \mu_1 \frac{\zeta_1 - \zeta}{r_1^3} + \mu_2 \frac{\zeta_2 - \zeta}{r_2^3}, \label{eq:zetaddot}
+\end{eqnarray}
+となり，ここで図 \ref{fig:xi_eta_zeta} より，
+\begin{eqnarray}
+r_1^2 & = & (\xi_1 - \xi)^2 + (\eta_1 - \eta)^2 + (\zeta_1 - \zeta)^2,\\
+r_2^2 & = & (\xi_2 - \xi)^2 + (\eta_2 - \eta)^2 + (\zeta_2 - \zeta)^2.
+\end{eqnarray}
+これらの方程式は，2つの物体の軌道の仮定が必要ないため，一般の3体問題にも有効である．
+
+2つの物体が円運動をするとき，それらの距離と平均運動は一定である．このような場合，2つの物体の位置も固定されるような回転座標系での粒子の運動を考えたほうが自然である．ここで，$\xi, \eta$ 座標と原点は同じだが，正の方向に一定の回転速度 $n$ で回転する新たな座標系を考える (図 \ref{fig:xi_eta_zeta})．$x$ 軸を2つの物体に沿うようにとると，それぞれの座標は ($x_1, y_1,z_1$) = ($- \mu_2, 0, 0$)，($x_2, y_2, z_2$) = ($\mu_1, 0, 0$) である．したがって，(\ref{eq:mu1mu2}) 式と図 \ref{fig:xi_eta_zeta} より，
+\begin{eqnarray}
+r_1^2 & = & (x + \mu_2)^2 + y^2 + z^2,\\
+r_2^2 & = & (x - \mu_1)^2 + y^2 + z^2,
+\end{eqnarray}
+となり，ここで ($x, y, z$) は回転座標系，もしくは synodic 座標系での粒子の座標である．これらの座標系は次のような単純な回転で関連づけられる．
+\begin{equation}
+\begin{pmatrix}
+\xi\\
+\eta\\
+\zeta\\
+\end{pmatrix}
+= 
+\begin{pmatrix}
+\cos nt & - \sin nt & 0\\
+\sin nt & \cos nt & 0\\
+0 & 0 & 1\\
+\end{pmatrix}
+\begin{pmatrix}
+x\\
+y\\
+z\\
+\end{pmatrix}. \label{eq:xi_eta_zeta_x_y_z}
+\end{equation}
+今用いている単位系では $n = 1$ であるが，方程式中に $n$ をあえて残しておく．
+
+(\ref{eq:xi_eta_zeta_x_y_z}) 式を各成分ごとに2階微分すると，
+\begin{equation}
+\begin{pmatrix}
+\dot{\xi}\\
+\dot{\eta}\\
+\dot{\zeta}\\
+\end{pmatrix}
+= 
+\begin{pmatrix}
+\cos nt & - \sin nt & 0\\
+\sin nt & \cos nt & 0\\
+0 & 0 & 1\\
+\end{pmatrix}
+\begin{pmatrix}
+\dot{x} - ny\\
+\dot{y} + nx\\
+\dot{z}\\
+\end{pmatrix} \label{eq:xidot_etadot_zetadot}
+\end{equation}
+and
+\begin{equation}
+\begin{pmatrix}
+\ddot{\xi}\\
+\ddot{\eta}\\
+\ddot{\zeta}\\
+\end{pmatrix}
+= 
+\begin{pmatrix}
+\cos nt & - \sin nt & 0\\
+\sin nt & \cos nt & 0\\
+0 & 0 & 1\\
+\end{pmatrix}
+\begin{pmatrix}
+\ddot{x} - 2 n \dot{y} - n^2 x\\
+\ddot{y} + 2 n \dot{x} - n^2 y\\
+\ddot{z}\\
+\end{pmatrix}. \label{eq:xi_eta_zeta_x_y_z}
+\end{equation}
+回転座標系に切り替えることによって，$n \dot{x}, n \dot{y}$ の項 (コリオリ力) と $n^2 x, n^2 y$ の項 (遠心力) が運動方程式に生じる．これらの式を使って (\ref{eq:xiddot})，(\ref{eq:etaddot})，(\ref{eq:zetaddot}) 式を書き換えると，
+\begin{equation}
+\begin{split}
+(\ddot{x} - 2 n \dot{y} & - n^2 x) \cos nt - (\ddot{y} + 2 n \dot{x} - n^2 y) \sin nt =\\
+& \left[ \mu_1 \frac{x_1 - 1}{r_1^3} + \mu_2 \frac{x_2 - x}{r_2^3} \right] \cos nt + \left[ \frac{\mu_1}{r_1^3} + \frac{\mu_2}{r_2^3} \right] y \sin nt, \label{eq:cos_sin}
+\end{split}
+\end{equation}
+\begin{equation}
+\begin{split}
+(\ddot{x} - 2 n \dot{y} & - n^2 x) \sin nt + (\ddot{y} + 2 n \dot{x} - n^2 y) \cos nt =\\
+& \left[ \mu_1 \frac{x_1 - 1}{r_1^3} + \mu_2 \frac{x_2 - x}{r_2^3} \right] \sin nt - \left[ \frac{\mu_1}{r_1^3} + \frac{\mu_2}{r_2^3} \right] y \cos nt, \label{eq:sin_cos}
+\end{split}
+\end{equation}
+\begin{equation}
+\ddot{z} = - \left[ \frac{\mu_1}{r_1^3} + \frac{\mu_2}{r_2^3} \right] z.
+\end{equation}
+(\ref{eq:cos_sin}) 式と $\cos nt$ の積，(\ref{eq:sin_cos}) 式と $\sin nt$ の積の和をとり，また (\ref{eq:cos_sin}) 式と $- \sin nt$ の積，(\ref{eq:sin_cos}) 式と $\cos nt$ の積の和をとると，synodic 座標系での運動方程式は，
+\begin{eqnarray}
+\ddot{x} - 2 n \dot{y} - n^2 x & = & - \left[ \mu_1 \frac{x + \mu_2}{r_1^3} + \mu_2 \frac{x - \mu_1}{r_2^3} \right],\\
+\ddot{y} + 2 n \dot{x} - n^2 y & = & - \left[ \frac{\mu_1}{r_1^3} + \frac{\mu_2}{r_2^3} \right] y,\\
+\ddot{z} & = & - \left[ \frac{\mu_1}{r_1^3} + \frac{\mu_2}{r_2^3} \right] z.
+\end{eqnarray}
+これらの運動方程式はスカラー関数 $U$ の勾配として書くこともできる．
+\begin{eqnarray}
+\ddot{x} - 2 n \dot{y} - n^2 x & = & \frac{\partial U}{\partial x},\\
+\ddot{y} + 2 n \dot{x} - n^2 y & = & \frac{\partial U}{\partial y},\\
+\ddot{z} & = & \frac{\partial U}{\partial z}.
+\end{eqnarray}
+ここで $U = U (x, y, z)$ は次のように与えられる．
+\begin{equation}
+U = \frac{n^2}{2} (x^2 + y^2) + \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2}.
+\end{equation}
+
+
+
+
 
 
 \begin{figure}[H]
@@ -894,12 +1010,12 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/Nomove_a_100kyr.pdf}
+\includegraphics[width=7.6cm]{./image/Nomove_a_100kyr.pdf}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/Nomove_a_1Myr.pdf}
+\includegraphics[width=7.6cm]{./image/Nomove_a_1Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -912,12 +1028,12 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/Nomove_ecc_100kyr.pdf}
+\includegraphics[width=7.6cm]{./image/Nomove_ecc_100kyr.pdf}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/Nomove_ecc_1Myr.pdf}
+\includegraphics[width=7.6cm]{./image/Nomove_ecc_1Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -930,12 +1046,12 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/Nomove_inc_100kyr.pdf}
+\includegraphics[width=7.6cm]{./image/Nomove_inc_100kyr.pdf}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/Nomove_inc_1Myr.pdf}
+\includegraphics[width=7.6cm]{./image/Nomove_inc_1Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -948,12 +1064,12 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/Nomove_capitalOMEGA_100kyr.pdf}
+\includegraphics[width=7.6cm]{./image/Nomove_capitalOMEGA_100kyr.pdf}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/Nomove_capitalOMEGA_1Myr.pdf}
+\includegraphics[width=7.6cm]{./image/Nomove_capitalOMEGA_1Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -966,12 +1082,12 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/Nomove_smallomega_100kyr.pdf}
+\includegraphics[width=7.6cm]{./image/Nomove_smallomega_100kyr.pdf}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/Nomove_smallomega_1Myr.pdf}
+\includegraphics[width=7.6cm]{./image/Nomove_smallomega_1Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -986,12 +1102,12 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/move5Myr_a_1Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move5Myr_a_1Myr.pdf}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/move5Myr_a_10Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move5Myr_a_10Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1004,12 +1120,12 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/move5Myr_ecc_1Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move5Myr_ecc_1Myr.pdf}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/move5Myr_ecc_10Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move5Myr_ecc_10Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1022,12 +1138,12 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/move5Myr_inc_1Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move5Myr_inc_1Myr.pdf}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/move5Myr_inc_10Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move5Myr_inc_10Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1040,12 +1156,12 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/move5Myr_capitalOMEGA_1Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move5Myr_capitalOMEGA_1Myr.pdf}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/move5Myr_capitalOMEGA_10Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move5Myr_capitalOMEGA_10Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1058,12 +1174,12 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/move5Myr_smallomega_1Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move5Myr_smallomega_1Myr.pdf}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.8cm]{./image/move5Myr_smallomega_10Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move5Myr_smallomega_10Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1081,7 +1197,7 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{thebibliography}{9}
   \bibitem{1} Carl D. Murray and Stanley F. Dermott 1999, Solar System Dynamics
-  \bibitem{2} 富坂幸治, 花輪知幸, 牧野淳一郎 2007, シリーズ現代の天文学 14 シミュ レーション天文学
+  \bibitem{2} 富坂幸治, 花輪知幸, 牧野淳一郎 2007, シリーズ現代の天文学 14 シミュレーション天文学
   \bibitem{3} 木下宙, 天体と軌道の力学
 \end{thebibliography}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
