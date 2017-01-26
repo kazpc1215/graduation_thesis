@@ -526,7 +526,7 @@ I = \cos^{-1} \left( \frac{h_Z}{h} \right) \label{eq:inc}
 
 
 \section{制限3体問題}
-この章では3体の物体が重力相互作用をした場合に拡張して考える．特に，3体目の質量が他の2つに比べ無視できるほど小さいときの3体目の物体の運動について考える．この問題は「制限3体問題」と呼ばれる．また，1,2体目の物体がそれらの共通重心を中心に円運動をし，3体目の物体がそれと同一な平面上を運動する場合，「円制限3体問題」と呼ばれる．一見すると，太陽系の天体運動に対して円制限3体問題はほとんど応用できないと思えるかもしれない．やはり観測された太陽系の天体は，同一平面上を運動せず円運動もしていない．しかし，太陽系の天体の軌道と質量の階層構造 (太陽，惑星，衛星，リングなど) は，制限3体問題がよい近似であり，比較的簡単な解析で定性的に天体の運動の振る舞いを理解できることを示している．
+この章では3体の物体が重力相互作用をした場合に拡張して考える．特に，3体目の質量が他の2つに比べ無視できるほど小さいときの3体目の物体の運動について考える．この問題は「制限3体問題」と呼ばれる．また，1,2体目の物体がそれらの共通重心を中心に円運動をし，3体目の物体がそれと同一な平面上を運動する場合，「円制限3体問題」と呼ばれる．一見すると，太陽系の天体運動に対して円制限3体問題はほとんど応用できないと思えるかもしれない．観測された太陽系の天体はやはり，同一平面上を運動せず円運動もしていない．しかし，太陽系の天体の軌道と質量の階層構造 (太陽，惑星，衛星，リングなど) は，制限3体問題がよい近似であり，比較的簡単な解析で定性的に天体の運動の振る舞いを理解できることを示している．
 
 \subsection{運動方程式}
 2つの質量 $m_1, m_2$ の物体の重力の影響下で，質量が無視できるほど小さい粒子の運動を考える．粒子は2つの物体に影響を与えないが，2つの物体は共通重心を中心に円運動をして粒子に力を及ぼすと仮定する．
@@ -623,7 +623,7 @@ and
 \ddot{x} - 2 n \dot{y} - n^2 x\\
 \ddot{y} + 2 n \dot{x} - n^2 y\\
 \ddot{z}\\
-\end{pmatrix}. \label{eq:xi_eta_zeta_x_y_z}
+\end{pmatrix}. \label{eq:xiddot_etaddot_zetaddot}
 \end{equation}
 回転座標系に切り替えることによって，$n \dot{x}, n \dot{y}$ の項 (コリオリ力) と $n^2 x, n^2 y$ の項 (遠心力) が運動方程式に生じる．これらの式を使って (\ref{eq:xiddot})，(\ref{eq:etaddot})，(\ref{eq:zetaddot}) 式を書き換えると，
 \begin{equation}
@@ -649,14 +649,223 @@ and
 \end{eqnarray}
 これらの運動方程式はスカラー関数 $U$ の勾配として書くこともできる．
 \begin{eqnarray}
-\ddot{x} - 2 n \dot{y} - n^2 x & = & \frac{\partial U}{\partial x},\\
-\ddot{y} + 2 n \dot{x} - n^2 y & = & \frac{\partial U}{\partial y},\\
-\ddot{z} & = & \frac{\partial U}{\partial z}.
+\ddot{x} - 2 n \dot{y} & = & \frac{\partial U}{\partial x}, \label{eq:xU}\\
+\ddot{y} + 2 n \dot{x} & = & \frac{\partial U}{\partial y}, \label{eq:yU}\\
+\ddot{z} & = & \frac{\partial U}{\partial z}. \label{eq:zU}
 \end{eqnarray}
 ここで $U = U (x, y, z)$ は次のように与えられる．
 \begin{equation}
-U = \frac{n^2}{2} (x^2 + y^2) + \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2}.
+U = \frac{n^2}{2} (x^2 + y^2) + \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2}. \label{eq:U}
 \end{equation}
+$x^2 + y^2$ の項は遠心力によるポテンシャル，$1/r_1, 1/r_2$ の項は重力によるポテンシャルであり，それぞれの偏微分をとると運動方程式に遠心力，重力の項が現れる．
+
+(\ref{eq:xU})，(\ref{eq:yU}) 式の $- 2n \dot{y}$ と $+ 2n \dot{x}$ の項はコリオリ項であり，回転座標系での粒子の速度に依存する．コリオリ力は速度方向に対して右側にずれる力であり，ゆえに効かない．
+
+$U$ の定義より符号は正であるが，単に天文学の伝統であり，物理では慣習として符号を負にする．$U^{\ast} = - U$ のように置き換えると運動方程式は，
+\begin{eqnarray}
+\ddot{x} - 2 n \dot{y} & = & - \frac{\partial U^{\ast}}{\partial x}, \label{eq:xUast}\\
+\ddot{y} + 2 n \dot{x} & = & - \frac{\partial U^{\ast}}{\partial y}, \label{eq:yUast}\\
+\ddot{z} & = & - \frac{\partial U^{\ast}}{\partial z}. \label{eq:zUast}
+\end{eqnarray}
+また，$U$ は真のポテンシャルではなく，回転座標系での粒子にかかる力のいくつか (全てではない) を得ることができるスカラー関数である．$U$ は偽ポテンシャルと呼ぶ．
+
+\subsection{Jacobi積分}
+(\ref{eq:xU}) 式と $\dot{x}$ の積，(\ref{eq:yU}) 式と $\dot{y}$ の積，(\ref{eq:zU}) 式と $\dot{z}$ の積の和をとると，
+\begin{equation}
+\dot{x} \ddot{x} + \dot{y} \ddot{y} + \dot{z} \ddot{z} = \frac{\partial U}{\partial x} \dot{x} + \frac{\partial U}{\partial y} \dot{y} + \frac{\partial U}{\partial z} \dot{z} = \frac{dU}{dt}.
+\end{equation}
+これは積分できて，
+\begin{equation}
+\dot{x}^2 + \dot{y}^2 + \dot{z}^2 = 2 U - C_J,
+\end{equation}
+ここで $C_J$ は積分定数である．$\dot{x}^2 + \dot{y}^2 + \dot{z}^2 = v^2$ は回転座標系での速度の2乗なので，
+\begin{equation}
+v^2 = 2 U - C_J
+\end{equation}
+または，(\ref{eq:U}) 式を用いて，
+\begin{equation}
+C_J = n^2 (x^2 + y^2) + 2 \left( \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2} \right) - \dot{x}^2 - \dot{y}^2 - \dot{z}^2.
+\end{equation}
+これらのことから，$2 U - C_J$ はこの運動における定数であることがわかる．これはJacobi積分，またはJacobi定数であり，時には相対エネルギー積分とも呼ばれる．ただし，制限3体問題ではエネルギーも角運動量も保存しないので，エネルギー積分ではないことに注意する．Jacobi積分は単に円制限3体問題における積分定数であり，これは一般の場合には3体問題は閉じた式で解くことはできないことを意味する．
+
+$C_J$ の表式は，回転していない，sidereal 座標系での粒子の位置と速度を使って書くこともできる．位置ベクトルは， (\ref{eq:xi_eta_zeta_x_y_z}) 式を用いると，
+\begin{equation}
+\begin{pmatrix}
+x\\
+y\\
+z\\
+\end{pmatrix}
+= 
+\begin{pmatrix}
+\cos nt & \sin nt & 0\\
+- \sin nt & \cos nt & 0\\
+0 & 0 & 1\\
+\end{pmatrix}
+\begin{pmatrix}
+\xi\\
+\eta\\
+\zeta\\
+\end{pmatrix}. \label{eq:x_y_z_xi_eta_zeta}
+\end{equation}
+速度ベクトルは，(\ref{eq:xidot_etadot_zetadot}) 式を用いると，
+\begin{equation}
+\begin{pmatrix}
+\dot{x} - ny\\
+\dot{y} + nx\\
+\dot{z}\\
+\end{pmatrix}
+= 
+\begin{pmatrix}
+\cos nt & \sin nt & 0\\
+- \sin nt & \cos nt & 0\\
+0 & 0 & 1\\
+\end{pmatrix}
+\begin{pmatrix}
+\dot{\xi}\\
+\dot{\eta}\\
+\dot{\zeta}\\
+\end{pmatrix} \label{eq:xdot_ydot_zdot_1}
+\end{equation}
+しかし，
+\begin{equation}
+\begin{pmatrix}
+\dot{x} - ny\\
+\dot{y} + nx\\
+\dot{z}\\
+\end{pmatrix}
+= 
+\begin{pmatrix}
+\dot{x}\\
+\dot{y}\\
+\dot{z}\\
+\end{pmatrix}
++ n
+\begin{pmatrix}
+\sin nt & - \cos nt & 0\\
+\cos nt & \sin nt & 0\\
+0 & 0 & 0\\
+\end{pmatrix}
+\begin{pmatrix}
+\xi\\
+\eta\\
+\zeta\\
+\end{pmatrix} \label{eq:xdot_ydot_zdot_2}
+\end{equation}
+とも書けるから，したがって，
+\begin{equation}
+\begin{pmatrix}
+\dot{x}\\
+\dot{y}\\
+\dot{z}\\
+\end{pmatrix}
+= 
+\begin{pmatrix}
+\cos nt & \sin nt & 0\\
+- \sin nt & \cos nt & 0\\
+0 & 0 & 1\\
+\end{pmatrix}
+\begin{pmatrix}
+\dot{\xi}\\
+\dot{\eta}\\
+\dot{\zeta}\\
+\end{pmatrix}
+- n
+\begin{pmatrix}
+\sin nt & - \cos nt & 0\\
+\cos nt & \sin nt & 0\\
+0 & 0 & 0\\
+\end{pmatrix}
+\begin{pmatrix}
+\xi\\
+\eta\\
+\zeta\\
+\end{pmatrix} \label{eq:xdot_ydot_zdot_3}
+\end{equation}
+ここで，
+\begin{equation}
+{\bm A} = 
+\begin{pmatrix}
+\cos nt & \sin nt & 0\\
+- \sin nt & \cos nt & 0\\
+0 & 0 & 1\\
+\end{pmatrix}
+ \quad {\rm and} \quad 
+ {\bm B} = 
+\begin{pmatrix}
+\sin nt & - \cos nt & 0\\
+\cos nt & \sin nt & 0\\
+0 & 0 & 0\\
+\end{pmatrix}
+\end{equation}
+とおくと，(\ref{eq:xdot_ydot_zdot_3}) 式から，
+\begin{equation}
+\begin{split}
+\dot{x}^2 + \dot{y}^2 + \dot{z}^2 & = 
+\begin{pmatrix}
+\dot{x} & \dot{y} & \dot{z}\\
+\end{pmatrix}
+\begin{pmatrix}
+\dot{x}\\
+\dot{y}\\
+\dot{z}\\
+\end{pmatrix}\\
+& = 
+\begin{pmatrix}
+\dot{\xi} & \dot{\eta} & \dot{\zeta}\\
+\end{pmatrix}
+{\bm A}^{\bm T} {\bm A} 
+\begin{pmatrix}
+\dot{\xi}\\
+\dot{\eta}\\
+\dot{\zeta}\\
+\end{pmatrix}
+- n
+\begin{pmatrix}
+\dot{\xi} & \dot{\eta} & \dot{\zeta}\\
+\end{pmatrix}
+{\bm A}^{\bm T} {\bm B} 
+\begin{pmatrix}
+\xi\\
+\eta\\
+\zeta\\
+\end{pmatrix}\\
+& \quad - n
+\begin{pmatrix}
+\xi & \eta & \zeta\\
+\end{pmatrix}
+{\bm B}^{\bm T} {\bm A}
+ \begin{pmatrix}
+\dot{\xi}\\
+\dot{\eta}\\
+\dot{\zeta}\\
+\end{pmatrix}
++ n^2 
+\begin{pmatrix}
+\xi & \eta & \zeta\\
+\end{pmatrix}
+{\bm B}^{\bm T} {\bm B}
+\begin{pmatrix}
+\xi\\
+\eta\\
+\zeta\\
+\end{pmatrix}\\
+& =  \dot{\xi}^2 + \dot{\eta}^2 + \dot{\zeta}^2 + n^2 (\xi^2 + \eta^2) + 2 n (\dot{\xi} \eta - \dot{\eta} \xi)
+\end{split}
+\end{equation}
+ここで，${\bm A}^{\bm T}, {\bm B}^{\bm T}$ は ${\bm A}, {\bm B}$ の転置行列を表す．${\bm A}, {\bm B}$ はどちらも直交行列なので，逆行列は単純に自身の転置行列である．回転行列を作用させても距離は常に変わらないので (言い換えると，直交行列の行列式は$\pm 1$なので)，$x^2 + y^2 + z^2 = \xi^2 + \eta^2 + \zeta^2$ である．このことは，(\ref{eq:xi_eta_zeta_x_y_z}) 式からも得られる．したがって，sidereal 座標系でのJacobi積分の表式は，
+\begin{equation}
+C_J = 2 \left( \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2} \right) + 2 n (\dot{\xi} \eta - \dot{\eta} \xi) - \dot{\xi}^2 - \dot{\eta}^2 - \dot{\zeta}^2
+\end{equation}
+となる．これは以下のように書き直せる．
+\begin{equation}
+ \frac{1}{2} (\dot{\xi}^2 + \dot{\eta}^2 + \dot{\zeta}^2) - \left( \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2} \right) = {\bm h} \cdot {\bm n} - \frac{1}{2} C_J
+\end{equation}
+ここで ${\bm n} = (0, 0, n)$ であり，左辺は粒子の単位質量あたりの全エネルギーである．${\bm h} \cdot {\bm n}$ は一定ではないため，制限3体問題ではエネルギーが保存しない理由はこの式で説明できる．
+
+
+
+
+
 
 
 
