@@ -676,7 +676,7 @@ $U$ の定義より符号は正であるが，単に天文学の伝統であり�
 \end{equation}
 これは積分できて，
 \begin{equation}
-\dot{x}^2 + \dot{y}^2 + \dot{z}^2 = 2 U - C_J,
+\dot{x}^2 + \dot{y}^2 + \dot{z}^2 = 2 U - C_J, \label{eq:2U-C_J}
 \end{equation}
 ここで $C_J$ は積分定数である．$\dot{x}^2 + \dot{y}^2 + \dot{z}^2 = v^2$ は回転座標系での速度の2乗なので，
 \begin{equation}
@@ -783,14 +783,14 @@ z\\
 \end{equation}
 ここで，
 \begin{equation}
-{\bm A} = 
+{\rm A} = 
 \begin{pmatrix}
 \cos nt & \sin nt & 0\\
 - \sin nt & \cos nt & 0\\
 0 & 0 & 1\\
 \end{pmatrix}
  \quad {\rm and} \quad 
- {\bm B} = 
+ {\rm B} = 
 \begin{pmatrix}
 \sin nt & - \cos nt & 0\\
 \cos nt & \sin nt & 0\\
@@ -813,7 +813,7 @@ z\\
 \begin{pmatrix}
 \dot{\xi} & \dot{\eta} & \dot{\zeta}\\
 \end{pmatrix}
-{\bm A}^{\bm T} {\bm A} 
+{\rm A}^{\rm T} {\rm A} 
 \begin{pmatrix}
 \dot{\xi}\\
 \dot{\eta}\\
@@ -823,7 +823,7 @@ z\\
 \begin{pmatrix}
 \dot{\xi} & \dot{\eta} & \dot{\zeta}\\
 \end{pmatrix}
-{\bm A}^{\bm T} {\bm B} 
+{\rm A}^{\rm T} {\rm B} 
 \begin{pmatrix}
 \xi\\
 \eta\\
@@ -833,7 +833,7 @@ z\\
 \begin{pmatrix}
 \xi & \eta & \zeta\\
 \end{pmatrix}
-{\bm B}^{\bm T} {\bm A}
+{\rm B}^{\rm T} {\rm A}
  \begin{pmatrix}
 \dot{\xi}\\
 \dot{\eta}\\
@@ -843,7 +843,7 @@ z\\
 \begin{pmatrix}
 \xi & \eta & \zeta\\
 \end{pmatrix}
-{\bm B}^{\bm T} {\bm B}
+{\rm B}^{\rm T} {\rm B}
 \begin{pmatrix}
 \xi\\
 \eta\\
@@ -852,7 +852,7 @@ z\\
 & =  \dot{\xi}^2 + \dot{\eta}^2 + \dot{\zeta}^2 + n^2 (\xi^2 + \eta^2) + 2 n (\dot{\xi} \eta - \dot{\eta} \xi)
 \end{split}
 \end{equation}
-ここで，${\bm A}^{\bm T}, {\bm B}^{\bm T}$ は ${\bm A}, {\bm B}$ の転置行列を表す．${\bm A}, {\bm B}$ はどちらも直交行列なので，逆行列は単純に自身の転置行列である．回転行列を作用させても距離は常に変わらないので (言い換えると，直交行列の行列式は$\pm 1$なので)，$x^2 + y^2 + z^2 = \xi^2 + \eta^2 + \zeta^2$ である．このことは，(\ref{eq:xi_eta_zeta_x_y_z}) 式からも得られる．したがって，sidereal 座標系でのJacobi積分の表式は，
+ここで，${\rm A}^{\rm T}, {\rm B}^{\rm T}$ は ${\rm A}, {\rm B}$ の転置行列を表す．${\rm A}, {\rm B}$ はどちらも直交行列なので，逆行列は単純に自身の転置行列である．回転行列を作用させても距離は常に変わらないので (言い換えると，直交行列の行列式は$\pm 1$なので)，$x^2 + y^2 + z^2 = \xi^2 + \eta^2 + \zeta^2$ である．このことは，(\ref{eq:xi_eta_zeta_x_y_z}) 式からも得られる．したがって，sidereal 座標系でのJacobi積分の表式は，
 \begin{equation}
 C_J = 2 \left( \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2} \right) + 2 n (\dot{\xi} \eta - \dot{\eta} \xi) - \dot{\xi}^2 - \dot{\eta}^2 - \dot{\zeta}^2
 \end{equation}
@@ -862,21 +862,41 @@ C_J = 2 \left( \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2} \right) + 2 n (\dot{\xi} \e
 \end{equation}
 ここで ${\bm n} = (0, 0, n)$ であり，左辺は粒子の単位質量あたりの全エネルギーである．${\bm h} \cdot {\bm n}$ は一定ではないため，制限3体問題ではエネルギーが保存しない理由はこの式で説明できる．
 
-
-
-
-
-
-
-
-
-
+各座標系での粒子の位置と速度を測定することで，粒子の運動と関連したJacobi積分の値を決定することができる．2体問題では，角運動量とエネルギー積分を使って相対運動を解くことができた．Jacobi積分は制限3体問題の単なる積分定数である．Jacobi積分を使って運動を厳密に解くことはできないが，粒子が存在できない領域を決定することができる．
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{./image/sec3_2.pdf}
-\caption{\label{}}
+\caption{\label{fig:zerovelo}}
 \end{figure}
+
+粒子の速度が0である場所を考えることで，Jacobi積分の有用さがわかる．この場合，
+\begin{equation}
+2 U = C_J
+\end{equation}
+または，
+\begin{equation}
+n^2 (x^2 + y^2) + 2 \left( \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2} \right) = C_J \label{eq:zerovelo}
+\end{equation}
+(\ref{eq:zerovelo}) 式はある $C_J$ の値の曲面を定義している．この曲面はゼロ速度曲面として知られているもので，粒子の運動に制約を与える上で重要な役割を果たす．簡単のため $x-y$ 平面を考えると，ゼロ速度曲面と $x-y$ 平面が交わるところでは，ゼロ速度曲線を形成する．図 \ref{fig:zerovelo} は $\mu_2 = 0.2, n = 1$ の場合のゼロ速度曲線を示している．(\ref{eq:2U-C_J}) 式から，常に $2 U \hspace{0.3em}\raisebox{0.4ex}{$>$}\hspace{-0.75em}\raisebox{-.7ex}{=}\hspace{0.3em} C_J$ であることは明らかである．ゆえに(\ref{eq:zerovelo}) 式は，粒子が運動が不可能な領域の境界線を決定する．したがって，制限3体問題は積分不可能である (任意の初期状態から粒子の運動を解くことができない) が，Jacobi積分が存在することによって，粒子が存在できない $x-y$ 平面の領域を見つけることができる．この結果は簡単に3次元に拡張できる．
+
+\subsection{Tissrand Relation}
+軌道長半径 $a$，離心率 $e$，軌道傾斜角 $I$ をもつ彗星を考える．また，この彗星が木星に接近した後の軌道要素を $a', e', I'$ とする．これらの2組の軌道要素は，Jacobi積分やいくつかの近似を用いることで簡単に関連づけることができる．Jacobi積分の値 $C_J = 2 U - v^2$ は接近の間定数である．3次元慣性座標系では，彗星は位置ベクトル ${\bm r} = (\xi, \eta, \zeta)$，速度ベクトル $\dot{{\bm r}} = (\dot{\xi}, \dot{\eta}, \dot{\zeta})$ である．
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \section{摂動関数}
@@ -1116,7 +1136,7 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{./image/raletive_error.pdf}
+\includegraphics[width=10cm]{./image/relative_error.pdf}
 \caption{\label{}}
 \end{figure}
 
@@ -1124,19 +1144,19 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{./image/protoplanet_delta_b.pdf}
+\includegraphics[width=10cm]{./image/planetesimal_delta_b.pdf}
 \caption{\label{}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{./image/protoplanet_delta_e.pdf}
+\includegraphics[width=10cm]{./image/planetesimal_delta_e.pdf}
 \caption{\label{}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{./image/protoplanet_r_min.pdf}
+\includegraphics[width=10cm]{./image/planetesimal_r_min.pdf}
 \caption{\label{}}
 \end{figure}
 
@@ -1197,6 +1217,12 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{./image/pythagoras_E_error.pdf}
+\caption{\label{}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{./image/pythagoras_E_error_detail.pdf}
 \caption{\label{}}
 \end{figure}
 
