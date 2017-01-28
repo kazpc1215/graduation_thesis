@@ -76,7 +76,7 @@
 \footnote[1]{あいうえお}
 
 
-\section{2 体問題}
+\section{2体問題}
 2体問題とは，万有引力の法則で記述される2つの質点の相互作用による運動を考える問題である．2体問題は太陽系力学の中で最も単純で，かつ解析的に解くことができる．また，太陽系には様々な質量の物体があるが，2体問題に近似して考えることができる場面が多く，通常3体目の天体との相互作用は2体の系に対する摂動として扱う．
 \subsection{運動方程式 \label{sec:EoM}}
 2体問題の例として，質量がそれぞれ $m_1, m_2$ の2つの質点を考える．各点の位置ベクトルは ${\bm r}_1, {\bm r}_2$ である．また，$m_1$ を基準とした $m_2$ の相対ベクトルは ${\bm r} = {\bm r}_2 - {\bm r}_1$ と書ける (図 \ref{fig:A})．2つの質点の運動方程式は以下のように書ける．
@@ -854,7 +854,7 @@ z\\
 \end{equation}
 ここで，${\rm A}^{\rm T}, {\rm B}^{\rm T}$ は ${\rm A}, {\rm B}$ の転置行列を表す．${\rm A}, {\rm B}$ はどちらも直交行列なので，逆行列は単純に自身の転置行列である．回転行列を作用させても距離は常に変わらないので (言い換えると，直交行列の行列式は$\pm 1$なので)，$x^2 + y^2 + z^2 = \xi^2 + \eta^2 + \zeta^2$ である．このことは，(\ref{eq:xi_eta_zeta_x_y_z}) 式からも得られる．したがって，sidereal 座標系でのJacobi積分の表式は，
 \begin{equation}
-C_J = 2 \left( \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2} \right) + 2 n (\dot{\xi} \eta - \dot{\eta} \xi) - \dot{\xi}^2 - \dot{\eta}^2 - \dot{\zeta}^2
+C_J = 2 \left( \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2} \right) + 2 n (\dot{\xi} \eta - \dot{\eta} \xi) - \dot{\xi}^2 - \dot{\eta}^2 - \dot{\zeta}^2 \label{eq:C_J}
 \end{equation}
 となる．これは以下のように書き直せる．
 \begin{equation}
@@ -881,23 +881,39 @@ n^2 (x^2 + y^2) + 2 \left( \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2} \right) = C_J \
 (\ref{eq:zerovelo}) 式はある $C_J$ の値の曲面を定義している．この曲面はゼロ速度曲面として知られているもので，粒子の運動に制約を与える上で重要な役割を果たす．簡単のため $x-y$ 平面を考えると，ゼロ速度曲面と $x-y$ 平面が交わるところでは，ゼロ速度曲線を形成する．図 \ref{fig:zerovelo} は $\mu_2 = 0.2, n = 1$ の場合のゼロ速度曲線を示している．(\ref{eq:2U-C_J}) 式から，常に $2 U \hspace{0.3em}\raisebox{0.4ex}{$>$}\hspace{-0.75em}\raisebox{-.7ex}{=}\hspace{0.3em} C_J$ であることは明らかである．ゆえに(\ref{eq:zerovelo}) 式は，粒子が運動が不可能な領域の境界線を決定する．したがって，制限3体問題は積分不可能である (任意の初期状態から粒子の運動を解くことができない) が，Jacobi積分が存在することによって，粒子が存在できない $x-y$ 平面の領域を見つけることができる．この結果は簡単に3次元に拡張できる．
 
 \subsection{Tissrand Relation}
-軌道長半径 $a$，離心率 $e$，軌道傾斜角 $I$ をもつ彗星を考える．また，この彗星が木星に接近した後の軌道要素を $a', e', I'$ とする．これらの2組の軌道要素は，Jacobi積分やいくつかの近似を用いることで簡単に関連づけることができる．Jacobi積分の値 $C_J = 2 U - v^2$ は接近の間定数である．3次元慣性座標系では，彗星は位置ベクトル ${\bm r} = (\xi, \eta, \zeta)$，速度ベクトル $\dot{{\bm r}} = (\dot{\xi}, \dot{\eta}, \dot{\zeta})$ である．
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+軌道長半径 $a$，離心率 $e$，軌道傾斜角 $I$ をもつ彗星を考える．また，この彗星が木星に接近した後の軌道要素を $a', e', I'$ とする．これらの2組の軌道要素は，Jacobi積分やいくつかの近似を用いることで簡単に関連づけることができる．Jacobi積分の値 $C_J = 2 U - v^2$ は接近の間定数である．3次元慣性座標系では，彗星は位置ベクトル ${\bm r} = (\xi, \eta, \zeta)$，速度ベクトル $\dot{{\bm r}} = (\dot{\xi}, \dot{\eta}, \dot{\zeta})$ を持つ．この座標系では，(\ref{eq:C_J}) 式よりJacobi積分を以下のように書くことができる．
+\begin{equation}
+C_J = 2 \left( \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2} \right) + 2 n (\dot{\xi} \eta - \dot{\eta} \xi) - \dot{\xi}^2 - \dot{\eta}^2 - \dot{\zeta}^2 \label{eq:C_Jcomet}
+\end{equation}
+ここで $r_1, r_2$ はそれぞれ彗星の太陽からと木星からの距離である．木星の軌道長半径を単位長さ，木星の平均運動を単位角速度として選ぶ．また木星と彗星の質量は太陽に比べ十分に小さいため，
+\begin{equation}
+G (m_{\rm sun} + m_{\rm comet}) \approx G (m_{\rm sun} + m_{\rm Jupiter}) = 1
+\end{equation}
+ここで $m_{\rm sun}, m_{\rm comet}, m_{\rm Jupiter}$ はそれぞれ太陽，彗星，木星の質量である．太陽-彗星の2体問題のエネルギー積分は (\ref{eq:v2new}) 式より，
+\begin{equation}
+\dot{\xi}^2 + \dot{\eta}^2 + \dot{\zeta}^2 = \frac{2}{r} - \frac{1}{a}
+\end{equation}
+ここで選んだ単位系では $\mu = 1$ であり，また木星と彗星の質量は太陽に比べ無視できるため，$r_1 \approx r$ と仮定した．彗星の単位質量あたりの角運動量は，
+\begin{equation}
+{\bm h} = {\bm r} \times \dot{{\bm r}}
+\end{equation}
+木星の軌道面に対する彗星の軌道傾斜角を $I$ とすると，角運動量の $\zeta$ 成分は，
+\begin{equation}
+\xi \dot{\eta} - \eta \dot{\xi} = h \cos I
+\end{equation}
+ここで選んだ単位系では $h^2 = a (1 - e^2)$ である．したがって，(\ref{eq:C_Jcomet}) 式のJacobi積分の表式から，
+\begin{equation}
+\frac{2}{r} - \frac{1}{a} - 2 \sqrt{a (1 - e^2)} \cos I = \frac{2}{r} - 2 \mu_2 \left( \frac{1}{r} - \frac{1}{r_2} \right) - C_J
+\end{equation}
+彗星が木星から遠く $1/r_2$ が常に微少量だとし，$\mu_2$ の項を無視すると，
+\begin{equation}
+\frac{1}{2a} + \sqrt{a (1 - e^2)} \cos I \approx {\rm const.}
+\end{equation}
+したがって，彗星の木星接近前後の軌道要素の関係は，近似的に以下のように書くことができる．
+\begin{equation}
+\frac{1}{2a} + \sqrt{a (1 - e^2)} \cos I = \frac{1}{2a'} + \sqrt{a' (1 - e'^2)} \cos I'
+\end{equation}
+これはTisserand relation (Tisserand 1896) として知られ，新しく発見された彗星が，惑星に接近して軌道要素を変えられたすでに発見されていた彗星かどうかを判定するのに使うことができる．
 
 \section{摂動関数}
 
@@ -1337,12 +1353,12 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/move5Myr_a_1Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move500kyr_a_1Myr.pdf}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/move5Myr_a_10Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move500kyr_a_10Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1355,12 +1371,12 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/move5Myr_ecc_1Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move500kyr_ecc_1Myr.pdf}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/move5Myr_ecc_10Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move500kyr_ecc_10Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1373,12 +1389,12 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/move5Myr_inc_1Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move500kyr_inc_1Myr.pdf}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/move5Myr_inc_10Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move500kyr_inc_10Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1391,12 +1407,12 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/move5Myr_capitalOMEGA_1Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move500kyr_capitalOMEGA_1Myr.pdf}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/move5Myr_capitalOMEGA_10Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move500kyr_capitalOMEGA_10Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1409,12 +1425,12 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/move5Myr_smallomega_1Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move500kyr_smallomega_1Myr.pdf}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/move5Myr_smallomega_10Myr.pdf}
+\includegraphics[width=7.6cm]{./image/move500kyr_smallomega_10Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
