@@ -878,7 +878,7 @@ C_J = 2 \left( \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2} \right) + 2 n (\dot{\xi} \e
 \begin{equation}
 n^2 (x^2 + y^2) + 2 \left( \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2} \right) = C_J \label{eq:zerovelo}
 \end{equation}
-(\ref{eq:zerovelo}) 式はある $C_J$ の値の曲面を定義している．この曲面はゼロ速度曲面として知られているもので，粒子の運動に制約を与える上で重要な役割を果たす．簡単のため $x-y$ 平面を考えると，ゼロ速度曲面と $x-y$ 平面が交わるところでは，ゼロ速度曲線を形成する．図 \ref{fig:zerovelo} は $\mu_2 = 0.2, n = 1$ の場合のゼロ速度曲線を示している．(\ref{eq:2U-C_J}) 式から，常に $2 U \hspace{0.3em}\raisebox{0.4ex}{$>$}\hspace{-0.75em}\raisebox{-.7ex}{=}\hspace{0.3em} C_J$ であることは明らかである．ゆえに(\ref{eq:zerovelo}) 式は，粒子が運動が不可能な領域の境界線を決定する．したがって，制限3体問題は積分不可能である (任意の初期状態から粒子の運動を解くことができない) が，Jacobi積分が存在することによって，粒子が存在できない $x-y$ 平面の領域を見つけることができる．この結果は簡単に3次元に拡張できる．
+(\ref{eq:zerovelo}) 式はある $C_J$ の値の曲面を定義している．この曲面はゼロ速度曲面として知られているもので，粒子の運動に制約を与える上で重要な役割を果たす．簡単のため $x-y$ 平面を考えると，ゼロ速度曲面と $x-y$ 平面が交わるところでは，ゼロ速度曲線を形成する．図 \ref{fig:zerovelo} は $\mu_2 = 0.2, n = 1$ の場合のゼロ速度曲線を示している．(\ref{eq:2U-C_J}) 式から，常に $2 U \geqq C_J$ であることは明らかである．ゆえに(\ref{eq:zerovelo}) 式は，粒子が運動が不可能な領域の境界線を決定する．したがって，制限3体問題は積分不可能である (任意の初期状態から粒子の運動を解くことができない) が，Jacobi積分が存在することによって，粒子が存在できない $x-y$ 平面の領域を見つけることができる．この結果は簡単に3次元に拡張できる．
 
 \subsection{Tissrand Relation}
 軌道長半径 $a$，離心率 $e$，軌道傾斜角 $I$ をもつ彗星を考える．また，この彗星が木星に接近した後の軌道要素を $a', e', I'$ とする．これらの2組の軌道要素は，Jacobi積分やいくつかの近似を用いることで簡単に関連づけることができる．Jacobi積分の値 $C_J = 2 U - v^2$ は接近の間定数である．3次元慣性座標系では，彗星は位置ベクトル ${\bm r} = (\xi, \eta, \zeta)$，速度ベクトル $\dot{{\bm r}} = (\dot{\xi}, \dot{\eta}, \dot{\zeta})$ を持つ．この座標系では，(\ref{eq:C_J}) 式よりJacobi積分を以下のように書くことができる．
@@ -945,7 +945,7 @@ m_c \ddot{\bm R}_c & = & G m_c m_i \frac{{\bm r}_i}{r_i^3} + G m_c m_j \frac{{\b
 m_i \ddot{\bm R}_i & = & G m_i m_j \frac{({\bm r}_j - {\bm r}_i)}{|{\bm r}_j - {\bm r}_i|^3} - G m_i m_c \frac{{\bm r}_i}{r_i^3}, \label{eq:R_i}\\
 m_j \ddot{\bm R}_j & = & G m_j m_i \frac{({\bm r}_i - {\bm r}_j)}{|{\bm r}_i - {\bm r}_j|^3} - G m_j m_c \frac{{\bm r}_j}{r_j^3}. \label{eq:R_j}
 \end{eqnarray}
-主星に対する伴星の加速度は以下のように与えられる．
+主星に対する伴星の加速度は次のように与えられる．
 \begin{eqnarray}
 \ddot{\bm r}_i & = & \ddot{\bm R}_i - \ddot{\bm R}_c, \\
 \ddot{\bm r}_j & = & \ddot{\bm R}_j - \ddot{\bm R}_c.
@@ -955,7 +955,7 @@ m_j \ddot{\bm R}_j & = & G m_j m_i \frac{({\bm r}_i - {\bm r}_j)}{|{\bm r}_i - {
 \ddot{\bm r}_i + G (m_c + m_i) \frac{{\bm r}_i}{r_i^3} & = & G m_j \left( \frac{{\bm r}_j - {\bm r}_i}{| {\bm r}_j - {\bm r}_i |^3} - \frac{{\bm r}_j}{r_j^3} \right), \label{eq:r_i} \\ 
 \ddot{\bm r}_j + G (m_c + m_j) \frac{{\bm r}_j}{r_j^3} & = & G m_i \left( \frac{{\bm r}_i - {\bm r}_j}{| {\bm r}_i - {\bm r}_j |^3} - \frac{{\bm r}_i}{r_i^3} \right). \label{eq:r_j}
 \end{eqnarray}
-これらの相対加速度は，スカラー関数の勾配として以下のように書ける．
+これらの相対加速度は，スカラー関数の勾配として次のように書ける．
 \begin{eqnarray}
 \ddot{\bm r}_i & = & \nabla_i (U_i + {\cal R}_i) = \left( \hat{\bf i} \frac{\partial}{\partial x_i} + \hat{{\bf j}} \frac{\partial}{\partial y_i} + \hat{\bf k} \frac{\partial}{\partial z_i} \right) (U_i + {\cal R}_i), \label{eq:r_i_nabla} \\ 
 \ddot{\bm r}_j & = & \nabla_j (U_j + {\cal R}_j) = \left( \hat{\bf i} \frac{\partial}{\partial x_j} + \hat{{\bf j}} \frac{\partial}{\partial y_j} + \hat{\bf k} \frac{\partial}{\partial z_j} \right) (U_j + {\cal R}_j), \label{eq:r_j_nabla}
@@ -964,7 +964,7 @@ m_j \ddot{\bm R}_j & = & G m_j m_i \frac{({\bm r}_i - {\bm r}_j)}{|{\bm r}_i - {
 \begin{equation}
 U_i = G \frac{m_c + m_i}{r_i} \quad {\rm and} \quad U_j = G \frac{m_c + m_j}{r_j}
 \end{equation}
-は全体のポテンシャルのうちの2体問題の部分である．$\nabla$ 演算子の添字 $i, j$ は，勾配を $m_i, m_j$ それぞれの座標についてとることを強調している．ポテンシャル中の${\cal R}$ の項は摂動関数であり，他の伴星によって生じるポテンシャルを表している．${\bm r}_i$ は $x_j, y_j, z_j$ によらず，${\bm r}_j$ は $x_i, y_i, z_i$ によらないので，以下のように書ける．
+は全体のポテンシャルのうちの2体問題の部分である．$\nabla$ 演算子の添字 $i, j$ は，勾配を $m_i, m_j$ それぞれの座標についてとることを強調している．ポテンシャル中の${\cal R}$ の項は摂動関数であり，他の伴星によって生じるポテンシャルを表している．${\bm r}_i$ は $x_j, y_j, z_j$ によらず，${\bm r}_j$ は $x_i, y_i, z_i$ によらないので，次のように書ける．
 \begin{eqnarray}
 {\cal R}_i & = & \frac{G m_j}{ |{\bm r}_j - {\bm r}_i| } - G m_j \frac{ {\bm r}_i \cdot {\bm r}_j }{r_j^3}, \\
 {\cal R}_j & = & \frac{G m_i}{ |{\bm r}_i - {\bm r}_j| } - G m_i \frac{ {\bm r}_i \cdot {\bm r}_j }{r_i^3}.
@@ -989,22 +989,146 @@ U_i = G \frac{m_c + m_i}{r_i} \quad {\rm and} \quad U_j = G \frac{m_c + m_j}{r_j
 \end{equation}
 ここで $\mu = G m$ であり，外側の伴星の基準軌道は接触軌道要素 $n'^2 a'^3 = G (m_c + m')$ を持つ．
 
+以上は ${\cal R}, {\cal R'}$ の最も素直な求め方であるが，この求め方や結果の表式は唯一のものではない．例えば，${\cal R'}$ の式の両辺に $- \frac{\mu}{r'}$ の項を加えると，$m'$ の運動方程式の両辺に $G m \frac{{\bm r'}}{r'^3}$ の項を加えることが可能である．ただし，このとき，$m'$ の基準軌道は接触軌道要素 $n'^2 a'^3 = G (m_c + m + m')$ を持つ．
 
-
-
-
-
-
-
-
-
-
-
+\subsection{ルジャンドル多項式を用いた展開}
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{./image/sec6_2.pdf}
-\caption{\label{}}
+\caption{\label{fig:disturbingfunc_psi}}
 \end{figure}
+図 \ref{fig:disturbingfunc_psi} に示すような，質量がそれぞれ $m, m'$ で主星に対する位置ベクトルがそれぞれ ${\bm r}, {\bm r'}$ である2つの伴星を考える．この2つの位置ベクトルのなす角を $\psi$ とする．余弦定理より，
+\begin{equation}
+|{\bm r'} - {\bm r}|^2 = r^2 + r'^2 - 2 r r' \cos \psi,
+\end{equation}
+または，
+\begin{equation}
+\frac{1}{|{\bm r'} - {\bm r}|} = \frac{1}{r'} \left[ 1 - 2 \frac{r}{r'} \cos \psi + \left( \frac{r}{r'} \right)^2 \right]^{-\frac{1}{2}}
+\end{equation}
+これはルジャンドル多項式で展開でき，
+\begin{equation}
+\frac{1}{|{\bm r'} - {\bm r}|} = \frac{1}{r'} \sum_{l = 0}^{\infty} \left( \frac{r}{r'} \right)^l P_l (\cos \psi)
+\end{equation}
+ここで $P_0 (\cos \psi) = 1, P_1 (\cos \psi) = \cos \psi, P_2 (\cos \psi) = \frac{1}{2} (3 \cos^2 \psi - 1), \cdots$ である．${\bm r} \cdot {\bm r'} = r r' \cos \psi = r r' P_1 (\cos \psi)$ なので，内側の伴星の摂動関数は，
+\begin{equation}
+{\cal R} = \frac{\mu'}{r'} \sum_{l = 2}^{\infty} \left( \frac{r}{r'} \right)^l P_l (\cos \psi) \label{eq:cal_R}
+\end{equation}
+ここで，$P_0 (\cos \psi)$ の項は $r$ に依存せず，内側の伴星の座標に対する ${\cal R}$ の勾配のみに興味があるため，この式からは省略している．同様に，外側の伴星の摂動関数は，
+\begin{equation}
+{\cal R'} = \frac{\mu}{r'} \sum_{l = 2}^{\infty} \left( \frac{r}{r'} \right)^l P_l (\cos \psi) + \mu \frac{r}{r'^2} \cos \psi - \mu \frac{r'}{r^2} \cos \psi
+\end{equation}
+したがって，後ろの二項 (ここで扱う利用法において実質的に重要でない) を別として，${\cal R}, {\cal R'}$ の表式はとても似ている．
+
+この章では摂動関数 ${\cal R}, {\cal R'}$ の，$m, m'$ の軌道要素 (直交座標ではなく) についての級数展開を扱う．ここで，標準軌道要素 $a, e, I, \varpi, \Omega, \lambda$ を用い，それぞれ $m$ の軌道長半径，離心率，軌道傾斜角，近日点経度，昇交点経度，平均経度 ($\lambda = M + \varpi$) を意味する．$m'$ についてはプライムをつけて表す．${\cal R}$ の展開式は，
+\begin{equation}
+{\cal R} = \mu' \sum S (a,a',e,e',I,I') \cos \varphi
+\end{equation}
+の形で表される．ここで $\varphi$ は，
+\begin{equation}
+\varphi = j_1 \lambda' + j_2 \lambda + j_3 \varpi' + j_4 \varpi + j_5 \Omega' + j_6 \Omega
+\end{equation}
+という線形結合の形で表され，$j_i (i = 1,2,…,6)$ は整数であり，
+\begin{equation}
+\sum_{i = 1}^{6} j_i = 0
+\end{equation}
+である．この性質は主星のポテンシャルが方位角に対して不変であることに由来する．関数 $S$ の詳細な形と $\varphi$ における許容される角の組み合わせを知ることにより，運動方程式に対して支配的な寄与をする項や，逆に無視できる項を見分けることができる．
+
+(\ref{eq:cal_R}) 式の動径方向に依存する部分に注目すると，
+\begin{equation}
+{\cal R} = \frac{\mu}{a'} \sum_{l = 2}^{\infty} \alpha^l \left( \frac{a'}{r'} \right)^{l+1} \left( \frac{r}{a} \right)^l P_l (\cos \psi)
+\end{equation}
+ここで，
+\begin{equation}
+\alpha = \frac{a}{a'} < 1
+\end{equation}
+は $m$ と $m'$ の軌道長半径の比である．
+
+摂動関数の展開はよくコンピュータの助けを借りて行われる作業である．最終的に得られる結果は膨大な数の偏角からなる $\alpha$ の級数である．
+
+摂動関数 ${\cal R}$ はKaula (1961, 1962) によって開発された手法により，標準軌道要素で展開できる．この手法では，摂動関数は主星の赤道を基準とした接触楕円要素で無限級数展開される．
+\begin{equation}
+\begin{split}
+{\cal R} = & \frac{\mu'}{a'} \sum_{l = 2}^{\infty} \alpha^l \sum_{m = 0}^l (-1)^{l - m} \kappa_m \frac{(l - m) !}{(l + m) !} \\
+& \times \sum_{p,p' = 0}^l F_{lmp} (I) F_{lmp'} (I') \sum_{q,q' = - \infty}^{\infty} X_{l - 2p + q}^{l, l - 2p} (e) X_{l - 2p' + q'}^{-l -1, l - 2p'} (e') \\
+& \times \cos [ (l - 2p' + q') \lambda' - (l - 2p + q) \lambda - q' \varpi' + q \varpi \\
+& \quad \quad \quad+ (m - l + 2p') \Omega' - (m - l + 2p) \Omega ]
+\end{split}
+\end{equation}
+ここで $\alpha = a / a'$ であり，$\lambda, \lambda'$ は平均経度，$\varpi, \varpi'$ は近日点経度である．また，$\kappa_0 = 1, \kappa_m = 2 \ {\rm for} \ m \not = 0$ である．
+
+関数 $F_{lmp} (I)$ は軌道傾斜角関数であり，次のように定義される．
+\begin{equation}
+\begin{split}
+F_{lmp} (I) = & \frac{{\rm i}^{l - m} (l + m) !}{2^l p ! (l - m) !} \\
+& \times \sum_k (-1)^k 
+\begin{pmatrix}
+2l - 2p \\
+k \\
+\end{pmatrix}
+\begin{pmatrix}
+2p \\
+l - m - k \\
+\end{pmatrix}
+c^{3l - m - 2p - 2k} s^{m - l + 2p + 2k}
+\end{split}
+\end{equation}
+ここで ${\rm i} = \sqrt{-1}$ であり，$k$ については $k = {\rm max} (0, l - m - 2p)$ から $k = {\rm min} (l - m, 2l - 2p)$ まで和をとる．また，$s = \sin \frac{1}{2} I, c = \cos \frac{1}{2} I$ である．
+
+$X_c^{a, b} (e)$ はハンセン係数 (Hansen coefficients) であり，次のように定義できる．
+\begin{equation}
+X_c^{a, b} (e) = e^{|c - b|} \sum_{\sigma = 0}^{\infty} X_{\sigma + \alpha, \sigma + \beta}^{a, b} e^{2 \sigma}
+\end{equation}
+ここで，$\alpha = {\rm max} (0, c - b), \beta = {\rm max} (0, b - c)$ である．また $X_{c, d}^{a, b}$ はニューカム演算子 (Newcomb operators) であり，次のように再帰的に定義される．
+\begin{eqnarray}
+X_{0, 0}^{a, b} = 1,\\
+X_{1, 0}^{a, b} = b - a / 2,
+\end{eqnarray}
+$d = 0$ のとき，
+\begin{equation}
+4 c X_{c, 0}^{a, b} = 2 (2b - a) X_{c - 1, 0}^{a, b + 1} + (b - a) X_{c - 2, 0}^{a, b + 2},
+\end{equation}
+$d \not = 0$ のとき，
+\begin{equation}
+\begin{split}
+4 c X_{c, d}^{a, b} = & -2 (2b + a) X_{c, d - 1}^{a, b - 1} - (b + a) X_{c, d - 2}^{a, b - 2} \\
+& - (c - 5d + 4 + 4b +a) X_{c - 1, d - 1}^{a, b} \\
+& + 2 (c - d + b) \sum_{j \geqq 2} (-1)^j
+\begin{pmatrix}
+3/2 \\
+j \\
+\end{pmatrix}
+X_{c - j, d - j}^{a, b}.
+\end{split}
+\end{equation}
+また，$c < 0$ または $d < 0$ のとき $X_{c, d}^{a, b} = 0$，$d > c$ のとき $X_{c, d}^{a, b} = X_{d, c}^{a, -b}$ である．
+
+Plummer (1918) とHughes (1981) にはハンセン係数とニューカム演算子に関する詳細な記述がある．特にHughes (1981) にはハンセン係数の性質や様々な再帰関係について述べている．
+
+${\cal R'}$ の展開も考えると，
+\begin{equation}
+\begin{split}
+{\cal R'} = & \frac{\mu}{a'} \sum_{l = 1}^{\infty} \alpha^l \sum_{m = 0}^l \kappa_m \frac{(l - m) !}{(l + m) !} \\
+& \times \sum_{p,p' = 0}^l F_{lmp} (I) F_{lmp'} (I') \sum_{q,q' = - \infty}^{\infty} X_{l - 2p + q}^{l, l - 2p} (e) X_{l - 2p' + q'}^{-l -1, l - 2p'} (e') \\
+& \times \cos [ (l - 2p' + q') \lambda' - (l - 2p + q) \lambda - q' \varpi' + q \varpi \\
+& \quad \quad \quad + (m - l + 2p') \Omega' - (m - l + 2p) \Omega ] \\
+& - \frac{\mu a'}{a^2} \sum_{m = 0}^1 \kappa_m \frac{(1 - m) !}{(1 + m) !} \\
+& \times \sum_{p,p' = 0}^1 F_{1mp} (I) F_{1mp'} (I') \sum_{q,q' = - \infty}^{\infty} X_{1 - 2p + q}^{-2, 1 - 2p} (e) X_{1 - 2p' + q'}^{1, 1 - 2p'} (e') \\
+& \times \cos [ (1 - 2p' +q') \lambda' - (1 -2p + q) \lambda - q' \varpi' +q \varpi \\
+& \quad \quad \quad + (m - 1 + 2p') \Omega' - (m - 1 + 2p) \Omega ].
+\end{split}
+\end{equation}
+
+\subsection{}
+
+
+
+
+
+
+
+
+
+
 
 
 \begin{figure}[H]
@@ -1513,6 +1637,22 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 \end{tabular}
 \caption{\label{}}
 \end{figure}
+
+\subsection{永年共鳴の位置}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{./image/PrecessionRate_A.pdf}
+\caption{\label{}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{./image/PrecessionRate_B.pdf}
+\caption{\label{}}
+\end{figure}
+
+
 
 
 \subsection{計算コードの見直し}

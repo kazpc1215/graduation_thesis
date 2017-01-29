@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.11.21)  29 JAN 2017 19:42
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.11.21)  30 JAN 2017 02:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -255,9 +255,6 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 LaTeX Warning: Label `' multiply defined.
 
 
-LaTeX Warning: Label `' multiply defined.
-
-
 LaTeX Warning: Label `eq:1storder' multiply defined.
 
 
@@ -442,218 +439,223 @@ File: ./image/sec6_1.pdf Graphic file (type pdf)
  <./image/sec6_1.pdf> [19] [20]
 File: ./image/sec6_2.pdf Graphic file (type pdf)
 
-<./image/sec6_2.pdf>
+<./image/sec6_2.pdf> [21] [22] [23]
 File: ./image/sec7_2.pdf Graphic file (type pdf)
- <./image/sec7_2.pdf> [21]
+ <./image/sec7_2.pdf> [24]
 File: ./image/sec7_3.pdf Graphic file (type pdf)
- <./image/sec7_3.pdf> [22]
-[23] [24]
+
+<./image/sec7_3.pdf> [25] [26] [27]
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 1138.
+(amsmath)                trying to recover with `aligned' on input line 1262.
 
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 1144.
+(amsmath)                trying to recover with `aligned' on input line 1268.
 
-[25] [26] [27]
+[28] [29] [30]
 File: ./image/relative_error.pdf Graphic file (type pdf)
  <./image/relative_error.pdf>
 File: ./image/planetesimal_delta_b.pdf Graphic file (type pdf)
  <./image/planetesimal_delta_b.pdf>
 File: ./image/planetesimal_delta_e.pdf Graphic file (type pdf)
 
-<./image/planetesimal_delta_e.pdf> [28]
+<./image/planetesimal_delta_e.pdf> [31]
 File: ./image/planetesimal_r_min.pdf Graphic file (type pdf)
  <./image/planetesimal_r_min.pdf>
 File: ./image/pythagoras_1.pdf Graphic file (type pdf)
 
-<./image/pythagoras_1.pdf> [29]
+<./image/pythagoras_1.pdf> [32]
 File: ./image/pythagoras_orbit_0to10.pdf Graphic file (type pdf)
  <./image/pythagoras_orbit_0to10.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 1271--1272
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1395--1396
  [][] 
  []
 
 File: ./image/pythagoras_orbit_10to20.pdf Graphic file (type pdf)
 <./image/pythagoras_orbit_10to20.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 1276--1277
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1400--1401
  [][] 
  []
 
 File: ./image/pythagoras_orbit_20to30.pdf Graphic file (type pdf)
 <./image/pythagoras_orbit_20to30.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 1282--1283
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1406--1407
  [][] 
  []
 
 File: ./image/pythagoras_orbit_30to40.pdf Graphic file (type pdf)
 <./image/pythagoras_orbit_30to40.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 1287--1288
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1411--1412
  [][] 
  []
 
 File: ./image/pythagoras_orbit_40to50.pdf Graphic file (type pdf)
 <./image/pythagoras_orbit_40to50.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 1293--1294
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1417--1418
  [][] 
  []
 
 File: ./image/pythagoras_orbit_50to60.pdf Graphic file (type pdf)
 <./image/pythagoras_orbit_50to60.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 1298--1299
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1422--1423
  [][] 
  []
 
 File: ./image/pythagoras_orbit_60to70.pdf Graphic file (type pdf)
 <./image/pythagoras_orbit_60to70.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 1303--1304
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1427--1428
  [][] 
  []
 
-[30]
+[33]
 File: ./image/pythagoras_E_error.pdf Graphic file (type pdf)
- <./image/pythagoras_E_error.pdf> [31]
+ <./image/pythagoras_E_error.pdf> [34]
 File: ./image/pythagoras_E_error_detail.pdf Graphic file (type pdf)
 
 <./image/pythagoras_E_error_detail.pdf>
 File: ./image/Nomove_a_100kyr.pdf Graphic file (type pdf)
  <./image/Nomove_a_100kyr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1341--1342
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1465--1466
  [][] 
  []
 
 File: ./image/Nomove_a_1Myr.pdf Graphic file (type pdf)
 <./image/Nomove_a_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1346--1347
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1470--1471
  [][] 
  []
 
-[32]
+[35]
 File: ./image/Nomove_ecc_100kyr.pdf Graphic file (type pdf)
  <./image/Nomove_ecc_100kyr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1359--1360
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1483--1484
  [][] 
  []
 
 File: ./image/Nomove_ecc_1Myr.pdf Graphic file (type pdf)
 <./image/Nomove_ecc_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1364--1365
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1488--1489
  [][] 
  []
 
 File: ./image/Nomove_inc_100kyr.pdf Graphic file (type pdf)
 <./image/Nomove_inc_100kyr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1377--1378
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1501--1502
  [][] 
  []
 
 File: ./image/Nomove_inc_1Myr.pdf Graphic file (type pdf)
 <./image/Nomove_inc_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1382--1383
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1506--1507
  [][] 
  []
 
-[33]
+[36]
 File: ./image/Nomove_capitalOMEGA_100kyr.pdf Graphic file (type pdf)
  <./image/Nomove_capitalOMEGA_100kyr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1395--1396
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1519--1520
  [][] 
  []
 
 File: ./image/Nomove_capitalOMEGA_1Myr.pdf Graphic file (type pdf)
 <./image/Nomove_capitalOMEGA_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1400--1401
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1524--1525
  [][] 
  []
 
 File: ./image/Nomove_smallomega_100kyr.pdf Graphic file (type pdf)
 <./image/Nomove_smallomega_100kyr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1413--1414
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1537--1538
  [][] 
  []
 
 File: ./image/Nomove_smallomega_1Myr.pdf Graphic file (type pdf)
 <./image/Nomove_smallomega_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1418--1419
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1542--1543
  [][] 
  []
 
 File: ./image/move500kyr_a_1Myr.pdf Graphic file (type pdf)
 <./image/move500kyr_a_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1433--1434
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1557--1558
  [][] 
  []
 
 File: ./image/move500kyr_a_10Myr.pdf Graphic file (type pdf)
 <./image/move500kyr_a_10Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1438--1439
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1562--1563
  [][] 
  []
 
-[34]
+[37]
 File: ./image/move500kyr_ecc_1Myr.pdf Graphic file (type pdf)
  <./image/move500kyr_ecc_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1451--1452
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1575--1576
  [][] 
  []
 
 File: ./image/move500kyr_ecc_10Myr.pdf Graphic file (type pdf)
 <./image/move500kyr_ecc_10Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1456--1457
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1580--1581
  [][] 
  []
 
 File: ./image/move500kyr_inc_1Myr.pdf Graphic file (type pdf)
 <./image/move500kyr_inc_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1469--1470
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1593--1594
  [][] 
  []
 
 File: ./image/move500kyr_inc_10Myr.pdf Graphic file (type pdf)
 <./image/move500kyr_inc_10Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1474--1475
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1598--1599
  [][] 
  []
 
 File: ./image/move500kyr_capitalOMEGA_1Myr.pdf Graphic file (type pdf)
 <./image/move500kyr_capitalOMEGA_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1487--1488
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1611--1612
  [][] 
  []
 
 File: ./image/move500kyr_capitalOMEGA_10Myr.pdf Graphic file (type pdf)
 <./image/move500kyr_capitalOMEGA_10Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1492--1493
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1616--1617
  [][] 
  []
 
-[35]
+[38]
 File: ./image/move500kyr_smallomega_1Myr.pdf Graphic file (type pdf)
  <./image/move500kyr_smallomega_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1505--1506
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1629--1630
  [][] 
  []
 
 File: ./image/move500kyr_smallomega_10Myr.pdf Graphic file (type pdf)
 <./image/move500kyr_smallomega_10Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1510--1511
+Overfull \hbox (11.38264pt too wide) in paragraph at lines 1634--1635
  [][] 
  []
 
+File: ./image/PrecessionRate_A.pdf Graphic file (type pdf)
+<./image/PrecessionRate_A.pdf>
+File: ./image/PrecessionRate_B.pdf Graphic file (type pdf)
+ <./image/PrecessionRate_B.pdf> [39]
 File: ./image/Nbody_test.pdf Graphic file (type pdf)
-<./image/Nbody_test.pdf> [36] [37] (./Isoya.aux)
+
+<./image/Nbody_test.pdf> [40] (./Isoya.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4118 strings out of 493693
- 61129 string characters out of 6149786
- 135046 words of memory out of 5000000
- 7545 multiletter control sequences out of 15000+600000
+ 4126 strings out of 493693
+ 61351 string characters out of 6149786
+ 135069 words of memory out of 5000000
+ 7551 multiletter control sequences out of 15000+600000
  25857 words of font info for 101 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 36i,22n,43p,819b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,22n,43p,740b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Isoya.dvi (37 pages, 147128 bytes).
+Output written on Isoya.dvi (40 pages, 161992 bytes).
