@@ -76,7 +76,7 @@
 \footnote[1]{あいうえお}
 
 
-\section{2体問題}
+\section{2体問題 \label{sec:2body}}
 2体問題とは，万有引力の法則で記述される2つの質点の相互作用による運動を考える問題である．2体問題は太陽系力学の中で最も単純で，かつ解析的に解くことができる．また，太陽系には様々な質量の物体があるが，2体問題に近似して考えることができる場面が多く，通常3体目の天体との相互作用は2体の系に対する摂動として扱う．
 \subsection{運動方程式 \label{sec:EoM}}
 2体問題の例として，質量がそれぞれ $m_1, m_2$ の2つの質点を考える．各点の位置ベクトルは ${\bm r}_1, {\bm r}_2$ である．また，$m_1$ を基準とした $m_2$ の相対ベクトルは ${\bm r} = {\bm r}_2 - {\bm r}_1$ と書ける (図 \ref{fig:A})．2つの質点の運動方程式は以下のように書ける．
@@ -525,7 +525,7 @@ I = \cos^{-1} \left( \frac{h_Z}{h} \right) \label{eq:inc}
 (\ref{eq:raletive}) 式から，これは $\mu = 1$ としたときと同じである．加えて，単位長さを $a = 1$ と選ぶと，2体問題は単位平均運動 $n = 1$ と単位周期 $T = 2 \pi$ のケプラー運動として扱うことができる．これは円制限3体問題を扱う際にも同様の形で適用できる．
 
 
-\section{制限3体問題}
+\section{制限3体問題 \label{sec:3body}}
 この章では3体の物体が重力相互作用をした場合に拡張して考える．特に，3体目の質量が他の2つに比べ無視できるほど小さいときの3体目の物体の運動について考える．この問題は「制限3体問題」と呼ばれる．また，1,2体目の物体がそれらの共通重心を中心に円運動をし，3体目の物体がそれと同一な平面上を運動する場合，「円制限3体問題」と呼ばれる．一見すると，太陽系の天体運動に対して円制限3体問題はほとんど応用できないと思えるかもしれない．観測された太陽系の天体はやはり，同一平面上を運動せず円運動もしていない．しかし，太陽系の天体の軌道と質量の階層構造 (太陽，惑星，衛星，リングなど) は，制限3体問題がよい近似であり，比較的簡単な解析で定性的に天体の運動の振る舞いを理解できることを示している．
 
 \subsection{運動方程式}
@@ -916,12 +916,89 @@ G (m_{\rm sun} + m_{\rm comet}) \approx G (m_{\rm sun} + m_{\rm Jupiter}) = 1
 これはTisserand relation (Tisserand 1896) として知られ，新しく発見された彗星が，惑星に接近して軌道要素を変えられたすでに発見されていた彗星かどうかを判定するのに使うことができる．
 
 \section{摂動関数}
+\ref{sec:3body} 章では，制限問題における惑星の位置から3体問題を扱った．しかし，任意の初期条件で2つの物体から重力の影響を受ける，3体目の物体の運動のより一般的な問題に取り組もうとはしなかった．この問題は積分不可能であるが，3体目の物体が受ける加速度を解析することで議論を進めることができる．運動が中心星または主星に支配されているなら，伴星らの軌道は，相互重力摂動によって円錐曲線から少しずれたものとなる．この章では，摂動関数 (disturbing function) の定義と解析によって，このずれがどのように計算できるのかを示す．
+
+質量 $m_c$ の主星のまわりを質量 $m_i$ の天体が楕円軌道で回っている場合を考える．\ref{sec:2body} 章でみてきたように，この2体問題は積分可能であり，主星の重力効果が質点によるものみなすと，$m_i$ の天体の軌道要素 $a_i, e_i, I_i, \varpi_i, \Omega_i$ は定数である．ここで3体目の天体 $m_j$ を導入すると，$m_c$ との2体問題での加速度に加えて，$m_i$ と $m_j$ 間の相互重力が加速度に足される (図 \ref{fig:disturbingfunc})．主星に対する伴星らの相対的な追加の加速度は，摂動関数と呼ばれる摂動のポテンシャルの勾配から得られる．
+
+この章は，摂動関数のフーリエ級数展開の性質の数学的な解析と関係している．摂動関数の展開式から適切な項を取り出し，その他の項の運動方程式への時間平均された寄与が無視できると仮定し，太陽系力学における特定の問題に取り組む方法を示す．摂動関数の性質を理解することは，太陽系における共鳴の力学やその他の長周期運動を理解する鍵となる．
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{./image/sec6_1.pdf}
-\caption{\label{}}
+\caption{\label{fig:disturbingfunc}}
 \end{figure}
+
+\subsection{摂動関数}
+質量 $m_c, m_i, m_j$ の3つの天体の，固定された原点 $O$ に対する位置ベクトルをそれぞれ ${\bm R}_c, {\bm R}_i, {\bm R}_j$ とする．主星 $m_c$ に対する伴星 $m_i, m_j$ の位置ベクトルをそれぞれ ${\bm r}_i, {\bm r}_j$ とすると，
+\begin{equation}
+|{\bm r}_i| = r_i = (x_i^2 + y_i^2 + z_i^2)^{1/2}, \quad |{\bm r}_j| = r_j = (x_j^2 + y_j^2 + z_j^2)^{1/2},
+\end{equation}
+そして
+\begin{equation}
+|{\bm r}_j- {\bm r}_i| = \left[ (x_j - x_i)^2 + (y_j - y_i)^2 + (z_j - z_i)^2 \right]^{1/2}.
+\end{equation}
+この座標系の原点は主星である (図 \ref{fig:disturbingfunc})．
+
+ニュートンの運動の法則と重力の法則より，慣性系における3つの天体の運動方程式が得られる．
+\begin{eqnarray}
+m_c \ddot{\bm R}_c & = & G m_c m_i \frac{{\bm r}_i}{r_i^3} + G m_c m_j \frac{{\bm r}_j}{r_j^3}, \label{eq:R_c}\\
+m_i \ddot{\bm R}_i & = & G m_i m_j \frac{({\bm r}_j - {\bm r}_i)}{|{\bm r}_j - {\bm r}_i|^3} - G m_i m_c \frac{{\bm r}_i}{r_i^3}, \label{eq:R_i}\\
+m_j \ddot{\bm R}_j & = & G m_j m_i \frac{({\bm r}_i - {\bm r}_j)}{|{\bm r}_i - {\bm r}_j|^3} - G m_j m_c \frac{{\bm r}_j}{r_j^3}. \label{eq:R_j}
+\end{eqnarray}
+主星に対する伴星の加速度は以下のように与えられる．
+\begin{eqnarray}
+\ddot{\bm r}_i & = & \ddot{\bm R}_i - \ddot{\bm R}_c, \\
+\ddot{\bm r}_j & = & \ddot{\bm R}_j - \ddot{\bm R}_c.
+\end{eqnarray}
+(\ref{eq:R_c})，(\ref{eq:R_i})，(\ref{eq:R_j}) 式から $\ddot{\bm R}_c, \ddot{\bm R}_i, \ddot{\bm R}_j$ の表式を代入すると，
+\begin{eqnarray}
+\ddot{\bm r}_i + G (m_c + m_i) \frac{{\bm r}_i}{r_i^3} & = & G m_j \left( \frac{{\bm r}_j - {\bm r}_i}{| {\bm r}_j - {\bm r}_i |^3} - \frac{{\bm r}_j}{r_j^3} \right), \label{eq:r_i} \\ 
+\ddot{\bm r}_j + G (m_c + m_j) \frac{{\bm r}_j}{r_j^3} & = & G m_i \left( \frac{{\bm r}_i - {\bm r}_j}{| {\bm r}_i - {\bm r}_j |^3} - \frac{{\bm r}_i}{r_i^3} \right). \label{eq:r_j}
+\end{eqnarray}
+これらの相対加速度は，スカラー関数の勾配として以下のように書ける．
+\begin{eqnarray}
+\ddot{\bm r}_i & = & \nabla_i (U_i + {\cal R}_i) = \left( \hat{\bf i} \frac{\partial}{\partial x_i} + \hat{{\bf j}} \frac{\partial}{\partial y_i} + \hat{\bf k} \frac{\partial}{\partial z_i} \right) (U_i + {\cal R}_i), \label{eq:r_i_nabla} \\ 
+\ddot{\bm r}_j & = & \nabla_j (U_j + {\cal R}_j) = \left( \hat{\bf i} \frac{\partial}{\partial x_j} + \hat{{\bf j}} \frac{\partial}{\partial y_j} + \hat{\bf k} \frac{\partial}{\partial z_j} \right) (U_j + {\cal R}_j), \label{eq:r_j_nabla}
+\end{eqnarray}
+ここで，
+\begin{equation}
+U_i = G \frac{m_c + m_i}{r_i} \quad {\rm and} \quad U_j = G \frac{m_c + m_j}{r_j}
+\end{equation}
+は全体のポテンシャルのうちの2体問題の部分である．$\nabla$ 演算子の添字 $i, j$ は，勾配を $m_i, m_j$ それぞれの座標についてとることを強調している．ポテンシャル中の${\cal R}$ の項は摂動関数であり，他の伴星によって生じるポテンシャルを表している．${\bm r}_i$ は $x_j, y_j, z_j$ によらず，${\bm r}_j$ は $x_i, y_i, z_i$ によらないので，以下のように書ける．
+\begin{eqnarray}
+{\cal R}_i & = & \frac{G m_j}{ |{\bm r}_j - {\bm r}_i| } - G m_j \frac{ {\bm r}_i \cdot {\bm r}_j }{r_j^3}, \\
+{\cal R}_j & = & \frac{G m_i}{ |{\bm r}_i - {\bm r}_j| } - G m_i \frac{ {\bm r}_i \cdot {\bm r}_j }{r_i^3}.
+\end{eqnarray}
+第一項は直接項 (direct terms) と呼ばれ，座標系の原点のとり方によって生じる第二項は間接項 (indirect terms) と呼ばれる．座標系の原点が重心にある場合，この間接項は現れない．
+
+上記の解析は天体の数を増やしても拡張できる．さらに，摂動関数に関係した加速度は，質点の重力に限らずどのような原因からでも生じうる．例えば，主星の扁平性によるポテンシャルから生じる．ここから先，この章では，質量がそれぞれ $m, m'$ で主星に対する位置ベクトルがそれぞれ ${\bm r}, {\bm r'}$ である2つの伴星を質点とみなす特別な場合を主に考える．ここで常に $r < r'$ とする．このとき，内側の伴星の運動方程式は，
+\begin{equation}
+\ddot{\bm r} + G (m_c + m) \frac{{\bm r}}{r^3} = G m' \left( \frac{{\bm r'} - {\bm r}}{| {\bm r'} - {\bm r} |^3} - \frac{{\bm r'}}{r'^3} \right)
+\end{equation}
+そして内側の伴星の摂動関数は，
+\begin{equation}
+{\cal R} = \frac{\mu'}{ |{\bm r'} - {\bm r}| } - \mu' \frac{ {\bm r} \cdot {\bm r'} }{r'^3}
+\end{equation}
+ここで $\mu' = G m'$ であり，内側の伴星の基準軌道は接触軌道要素 $n^2 a^3 = G (m_c + m)$ を持つ．同様に外側の伴星に関する運動方程式は，
+\begin{equation}
+\ddot{\bm r'} + G (m_c + m') \frac{{\bm r'}}{r'^3} = G m \left( \frac{{\bm r} - {\bm r'}}{| {\bm r} - {\bm r'} |^3} - \frac{{\bm r}}{r^3} \right)
+\end{equation}
+そして外側の伴星の摂動関数は，
+\begin{equation}
+{\cal R'} = \frac{\mu}{ |{\bm r} - {\bm r'}| } - \mu \frac{ {\bm r} \cdot {\bm r'} }{r^3}
+\end{equation}
+ここで $\mu = G m$ であり，外側の伴星の基準軌道は接触軌道要素 $n'^2 a'^3 = G (m_c + m')$ を持つ．
+
+
+
+
+
+
+
+
+
+
+
 
 \begin{figure}[H]
 \centering
