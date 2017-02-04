@@ -669,7 +669,7 @@ $U$ の定義より符号は正であるが，単に天文学の伝統であり�
 \end{eqnarray}
 また，$U$ は真のポテンシャルではなく，回転座標系での粒子にかかる力のいくつか (全てではない) を得ることができるスカラー関数である．$U$ は偽ポテンシャルと呼ぶ．
 
-\subsection{Jacobi積分}
+\subsection{ヤコビ積分}
 (\ref{eq:xU}) 式と $\dot{x}$ の積，(\ref{eq:yU}) 式と $\dot{y}$ の積，(\ref{eq:zU}) 式と $\dot{z}$ の積の和をとると，
 \begin{equation}
 \dot{x} \ddot{x} + \dot{y} \ddot{y} + \dot{z} \ddot{z} = \frac{\partial U}{\partial x} \dot{x} + \frac{\partial U}{\partial y} \dot{y} + \frac{\partial U}{\partial z} \dot{z} = \frac{dU}{dt}.
@@ -686,7 +686,7 @@ v^2 = 2 U - C_J
 \begin{equation}
 C_J = n^2 (x^2 + y^2) + 2 \left( \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2} \right) - \dot{x}^2 - \dot{y}^2 - \dot{z}^2.
 \end{equation}
-これらのことから，$2 U - C_J$ はこの運動における定数であることがわかる．これはJacobi積分，またはJacobi定数であり，時には相対エネルギー積分とも呼ばれる．ただし，制限3体問題ではエネルギーも角運動量も保存しないので，エネルギー積分ではないことに注意する．Jacobi積分は単に円制限3体問題における積分定数であり，これは一般の場合には3体問題は閉じた式で解くことはできないことを意味する．
+これらのことから，$2 U - C_J$ はこの運動における定数であることがわかる．これはヤコビ積分，またはヤコビ定数であり，時には相対エネルギー積分とも呼ばれる．ただし，制限3体問題ではエネルギーも角運動量も保存しないので，エネルギー積分ではないことに注意する．ヤコビ積分は単に円制限3体問題における積分定数であり，これは一般の場合には3体問題は閉じた式で解くことはできないことを意味する．
 
 $C_J$ の表式は，回転していない，sidereal 座標系での粒子の位置と速度を使って書くこともできる．位置ベクトルは， (\ref{eq:xi_eta_zeta_x_y_z}) 式を用いると，
 \begin{equation}
@@ -862,7 +862,7 @@ C_J = 2 \left( \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2} \right) + 2 n (\dot{\xi} \e
 \end{equation}
 ここで ${\bm n} = (0, 0, n)$ であり，左辺は粒子の単位質量あたりの全エネルギーである．${\bm h} \cdot {\bm n}$ は一定ではないため，制限3体問題ではエネルギーが保存しない理由はこの式で説明できる．
 
-各座標系での粒子の位置と速度を測定することで，粒子の運動と関連したJacobi積分の値を決定することができる．2体問題では，角運動量とエネルギー積分を使って相対運動を解くことができた．Jacobi積分は制限3体問題の単なる積分定数である．Jacobi積分を使って運動を厳密に解くことはできないが，粒子が存在できない領域を決定することができる．
+各座標系での粒子の位置と速度を測定することで，粒子の運動と関連したヤコビ積分の値を決定することができる．2体問題では，角運動量とエネルギー積分を使って相対運動を解くことができた．ヤコビ積分は制限3体問題の単なる積分定数である．ヤコビ積分を使って運動を厳密に解くことはできないが，粒子が存在できない領域を決定することができる．
 
 \begin{figure}[H]
 \centering
@@ -870,7 +870,7 @@ C_J = 2 \left( \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2} \right) + 2 n (\dot{\xi} \e
 \caption{\label{fig:zerovelo}}
 \end{figure}
 
-粒子の速度が0である場所を考えることで，Jacobi積分の有用さがわかる．この場合，
+粒子の速度が0である場所を考えることで，ヤコビ積分の有用さがわかる．この場合，
 \begin{equation}
 2 U = C_J
 \end{equation}
@@ -878,10 +878,10 @@ C_J = 2 \left( \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2} \right) + 2 n (\dot{\xi} \e
 \begin{equation}
 n^2 (x^2 + y^2) + 2 \left( \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2} \right) = C_J \label{eq:zerovelo}
 \end{equation}
-(\ref{eq:zerovelo}) 式はある $C_J$ の値の曲面を定義している．この曲面はゼロ速度曲面として知られているもので，粒子の運動に制約を与える上で重要な役割を果たす．簡単のため $x-y$ 平面を考えると，ゼロ速度曲面と $x-y$ 平面が交わるところでは，ゼロ速度曲線を形成する．図 \ref{fig:zerovelo} は $\mu_2 = 0.2, n = 1$ の場合のゼロ速度曲線を示している．(\ref{eq:2U-C_J}) 式から，常に $2 U \geqq C_J$ であることは明らかである．ゆえに(\ref{eq:zerovelo}) 式は，粒子が運動が不可能な領域の境界線を決定する．したがって，制限3体問題は積分不可能である (任意の初期状態から粒子の運動を解くことができない) が，Jacobi積分が存在することによって，粒子が存在できない $x-y$ 平面の領域を見つけることができる．この結果は簡単に3次元に拡張できる．
+(\ref{eq:zerovelo}) 式はある $C_J$ の値の曲面を定義している．この曲面はゼロ速度曲面として知られているもので，粒子の運動に制約を与える上で重要な役割を果たす．簡単のため $x-y$ 平面を考えると，ゼロ速度曲面と $x-y$ 平面が交わるところでは，ゼロ速度曲線を形成する．図 \ref{fig:zerovelo} は $\mu_2 = 0.2, n = 1$ の場合のゼロ速度曲線を示している．(\ref{eq:2U-C_J}) 式から，常に $2 U \geqq C_J$ であることは明らかである．ゆえに(\ref{eq:zerovelo}) 式は，粒子が運動が不可能な領域の境界線を決定する．したがって，制限3体問題は積分不可能である (任意の初期状態から粒子の運動を解くことができない) が，ヤコビ積分が存在することによって，粒子が存在できない $x-y$ 平面の領域を見つけることができる．この結果は簡単に3次元に拡張できる．
 
-\subsection{Tissrand Relation}
-軌道長半径 $a$，離心率 $e$，軌道傾斜角 $I$ をもつ彗星を考える．また，この彗星が木星に接近した後の軌道要素を $a', e', I'$ とする．これらの2組の軌道要素は，Jacobi積分やいくつかの近似を用いることで簡単に関連づけることができる．Jacobi積分の値 $C_J = 2 U - v^2$ は接近の間定数である．3次元慣性座標系では，彗星は位置ベクトル ${\bm r} = (\xi, \eta, \zeta)$，速度ベクトル $\dot{{\bm r}} = (\dot{\xi}, \dot{\eta}, \dot{\zeta})$ を持つ．この座標系では，(\ref{eq:C_J}) 式よりJacobi積分を以下のように書くことができる．
+\subsection{ティスランの関係式}
+軌道長半径 $a$，離心率 $e$，軌道傾斜角 $I$ をもつ彗星を考える．また，この彗星が木星に接近した後の軌道要素を $a', e', I'$ とする．これらの2組の軌道要素は，ヤコビ積分やいくつかの近似を用いることで簡単に関連づけることができる．ヤコビ積分の値 $C_J = 2 U - v^2$ は接近の間定数である．3次元慣性座標系では，彗星は位置ベクトル ${\bm r} = (\xi, \eta, \zeta)$，速度ベクトル $\dot{{\bm r}} = (\dot{\xi}, \dot{\eta}, \dot{\zeta})$ を持つ．この座標系では，(\ref{eq:C_J}) 式よりヤコビ積分を以下のように書くことができる．
 \begin{equation}
 C_J = 2 \left( \frac{\mu_1}{r_1} + \frac{\mu_2}{r_2} \right) + 2 n (\dot{\xi} \eta - \dot{\eta} \xi) - \dot{\xi}^2 - \dot{\eta}^2 - \dot{\zeta}^2 \label{eq:C_Jcomet}
 \end{equation}
@@ -901,7 +901,7 @@ G (m_{\rm sun} + m_{\rm comet}) \approx G (m_{\rm sun} + m_{\rm Jupiter}) = 1
 \begin{equation}
 \xi \dot{\eta} - \eta \dot{\xi} = h \cos I
 \end{equation}
-ここで選んだ単位系では $h^2 = a (1 - e^2)$ である．したがって，(\ref{eq:C_Jcomet}) 式のJacobi積分の表式から，
+ここで選んだ単位系では $h^2 = a (1 - e^2)$ である．したがって，(\ref{eq:C_Jcomet}) 式のヤコビ積分の表式から，
 \begin{equation}
 \frac{2}{r} - \frac{1}{a} - 2 \sqrt{a (1 - e^2)} \cos I = \frac{2}{r} - 2 \mu_2 \left( \frac{1}{r} - \frac{1}{r_2} \right) - C_J
 \end{equation}
@@ -913,7 +913,7 @@ G (m_{\rm sun} + m_{\rm comet}) \approx G (m_{\rm sun} + m_{\rm Jupiter}) = 1
 \begin{equation}
 \frac{1}{2a} + \sqrt{a (1 - e^2)} \cos I = \frac{1}{2a'} + \sqrt{a' (1 - e'^2)} \cos I'
 \end{equation}
-これはTisserand relation (Tisserand 1896) として知られ，新しく発見された彗星が，惑星に接近して軌道要素を変えられたすでに発見されていた彗星かどうかを判定するのに使うことができる．
+これはティスランの関係式 (Tisserand relation (Tisserand 1896)) として知られ，新しく発見された彗星が，惑星に接近して軌道要素を変えられたすでに発見されていた彗星かどうかを判定するのに使うことができる．
 
 \section{摂動関数}
 \ref{sec:3body} 章では，制限問題における惑星の位置から3体問題を扱った．しかし，任意の初期条件で2つの物体から重力の影響を受ける，3体目の物体の運動のより一般的な問題に取り組もうとはしなかった．この問題は積分不可能であるが，3体目の物体が受ける加速度を解析することで議論を進めることができる．運動が中心星または主星に支配されているなら，伴星らの軌道は，相互重力摂動によって円錐曲線から少しずれたものとなる．この章では，摂動関数 (disturbing function) の定義と解析によって，このずれがどのように計算できるのかを示す．
@@ -977,7 +977,7 @@ U_i = G \frac{m_c + m_i}{r_i} \quad {\rm and} \quad U_j = G \frac{m_c + m_j}{r_j
 \end{equation}
 そして内側の伴星の摂動関数は，
 \begin{equation}
-{\cal R} = \frac{\mu'}{ |{\bm r'} - {\bm r}| } - \mu' \frac{ {\bm r} \cdot {\bm r'} }{r'^3}
+{\cal R} = \frac{\mu'}{ |{\bm r'} - {\bm r}| } - \mu' \frac{ {\bm r} \cdot {\bm r'} }{r'^3} \label{eq:cal_R1}
 \end{equation}
 ここで $\mu' = G m'$ であり，内側の伴星の基準軌道は接触軌道要素 $n^2 a^3 = G (m_c + m)$ を持つ．同様に外側の伴星に関する運動方程式は，
 \begin{equation}
@@ -985,7 +985,7 @@ U_i = G \frac{m_c + m_i}{r_i} \quad {\rm and} \quad U_j = G \frac{m_c + m_j}{r_j
 \end{equation}
 そして外側の伴星の摂動関数は，
 \begin{equation}
-{\cal R'} = \frac{\mu}{ |{\bm r} - {\bm r'}| } - \mu \frac{ {\bm r} \cdot {\bm r'} }{r^3}
+{\cal R'} = \frac{\mu}{ |{\bm r} - {\bm r'}| } - \mu \frac{ {\bm r} \cdot {\bm r'} }{r^3} \label{eq:cal_R'1}
 \end{equation}
 ここで $\mu = G m$ であり，外側の伴星の基準軌道は接触軌道要素 $n'^2 a'^3 = G (m_c + m')$ を持つ．
 
@@ -1011,7 +1011,7 @@ U_i = G \frac{m_c + m_i}{r_i} \quad {\rm and} \quad U_j = G \frac{m_c + m_j}{r_j
 \end{equation}
 ここで $P_0 (\cos \psi) = 1, P_1 (\cos \psi) = \cos \psi, P_2 (\cos \psi) = \frac{1}{2} (3 \cos^2 \psi - 1), \cdots$ である．${\bm r} \cdot {\bm r'} = r r' \cos \psi = r r' P_1 (\cos \psi)$ なので，内側の伴星の摂動関数は，
 \begin{equation}
-{\cal R} = \frac{\mu'}{r'} \sum_{l = 2}^{\infty} \left( \frac{r}{r'} \right)^l P_l (\cos \psi) \label{eq:cal_R}
+{\cal R} = \frac{\mu'}{r'} \sum_{l = 2}^{\infty} \left( \frac{r}{r'} \right)^l P_l (\cos \psi) \label{eq:cal_R2}
 \end{equation}
 ここで，$P_0 (\cos \psi)$ の項は $r$ に依存せず，内側の伴星の座標に対する ${\cal R}$ の勾配のみに興味があるため，この式からは省略している．同様に，外側の伴星の摂動関数は，
 \begin{equation}
@@ -1021,19 +1021,19 @@ U_i = G \frac{m_c + m_i}{r_i} \quad {\rm and} \quad U_j = G \frac{m_c + m_j}{r_j
 
 この章では摂動関数 ${\cal R}, {\cal R'}$ の，$m, m'$ の軌道要素 (直交座標ではなく) についての級数展開を扱う．ここで，標準軌道要素 $a, e, I, \varpi, \Omega, \lambda$ を用い，それぞれ $m$ の軌道長半径，離心率，軌道傾斜角，近日点経度，昇交点経度，平均経度 ($\lambda = M + \varpi$) を意味する．$m'$ についてはプライムをつけて表す．${\cal R}$ の展開式は，
 \begin{equation}
-{\cal R} = \mu' \sum S (a,a',e,e',I,I') \cos \varphi
+{\cal R} = \mu' \sum S (a,a',e,e',I,I') \cos \varphi \label{eq:cal_R_varphi}
 \end{equation}
 の形で表される．ここで $\varphi$ は，
 \begin{equation}
-\varphi = j_1 \lambda' + j_2 \lambda + j_3 \varpi' + j_4 \varpi + j_5 \Omega' + j_6 \Omega
+\varphi = j_1 \lambda' + j_2 \lambda + j_3 \varpi' + j_4 \varpi + j_5 \Omega' + j_6 \Omega \label{eq:varphi}
 \end{equation}
 という線形結合の形で表され，$j_i (i = 1,2,…,6)$ は整数であり，
 \begin{equation}
 \sum_{i = 1}^{6} j_i = 0
 \end{equation}
-である．この性質は主星のポテンシャルが方位角に対して不変であることに由来する．関数 $S$ の詳細な形と $\varphi$ における許容される角の組み合わせを知ることにより，運動方程式に対して支配的な寄与をする項や，逆に無視できる項を見分けることができる．
+である．これはダランベールの関係式 (d'Alembert relation) という．この性質は主星のポテンシャルが方位角に対して不変であることに由来する．角変数に何をつかってもよいわけではなく，固定された方向からの角度 (すなわち，離角ではなく経度) を用いなければならない．関数 $S$ の詳細な形と $\varphi$ における許容される角の組み合わせを知ることにより，運動方程式に対して支配的な寄与をする項や，逆に無視できる項を見分けることができる．
 
-(\ref{eq:cal_R}) 式の動径方向に依存する部分に注目すると，
+(\ref{eq:cal_R2}) 式の動径方向に依存する部分に注目すると，
 \begin{equation}
 {\cal R} = \frac{\mu}{a'} \sum_{l = 2}^{\infty} \alpha^l \left( \frac{a'}{r'} \right)^{l+1} \left( \frac{r}{a} \right)^l P_l (\cos \psi)
 \end{equation}
@@ -1070,9 +1070,9 @@ k \\
 l - m - k \\
 \end{pmatrix}
 c^{3l - m - 2p - 2k} s^{m - l + 2p + 2k}
-\end{split}
+\end{split} \label{eq:F_lmp}
 \end{equation}
-ここで ${\rm i} = \sqrt{-1}$ であり，$k$ については $k = {\rm max} (0, l - m - 2p)$ から $k = {\rm min} (l - m, 2l - 2p)$ まで和をとる．また，$s = \sin \frac{1}{2} I, c = \cos \frac{1}{2} I$ である．
+ここで ${\rm i} = \sqrt{-1}$ であり，$k$ については $k = {\rm max} (0, l - m - 2p)$ から $k = {\rm min} (l - m, 2l - 2p)$ まで和をとる．また，$s \equiv \sin \frac{1}{2} I, c \equiv \cos \frac{1}{2} I$ とした．
 
 $X_c^{a, b} (e)$ はハンセン係数 (Hansen coefficients) であり，次のように定義できる．
 \begin{equation}
@@ -1098,7 +1098,7 @@ $d \not = 0$ のとき，
 j \\
 \end{pmatrix}
 X_{c - j, d - j}^{a, b}.
-\end{split}
+\end{split} \label{eq:4dX}
 \end{equation}
 また，$c < 0$ または $d < 0$ のとき $X_{c, d}^{a, b} = 0$，$d > c$ のとき $X_{c, d}^{a, b} = X_{d, c}^{a, -b}$ である．
 
@@ -1118,7 +1118,279 @@ ${\cal R'}$ の展開も考えると，
 \end{split}
 \end{equation}
 
-\subsection{}
+展開の複雑さを考えると，摂動関数の直接部と間接部を区別することが慣習的に行われる．(\ref{eq:cal_R1})，(\ref{eq:cal_R'1}) 式の定義より，次のように書ける．
+\begin{eqnarray}
+{\cal R} & = & \frac{\mu'}{a'} {\cal R}_{\rm D} + \frac{\mu'}{a'} \alpha {\cal R}_{\rm E} \label{eq:cal_R3} \\
+{\cal R'} & = & \frac{\mu}{a'} {\cal R}_{\rm D} + \frac{\mu}{a'} \frac{1}{\alpha^2} {\cal R}_{\rm I} \label{eq:cal_R'3}
+\end{eqnarray}
+ここで，
+\begin{eqnarray}
+{\cal R}_{\rm D} & = & \frac{a'}{|{\bm r'} - {\bm r}|}, \label{eq:cal_RD}\\
+{\cal R}_{\rm E} & = & - \left( \frac{r}{a} \right) \left( \frac{a'}{r'} \right)^2 \cos \psi, \label{eq:cal_RE} \\
+{\cal R}_{\rm I} & = & - \left( \frac{r'}{a'} \right) \left( \frac{a}{r} \right)^2 \cos \psi. \label{eq:cal_RI}
+\end{eqnarray}
+${\cal R}_{\rm D}$ は直接部，${\cal R}_{\rm E}$ は外側の摂動源による間接部，${\cal R}_{\rm I}$ は内側の摂動源による間接部から得られるものである．(\ref{eq:cal_R3})，(\ref{eq:cal_R3})，(\ref{eq:cal_RD}) 式から明らかなように，${\cal R}_{\rm D}$ の表式を用いて ${\cal R}, {\cal R'}$ の直接部を得ることができる．
+
+(\ref{eq:cal_R_varphi})，(\ref{eq:varphi}) 式から，これらは角変数 $\varphi$ のオーダー，すなわち $\lambda$ と $\lambda'$ の係数の和によって分類できる．
+
+直接部の二次のオーダーまでの展開式は，${\cal R}^{(i)}$ がオーダー $i$ の角変数を含む部分を表すとすると，
+\begin{equation}
+{\cal R}_{\rm D} =  {\cal R}_{\rm D}^{(0)} + {\cal R}_{\rm D}^{(1)} + {\cal R}_{\rm D}^{(2)} \label{eq:cal_RD(012)}
+\end{equation}
+\begin{equation}
+\begin{split}
+{\cal R}_{\rm D}^{(0)} = & \left( \frac{1}{2} b_{ \frac{1}{2} }^{(j)} + \frac{1}{8} (e^2 + e'^2) [ -4 j^2 + 2 \alpha D + \alpha^2 D^2 ] b_{ \frac{1}{2} }^{(j)} \right. \\
+& \left. \quad + \frac{1}{4} (s^2 + s'^2) \left( [- \alpha ] b_{ \frac{3}{2} }^{(j - 1)} + [- \alpha ] b_{ \frac{3}{2} }^{(j + 1)} \right) \right) \\
+& \quad \times \cos [j \lambda' - j \lambda ] \\
+& + \left( \frac{1}{4} e e' [ 2 + 6j + 4 j^2 - 2 \alpha D - \alpha^2 D^2] b_{ \frac{1}{2} }^{(j + 1)} \right) \\
+& \quad \times \cos [j \lambda' - j \lambda + \varpi' - \varpi ] \\
+& + \left( s s' [ \alpha ] b_{ \frac{3}{2} }^{(j + 1)} \right) \cos [ j \lambda' - j \lambda + \Omega' - \Omega ]
+\end{split} \label{eq:cal_RD(0)}
+\end{equation}
+\begin{equation}
+\begin{split}
+{\cal R}_{\rm D}^{(1)} = & \left( \frac{1}{2} e [-2 j - \alpha D] b_{ \frac{1}{2} }^{(j)} \right) \cos [j \lambda' + (1 -j) \lambda - \varpi ] \\
+& + \left( \frac{1}{2} e' [ -1 + 2 j + \alpha D] b_{ \frac{1}{2} }^{(j - 1)} \right) \cos [j \lambda' + (1 -j) \lambda - \varpi' ]
+\end{split}  \label{eq:cal_RD(1)}
+\end{equation}
+\begin{equation}
+\begin{split}
+{\cal R}_{\rm D}^{(2)} = & \left( \frac{1}{8} e^2 [-5 j + 4 j^2 - 2 \alpha D + 4 j \alpha D + \alpha^2 D^2] b_{ \frac{1}{2} }^{(j)} \right) \\
+& \quad \times \cos [j \lambda' + (2 - j) \lambda - 2 \varpi ] \\
+& + \left( \frac{1}{4} e e' [ -2 + 6 j - 4 j^2 + 2 \alpha D - 4 j \alpha D - \alpha^2 D^2] b_{ \frac{1}{2} }^{(j - 1)} \right) \\
+& \quad \times \cos [j \lambda' + (2 -j) \lambda - \varpi' - \varpi ] \\
+& + \left( \frac{1}{8} e'^2 [2 -7 j + 4 j^2 - 2 \alpha D + 4 j \alpha D + \alpha^2 D^2] b_{ \frac{1}{2} }^{(j - 2)} \right) \\
+& \quad \times \cos [j \lambda' + (2 - j) \lambda - 2 \varpi' ] \\
+& + \left( \frac{1}{2} s^2 [ \alpha ] b_{ \frac{3}{2} }^{(j - 1)} \right) \cos [j \lambda' + (2 - j) \lambda - 2 \Omega ] \\
+& + \left( s s' [ - \alpha ] b_{ \frac{3}{2} }^{(j - 1)} \right) \cos [j \lambda' + (2 - j) \lambda - \Omega' - \Omega] \\
+& + \left( \frac{1}{2} s'^2 [ \alpha ] b_{ \frac{3}{2} }^{(j - 1)} \right) \cos [j \lambda' + (2 - j) \lambda - 2 \Omega' ]
+\end{split} \label{eq:cal_RD(2)}
+\end{equation}
+ここで，$s \equiv \sin \frac{I}{2}$，$\alpha = a/a'$．$D \equiv d/d \alpha$ は微分演算子．また，$b_{i + \frac{1}{2}}^{(j)}(\alpha)$ はラプラス係数 (Laplace coefficients) であり，$i$ を整数として，
+\begin{equation}
+\frac{1}{2} b_{i + \frac{1}{2}}^{(j)} = \frac{1}{2 \pi} \int_0^{2 \pi} \frac{\cos j \psi d \psi}{(1 - 2 \alpha \cos \psi + \alpha^2)^{i + \frac{1}{2}}}
+\end{equation}
+と定義される．
+
+(\ref{eq:cal_RE})，(\ref{eq:cal_RI}) 式で定義された間接部の展開式は，離心率と軌道傾斜角を微少量だとして楕円展開 (elliptical expansion) を使うと比較的簡単に求めることができる．$\cos \psi, (r/a), (a'/r')$ の $e, I$ の二次までの展開は，
+\begin{equation}
+\begin{split}
+\cos \psi \approx & (1 - e^2 - e'^2 - s^2 - s'^2) \cos [\lambda - \lambda'] \\
+& + e e' \cos [2 \lambda - 2 \lambda' - \varpi - \varpi'] \\
+& + e e' \cos [\varpi - \varpi'] + 2 s s' \cos [\lambda - \lambda' - \Omega + \Omega'] \\
+& + e \cos [2 \lambda - \lambda' - \varpi] - e \cos [\lambda' - \varpi] \\
+& + e' \cos [\lambda - 2 \lambda' + \varpi'] - e' \cos [\lambda - \varpi'] \\
+& + \frac{9}{8} e^2 \cos [3 \lambda - \lambda' - 2 \varpi] - \frac{1}{8} e^2 \cos [\lambda + \lambda' - 2 \varpi] \\
+& + \frac{9}{8} e'^2 \cos [\lambda - 3 \lambda' + 2 \varpi'] - \frac{1}{8} e'^2 \cos [\lambda + \lambda' - 2 \varpi'] \\
+& - e e' \cos [2 \lambda - \varpi - \varpi'] - e e' \cos [2 \lambda' - \varpi - \varpi'] \\
+& + s^2 \cos [\lambda + \lambda' - 2 \Omega] + s'^2 \cos [\lambda + \lambda' - 2 \Omega'] \\
+& - 2 s s' \cos [\lambda + \lambda' - \Omega - \Omega']
+\end{split}
+\end{equation}
+\begin{eqnarray}
+\left( \frac{r}{a} \right) & = & 1 - e \cos [\lambda - \varpi] + \frac{1}{2} e^2 \left(1 - \cos [2 \lambda - 2 \varpi] \right) \\
+\left( \frac{a'}{r'} \right) & = & 1 + 2 e' \cos [\lambda' - \varpi'] + \frac{1}{2} e'^2 \left(1 + 5 \cos [2 \lambda' - 2 \varpi'] \right)
+\end{eqnarray}
+
+したがって，${\cal R}_{\rm E}$ の $e, I$ の二次までの展開は，
+\begin{equation}
+\begin{split}
+{\cal R}_{\rm E} = & - \left( \frac{r}{a} \right) \left( \frac{a'}{r'} \right)^2 \cos \psi \\
+\approx & \left( -1 + \frac{1}{2} e^2 + \frac{1}{2} e'^2 + s^2 + s'^2 \right) \cos [\lambda' - \lambda] \\
+& - e e' \cos [2 \lambda' - 2 \lambda - \varpi' + \varpi] - 2 s s' \cos [\lambda' - \lambda - \Omega' + \Omega] \\
+& - \frac{1}{2} e \cos [\lambda' -2 \lambda + \varpi] + \frac{3}{2} e \cos [\lambda' - \varpi] - 2 e' \cos [2 \lambda' - \lambda - \varpi'] \\
+& - \frac{3}{8} e^2 \cos [\lambda' - 3 \lambda + 2 \varpi] - \frac{1}{8} e^2 \cos [\lambda' + \lambda - 2 \varpi] \\
+& + 3 e e' \cos [2 \lambda - \varpi' - \varpi] - \frac{1}{8} e'^2 \cos [\lambda' + \lambda - 2 \varpi'] \\
+& - \frac{27}{8} e'^2 \cos [3 \lambda' - \lambda - 2 \varpi'] - s^2 \cos [\lambda' + \lambda - 2 \Omega] \\
+& + 2 s s' \cos [\lambda' + \lambda - \Omega' - \Omega] - s'^2 \cos [\lambda' + \lambda - 2 \Omega']
+\end{split} \label{eq:cal_RE(012)}
+\end{equation}
+ただし，${\cal R}_{\rm D}$ を求めたときと同じ形にするため，偏角の符号を変えている．
+
+${\cal R}_{\rm I}$ の $e, I$ の二次までの展開は，${\cal R}_{\rm E}$ の表式の中のプライム付きの量とプライムなしの量を入れ替えればよい．
+\begin{equation}
+\begin{split}
+{\cal R}_{\rm I} = & - \left( \frac{r'}{a'} \right) \left( \frac{a}{r} \right)^2 \cos \psi \\
+\approx & \left( -1 + \frac{1}{2} e^2 + \frac{1}{2} e'^2 + s^2 + s'^2 \right) \cos [\lambda' - \lambda] \\
+& - e e' \cos [2 \lambda' - 2 \lambda - \varpi' + \varpi] - 2 s s' \cos [\lambda' - \lambda - \Omega' + \Omega] \\
+& -2 e \cos [\lambda' -2 \lambda + \varpi] + \frac{3}{2} e' \cos [\lambda - \varpi'] - \frac{1}{2} e' \cos [2 \lambda' - \lambda - \varpi'] \\
+& - \frac{27}{8} e^2 \cos [\lambda' - 3 \lambda + 2 \varpi] - \frac{1}{8} e^2 \cos [\lambda' + \lambda - 2 \varpi] \\
+& + 3 e e' \cos [2 \lambda - \varpi' - \varpi] - \frac{1}{8} e'^2 \cos [\lambda' + \lambda - 2 \varpi'] \\
+& - \frac{3}{8} e'^2 \cos [3 \lambda' - \lambda - 2 \varpi'] - s^2 \cos [\lambda' + \lambda - 2 \Omega] \\
+& + 2 s s' \cos [\lambda' + \lambda - \Omega' - \Omega] - s'^2 \cos [\lambda' + \lambda - 2 \Omega']
+\end{split}
+\end{equation}
+
+\subsection{摂動関数の利用}
+ここまでの解析で，$r' > r$ (すなわち，軌道は交差しない) と仮定してきた．級数展開が収束するかどうかは，軌道が交差にどれだけ近いかに依存している．(\ref{eq:cal_R1})，(\ref{eq:cal_R'1}) 式より，もし軌道が交差するなら，ある経度では${\bm r} = {\bm r'}$ となり第一項が定義できなくなるため，明らかに特異点が存在する．したがって収束のおおよその条件は，
+\begin{equation}
+a (1 + e) < a' (1 - e')
+\end{equation}
+つまり，内側の軌道の遠日点距離が，外側の軌道の近日点距離よりも短いことである．
+
+次に，(\ref{eq:cal_R_varphi}) 式より，${\cal R} = \mu' \sum S (a,a',e,e',I,I') \cos \varphi$ の $S$ の形，すなわち各項の「強さ」を考える．$X_{l - 2p + q}^{l, l - 2p} (e)$ と $F_{lmp} (I)$ の性質より，離心率と軌道傾斜角の最低次の項を計算することができる．(\ref{eq:F_lmp}) から (\ref{eq:4dX}) 式を用いると，
+\begin{equation}
+X_{l - 2p + q}^{l, l - 2p} (e) = \mathcal{O} (e^{|q|}), \quad X_{l - 2p' + q'}^{-l -1, l - 2p'} (e') = \mathcal{O} (e'^{|q'|})
+\end{equation}
+\begin{equation}
+F_{lmp} (I) = \mathcal{O} (s^{|m - l + 2p|}), \quad F_{lmp'} (I') = \mathcal{O} (s'^{|m - l + 2p'|})
+\end{equation}
+ここで，$s \equiv \sin \frac{1}{2} I, s' \equiv \sin \frac{1}{2} I'$ である．よって，
+\begin{equation}
+S \approx \frac{f (\alpha)}{a'} e^{|q|} e'^{|q'|} s^{|m - l + 2p|} s'^{|m - l + 2p'|} = \frac{f (\alpha)}{a'} e^{|j_4|} e'^{|j_3|} s^{|j_6|} s'^{|j_5|}
+\end{equation}
+ここで，$f (\alpha)$ はラプラス係数の関数として表される．したがって例えば $e$ の最低次は，最小でもその項の中の $\varpi$ の係数の絶対値に等しい．同様に，$e', \sin \frac{1}{2} I, \sin \frac{1}{2} I'$ の最低次は $\varpi', \Omega, \Omega'$ の係数の絶対値に等しいかそれ以上である．
+
+\subsection{ラグランジュの惑星方程式}
+摂動関数の展開によって，摂動のポテンシャルの軌道要素に対する依存性を明らかにしてきた．ここからは，摂動を受けた天体の軌道変化の量を表すことが必要である．そこで，ラグランジュの惑星方程式 (Lagrange's planetary equations) を用いる．ここでは方程式の説明だけにとどめる．完全な導出は，Brouwer \& Clemence (1961) とRoy (1988) に記されている．
+
+ラグランジュの惑星方程式を使うために，新たな角度を導入する必要がある．
+\begin{equation}
+\lambda = M + \varpi = n (t - \tau) + \varpi = n t + \epsilon \label{eq:lambda}
+\end{equation}
+ここで，$\lambda$ は平均経度 (mean longitude)，$M$ は平均近点離角 (mean anomaly)，$\varpi$ は近日点経度 (longitude of pericentre)，$t$ は時間，$\tau$ は近点通過時刻 (time of pericentre passage)，そして新たな角度 $\epsilon$ は元期 ($t = 0$) での平均経度 (mean longitude at epoch) である．軌道要素の変化に関するラグランジュの惑星方程式は，
+\begin{eqnarray}
+\frac{d a}{d t} & = & \frac{2}{n a} \frac{\partial {\cal R}}{\partial \epsilon}, \label{eq:dadt} \\
+\frac{d e}{d t} & = & - \frac{\sqrt{1 - e^2}}{n a^2 e} \left( 1 - \sqrt{1 - e^2} \right) \frac{\partial {\cal R}}{\partial \epsilon} - \frac{\sqrt{1 - e^2}}{n a^2 e} \frac{\partial {\cal R}}{\partial \varpi}, \label{eq:dedt} \\
+\frac{d \epsilon}{d t} & = & - \frac{2}{n a} \frac{\partial {\cal R}}{\partial a} + \frac{\sqrt{1 - e^2}}{n a^2 e} \left( 1 - \sqrt{1 - e^2} \right) \frac{\partial {\cal R}}{\partial e} + \frac{\tan \frac{1}{2} I}{n a^2 \sqrt{1 - e^2}} \frac{\partial {\cal R}}{\partial I}, \label{eq:depsilondt} \\
+\frac{d \Omega}{d t} & = & \frac{1}{n a^2 \sqrt{1 - e^2} \sin I} \frac{\partial {\cal R}}{\partial I}, \label{eq:dOmegadt} \\
+\frac{d \varpi}{d t} & = & \frac{\sqrt{1 - e^2}}{n a^2 e} \frac{\partial {\cal R}}{\partial e} + \frac{\tan \frac{1}{2} I}{n a^2 \sqrt{1 - e^2}} \frac{\partial {\cal R}}{\partial I}, \label{eq:dvarpidt} \\
+\frac{d I}{d t} & = & - \frac{\tan \frac{1}{2} I}{n a^2 \sqrt{1 - e^2}} \left( \frac{\partial {\cal R}}{\partial \epsilon} + \frac{\partial {\cal R}}{\partial \varpi} \right) - \frac{1}{n a^2 \sqrt{1 - e^2} \sin I} \frac{\partial {\cal R}}{\partial \Omega}. \label{eq:dIdt}
+\end{eqnarray}
+(\ref{eq:depsilondt}) 式で与えられる $\dot{\epsilon}$ の表式を考える際に，ある問題が生じる (Brouwer \& Clemence (1961))．右辺には $\partial {\cal R}/\partial a$ の因数が含まれるため，軌道長半径が, 
+摂動関数のラプラス係数の中に陽に現れ，偏角 $\varphi$ の中に ($\lambda = n t + \epsilon$ のため) 平均運動 $n = \sqrt{\mu /a^3}$として陰に現れることに気をつけなければならない．このことは偏微分をとったときに時間因子として現れる．この問題は，次のように新しく元期での平均経度 $\epsilon^{\ast}$ を定義することで解決することができる．
+\begin{equation}
+\frac{d \epsilon^{\ast}}{d t} = \frac{d \epsilon}{d t} + t \frac{d n}{d t}.
+\end{equation}
+したがって，
+\begin{eqnarray}
+\frac{d \lambda}{d t} = n + \frac{d \epsilon^{\ast}}{d t}, \\
+\lambda = \int n d t + \epsilon^{\ast}.
+\end{eqnarray}
+これは，次のようにも書ける．
+\begin{equation}
+\lambda = \rho + \epsilon^{\ast}
+\end{equation}
+ここで，
+\begin{equation}
+\frac{d \rho}{d t} = n, \quad \frac{d^2 \rho}{d t^2} = \frac{d n}{d t} = - \frac{3}{2} \frac{n}{a} \frac{d a}{d t}
+\end{equation}
+または，
+\begin{equation}
+\frac{d^2 \rho}{d t^2} = - \frac{3}{a^2} \frac{\partial {\cal R}}{\partial \epsilon}.
+\end{equation}
+この場合，$\dot{a}, \dot{e}, \dot{I}$ の表式に生じる $\partial / \partial \epsilon$ の導関数を考え，$\partial / \partial \lambda$ を示さなければならない．実際には $\epsilon$ の変化はとても小さい効果であり，大抵は無視できる．
+
+$m'$ の軌道要素の変化は (\ref{eq:dadt}) 式から (\ref{eq:dIdt}) 式の ${\cal R}$ を ${\cal R'}$ に，プライムなしの量をプライム付きの量に置き換えることで，同様に求めることができる．ラグランジュの惑星方程式の導出には ${\cal R}$ が外側からの摂動によって生じることを仮定していない．したがってこれらの方程式を，中心星が球対称でないときの $m$ への摂動を扱う場合にも同様に使うことができる．
+
+ラグランジュの惑星方程式を使うと，この章で議論した摂動関数のフーリエ級数展開に基づいて軌道要素の変化を求めることができる．このように，ラグランジュの惑星方程式は，以下に示すほとんどの摂動計算の基礎となる．
+
+\subsection{摂動関数中の偏角の分類}
+これで，摂動関数の展開式の物理的意味にせまることができるようになった．今までは，角変数の無限個の結合を含む級数として，摂動のポテンシャルを表してきた．しかし，どの角変数が与えられた問題において重要なのだろうか．つまり，無限個の項の中で，重要な項と無視できる項はどれなのだろうか．それに対する答えは，ほとんどの場合，摂動を受ける天体の軌道長半径に依存する．展開式の余弦偏角に関連した振動数や周期を考えることで，全ての偏角を分類することができる．
+
+余弦偏角はそれぞれ角変数 $\lambda', \lambda, \varpi', \varpi, \Omega', \Omega$ の線形結合を含む．摂動がない問題では，平均経度 $\lambda', \lambda$ はそれぞれ $n', n$ の速さで線形的に増加する．対照的に，他の角変数は摂動がない問題では定数である．よって，摂動を受ける系を考えるときには，$\lambda', \lambda$ は急激に変化し，他の角変数はゆっくりと変化する．したがって，平均経度を含まない偏角はゆっくりと変化する．これらの偏角によって，永年項，すなわち長周期の項が生じる．これはその他の偏角が全て短周期であることを意味していない．$\varphi = j_1 \lambda' + j_2 \lambda + j_3 \varpi' + j_4 \varpi + j_5 \Omega' + j_6 \Omega$ の形の一般的な偏角を考えよう．ここで (\ref{eq:lambda}) 式より，
+\begin{equation}
+\lambda' \approx n' t + \epsilon' \quad {\rm and} \quad \lambda \approx n t + \epsilon
+\end{equation}
+と書ける．したがって，$j_1 \lambda' + j_2 \lambda \approx (j_1 n' + j_2 n) t + {\rm const.}$ であるから，軌道長半径が
+\begin{equation}
+j_1 n' + j_2 n \approx 0 \label{eq:zinnsuu}
+\end{equation}
+を満たせば，この偏角も軌道周期よりも長い周期を持つことになる．(\ref{eq:zinnsuu}) 式は平均運動や軌道周期が尽数関係にあるとき成り立つ．このような偏角を展開式中の共鳴項として分類する．軌道長半径で考えると，この関係は次のように書ける．
+\begin{equation}
+a \approx \left( \frac{|j_1|}{|j_2|} \right)^{\frac{2}{3}} a'
+\end{equation}
+軌道長半径に依存するため，共鳴項は局所的である．ある特定の角変数の結合は，摂動を受ける天体のある軌道長半径ではゆっくり変化するかもしれないが，同じ角変数の結合でも他の軌道長半径では急激な変化をするだろう．これに対し，永年項は包括的である．
+
+永年項でも共鳴項でもない偏角は，短周期項を生じさせると考えられる．実際，平均法によって展開式中にある無限個の短周期項を無視することができ，適切な永年項と共鳴項によって力学が支配されていることを認めることができる．
+
+以下に，軌道傾斜角が小さい楕円制限3体問題における永年項と共鳴項による運動の予測を行った．ここで質量 $m$ を無視できるとし，質量 $m'$ の天体の軌道は基準平面上に固定されているものとする．(\ref{eq:dadt})，(\ref{eq:dedt})，(\ref{eq:dvarpidt})，(\ref{eq:dOmegadt}) 式の考察から得られる $\dot{a}, \dot{e}, \dot{\varpi}, \dot{\Omega}$ のラグランジュの惑星方程式の最低次の形から考えることにする．運動方程式は，
+\begin{eqnarray}
+\frac{d a}{d t} & = & \frac{2}{n a} \frac{\partial \langle {\cal R} \rangle}{\partial \lambda}, \label{eq:dadt2} \\
+\frac{d e}{d t} & = & - \frac{1}{n a^2 e} \frac{\partial \langle {\cal R} \rangle}{\partial \varpi}, \label{eq:dedt2} \\
+\frac{d \varpi}{d t} & = & + \frac{1}{n a^2 e} \frac{\partial \langle {\cal R} \rangle}{\partial e}, \label{eq:dvarpidt2} \\
+\frac{d \Omega}{d t} & = & + \frac{1}{n a^2 \sin I} \frac{\partial \langle {\cal R} \rangle}{\partial I}.\label{eq:dOmegadt2}
+\end{eqnarray}
+ここで，$\langle {\cal R} \rangle$ は外側からの摂動による摂動関数の平均部分である．
+
+\subsubsection{永年項}
+永年項は平均経度を含まない偏角によって生じる．(\ref{eq:cal_RD(012)}) 式から (\ref{eq:cal_RD(2)}) 式の，摂動関数の直接部 ${\cal R}_{\rm D}$ の二次のオーダーまでの展開式より，永年項は $j \lambda' - j \lambda$ を含む余弦偏角の中で $j = 0$ とおくことで得られることがわかる．したがって，
+\begin{equation}
+\langle {\cal R}_{\rm D} \rangle = C_0 + C_1 (e^2 + e'^2) + C_2 s^2 + C_3 e e' \cos (\varpi - \varpi')
+\end{equation}
+ここで，
+\begin{eqnarray}
+C_0 & = & \frac{1}{2} b_{\frac{1}{2}}^{(0)} (\alpha), \\
+C_1 & = & \frac{1}{8} [ 2 \alpha D + \alpha^2 D^2 ] b_{\frac{1}{2}}^{(0)} (\alpha), \\
+C_2 & = & - \frac{1}{2} b_{\frac{3}{2}}^{(1)} (\alpha), \\
+C_3 & = & \frac{1}{4} [ 2 - 2 \alpha D - \alpha^2 D^2 ] b_{\frac{1}{2}}^{(1)} (\alpha).
+\end{eqnarray}
+$\langle {\cal R} \rangle$ には $s s', s^2$ の項が含まれないことに注意する．これは $s' = 0$ とおき，$C_0$ が $\alpha$ のみの関数であるとしたからである．さらに，(\ref{eq:cal_RE(012)}) 式の ${\cal R}_{\rm E}$ の項をみると，全ての偏角が少なくとも一つは平均経度を含むことから，摂動関数の間接部からくる永年寄与はないことがわかる．したがって，ラグランジュの惑星方程式の低次の項は，
+\begin{eqnarray}
+\left( \frac{d a}{d t} \right)_{\rm sec} & = & 0, \\
+\left( \frac{d e}{d t} \right)_{\rm sec} & = & n \alpha (m' / m_c) C_3 e' \sin (\varpi - \varpi'), \\
+\left( \frac{d \varpi}{d t} \right)_{\rm sec} & = & n \alpha (m' / m_c) [2 C_1 + C_3 (e' / e) \cos (\varpi - \varpi') ], \\
+\left( \frac{d \Omega}{d t} \right)_{\rm sec} & = & n \alpha (m' / m_c) (C_2 / 2).
+\end{eqnarray}
+ここで，中心星の質量を $m_c$ とし，$\mu' = G m' \approx n^2 a^3 (m' / m_c)$ を使った．$e \gg e'$ とすると，これらの方程式の近似解は次のようになる．
+\begin{eqnarray}
+a & = & a_0, \\
+e & = & e_0 - \frac{n \alpha}{\dot{\varpi}} (m' / m_c) C_3 e' [\cos \varpi_0 - \cos \varpi], \\
+\varpi & = & \varpi_0 + n \alpha (m' / m_c) 2 C_1 t, \\
+\Omega & = & \Omega_0 n \alpha (m' / m_c) (C_2 / 2) t.
+\end{eqnarray}
+添字0は各量の初期 ($t = 0$) の値を表し，$\varpi' = 0$ とした．これらの解から $a$ には永年変化がないことが予測され，$e$ は振幅
+\begin{equation}
+(\Delta e)_{\rm sec} = | (n \alpha /\dot{\varpi}) (m' / m_c) C_3 e' |
+\end{equation}
+で正弦関数的に変化することが予測される．また $\varpi$ と $\Omega$ は $C_1, C_2$ の符号に依存して，時間とともに線形的に増加，または減少することが予測される．
+
+\subsubsection{共鳴項}
+今度は，例えば，$3.27{\rm AU}$ で木星からの摂動を受ける小惑星の運動に着目する．木星の軌道長半径は $5.20 {\rm AU}$ であるから，ケプラーの第3法則より周期の比は $(3.27/5.20)^{3/2} \approx 0.499$ である．よって，$2 n' \approx n$ という関係が得られ，共鳴項の重要性が予想される．したがって，2:1共鳴の近傍では，上で議論した永年項だけでなく，摂動関数の展開式中の $2 \lambda' - \lambda$ を含む項 (すなわち，この位置における共鳴項) についても考える必要がある．
+
+(\ref{eq:cal_RD(012)}) 式から (\ref{eq:cal_RD(2)}) 式より，二次のオーダーまでの展開式中の $\langle {\cal R} \rangle / a'$ には，ある $j$ の値に対して $2\lambda' - \lambda$ を含む余弦偏角を持つ項が2つある．平均摂動関数の意味のある直接部は，
+\begin{equation}
+\begin{split}
+\langle {\cal R} \rangle = & C_0 + C_1 (e^2 + e'^2) + C_2 (s^2 + s'^2) + C_3 e e' \cos (\varpi - \varpi') \\
+& + C_4 e \cos (2 \lambda' - \lambda - \varpi) + C_5 e' \cos (2 \lambda' - \lambda - \varpi')
+\end{split}
+\end{equation} 
+ここで，新たな定数 $C_4, C_5$ は次のように与えられる．
+\begin{eqnarray}
+C_4 & = & \frac{1}{2} [- 4 - \alpha D] b_{\frac{1}{2}}^{(2)} (\alpha), \\
+\Omega & = & \frac{1}{2} [3 + \alpha D] b_{\frac{1}{2}}^{(1)} (\alpha).
+\end{eqnarray}
+これらの共鳴偏角のうち2つ目は $\dot{e}, \dot{\varpi}, \dot{\Omega}$ には寄与しないが，$\dot{a}$ には寄与する．(\ref{eq:cal_RE(012)}) 式より，間接部からくる $- 2 \alpha e'$ は同じ共鳴偏角へ寄与する．
+
+ラグランジュの惑星方程式の近似形を用いると，2:1共鳴による $a, e, \varpi, \Omega$ の変化は，
+\begin{align} 
+\left( \frac{d a}{d t} \right)_{\rm res} & = 2 n \alpha a (m' / m_c) C_4 e \sin (2 \lambda' - \lambda - \varpi)\nonumber \\
+& \quad + 2 n \alpha a (m' / m_c) (C_5 - 2 \alpha) e' \sin (2 \lambda' - \lambda - \varpi'), \\
+\left( \frac{d e}{d t} \right)_{\rm res} & = n \alpha (m' / m_c) C_4 \sin (2 \lambda' - \lambda - \varpi), \\
+\left( \frac{d \varpi}{d t} \right)_{\rm res} & = n \alpha (m' / m_c) (C_4 / e) \cos (2 \lambda' - \lambda - \varpi), \\
+\left( \frac{d \Omega}{d t} \right)_{\rm res} & = 0.
+\end{align}
+これらの共鳴の方程式の近似解を考えると，
+\begin{align}
+a & = a_0 - \frac{2 n \alpha a (m' / m_c) C_4 e}{2 n' - n - \dot{\varpi}} [ \cos (2 \lambda' - \lambda - \varpi) - \cos (\lambda_0 + \omega_0) ] \nonumber \\
+& \quad - \frac{2 n \alpha a (m' / m_c) (C_5 - 2 \alpha) e'}{2 n' - n} [\cos (2 \lambda' - \lambda - \varpi') - \cos \lambda_0 ], \\
+e & = e_0 + \frac{n \alpha (m' / m_c) C_4}{2 n' - n - \dot{\varpi}} [\cos (2 \lambda' - \lambda - \varpi) - \cos (\lambda_0 + \omega_0) ], \\
+\varpi & = \varpi_0 + \frac{n \alpha (m' / m_c) (C_4 / e)}{2 n' - n - \dot{\varpi}} [\sin (2 \lambda' - \lambda - \varpi) - \sin (\lambda_0 + \omega_0) ] \\
+\Omega & = \Omega_0.
+\end{align}
+この解を得るのに，$\dot{a}, \dot{e}, \dot{\varpi}$ の方程式の右辺で，余弦偏角の中の角変数のみが時間変化し，$\varpi$ は永年での理論から決まる定数 $\dot{\varpi}$ で時間とともに線形的に増加するものとした．これらの方程式は $a, e, \varpi$ が次のように表される最大振幅で正弦的に変化することを示唆している．
+\begin{eqnarray}
+(\Delta a)_{\rm res} & = & 2 n \alpha a (m' / m_c) \left( \left| \frac{C_4 e}{2 n' - n - \dot{\varpi}} \right| + \left| \frac{(C_5 - 2 \alpha) e'}{2 n' - n} \right| \right), \\
+(\Delta e)_{\rm res} & = & \left| \frac{n \alpha (m' / m_c) C_4}{2 n' - n - \dot{\varpi}} \right|, \\
+(\Delta \varpi)_{\rm res} & = & \left| \frac{n \alpha (m' / m_c) (C_4 / e)}{2 n' - n - \dot{\varpi}} \right|.
+\end{eqnarray}
+これらは近似解にすぎず，特に軌道長半径については，2つの共鳴偏角を持つ項の各振幅を足しただけである．
+
+\subsubsection{短周期項と微小振幅項}
+
+
+
+
 
 
 
@@ -1272,7 +1544,7 @@ $t = 0$ では，加速度の2階微分と3階微分は計算できないので�
 N 体問題の場合に拡張して考えると，$i, j = 1, 2, 3, \cdots, N$ に対して，
 \begin{eqnarray}
 {\bm a}_i & = & - G m_0 \frac{{\bm r}_i}{|{\bm r}_i|^3}  + \sum_{j \not= i} G m_j \frac{{\bm r}_{ij}}{|{\bm r}_{ij} |^3} - \sum_j G m_j \frac{{\bm r}_j}{|{\bm r}_j|^3}, \label{eq:ai} \\
-\dot{{\bm a}}_j & = & - G m_0 \left[ \frac{{\bm v}_i}{|{\bm r}_i|^3} - 3 \frac{({\bm v}_i \cdot {\bm r}_i) {\bm r}_i}{|{\bm r}_i|^5} \right] \nonumber \\ 
+\dot{{\bm a}}_i & = & - G m_0 \left[ \frac{{\bm v}_i}{|{\bm r}_i|^3} - 3 \frac{({\bm v}_i \cdot {\bm r}_i) {\bm r}_i}{|{\bm r}_i|^5} \right] \nonumber \\ 
 & & - \sum_{j \not= i} G m_j \left[ \frac{{\bm v}_{ij}}{|{\bm r}_{ij}|^3} - 3 \frac{[{\bm v}_{ij} \cdot {\bm r}_{ij}] {\bm r}_{ij}}{|{\bm r}_{ij}|^5} \right] - \sum_j G m_j \left[ \frac{{\bm v}_j}{|{\bm r}_j|^3} - 3 \frac{{\bm v}_j \cdot {\bm r}_j}{|{\bm r}_j|^5} {\bm r}_j \right]. \label{eq:adoti}
 \end{eqnarray}
 となる．ここで，
@@ -1280,12 +1552,12 @@ N 体問題の場合に拡張して考えると，$i, j = 1, 2, 3, \cdots, N$ �
 {\bm r}_{ij} & = & {\bm r}_{i} - {\bm r}_{j}, \\
 {\bm v}_{ij} & = & {\bm v}_{i} - {\bm v}_{j}.
 \end{eqnarray}
-(\ref{eq:ai}), (\ref{eq:adoti}) 式の indirect 項は i にはよらないので，一度計算しておけば，全ての粒子 i に対して使えることに注意．
+(\ref{eq:ai}), (\ref{eq:adoti}) 式の indirect 項は $i$ にはよらないので，一度計算しておけば，全ての粒子 $i$ に対して使えることに注意．
 
 回っている天体の質量が中心星に対して非常に小さい場合は，(\ref{eq:ai}), (\ref{eq:adoti}) 式の第3項の indirect 項は第1項の中心星重力項に比べて無視できる．そのようなときには第3項の indirect 項を落とし，中心星の動きは無視して，中心星重力は外場として扱うことも多い．
 \begin{eqnarray}
 {\bm a}_i & = & - G m_0 \frac{{\bm r}_i}{|{\bm r}_i|^3}  + \sum_{j \not= i} G m_j \frac{{\bm r}_{ij}}{|{\bm r}_{ij} |^3},  \\
-\dot{{\bm a}}_j & = & - G m_0 \left[ \frac{{\bm v}_i}{|{\bm r}_i|^3} - 3 \frac{({\bm v}_i \cdot {\bm r}_i) {\bm r}_i}{|{\bm r}_i|^5} \right] - \sum_{j \not= i} G m_j \left[ \frac{{\bm v}_{ij}}{|{\bm r}_{ij}|^3} - 3 \frac{[{\bm v}_{ij} \cdot {\bm r}_{ij}] {\bm r}_{ij}}{|{\bm r}_{ij}|^5} \right].
+\dot{{\bm a}}_i & = & - G m_0 \left[ \frac{{\bm v}_i}{|{\bm r}_i|^3} - 3 \frac{({\bm v}_i \cdot {\bm r}_i) {\bm r}_i}{|{\bm r}_i|^5} \right] - \sum_{j \not= i} G m_j \left[ \frac{{\bm v}_{ij}}{|{\bm r}_{ij}|^3} - 3 \frac{[{\bm v}_{ij} \cdot {\bm r}_{ij}] {\bm r}_{ij}}{|{\bm r}_{ij}|^5} \right].
 \end{eqnarray}
 このほうが計算コストはずっと軽くなる．
 
