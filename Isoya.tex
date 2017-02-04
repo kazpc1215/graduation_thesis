@@ -1237,7 +1237,7 @@ F_{lmp} (I) = \mathcal{O} (s^{|m - l + 2p|}), \quad F_{lmp'} (I') = \mathcal{O} 
 \end{equation}
 ここで，$s \equiv \sin \frac{1}{2} I, s' \equiv \sin \frac{1}{2} I'$ である．よって，
 \begin{equation}
-S \approx \frac{f (\alpha)}{a'} e^{|q|} e'^{|q'|} s^{|m - l + 2p|} s'^{|m - l + 2p'|} = \frac{f (\alpha)}{a'} e^{|j_4|} e'^{|j_3|} s^{|j_6|} s'^{|j_5|}
+S \approx \frac{f (\alpha)}{a'} e^{|q|} e'^{|q'|} s^{|m - l + 2p|} s'^{|m - l + 2p'|} = \frac{f (\alpha)}{a'} e^{|j_4|} e'^{|j_3|} s^{|j_6|} s'^{|j_5|} \label{eq:S}
 \end{equation}
 ここで，$f (\alpha)$ はラプラス係数の関数として表される．したがって例えば $e$ の最低次は，最小でもその項の中の $\varpi$ の係数の絶対値に等しい．同様に，$e', \sin \frac{1}{2} I, \sin \frac{1}{2} I'$ の最低次は $\varpi', \Omega, \Omega'$ の係数の絶対値に等しいかそれ以上である．
 
@@ -1345,7 +1345,7 @@ e & = & e_0 - \frac{n \alpha}{\dot{\varpi}} (m' / m_c) C_3 e' [\cos \varpi_0 - \
 \end{equation}
 で正弦関数的に変化することが予測される．また $\varpi$ と $\Omega$ は $C_1, C_2$ の符号に依存して，時間とともに線形的に増加，または減少することが予測される．
 
-\subsubsection{共鳴項}
+\subsubsection{共鳴項 \label{sec:resonant}}
 今度は，例えば，$3.27{\rm AU}$ で木星からの摂動を受ける小惑星の運動に着目する．木星の軌道長半径は $5.20 {\rm AU}$ であるから，ケプラーの第3法則より周期の比は $(3.27/5.20)^{3/2} \approx 0.499$ である．よって，$2 n' \approx n$ という関係が得られ，共鳴項の重要性が予想される．したがって，2:1共鳴の近傍では，上で議論した永年項だけでなく，摂動関数の展開式中の $2 \lambda' - \lambda$ を含む項 (すなわち，この位置における共鳴項) についても考える必要がある．
 
 (\ref{eq:cal_RD(012)}) 式から (\ref{eq:cal_RD(2)}) 式より，二次のオーダーまでの展開式中の $\langle {\cal R} \rangle / a'$ には，ある $j$ の値に対して $2\lambda' - \lambda$ を含む余弦偏角を持つ項が2つある．平均摂動関数の意味のある直接部は，
@@ -1380,16 +1380,31 @@ e & = e_0 + \frac{n \alpha (m' / m_c) C_4}{2 n' - n - \dot{\varpi}} [\cos (2 \la
 \end{align}
 この解を得るのに，$\dot{a}, \dot{e}, \dot{\varpi}$ の方程式の右辺で，余弦偏角の中の角変数のみが時間変化し，$\varpi$ は永年での理論から決まる定数 $\dot{\varpi}$ で時間とともに線形的に増加するものとした．これらの方程式は $a, e, \varpi$ が次のように表される最大振幅で正弦的に変化することを示唆している．
 \begin{eqnarray}
-(\Delta a)_{\rm res} & = & 2 n \alpha a (m' / m_c) \left( \left| \frac{C_4 e}{2 n' - n - \dot{\varpi}} \right| + \left| \frac{(C_5 - 2 \alpha) e'}{2 n' - n} \right| \right), \\
-(\Delta e)_{\rm res} & = & \left| \frac{n \alpha (m' / m_c) C_4}{2 n' - n - \dot{\varpi}} \right|, \\
-(\Delta \varpi)_{\rm res} & = & \left| \frac{n \alpha (m' / m_c) (C_4 / e)}{2 n' - n - \dot{\varpi}} \right|.
+(\Delta a)_{\rm res} & = & 2 n \alpha a (m' / m_c) \left( \left| \frac{C_4 e}{2 n' - n - \dot{\varpi}} \right| + \left| \frac{(C_5 - 2 \alpha) e'}{2 n' - n} \right| \right), \label{eq:Delta_a} \\
+(\Delta e)_{\rm res} & = & \left| \frac{n \alpha (m' / m_c) C_4}{2 n' - n - \dot{\varpi}} \right|, \label{eq:Delta_e} \\
+(\Delta \varpi)_{\rm res} & = & \left| \frac{n \alpha (m' / m_c) (C_4 / e)}{2 n' - n - \dot{\varpi}} \right|. \label{eq:Delta_varpi}
 \end{eqnarray}
 これらは近似解にすぎず，特に軌道長半径については，2つの共鳴偏角を持つ項の各振幅を足しただけである．
 
 \subsubsection{短周期項と微小振幅項}
+摂動関数の形を知ることで，重要そうな永年偏角と共鳴偏角を分離することができる．事実上，平均経度を含む他のすべての項は短周期であり，それらの効果は平均してゼロになるものとしている．これが平均法である．したがって短周期項は存在しているが，その効果は無視できると思われる．
 
+\ref{sec:resonant} 節では，どの項が摂動を受けた小惑星の運動を支配しているのかを知りたいときに，$j_1 n' + j_2 n \approx 0$ を満たす整数 $j_1, j_2$ を見つけなければならなかった．これらは (\ref{eq:Delta_a})，(\ref{eq:Delta_e})，(\ref{eq:Delta_varpi}) 式の分母を小さくするからである．したがって $3.27 {\rm AU}$ の近傍での支配的な項は，$2 n' - n \approx 0$ となる $j_1 = \pm 2$ と $j_2 = \mp 1$ を持つ項だろう．しかし，これは同様に分母を小さくする $j_1 = \pm 4, \pm 6, \cdots$ と $j_2 = \mp 2, \mp 3, \cdots$ を持つ項についても考えなければいけないことを示唆している，  
+この共鳴での運動に寄与する項が無限個あるのだろうか．単純な整数論によると，2つの実数 (この場合は2つの平均運動) の比は常に有理数で任意の精度まで近似できる．どんな軌道長半径での摂動関数に対しても振幅の大きな項をもたらす無限個の共鳴が存在するのだろうか．
 
+これらのパラドックスは，関数 $S$，すなわち摂動関数の「強さ」の表式を考えることで解決できる ((\ref{eq:S}) 式参照)．簡単のため，平面上での円制限3体問題での平均運動が尽数関係に近い場合を考える．共鳴偏角を次のようにおく．
+\begin{equation}
+\varphi = (j + k) \lambda' - j \lambda - k \varpi
+\end{equation}
+次のように尽数関係に近いと仮定する．
+\begin{equation}
+(j + k) n' - j n \approx 0
+\end{equation}
+ここで，$j, k$ は整数である．これは $(j + k) \lambda' - j \lambda - k \varpi$ という形を含む偏角はゆっくりと変化し，長周期で振幅の大きい摂動を引き起こすことを意味する．例えば，2:1共鳴の場合，$j = \pm 1, \pm 2, \pm 3, \cdots, k = \pm 1, \pm 2, \pm 3, \cdots$ である．しかし，$j$ と $k$ の各ペアに対応して起こりうる共鳴は無限個存在するが，そのほとんどは弱い．これは $S \propto e^{|k|}$ ((\ref{eq:S}) 参照) と $e < 1$ のためである．したがって，$k$ が増えると摂動は弱くなる．実際，これらの他の項は存在するが振幅は小さい．似た偏角を使って考えると，常に任意の共鳴付近にいるという問題を解決することができる．例えば，21:10共鳴は2:1共鳴に近いが，この場合 $S \propto e^{11}$ であり，この共鳴は弱い．したがって，離心率と軌道傾斜角の高次に対応する「共鳴付近」の項は，他の短周期項と同様に切り捨てられる．
 
+共鳴の「オーダー」$k$ は 摂動関数の偏角のオーダー $N = |j_1 + j_2|$ と等しい．
+
+\section{永年摂動}
 
 
 
@@ -1660,11 +1675,14 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 
 
 \begin{figure}[H]
-\begin{tabular}{cc}
+\begin{tabular}{ccc}
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
 \includegraphics[width=8cm]{./image/pythagoras_orbit_0to10.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
@@ -1677,6 +1695,9 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 \centering
 \includegraphics[width=8cm]{./image/pythagoras_orbit_20to30.pdf}
 \end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
@@ -1687,6 +1708,9 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 \begin{minipage}[t]{0.45\hsize}
 \centering
 \includegraphics[width=8cm]{./image/pythagoras_orbit_40to50.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
@@ -1726,20 +1750,23 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 
 \subsection{Secular Resonance}
 
-\subsubsection{現在から100万年後までの巨大惑星の運動}
+\subsubsection{巨大惑星の運動}
 
 
 \begin{figure}[H]
-\begin{tabular}{cc}
+\begin{tabular}{ccc}
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/Nomove_a_100kyr.pdf}
+\includegraphics[width=8cm]{./image/NoMove_axis_5Myr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/Nomove_a_1Myr.pdf}
+\includegraphics[width=8cm]{./image/Move500kyr_axis_5Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1748,16 +1775,19 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 
 
 \begin{figure}[H]
-\begin{tabular}{cc}
+\begin{tabular}{ccc}
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/Nomove_ecc_100kyr.pdf}
+\includegraphics[width=8cm]{./image/NoMove_ecc_5Myr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/Nomove_ecc_1Myr.pdf}
+\includegraphics[width=8cm]{./image/Move500kyr_ecc_5Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1766,16 +1796,19 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 
 
 \begin{figure}[H]
-\begin{tabular}{cc}
+\begin{tabular}{ccc}
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/Nomove_inc_100kyr.pdf}
+\includegraphics[width=8cm]{./image/NoMove_inc_5Myr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/Nomove_inc_1Myr.pdf}
+\includegraphics[width=8cm]{./image/Move500kyr_inc_5Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1784,16 +1817,19 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 
 
 \begin{figure}[H]
-\begin{tabular}{cc}
+\begin{tabular}{ccc}
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/Nomove_capitalOMEGA_100kyr.pdf}
+\includegraphics[width=8cm]{./image/NoMove_capitalOMEGA_5Myr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/Nomove_capitalOMEGA_1Myr.pdf}
+\includegraphics[width=8cm]{./image/Move500kyr_capitalOMEGA_5Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1802,36 +1838,19 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 
 
 \begin{figure}[H]
-\begin{tabular}{cc}
+\begin{tabular}{ccc}
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/Nomove_smallomega_100kyr.pdf}
+\includegraphics[width=8cm]{./image/NoMove_smallomega_5Myr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/Nomove_smallomega_1Myr.pdf}
-\end{minipage}
-%
-\end{tabular}
-\caption{\label{}}
-\end{figure}
-
-
-\subsubsection{移動をさせたときの巨大惑星の運動}
-
-\begin{figure}[H]
-\begin{tabular}{cc}
-%左
-\begin{minipage}[t]{0.45\hsize}
-\centering
-\includegraphics[width=7.6cm]{./image/move500kyr_a_1Myr.pdf}
-\end{minipage} &
-%右
-\begin{minipage}[t]{0.45\hsize}
-\centering
-\includegraphics[width=7.6cm]{./image/move500kyr_a_10Myr.pdf}
+\includegraphics[width=8cm]{./image/Move500kyr_smallomega_5Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1840,16 +1859,19 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 
 
 \begin{figure}[H]
-\begin{tabular}{cc}
+\begin{tabular}{ccc}
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/move500kyr_ecc_1Myr.pdf}
+\includegraphics[width=8cm]{./image/NoMove_curlypi_5Myr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
 \end{minipage} &
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=7.6cm]{./image/move500kyr_ecc_10Myr.pdf}
+\includegraphics[width=8cm]{./image/Move500kyr_curlypi_5Myr.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1857,58 +1879,6 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 \end{figure}
 
 
-\begin{figure}[H]
-\begin{tabular}{cc}
-%左
-\begin{minipage}[t]{0.45\hsize}
-\centering
-\includegraphics[width=7.6cm]{./image/move500kyr_inc_1Myr.pdf}
-\end{minipage} &
-%右
-\begin{minipage}[t]{0.45\hsize}
-\centering
-\includegraphics[width=7.6cm]{./image/move500kyr_inc_10Myr.pdf}
-\end{minipage}
-%
-\end{tabular}
-\caption{\label{}}
-\end{figure}
-
-
-\begin{figure}[H]
-\begin{tabular}{cc}
-%左
-\begin{minipage}[t]{0.45\hsize}
-\centering
-\includegraphics[width=7.6cm]{./image/move500kyr_capitalOMEGA_1Myr.pdf}
-\end{minipage} &
-%右
-\begin{minipage}[t]{0.45\hsize}
-\centering
-\includegraphics[width=7.6cm]{./image/move500kyr_capitalOMEGA_10Myr.pdf}
-\end{minipage}
-%
-\end{tabular}
-\caption{\label{}}
-\end{figure}
-
-
-\begin{figure}[H]
-\begin{tabular}{cc}
-%左
-\begin{minipage}[t]{0.45\hsize}
-\centering
-\includegraphics[width=7.6cm]{./image/move500kyr_smallomega_1Myr.pdf}
-\end{minipage} &
-%右
-\begin{minipage}[t]{0.45\hsize}
-\centering
-\includegraphics[width=7.6cm]{./image/move500kyr_smallomega_10Myr.pdf}
-\end{minipage}
-%
-\end{tabular}
-\caption{\label{}}
-\end{figure}
 
 \subsection{永年共鳴の位置}
 

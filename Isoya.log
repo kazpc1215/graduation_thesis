@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.11.21)  4 FEB 2017 00:37
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.11.21)  4 FEB 2017 21:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -311,18 +311,6 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `' multiply defined.
 
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
 )
 \openout1 = `Isoya.aux'.
 
@@ -384,36 +372,49 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 68.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> nooc'.
-
- [1
-
-]
-LaTeX Font Info:    Try loading font information for U+msa on input line 76.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 68.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 68.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 68.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 68.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 70.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 70.
+(./Isoya.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 76.
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+) [1
+
+])
+\tf@toc=\write3
+\openout3 = `Isoya.toc'.
+
+ [2]
 File: ./image/sec2_1.pdf Graphic file (type pdf)
 
-<./image/sec2_1.pdf> [2
+<./image/sec2_1.pdf> [3
 
-] [3]
+] [4]
 File: ./image/sec2_5.pdf Graphic file (type pdf)
- <./image/sec2_5.pdf> [4] [5] [6]
+ <./image/sec2_5.pdf> [5] [6] [7]
 File: ./image/sec2_7.pdf Graphic file (type pdf)
 
-<./image/sec2_7.pdf> [7]
+<./image/sec2_7.pdf> [8]
 File: ./image/sec2_13.pdf Graphic file (type pdf)
- <./image/sec2_13.pdf> [8]
+ <./image/sec2_13.pdf> [9]
 File: ./image/sec2_14.pdf Graphic file (type pdf)
  <./image/sec2_14.pdf>
-[9]
+[10]
 File: ./image/ellipse1.pdf Graphic file (type pdf)
  <./image/ellipse1.pdf>
 File: ./image/ellipse2.pdf Graphic file (type pdf)
@@ -422,127 +423,82 @@ File: ./image/ellipse3.pdf Graphic file (type pdf)
  <./image/ellipse3.pdf>
 File: ./image/ellipse4.pdf Graphic file (type pdf)
 
-<./image/ellipse4.pdf> [10] [11] [12]
+<./image/ellipse4.pdf> [11] [12] [13]
 File: ./image/sec3_1.pdf Graphic file (type pdf)
- <./image/sec3_1.pdf> [13] [14] [15]
+ <./image/sec3_1.pdf> [14] [15] [16]
 File: ./image/sec3_2.pdf Graphic file (type pdf)
 
-<./image/sec3_2.pdf> [16] [17]
-
-LaTeX Warning: Reference `eq:C_Jcomet' on page 18 undefined on input line 904.
-
-
-LaTeX Warning: Reference `fig:disturbingfunc' on page 18 undefined on input lin
-e 921.
-
+<./image/sec3_2.pdf> [17] [18]
 File: ./image/sec6_1.pdf Graphic file (type pdf)
-<./image/sec6_1.pdf> [18]
-
-LaTeX Warning: Reference `fig:disturbingfunc' on page 19 undefined on input lin
-e 940.
-
-
-LaTeX Warning: Reference `eq:R_c' on page 19 undefined on input line 953.
-
-
-LaTeX Warning: Reference `eq:R_i' on page 19 undefined on input line 953.
-
-
-LaTeX Warning: Reference `eq:R_j' on page 19 undefined on input line 953.
-
-[19]
+ <./image/sec6_1.pdf> [19] [20]
 File: ./image/sec6_2.pdf Graphic file (type pdf)
- <./image/sec6_2.pdf> [20]
 
-LaTeX Warning: Reference `fig:disturbingfunc_psi' on page 21 undefined on input
- line 1000.
+<./image/sec6_2.pdf> [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31]
+File: ./image/sec7_2.pdf Graphic file (type pdf)
 
-[21]
+<./image/sec7_2.pdf> [32]
+File: ./image/sec7_3.pdf Graphic file (type pdf)
+ <./image/sec7_3.pdf> [33] [34] [35]
 
-LaTeX Warning: Reference `eq:cal_R2' on page 22 undefined on input line 1036.
-
-[22]
-
-LaTeX Warning: Reference `eq:cal_R1' on page 23 undefined on input line 1121.
+Package amsmath Warning: Cannot use `split' here;
+(amsmath)                trying to recover with `aligned' on input line 1549.
 
 
-LaTeX Warning: Reference `eq:cal_R'1' on page 23 undefined on input line 1121.
+Package amsmath Warning: Cannot use `split' here;
+(amsmath)                trying to recover with `aligned' on input line 1555.
 
+[36] [37] [38]
+File: ./image/relative_error.pdf Graphic file (type pdf)
+ <./image/relative_error.pdf>
+File: ./image/planetesimal_delta_b.pdf Graphic file (type pdf)
+ <./image/planetesimal_delta_b.pdf>
+File: ./image/planetesimal_delta_e.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `eq:cal_R3' on page 23 undefined on input line 1132.
+<./image/planetesimal_delta_e.pdf> [39]
+File: ./image/planetesimal_r_min.pdf Graphic file (type pdf)
+ <./image/planetesimal_r_min.pdf>
+File: ./image/pythagoras_1.pdf Graphic file (type pdf)
 
+<./image/pythagoras_1.pdf> [40]
+File: ./image/pythagoras_orbit_0to10.pdf Graphic file (type pdf)
+ <./image/pythagoras_orbit_0to10.pdf>
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1682--1683
+ [][] 
+ []
 
-LaTeX Warning: Reference `eq:cal_R3' on page 23 undefined on input line 1132.
-
-
-LaTeX Warning: Reference `eq:cal_RD' on page 23 undefined on input line 1132.
-
-
-LaTeX Warning: Reference `eq:cal_R_varphi' on page 23 undefined on input line 1
-133.
-
-
-LaTeX Warning: Reference `eq:varphi' on page 23 undefined on input line 1133.
-
-[23]
-Runaway argument?
- {\cal R}_{\rm D}^{(0)} = & \left ( \frac {1}{2} b_{\frac {1}{2}}^{(j\ETC.
-./Isoya.tex:1151: Paragraph ended before \split was complete.
-<to be read again> 
-                   \par 
-l.1151 
-       
-? 
-./Isoya.tex:1151: Emergency stop.
-<to be read again> 
-                   \par 
-l.1151 
-       
-End of file on the terminal!
-
- 
-Here is how much of TeX's memory you used:
- 3988 strings out of 493693
- 57124 string characters out of 6149786
- 134693 words of memory out of 5000000
- 7454 multiletter control sequences out of 15000+600000
- 25857 words of font info for 101 fonts, out of 8000000 for 9000
- 929 hyphenation exceptions out of 8191
- 36i,22n,43p,740b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on Isoya.dvi (23 pages, 112236 bytes).
 File: ./image/pythagoras_orbit_10to20.pdf Graphic file (type pdf)
 <./image/pythagoras_orbit_10to20.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 1668--1669
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1690--1691
  [][] 
  []
 
 File: ./image/pythagoras_orbit_20to30.pdf Graphic file (type pdf)
 <./image/pythagoras_orbit_20to30.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 1674--1675
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1696--1697
  [][] 
  []
 
 File: ./image/pythagoras_orbit_30to40.pdf Graphic file (type pdf)
 <./image/pythagoras_orbit_30to40.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 1679--1680
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1704--1705
  [][] 
  []
 
 File: ./image/pythagoras_orbit_40to50.pdf Graphic file (type pdf)
 <./image/pythagoras_orbit_40to50.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 1685--1686
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1710--1711
  [][] 
  []
 
 File: ./image/pythagoras_orbit_50to60.pdf Graphic file (type pdf)
 <./image/pythagoras_orbit_50to60.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 1690--1691
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1718--1719
  [][] 
  []
 
 File: ./image/pythagoras_orbit_60to70.pdf Graphic file (type pdf)
 <./image/pythagoras_orbit_60to70.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 1695--1696
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1723--1724
  [][] 
  []
 
@@ -552,148 +508,99 @@ File: ./image/pythagoras_E_error.pdf Graphic file (type pdf)
 File: ./image/pythagoras_E_error_detail.pdf Graphic file (type pdf)
 
 <./image/pythagoras_E_error_detail.pdf>
-File: ./image/Nomove_a_100kyr.pdf Graphic file (type pdf)
- <./image/Nomove_a_100kyr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1733--1734
+File: ./image/NoMove_axis_5Myr.pdf Graphic file (type pdf)
+ <./image/NoMove_axis_5Myr.pdf>
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1761--1762
  [][] 
  []
 
-File: ./image/Nomove_a_1Myr.pdf Graphic file (type pdf)
-<./image/Nomove_a_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1738--1739
+File: ./image/Move500kyr_axis_5Myr.pdf Graphic file (type pdf)
+<./image/Move500kyr_axis_5Myr.pdf>
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1769--1770
  [][] 
  []
 
 [43]
-File: ./image/Nomove_ecc_100kyr.pdf Graphic file (type pdf)
- <./image/Nomove_ecc_100kyr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1751--1752
+File: ./image/NoMove_ecc_5Myr.pdf Graphic file (type pdf)
+ <./image/NoMove_ecc_5Myr.pdf>
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1782--1783
  [][] 
  []
 
-File: ./image/Nomove_ecc_1Myr.pdf Graphic file (type pdf)
-<./image/Nomove_ecc_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1756--1757
+File: ./image/Move500kyr_ecc_5Myr.pdf Graphic file (type pdf)
+<./image/Move500kyr_ecc_5Myr.pdf>
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1790--1791
  [][] 
  []
 
-File: ./image/Nomove_inc_100kyr.pdf Graphic file (type pdf)
-<./image/Nomove_inc_100kyr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1769--1770
+File: ./image/NoMove_inc_5Myr.pdf Graphic file (type pdf)
+<./image/NoMove_inc_5Myr.pdf>
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1803--1804
  [][] 
  []
 
-File: ./image/Nomove_inc_1Myr.pdf Graphic file (type pdf)
-<./image/Nomove_inc_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1774--1775
+File: ./image/Move500kyr_inc_5Myr.pdf Graphic file (type pdf)
+<./image/Move500kyr_inc_5Myr.pdf>
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1811--1812
  [][] 
  []
 
 [44]
-File: ./image/Nomove_capitalOMEGA_100kyr.pdf Graphic file (type pdf)
- <./image/Nomove_capitalOMEGA_100kyr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1787--1788
+File: ./image/NoMove_capitalOMEGA_5Myr.pdf Graphic file (type pdf)
+ <./image/NoMove_capitalOMEGA_5Myr.pdf>
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1824--1825
  [][] 
  []
 
-File: ./image/Nomove_capitalOMEGA_1Myr.pdf Graphic file (type pdf)
-<./image/Nomove_capitalOMEGA_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1792--1793
+File: ./image/Move500kyr_capitalOMEGA_5Myr.pdf Graphic file (type pdf)
+<./image/Move500kyr_capitalOMEGA_5Myr.pdf>
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1832--1833
  [][] 
  []
 
-File: ./image/Nomove_smallomega_100kyr.pdf Graphic file (type pdf)
-<./image/Nomove_smallomega_100kyr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1805--1806
+File: ./image/NoMove_smallomega_5Myr.pdf Graphic file (type pdf)
+<./image/NoMove_smallomega_5Myr.pdf>
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1845--1846
  [][] 
  []
 
-File: ./image/Nomove_smallomega_1Myr.pdf Graphic file (type pdf)
-<./image/Nomove_smallomega_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1810--1811
+File: ./image/Move500kyr_smallomega_5Myr.pdf Graphic file (type pdf)
+<./image/Move500kyr_smallomega_5Myr.pdf>
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1853--1854
  [][] 
  []
 
-File: ./image/move500kyr_a_1Myr.pdf Graphic file (type pdf)
-<./image/move500kyr_a_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1825--1826
+File: ./image/NoMove_curlypi_5Myr.pdf Graphic file (type pdf)
+<./image/NoMove_curlypi_5Myr.pdf>
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1866--1867
  [][] 
  []
 
-File: ./image/move500kyr_a_10Myr.pdf Graphic file (type pdf)
-<./image/move500kyr_a_10Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1830--1831
+File: ./image/Move500kyr_curlypi_5Myr.pdf Graphic file (type pdf)
+<./image/Move500kyr_curlypi_5Myr.pdf>
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 1874--1875
  [][] 
  []
 
 [45]
-File: ./image/move500kyr_ecc_1Myr.pdf Graphic file (type pdf)
- <./image/move500kyr_ecc_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1843--1844
- [][] 
- []
-
-File: ./image/move500kyr_ecc_10Myr.pdf Graphic file (type pdf)
-<./image/move500kyr_ecc_10Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1848--1849
- [][] 
- []
-
-File: ./image/move500kyr_inc_1Myr.pdf Graphic file (type pdf)
-<./image/move500kyr_inc_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1861--1862
- [][] 
- []
-
-File: ./image/move500kyr_inc_10Myr.pdf Graphic file (type pdf)
-<./image/move500kyr_inc_10Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1866--1867
- [][] 
- []
-
-File: ./image/move500kyr_capitalOMEGA_1Myr.pdf Graphic file (type pdf)
-<./image/move500kyr_capitalOMEGA_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1879--1880
- [][] 
- []
-
-File: ./image/move500kyr_capitalOMEGA_10Myr.pdf Graphic file (type pdf)
-<./image/move500kyr_capitalOMEGA_10Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1884--1885
- [][] 
- []
-
-[46]
-File: ./image/move500kyr_smallomega_1Myr.pdf Graphic file (type pdf)
- <./image/move500kyr_smallomega_1Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1897--1898
- [][] 
- []
-
-File: ./image/move500kyr_smallomega_10Myr.pdf Graphic file (type pdf)
-<./image/move500kyr_smallomega_10Myr.pdf>
-Overfull \hbox (11.38264pt too wide) in paragraph at lines 1902--1903
- [][] 
- []
-
 File: ./image/PrecessionRate_A.pdf Graphic file (type pdf)
-<./image/PrecessionRate_A.pdf>
+ <./image/PrecessionRate_A.pdf>
 File: ./image/PrecessionRate_B.pdf Graphic file (type pdf)
- <./image/PrecessionRate_B.pdf> [47]
+ <./image/PrecessionRate_B.pdf> [46]
 File: ./image/Nbody_test.pdf Graphic file (type pdf)
 
-<./image/Nbody_test.pdf> [48] (./Isoya.aux)
+<./image/Nbody_test.pdf> [47] (./Isoya.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4154 strings out of 493693
- 61690 string characters out of 6149786
- 135405 words of memory out of 5000000
- 7579 multiletter control sequences out of 15000+600000
+ 4135 strings out of 493693
+ 60887 string characters out of 6149786
+ 135468 words of memory out of 5000000
+ 7568 multiletter control sequences out of 15000+600000
  25857 words of font info for 101 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 36i,22n,43p,740b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,22n,43p,810b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Isoya.dvi (48 pages, 209688 bytes).
+Output written on Isoya.dvi (47 pages, 212932 bytes).
