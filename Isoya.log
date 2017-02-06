@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.11.21)  4 FEB 2017 21:20
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.11.21)  6 FEB 2017 17:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -583,24 +583,22 @@ Overfull \hbox (22.76358pt too wide) in paragraph at lines 1874--1875
  []
 
 [45]
-File: ./image/PrecessionRate_A.pdf Graphic file (type pdf)
- <./image/PrecessionRate_A.pdf>
-File: ./image/PrecessionRate_B.pdf Graphic file (type pdf)
- <./image/PrecessionRate_B.pdf> [46]
+File: ./image/PrecessionRate_logAB.pdf Graphic file (type pdf)
+ <./image/PrecessionRate_logAB.pdf>
 File: ./image/Nbody_test.pdf Graphic file (type pdf)
-
-<./image/Nbody_test.pdf> [47] (./Isoya.aux)
+ <./image/Nbody_test.pdf> [46] [47]
+(./Isoya.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4135 strings out of 493693
- 60887 string characters out of 6149786
+ 4132 strings out of 493693
+ 60805 string characters out of 6149786
  135468 words of memory out of 5000000
- 7568 multiletter control sequences out of 15000+600000
+ 7566 multiletter control sequences out of 15000+600000
  25857 words of font info for 101 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  36i,22n,43p,810b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Isoya.dvi (47 pages, 212932 bytes).
+Output written on Isoya.dvi (47 pages, 212732 bytes).
