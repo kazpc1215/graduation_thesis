@@ -42,4 +42,4 @@
 \contentsline {subsection}{\numberline {8.3}Secular Resonance}{44}
 \contentsline {subsubsection}{\numberline {8.3.1}巨大惑星の運動}{44}
 \contentsline {subsection}{\numberline {8.4}永年共鳴の位置}{46}
-\contentsline {subsection}{\numberline {8.5}計算コードの見直し}{47}
+\contentsline {subsection}{\numberline {8.5}計算コードの見直し}{49}
