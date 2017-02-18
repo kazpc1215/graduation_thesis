@@ -51,7 +51,7 @@
 \makeatother
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{巨大惑星の移動に伴う小天体の力学的進化\\
-- 太陽系の歴史をなんとかかんとか -}
+- 共鳴現象から太陽系の歴史を探る -}
 \date{\today}
 \department{
 名古屋大学 理学部物理学科 4年\\
@@ -915,7 +915,7 @@ G (m_{\rm sun} + m_{\rm comet}) \approx G (m_{\rm sun} + m_{\rm Jupiter}) = 1
 \end{equation}
 これはティスランの関係式 (Tisserand relation (Tisserand 1896)) として知られ，新しく発見された彗星が，惑星に接近して軌道要素を変えられたすでに発見されていた彗星かどうかを判定するのに使うことができる．
 
-\section{摂動関数}
+\section{摂動関数 \label{sec:disturb_func}}
 \ref{sec:3body} 章では，制限問題における惑星の位置から3体問題を扱った．しかし，任意の初期条件で2つの物体から重力の影響を受ける，3体目の物体の運動のより一般的な問題に取り組もうとはしなかった．この問題は積分不可能であるが，3体目の物体が受ける加速度を解析することで議論を進めることができる．運動が中心星または主星に支配されているなら，伴星らの軌道は，相互重力摂動によって円錐曲線から少しずれたものとなる．この章では，摂動関数 (disturbing function) の定義と解析によって，このずれがどのように計算できるのかを示す．
 
 質量 $m_c$ の主星のまわりを質量 $m_i$ の天体が楕円軌道で回っている場合を考える．\ref{sec:2body} 章でみてきたように，この2体問題は積分可能であり，主星の重力効果が質点によるものみなすと，$m_i$ の天体の軌道要素 $a_i, e_i, I_i, \varpi_i, \Omega_i$ は定数である．ここで3体目の天体 $m_j$ を導入すると，$m_c$ との2体問題での加速度に加えて，$m_i$ と $m_j$ 間の相互重力が加速度に足される (図 \ref{fig:disturbingfunc})．主星に対する伴星らの相対的な追加の加速度は，摂動関数と呼ばれる摂動のポテンシャルの勾配から得られる．
@@ -1405,7 +1405,66 @@ e & = e_0 + \frac{n \alpha (m' / m_c) C_4}{2 n' - n - \dot{\varpi}} [\cos (2 \la
 共鳴の「オーダー」$k$ は 摂動関数の偏角のオーダー $N = |j_1 + j_2|$ と等しい．
 
 \section{永年摂動}
+\ref{sec:disturb_func} 章では，どのように摂動関数が永年項，共鳴項，短周期項のような独立した項に分類でき，無限項展開できるのかをみてきた．これまで述べたように，３体以上の多体問題は積分不可能である．しかしこの章では，適切な近似によって，N体問題の特定な場合に対する解析解を見つけることができることを示す．中心星のまわりをN個の天体が回っている系に対する摂動関数のうち，永年項からのみの効果を考えることによって，解析解を見つけることができる．この結果得られる理論は，惑星のまわりを回る衛星，または太陽のまわりを回る惑星に適用でき，そして太陽まわりの系，惑星まわりの系のどちらかを回る小天体の運動の研究に用いられてきた．この理論を永年摂動論という．
 
+\subsection{２つの惑星の永年摂動}
+中心星（質点）$m_c$ からの引力と相互重力の影響を受ける，質量 $m_1, m_2$ の２つの惑星を考える．ここで $m_1 \gg m_c$ かつ $m_2 \gg m_c$ である．${\cal R}_1, {\cal R}_2$ をそれぞれ $m_1, m_2$ の摂動を記述する摂動関数であるとし，${\cal R}_1, {\cal R}_2$ は両方の惑星の標準接触軌道要素の関数である．接触要素とは，摂動を受けずにケプラー運動をすると仮定した天体の位置と速度の値から得られる瞬間的な要素である．軌道要素の摂動は，(\ref{eq:dadt}) から (\ref{eq:dIdt}) 式のラグランジュの惑星方程式で与えられる．２つの惑星の平均運動に尽数関係がない場合，$m_1, m_2, m_c$ 間の重力摂動から生じる永年摂動は，摂動関数うち平均経度を含まない独立した項から得られる．また，(\ref{eq:dadt}) 式より軌道長半径は永年進化に寄与しないため，軌道長半径のみに依存する項を取り除くことができる．離心率と軌道傾斜角の２次のオーダーまでの，一般化された，平均化された，永年項の，摂動関数の直接部は，
+\begin{equation}
+\begin{split}
+{\cal R}_{\rm D}^{\rm (sec)} = & \frac{1}{8} \left[ 2 \alpha_{12} D + \alpha_{12}^2 D^2 \right] b_{1/2}^{(0)} (e_1^2 + e_2^2) - \frac{1}{2} \alpha_{12} b_{3/2}^{(1)} (s_1^2 + s_2^2) \\
+& + \frac{1}{4} \left[ 2 - 2 \alpha_{12} D - \alpha_{12}^2 D^2 \right] b_{1/2}^{(1)} e_1 e_2 \cos (\varpi_1 - \varpi_2) \\
+& + \alpha_{12} b_{3/2}^{(1)} s_1 s_2 \cos (\Omega_1 - \Omega_2) \\
+\end{split} \label{}
+\end{equation}
+ここで，添字 $1,2$ はそれぞれ内側，外側の天体を表し，$a_1 < a_2$ のとき $\alpha_{12} = a_1 / a_2$ 
+である．間接部は永年項には存在しない．実際，すべての間接項は少なくとも一つの平均経度を含み，したがって永年項には決して寄与しない (Brouwer \& Clemence 1961 参照)．
+
+${\cal R}_{\rm D}^{\rm (sec)}$ から ${\cal R}_1, {\cal R}_2$ を計算する際に，${\cal R}_1$ は $m_2$ による外側からの摂動から生じ，一方 ${\cal R}_2$ は $m_1$ による内側からの摂動から生じることを考慮する必要がある．したがって，(\ref{eq:cal_R3}) 式と (\ref{eq:cal_R'3}) 式より，${\cal R}_1, {\cal R}_2$ は次のように書ける．
+\begin{eqnarray}
+{\cal R}_1 & = & \frac{G m_2}{a_2} {\cal R}_{\rm D}^{\rm (sec)} = \frac{G m_2}{a_1} \alpha_{12} {\cal R}_{\rm D}^{\rm (sec)}, \\ \label{}
+{\cal R}_2 & = & \frac{G m_1}{a_1} \alpha_{12} {\cal R}_{\rm D}^{\rm (sec)} = \frac{G m_1}{a_2} {\cal R}_{\rm D}^{\rm (sec)}. \label{}
+\end{eqnarray}
+ラプラス係数とその導関数の関係，
+\begin{eqnarray}
+2 \alpha \frac{d b_{1/2}^{(0)}}{d \alpha} + \alpha^2 \frac{d^2 b_{1/2}^{(0)}}{d \alpha^2} & = & \alpha b_{3/2}^{(1)}, \\ \label{}
+2 b_{1/2}^{(1)} - 2 \alpha \frac{d b_{1/2}^{(1)}}{d \alpha} - \alpha^2 \frac{d^2 b_{1/2}^{(1)}}{d \alpha^2} & = & - \alpha b_{3/2}^{(2)}, \label{}
+\end{eqnarray}
+さらに $G m_c \approx n_1^2 a_1^3 \approx n_2^2 a_2^3$ という近似を用いると，
+\begin{equation}
+\begin{split}
+{\cal R}_1 = n_1^2 a_1^2 \frac{m_2}{m_c + m_1} & \left[ \frac{1}{8} \alpha_{12}^2 b_{3/2}^{(1)} e_1^2 - \frac{1}{8} \alpha_{12} b_{3/2}^{(1)} I_1^2 \right. \\
+& \left. - \frac{1}{4} \alpha_{12}^2 b_{3/2}^{(2)} e_1 e_2 \cos (\varpi_1 - \varpi_2) \right. \\
+& \left. + \frac{1}{4} \alpha_{12}^2 b_{3/2}^{(1)} I_1 I_2 \cos (\Omega_1 - \Omega_2) \right] \\
+\end{split} \label{}
+\end{equation}
+\begin{equation}
+\begin{split}
+{\cal R}_2 = n_2^2 a_2^2 \frac{m_1}{m_c + m_2} & \left[ \frac{1}{8} \alpha_{12}^2 b_{3/2}^{(1)} e_2^2 - \frac{1}{8} \alpha_{12} b_{3/2}^{(1)} I_2^2 \right. \\
+& \left. - \frac{1}{4} \alpha_{12}^2 b_{3/2}^{(2)} e_1 e_2 \cos (\varpi_1 - \varpi_2) \right. \\
+& \left. + \frac{1}{4} \alpha_{12}^2 b_{3/2}^{(1)} I_1 I_2 \cos (\Omega_1 - \Omega_2) \right] \\
+\end{split} \label{}
+\end{equation}
+ここで，$I_1, I_2$ は $s_1 = \sin \frac{1}{2} I_1 \approx \frac{1}{2} I_1, s_2 = \sin \frac{1}{2} I_2 \approx \frac{1}{2} I_2$ と近似できるほど十分に小さいと仮定している．
+
+ 上式の ${\cal R}_1, {\cal R}_2$ の表式を組み合わせると，
+\begin{equation}
+\begin{split}
+{\cal R}_j = n_j^2 a_j^2 & \left[ \frac{1}{2} A_{jj} e_j^2 + A_{jk} e_1 e_2 \cos (\varpi_1 - \varpi_2) \right. \\
+& + \left. \frac{1}{2} B_{jj} I_j^2 + B_{jk} I_1 I_2 \cos (\Omega_1 - \Omega_2) \right]. \\
+\end{split} \label{}
+\end{equation} 
+ここで $j = 1, 2; k = 2, 1 (j \not= k)$ であり，
+\begin{eqnarray}
+A_{jj} & = & + n_j \frac{1}{4} \frac{m_k}{m_c + m_j} \alpha_{12} \bar{\alpha}_{12} b_{3/2}^{(1)} (\alpha_{12}), \\
+A_{jk} & = & - n_j \frac{1}{4} \frac{m_k}{m_c + m_j} \alpha_{12} \bar{\alpha}_{12} b_{3/2}^{(2)} (\alpha_{12}), \\
+B_{jj} & = & - n_j \frac{1}{4} \frac{m_k}{m_c + m_j} \alpha_{12} \bar{\alpha}_{12} b_{3/2}^{(1)} (\alpha_{12}), \\
+B_{jk} & = & + n_j \frac{1}{4} \frac{m_k}{m_c + m_j} \alpha_{12} \bar{\alpha}_{12} b_{3/2}^{(1)} (\alpha_{12}). 
+\end{eqnarray}
+ここで，$j = 1$（内側の摂動源）のとき $\bar{\alpha}_{12} = \alpha_{12}$，$j = 2$（外側の摂動源）のとき $\bar{\alpha}_{12} = 1$ である．ラプラス係数の定義より，
+\begin{eqnarray}
+b_{3/2}^{(1)} (\alpha) & = & \frac{1}{\pi} \int_0^{2 \pi} \frac{\cos \psi d \psi}{(1 - 2 \alpha \cos \psi + \alpha^2)^{3/2}}, \\
+b_{3/2}^{(2)} (\alpha) & = & \frac{1}{\pi} \int_0^{2 \pi} \frac{\cos 2 \psi d \psi}{(1 - 2 \alpha \cos \psi + \alpha^2)^{3/2}}.
+\end{eqnarray}
 
 
 
@@ -1458,7 +1517,7 @@ $\Delta t$ に対して ${\bm x}_{p,j}$ は3次，${\bm v}_{p,j}$ は2次の精�
 ${\bm x}_{p,j}, {\bm v}_{p,j}$ を使い，$t + \Delta t$ での加速度 ${\bm a}_{1,j}$ とその時間微分 $\dot{{\bm a}}_{1,j}$ は以下のように計算される．
 \begin{eqnarray}
 {\bm a}_{1,j} & = & - \sum_{k \not= j} G m_k \frac{{\bm r}_{jk}}{(r_{jk}^2 + \epsilon^2)^{3/2}}, \label{eq:a1j}\\
-\dot{{\bm a}}_{1,j} & = & - \sum_{j} G m_k \left[ \frac{{\bm v}_{jk}}{(r_{jk}^2 + \epsilon^2)^{3/2}} - \frac{3 ( {\bm v}_{jk} \cdot {\bm r}_{jk} ) {\bm r}_{jk} }{(r_{jk}^2 + \epsilon^2)^{5/2}} \right]. \label{eq:a2j}
+\dot{{\bm a}}_{1,j} & = & - \sum_{k \not= j} G m_k \left[ \frac{{\bm v}_{jk}}{(r_{jk}^2 + \epsilon^2)^{3/2}} - \frac{3 ( {\bm v}_{jk} \cdot {\bm r}_{jk} ) {\bm r}_{jk} }{(r_{jk}^2 + \epsilon^2)^{5/2}} \right]. \label{eq:a2j}
 \end{eqnarray}
 
 ここで，
@@ -1488,7 +1547,7 @@ Taylor 展開により，
 この ${\bm a}_{0,j}^{(2)}, {\bm a}_{0,j}^{(3)}$ を使って，位置と速度の予測子 (${\bm x}_{p,j}, {\bm v}_{p,j}$) を以下のように修正する．
 \begin{eqnarray}
 {\bm x}_{c,j} (t + \Delta t) & = & {\bm x}_{p,j} (t + \Delta t) +  \frac{\Delta t ^4}{24} {\bm a}_{0,j}^{(2)} + \alpha \frac{\Delta t ^5}{120} {\bm a}_{0,j}^{(3)}, \\
-{\bm v}_{c,j} (t \Delta t) & = & {\bm v}_{p,j} (t +\Delta t) + \frac{\Delta t ^3}{6} {\bm a}_{0,j}^{(2)} + \frac{\Delta t ^4}{24} {\bm a}_{0,j}^{(3)}. 
+{\bm v}_{c,j} (t + \Delta t) & = & {\bm v}_{p,j} (t +\Delta t) + \frac{\Delta t ^3}{6} {\bm a}_{0,j}^{(2)} + \frac{\Delta t ^4}{24} {\bm a}_{0,j}^{(3)}. 
 \end{eqnarray}
 ここで，普通にTaylor 展開を考えれば，$\alpha = 1$．ただし，$\alpha \not= 1$ とすることもある．この修正により，$\Delta t$ に対して，${\bm x}_j$ は5次，${\bm v}_j$ は4次の精度になる．積分全体の精度は4次．(${\bm a}_{0,j}^{(3)}$ が与えられているので，${\bm x}_j$ は5次まで書いておくが，係数には自由度がある．)
 
@@ -1517,7 +1576,7 @@ ${\bm a}_{1,j}^{\rm new}, \dot{{\bm a}}_{1,j}^{\rm new}$ を ${\bm a}_{1,j}, \do
 {\bm a}_{1,j}^{(3)} & = & {\bm a}_{0,j}^{(3)}, \\
 {\bm a}_{1,j}^{(2)} & = & {\bm a}_{0,j}^{(2)} + {\bm a}_{0,j}^{(3)} \Delta t. 
 \end{eqnarray}
-のように見積もる．これは3次の精度で正しい．(Indiividual timestep ではこのまま進み，Shared timestep では $\Delta t_j$ で最小のものを $\Delta t$ とする．(\ref{sec:timestep} 参照))
+のように見積もる．これは3次の精度で正しい．(Individual timestep ではこのまま進み，Shared timestep では $\Delta t_j$ で最小のものを $\Delta t$ とする．(\ref{sec:timestep} 参照))
 
 そして，\ref{sec:predictor} に戻る．
 
@@ -1758,7 +1817,7 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=8cm]{./image/NoMove_axis_5Myr.pdf}
+\includegraphics[width=8cm]{./image/NoMove_axis_5Myr_JUPSAT.pdf}
 \end{minipage} &
 %調整
 \begin{minipage}[t]{0.1\hsize}
@@ -1766,7 +1825,20 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=8cm]{./image/Move500kyr_axis_5Myr.pdf}
+\includegraphics[width=8cm]{./image/Move500kyr_axis_5Myr_JUPSAT.pdf}
+\end{minipage}\\
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/NoMove_axis_5Myr_URANEP.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/Move500kyr_axis_5Myr_URANEP.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1779,7 +1851,7 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=8cm]{./image/NoMove_ecc_5Myr.pdf}
+\includegraphics[width=8cm]{./image/NoMove_ecc_5Myr_JUPSAT.pdf}
 \end{minipage} &
 %調整
 \begin{minipage}[t]{0.1\hsize}
@@ -1787,7 +1859,20 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=8cm]{./image/Move500kyr_ecc_5Myr.pdf}
+\includegraphics[width=8cm]{./image/Move500kyr_ecc_5Myr_JUPSAT.pdf}
+\end{minipage}\\
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/NoMove_ecc_5Myr_URANEP.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/Move500kyr_ecc_5Myr_URANEP.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1800,7 +1885,7 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=8cm]{./image/NoMove_inc_5Myr.pdf}
+\includegraphics[width=8cm]{./image/NoMove_inc_5Myr_JUPSAT.pdf}
 \end{minipage} &
 %調整
 \begin{minipage}[t]{0.1\hsize}
@@ -1808,7 +1893,20 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=8cm]{./image/Move500kyr_inc_5Myr.pdf}
+\includegraphics[width=8cm]{./image/Move500kyr_inc_5Myr_JUPSAT.pdf}
+\end{minipage}\\
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/NoMove_inc_5Myr_URANEP.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/Move500kyr_inc_5Myr_URANEP.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1821,7 +1919,7 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=8cm]{./image/NoMove_capitalOMEGA_5Myr.pdf}
+\includegraphics[width=8cm]{./image/NoMove_capitalOMEGA_5Myr_JUPSAT.pdf}
 \end{minipage} &
 %調整
 \begin{minipage}[t]{0.1\hsize}
@@ -1829,7 +1927,20 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=8cm]{./image/Move500kyr_capitalOMEGA_5Myr.pdf}
+\includegraphics[width=8cm]{./image/Move500kyr_capitalOMEGA_5Myr_JUPSAT.pdf}
+\end{minipage}\\
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/NoMove_capitalOMEGA_5Myr_URANEP.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/Move500kyr_capitalOMEGA_5Myr_URANEP.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1842,7 +1953,7 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=8cm]{./image/NoMove_smallomega_5Myr.pdf}
+\includegraphics[width=8cm]{./image/NoMove_smallomega_5Myr_JUPSAT.pdf}
 \end{minipage} &
 %調整
 \begin{minipage}[t]{0.1\hsize}
@@ -1850,7 +1961,20 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=8cm]{./image/Move500kyr_smallomega_5Myr.pdf}
+\includegraphics[width=8cm]{./image/Move500kyr_smallomega_5Myr_JUPSAT.pdf}
+\end{minipage}\\
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/NoMove_smallomega_5Myr_URANEP.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/Move500kyr_smallomega_5Myr_URANEP.pdf}
 \end{minipage}
 %
 \end{tabular}
@@ -1863,7 +1987,7 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %左
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=8cm]{./image/NoMove_curlypi_5Myr.pdf}
+\includegraphics[width=8cm]{./image/NoMove_curlypi_5Myr_JUPSAT.pdf}
 \end{minipage} &
 %調整
 \begin{minipage}[t]{0.1\hsize}
@@ -1871,7 +1995,20 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 %右
 \begin{minipage}[t]{0.45\hsize}
 \centering
-\includegraphics[width=8cm]{./image/Move500kyr_curlypi_5Myr.pdf}
+\includegraphics[width=8cm]{./image/Move500kyr_curlypi_5Myr_JUPSAT.pdf}
+\end{minipage}\\
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/NoMove_curlypi_5Myr_URANEP.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/Move500kyr_curlypi_5Myr_URANEP.pdf}
 \end{minipage}
 %
 \end{tabular}
