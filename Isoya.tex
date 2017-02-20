@@ -1562,7 +1562,8 @@ f \left[ f - (B_{11} + B_{22}) \right] = 0
 
 解に関してもう一つ挙げるとすれば，摂動関数の平均化の際に故意に平均経度を取り除いたので，永年解は平均経度に依存しないことである．したがって，２つの惑星の離心率，軌道傾斜角，近日点経度，昇交点経度は予測できるが，位置についての情報はない．
 
-(\ref{eq:hk_eigen}) 式と (\ref{eq:pq_eigen}) 式の解は，全ての天体は「永久に」安定であることを示している．しかし，次のような仮定の下で導出されたことを覚えておくことが重要である: (i) 平均運動が尽数関係にない，(ii) $r_1 < r_2$，(iii) 摂動関数の２次のオーダーまでの展開が運動を記述するのに有効であるほど $e, I$ が十分小さい．しかし，例えば離心率の固有ベクトルの振幅は，軌道交差を起こすほど大きくなる可能性があり，(ii) と (iii) の条件を破ってしまう．これからみるように，平均運動が尽数関係にないという条件があるかもしれないが，それでもなお「微小分母」項が重要である．これまで，質量の１次までしか正しくない理論を導出してきたため，２次までの理論からの重要な寄与を理解することが大切である．
+(\ref{eq:hk_eigen}) 式と (\ref{eq:pq_eigen}) 式の解は，全ての天体は「永久に」安定であることを示している．しかし，次のような仮定の下で導出されたことを覚えておくことが重要である: (i) 平均運動が尽数関係にない，(ii) $r_1 < r_2$，(iii) 摂動関数の２次のオーダーまでの展開が運動を記述するのに有効であるほど $e, I$ が十分小さい．しかし，例えば離心率の固有ベクトルの振幅は，軌道交差を起こすほど大きくなる可能性があり，(ii) と (iii) の条件を破ってしまう．これからみるように，平均運動が尽数関係にないという条件があるかもしれないが，それでもなお「微小分母」項が重要である．
+%これまで，質量の１次までしか正しくない理論を導出してきたため，２次までの理論からの重要な寄与を理解することが大切である．
 
 \subsection{自由要素と強制要素}
 特定の条件下では，相互重力効果の下でケプラー運動する天体の運動に対する永年解を構成することができることを示してきた．そして任意の時間に両方の天体の離心率，軌道傾斜角，近日点経度，昇交点経度を得ることができる．質量を無視でき，中心星の影響下で運動をし，２つの惑星からの摂動を受ける天体（テスト粒子）を追加したときの運動を研究するために，この永年解を利用することができる．\ref{sec:2planet} 節の例のように，テスト粒子の摂動関数 ${\cal R}$ は軌道要素 $a, n, e, I, \varpi, \Omega$ を用いて次のように与えられる．
@@ -1574,36 +1575,34 @@ f \left[ f - (B_{11} + B_{22}) \right] = 0
 \end{equation} 
 ここで，
 \begin{eqnarray}
-A & = & + n \frac{1}{4} \sum_{i = 1}^2 \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(1)} (\alpha_j), \\
-A_j & = & - n \frac{1}{4} \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(2)} (\alpha_j), \\
-B & = & - n \frac{1}{4} \sum_{i = 1}^2 \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(1)} (\alpha_j), \\
-B_j & = & + n \frac{1}{4} \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(1)} (\alpha_j). 
+A & = & + n \frac{1}{4} \sum_{i = 1}^2 \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(1)} (\alpha_j), \label{eq:A_test} \\
+A_j & = & - n \frac{1}{4} \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(2)} (\alpha_j), \label{eq:A_j_test} \\
+B & = & - n \frac{1}{4} \sum_{i = 1}^2 \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(1)} (\alpha_j), \label{eq:B_test} \\
+B_j & = & + n \frac{1}{4} \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(1)} (\alpha_j). \label{eq:B_j_test}
 \end{eqnarray}
 そして，
 \begin{equation}
 \alpha_j = \left\{
-\begin{array}{l}
-a_j / a \quad {\rm if} \quad a_j < a, \\
-a / a_j \quad {\rm if} \quad a_j > a,
+\begin{array}{lll}
+a_j / a & {\rm if} & a_j < a, \\
+a / a_j & {\rm if} & a_j > a,
 \end{array}
 \right.
 \end{equation}
 \begin{equation}
 \bar{\alpha}_j = \left\{
-\begin{array}{l}
-1 \quad {\rm if} \quad a_j < a, \\
-a / a_j \quad {\rm if} \quad a_j > a.
+\begin{array}{lll}
+1 & {\rm if} & a_j < a, \\
+a / a_j & {\rm if} & a_j > a.
 \end{array}
 \right.
 \end{equation}
 
 ここで新しい変数のセット $h, k, p, q$ に変換すると，
-\begin{equation}
-h = e \sin \varpi, \quad k = e \cos \varpi,
-\end{equation}
-\begin{equation}
-p = I \sin \Omega, \quad q = I \cos \Omega.
-\end{equation}
+\begin{eqnarray}
+h = e \sin \varpi, & \quad & k = e \cos \varpi, \\
+p = I \sin \Omega, & \quad & q = I \cos \Omega.
+\end{eqnarray}
 すなわち，
 \begin{equation}
 \begin{split}
@@ -1612,19 +1611,15 @@ p = I \sin \Omega, \quad q = I \cos \Omega.
 \end{split} \label{eq:cal_R_hkpq_test}
 \end{equation} 
 運動方程式は，
-\begin{equation}
-\dot{h} = + \frac{1}{n a^2} \frac{\partial {\cal R}}{\partial k}, \quad \dot{k} = - \frac{1}{n a^2} \frac{\partial {\cal R}}{\partial h},
-\end{equation}
-\begin{equation}
-\dot{p} = + \frac{1}{n a^2} \frac{\partial {\cal R}}{\partial q}, \quad \dot{q} = - \frac{1}{n a^2} \frac{\partial {\cal R}}{\partial p}.
-\end{equation}
+\begin{eqnarray}
+\dot{h} = + \frac{1}{n a^2} \frac{\partial {\cal R}}{\partial k}, & \quad & \dot{k} = - \frac{1}{n a^2} \frac{\partial {\cal R}}{\partial h}, \\
+\dot{p} = + \frac{1}{n a^2} \frac{\partial {\cal R}}{\partial q}, & \quad & \dot{q} = - \frac{1}{n a^2} \frac{\partial {\cal R}}{\partial p}.
+\end{eqnarray}
 (\ref{eq:cal_R_hkpq_test}) 式の ${\cal R}$ を代入すると，運動方程式は次のように書ける．
-\begin{equation}
-\dot{h} = + A k + \sum_{j = 1}^2 A_j k_j, \quad \dot{k} = - A h - \sum_{j = 1}^2 A_j h_j,
-\end{equation}
-\begin{equation}
-\dot{p} = + B q + \sum_{j = 1}^2 B_j q_j, \quad \dot{q} = - B p - \sum_{j = 1}^2 B_j p_j.
-\end{equation}
+\begin{eqnarray}
+\dot{h} = + A k + \sum_{j = 1}^2 A_j k_j, & \quad & \dot{k} = - A h - \sum_{j = 1}^2 A_j h_j, \\
+\dot{p} = + B q + \sum_{j = 1}^2 B_j q_j, & \quad & \dot{q} = - B p - \sum_{j = 1}^2 B_j p_j.
+\end{eqnarray}
 ここで $h_j, k_j, p_j, q_j$ の値は (\ref{eq:hk_eigen}) 式と (\ref{eq:pq_eigen}) 式の永年解から得られ，これらを代入すると，
 \begin{eqnarray}
 \dot{h} & = & + A k + \sum_{j = 1}^2 A_j \sum_{i = 1}^2 e_{ji} \cos (g_i t + \beta_i), \\
@@ -1641,7 +1636,7 @@ p = I \sin \Omega, \quad q = I \cos \Omega.
 \end{eqnarray}
 ここで，
 \begin{equation}
-\nu_i = \sum_{j = 1}^2 A_j e_{ji} \quad {\rm and} \quad \mu_i = \sum_{j=1}^2 B_j I_{ji}.
+\nu_i = \sum_{j = 1}^2 A_j e_{ji} \quad {\rm and} \quad \mu_i = \sum_{j=1}^2 B_j I_{ji}. \label{eq:nu_mu}
 \end{equation}
 これらの微分方程式の解は，
 \begin{eqnarray}
@@ -1650,16 +1645,16 @@ p = I_{\rm free} \sin (B t + \gamma) + p_0 (t), & \quad & q = I_{\rm free} \cos 
 \end{eqnarray}
 ここで，$e_{\rm free}, I_{\rm free}, \beta, \gamma$ は境界条件から決まる定数であり，
 \begin{eqnarray}
-h_0 (t) & = & - \sum_{i = 1}^2 \frac{\nu_i}{A - g_i} \sin (g_i t + \beta_i), \\
-k_0 (t) & = & - \sum_{i = 1}^2 \frac{\nu_i}{A - g_i} \cos (g_i t + \beta_i), \\
-p_0 (t) & = & - \sum_{i = 1}^2 \frac{\mu_i}{B - f_i} \sin (f_i t + \gamma_i), \\
-h_0 (t) & = & - \sum_{i = 1}^2 \frac{\mu_i}{B - f_i} \cos (f_i t + \gamma_i).
+h_0 (t) & = & - \sum_{i = 1}^2 \frac{\nu_i}{A - g_i} \sin (g_i t + \beta_i), \label{eq:h_0} \\
+k_0 (t) & = & - \sum_{i = 1}^2 \frac{\nu_i}{A - g_i} \cos (g_i t + \beta_i), \label{eq:k_0} \\
+p_0 (t) & = & - \sum_{i = 1}^2 \frac{\mu_i}{B - f_i} \sin (f_i t + \gamma_i), \label{eq:p_0} \\
+q_0 (t) & = & - \sum_{i = 1}^2 \frac{\mu_i}{B - f_i} \cos (f_i t + \gamma_i). \label{eq:q_0} 
 \end{eqnarray}
 $h_0, k_0, p_0, q_0$ はテスト粒子の軌道長半径（定数）のみの関数であり，他の軌道要素を含まないことに注意する．しかし，$h_0, k_0, p_0, q_0$ の値は２つの摂動源天体の永年解にも依存するため，これらは時間変化する．
 
 これらの値を，
 \begin{equation}
-e_{\rm forced} = \sqrt{h_0^2 + k_0^2}, \quad I_{\rm forced} = \sqrt{p_0^2 + q_0^2}
+e_{\rm forced} = \sqrt{h_0^2 + k_0^2}, \quad I_{\rm forced} = \sqrt{p_0^2 + q_0^2} \label{eq:forced}
 \end{equation}
 と定義すれば，(\ref{eq:hk_solution}) 式と (\ref{eq:pq_solution}) 式で与えられる解は，簡単な幾何学的解釈をすることができる (図 \ref{fig:geometrical_e}, \ref{fig:geometrical_I} 参照)．$h - k$ 解の場合，粒子の $k$ と $h$ の値は $k - h$ 平面上の一点として定義される．原点からその点までのベクトルは，長さ $e$，$k$ 軸となす角は $\varpi$ である．上で述べた解の観点から，このベクトルは２つの異なるベクトルの足し合わせとみなすことができる．１つ目のベクトルは原点から点 $(k_0, h_0)$ まで，長さ $e_{\rm forced}$，$k$ 軸となす角は $\varpi_{\rm forced}$ である．２つ目のベクトルは点 $(k_0, h_0)$ から点 $(k, h)$ まで，長さ $e_{\rm free}$， $k$ 軸となす角は $\varpi_{\rm free} = A t + \beta$ である．このことから，粒子は点 $(k_0, h_0)$ を中心とし，角速度 $A$ で円運動するとみなすことができる．一方，点 $(k_0, h_0)$ 自身は２つの摂動源天体の永年解によって決定される複雑な軌跡に沿って運動する．このことをイラストにしたのが図 \ref{fig:geometrical_e} である．$e_{\rm forced}, \varpi_{\rm forced}$ は $h_0, k_0$ から導出され，これらは粒子の「強制離心率」，「強制近日点経度」と呼ばれる．これらの値は単に粒子の軌道長半径と２つの摂動源天体の永年解によって決定される．対照的に，$e_{\rm free}, \varpi_{\rm free}$ は粒子の「自由離心率」，「自由近日点経度」と呼ばれ，境界条件から決まり，粒子の基本的な軌道パラメータを示している．これらの物理量は粒子の「固有離心率」，「固有近日点経度」とも呼ばれる．
 
@@ -1675,15 +1670,51 @@ e_{\rm forced} = \sqrt{h_0^2 + k_0^2}, \quad I_{\rm forced} = \sqrt{p_0^2 + q_0^
 \caption{\label{fig:geometrical_I}}
 \end{figure}
 
-図 \ref{fig:geometrical_e} の円は原点を含む必要がないことに注意することが重要である．
+図 \ref{fig:geometrical_e} の円は原点を含む必要がないことに注意することが重要である．$e_{\rm free}$ が十分小さい，または $e_{\rm forced}$ が十分大きい場合，粒子の円運動は，ある固定された角度の範囲の中で $\varpi$（接触近日点経度）または $\Omega$（接触昇交点経度）が変化するようなものになるだろう．
 
+$p - q$ 解は図 \ref{fig:geometrical_I} に示している．ここで $I_{\rm forced}$，$I_{\rm free}$，$\Omega_{\rm forced}$，$\Omega_{\rm free}$ は粒子の強制，自由軌道傾斜角，また強制，自由昇交点経度を表している．この図は，強制軌道傾斜角が自由軌道傾斜角より大きく，円が原点を含んでいないような状況である．上で述べたように，このことは境界条件の結果である．
 
+(\ref{eq:forced}) 式の $e_{\rm forced}, I_{\rm forced}$ は，(\ref{eq:h_0}) 式から (\ref{eq:q_0}) 式の $h_0, k_0, p_0, q_0$ の定義に依存しているため，$A - g_i \approx 0$ または $B - f_i \approx 0$ のどちらかを満たす状況では $e_{\rm forced}, I_{\rm forced}$ の値が大きくなることは明らかである．$g_i, f_i$ は２つの引き合う天体の系の固有振動数である一方で，(\ref{eq:A_test}) 式，(\ref{eq:B_test}) 式より，物理量 $A, B$ はテスト粒子の軌道長半径の関数である． このことは，ある軌道長半径の場所で強制離心率または強制軌道傾斜角の発散が存在することを示している．
 
-
-
-
-
-
+もう一つ重要なことは，２つの摂動源のどちらかの軌道に近づくにつれて $e_{\rm forced}, I_{\rm forced}$ が上限値に近づくことである．(\ref{eq:nu_mu}) 式の $\nu_i, \mu_i$ の定義と同様に，(\ref{eq:A_test}) 式から (\ref{eq:B_j_test}) 式の $A, A_j, B, B_j$ はラプラス係数 $b_{3/2}^{(1)} (\alpha_j), b_{3/2}^{(2)} (\alpha_j)$ を含み，ラプラス係数は $\alpha_j \rightarrow 1$ で無限大に発散するため，摂動源の軌道で $e_{\rm forced}, I_{\rm forced}$ が有限の上限値が存在するかは明らかではない．添字 $j = l$ で示される摂動源の軌道の付近での $e_{\rm forced}$ の振る舞いを考えていると仮定しよう．この場合，
+\begin{equation}
+b_{3/2}^{(1)} (\alpha_l) \rightarrow \infty \quad {\rm and} \quad b_{3/2}^{(2)} (\alpha_l) \rightarrow \infty \quad {\rm as} \quad \alpha_l \rightarrow 1.
+\end{equation}
+摂動源の軌道で $A \gg g_i (i = 1, 2)$ であり，$A_l \gg A_i (i \not= l)$ である．したがって，
+\begin{equation}
+A - g_i \approx A \approx \frac{1}{4} n \frac{m_l}{m_c} \alpha_l \bar{\alpha}_l b_{3/2}^{(1)} (\alpha_l)
+\end{equation}
+そして，
+\begin{equation}
+\nu_i = \sum_{j = 1}^{2} A_j e_{ji} \approx A_l e_{li}.
+\end{equation}
+これにより，
+\begin{equation}
+h_0 (t) \approx - \sum_{i = 1}^{2} \frac{A_l e_{li}}{A} \sin (g_i t + \beta_i) = + \frac{b_{3/2}^{(2)} (\alpha_l)}{b_{3/2}^{(1)} (\alpha_l)} \sum_{i = 1}^{2} e_{li} \sin (g_i t + \beta_i).
+\end{equation}
+ラプラス係数の定義から，次のように書くこともできる．
+\begin{equation}
+\frac{1}{2} b_{s}^{(j)} (\alpha) = \frac{s (s + 1) \cdots (s + j - 1)}{j !} \alpha^j F (s, s + j, j + 1; \alpha^2)
+\end{equation}
+ここで $F (a, b, c; d)$ は標準超幾何関数であり，超幾何級数の特性とそれらと楕円積分との関係から，
+\begin{equation}
+\lim_{\alpha_l \rightarrow 1} \frac{b_{3/2}^{(2)} (\alpha_l)}{b_{3/2}^{(1)} (\alpha_l)} = \lim_{\alpha_l \rightarrow 1} \left[ \frac{5}{4} \alpha_l \frac{F (\frac{3}{2}, \frac{7}{2}, 3; \alpha_l^2)}{F (\frac{3}{2}, \frac{5}{2}, 2; \alpha_l^2)} \right] = 1
+\end{equation}
+したがって，
+\begin{equation}
+\lim_{\alpha_l \rightarrow 1} h_0 (t) = \sum_{i = 1}^2 e_{li} \sin (g_i t + \beta_i) = h_l
+\end{equation}
+同様に，
+\begin{equation}
+\lim_{\alpha_l \rightarrow 1} k_0 (t) = \sum_{i = 1}^2 e_{li} \cos (g_i t + \beta_i) = k_l
+\end{equation}
+ゆえに，摂動源天体 $l$ の軌道に近づくにつれて，
+\begin{equation}
+e_{\rm forced} = \sqrt{h_0^2 + k_0^2} \rightarrow \sqrt{h_l^2 + k_l^2} = e_l 
+\end{equation}
+になる．このことは，摂動源天体の軌道での強制離心率と強制近日点経度は，摂動源天体の離心率と近日点経度に等しいことを示している．上で述べたものと同じ手法を用いると，強制軌道傾斜角と強制昇交点経度についても同様な結果が示される．
+%しかし，摂動源天体の軌道付近における粒子の軌道の性質について，一般化をしすぎることに注意する必要がある．
+強制離心率と強制軌道傾斜角を考えてきた結果は，$e, I$ が小さい値のときにのみ有効である．
 
 
 
