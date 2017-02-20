@@ -1405,9 +1405,9 @@ e & = e_0 + \frac{n \alpha (m' / m_c) C_4}{2 n' - n - \dot{\varpi}} [\cos (2 \la
 共鳴の「オーダー」$k$ は 摂動関数の偏角のオーダー $N = |j_1 + j_2|$ と等しい．
 
 \section{永年摂動}
-\ref{sec:disturb_func} 章では，どのように摂動関数が永年項，共鳴項，短周期項のような独立した項に分類でき，無限項展開できるのかをみてきた．これまで述べたように，３体以上の多体問題は積分不可能である．しかしこの章では，適切な近似によって，N体問題の特定な場合に対する解析解を見つけることができることを示す．中心星のまわりをN個の天体が回っている系に対する摂動関数のうち，永年項からのみの効果を考えることによって，解析解を見つけることができる．この結果得られる理論は，惑星のまわりを回る衛星，または太陽のまわりを回る惑星に適用でき，そして太陽まわりの系，惑星まわりの系のどちらかを回る小天体の運動の研究に用いられてきた．この理論を永年摂動論という．
+\ref{sec:disturb_func} 章では，摂動関数がどのように永年項，共鳴項，短周期項のような独立した項に分類でき，無限項展開できるのかをみてきた．これまで述べたように，３体以上の多体問題は積分不可能である．しかしこの章では，適切な近似によって，N体問題の特定な場合に対する解析解を見つけることができることを示す．中心星のまわりをN個の天体が回っている系に対する摂動関数のうち，永年項からのみの効果を考えることによって，解析解を見つけることができる．この結果得られる理論は，惑星のまわりを回る衛星，または太陽のまわりを回る惑星に適用でき，そして太陽まわりの系，惑星まわりの系のどちらかを回る小天体の運動の研究に用いられてきた．この理論を永年摂動論という．
 
-\subsection{２つの惑星の永年摂動}
+\subsection{２つの惑星の永年摂動 \label{sec:2planet}}
 中心星（質点）$m_c$ からの引力と相互重力の影響を受ける，質量 $m_1, m_2$ の２つの惑星を考える．ここで $m_1 \gg m_c$ かつ $m_2 \gg m_c$ である．${\cal R}_1, {\cal R}_2$ をそれぞれ $m_1, m_2$ の摂動を記述する摂動関数であるとし，${\cal R}_1, {\cal R}_2$ は両方の惑星の標準接触軌道要素の関数である．接触要素とは，摂動を受けずにケプラー運動をすると仮定した天体の位置と速度の値から得られる瞬間的な要素である．軌道要素の摂動は，(\ref{eq:dadt}) から (\ref{eq:dIdt}) 式のラグランジュの惑星方程式で与えられる．２つの惑星の平均運動に尽数関係がない場合，$m_1, m_2, m_c$ 間の重力摂動から生じる永年摂動は，摂動関数うち平均経度を含まない独立した項から得られる．また，(\ref{eq:dadt}) 式より軌道長半径は永年進化に寄与しないため，軌道長半径のみに依存する項を取り除くことができる．離心率と軌道傾斜角の２次のオーダーまでの，一般化された，平均化された，永年項の，摂動関数の直接部は，
 \begin{equation}
 \begin{split}
@@ -1457,37 +1457,241 @@ ${\cal R}_{\rm D}^{\rm (sec)}$ から ${\cal R}_1, {\cal R}_2$ を計算する�
 \begin{eqnarray}
 A_{jj} & = & + n_j \frac{1}{4} \frac{m_k}{m_c + m_j} \alpha_{12} \bar{\alpha}_{12} b_{3/2}^{(1)} (\alpha_{12}), \\
 A_{jk} & = & - n_j \frac{1}{4} \frac{m_k}{m_c + m_j} \alpha_{12} \bar{\alpha}_{12} b_{3/2}^{(2)} (\alpha_{12}), \\
-B_{jj} & = & - n_j \frac{1}{4} \frac{m_k}{m_c + m_j} \alpha_{12} \bar{\alpha}_{12} b_{3/2}^{(1)} (\alpha_{12}), \\
-B_{jk} & = & + n_j \frac{1}{4} \frac{m_k}{m_c + m_j} \alpha_{12} \bar{\alpha}_{12} b_{3/2}^{(1)} (\alpha_{12}). 
+B_{jj} & = & - n_j \frac{1}{4} \frac{m_k}{m_c + m_j} \alpha_{12} \bar{\alpha}_{12} b_{3/2}^{(1)} (\alpha_{12}), \label{eq:B_jj} \\
+B_{jk} & = & + n_j \frac{1}{4} \frac{m_k}{m_c + m_j} \alpha_{12} \bar{\alpha}_{12} b_{3/2}^{(1)} (\alpha_{12}). \label{eq:B_jk}
 \end{eqnarray}
 ここで，$j = 1$（内側の摂動源）のとき $\bar{\alpha}_{12} = \alpha_{12}$，$j = 2$（外側の摂動源）のとき $\bar{\alpha}_{12} = 1$ である．ラプラス係数の定義より，
 \begin{eqnarray}
 b_{3/2}^{(1)} (\alpha) & = & \frac{1}{\pi} \int_0^{2 \pi} \frac{\cos \psi d \psi}{(1 - 2 \alpha \cos \psi + \alpha^2)^{3/2}}, \\
 b_{3/2}^{(2)} (\alpha) & = & \frac{1}{\pi} \int_0^{2 \pi} \frac{\cos 2 \psi d \psi}{(1 - 2 \alpha \cos \psi + \alpha^2)^{3/2}}.
 \end{eqnarray}
+この場合， $B_{11} = - B_{12}, B_{21} = - B_{22}$ となることに注意する．しかし，中心星の偏平率を考慮した場合，この状況とは異なる．これら全ては振動数であり，２つの行列 ${\rm A}, {\rm B}$ の定数要素と見なすことができる．
+\begin{equation}
+{\rm A} = 
+\begin{pmatrix}
+A_{11} & A_{12}\\
+A_{21} & A_{22}\\
+\end{pmatrix}
+\quad {\rm and} \quad
+{\rm B} = 
+\begin{pmatrix}
+B_{11} & B_{12}\\
+B_{21} & B_{22}\\
+\end{pmatrix}.
+\end{equation}
+これらの行列の要素は２つの惑星の質量と（固定された）軌道長半径のみの関数であり，行列 ${\rm B}$ の行（または列）は線形独立ではないことに注意する．
 
+(\ref{eq:dedt}), (\ref{eq:dOmegadt}), (\ref{eq:dvarpidt}), (\ref{eq:dIdt}) 式で $e, I$ の最低次の項を考えると，軌道要素の時間微分を得るためのラグランジュの惑星方程式の近似形を簡単に導出することができる．
+\begin{equation}
+\dot{e}_j = - \frac{1}{n_j a_j^2 e_j} \frac{\partial {\cal R}_j}{\partial \varpi_j}, \quad \dot{\varpi}_j = + \frac{1}{n_j a_j^2 e_j} \frac{\partial {\cal R}_j}{\partial e_j}, \label{eq:edot_varpidot}
+\end{equation}
+\begin{equation}
+\dot{I}_j = - \frac{1}{n_j a_j^2 I_j} \frac{\partial {\cal R}_j}{\partial \Omega_j}, \quad \dot{\Omega}_j = + \frac{1}{n_j a_j^2 I_j} \frac{\partial {\cal R}_j}{\partial I_j}. \label{eq:Idot_Omegadot}
+\end{equation}
 
+上の方程式の形が与えられたとき，以下のように離心率と軌道傾斜角の「ベクトル」の垂直成分と水平成分を定義すると便利である．
+\begin{equation}
+h_j = e_j \sin \varpi_j, \quad k_j = e_j \cos \varpi_j,
+\end{equation}
+\begin{equation}
+p_j = I_j \sin \Omega_j, \quad q_j = I_j \cos \Omega_j.
+\end{equation}
+これらの変数は，(\ref{eq:edot_varpidot}), (\ref{eq:Idot_Omegadot}) 式で $e, I$ が小さいときに発散するという問題を避ける点で有利である．ここまでで，摂動関数の一般化された永年項はこのように書ける．
+\begin{equation}
+\begin{split}
+{\cal R}_j = n_j a_j^2 & \left[ \frac{1}{2} A_{jj} (h_j^2 + k_j^2) + A_{jk} (h_j h_k + k_j k_k) \right. \\
+& + \left. \frac{1}{2} B_{jj} (p_j^2 + q_j^2) + B_{jk} (p_j p_k + q_j q_k) \right]. \\
+\end{split} \label{eq:cal_R_hkpq}
+\end{equation} 
+ここで，$k$ を添字として用いるときには，常に1か2と等しく，内側か外側の惑星を指しており，離心率ベクトルの水平成分と混同しないように注意する．
 
+$h_j, k_j, p_j, q_j$ は２変数の関数なので，次のように書ける．
+\begin{equation}
+\frac{d h_j}{dt} = \frac{\partial h_j}{\partial e_j} \frac{d e_j}{dt} + \frac{\partial h_j}{\partial \varpi_j} \frac{d \varpi_j}{dt} , \quad \frac{d k_j}{dt} = \frac{\partial k_j}{\partial e_j} \frac{d e_j}{dt} + \frac{\partial k_j}{\partial \varpi_j} \frac{d \varpi_j}{dt},
+\end{equation}
+\begin{equation}
+\frac{d p_j}{dt} = \frac{\partial p_j}{\partial I_j} \frac{d I_j}{dt} + \frac{\partial p_j}{\partial \Omega_j} \frac{d \Omega_j}{dt} , \quad \frac{d q_j}{dt} = \frac{\partial q_j}{\partial I_j} \frac{d I_j}{dt} + \frac{\partial q_j}{\partial \Omega_j} \frac{d \Omega_j}{dt}.
+\end{equation}
+ここで，偏微分は上の定義より次のように与えられる．
+\begin{equation}
+\frac{\partial h_j}{\partial e_j} = \frac{h_j}{e_j}, \quad \frac{\partial k_j}{\partial e_j} = \frac{k_j}{e_j}, \quad \frac{\partial h_j}{\partial \varpi_j} = + k_j, \quad \frac{\partial k_j}{\partial \varpi_j} = - h_j,
+\end{equation}
+\begin{equation}
+\frac{\partial p_j}{\partial I_j} = \frac{p_j}{I_j}, \quad \frac{\partial q_j}{\partial I_j} = \frac{q_j}{I_j}, \quad \frac{\partial p_j}{\partial \Omega_j} = + q_j, \quad \frac{\partial q_j}{\partial \Omega_j} = - p_j.
+\end{equation}
+計算を進めると，(\ref{eq:cal_R_hkpq}) 式の ${\cal R}_j$ を用いて，以下のような摂動方程式が得られる．
+\begin{equation}
+\dot{h}_j = + \frac{1}{n_j a_j^2} \frac{\partial {\cal R}_j}{\partial k_j}, \quad \dot{k}_j = - \frac{1}{n_j a_j^2} \frac{\partial {\cal R}_j}{\partial h_j},
+\end{equation}
+\begin{equation}
+\dot{p}_j = + \frac{1}{n_j a_j^2} \frac{\partial {\cal R}_j}{\partial q_j}, \quad \dot{q}_j = - \frac{1}{n_j a_j^2} \frac{\partial {\cal R}_j}{\partial p_j}.
+\end{equation}
+ゆえに $h_j, k_j, p_j, q_j (j = 1, 2)$ の導関数の方程式は，
+\begin{equation}
+\begin{split}
+\dot{h}_1= + A_{11} k_1 + A_{12} k_2, & \quad \dot{k}_1 = - A_{11} h_1 - A_{12} h_2, \\
+\dot{h}_2 = + A_{21} k_1 + A_{22} k_2, & \quad \dot{k}_2 = - A_{21} h_1 - A_{22} h_2, \\
+\dot{p}_1 = + B_{11} q_1 + B_{12} q_2, & \quad \dot{q}_1 = - B_{11} p_1 - B_{12} p_2, \\
+\dot{p}_2 = + B_{21} q_1 + B_{22} q_2, & \quad \dot{q}_2 = - B_{21} p_1 - B_{22} p_2.
+\end{split}
+\end{equation}
+したがって，最低次まででは，$\{ h_j, k_j \}$ の時間微分は $\{ p_j, q_j \}$ の時間微分と分離されている．さらに，これらは定数係数の線形微分方程式であり，よって永年摂動の問題は２つの固有値問題にまとめられる．その解は，
+\begin{equation}
+h_j = \sum_{i = 1}^2 e_{ji} \sin (g_i t + \beta_i), \quad k_j = \sum_{i=1}^2 e_{ji} \cos (g_i t + \beta_i), \label{eq:hk_eigen}
+\end{equation}
+\begin{equation}
+p_j = \sum_{i = 1}^2 I_{ji} \sin (f_i t + \gamma_i), \quad q_j = \sum_{i=1}^2 I_{ji} \cos (f_i t + \gamma_i). \label{eq:pq_eigen}
+\end{equation}
+ここで，振動数 $g_i (i = 1, 2)$ は行列 ${\rm A}$ の固有値，$e_{ji}$ は固有ベクトルの２つの要素に対応しており，また振動数 $f_i (i = 1, 2)$ は行列 ${\rm B}$ の固有値，$I_{ji}$ は固有ベクトルの２つの要素に対応している．位相 $\beta_i, \gamma_i$ は，固有ベクトルの振幅と同様に，初期条件によって決まる．これはある時刻に離心率と軌道傾斜角の接触要素を観測することに対応する．(\ref{eq:hk_eigen}) 式と(\ref{eq:pq_eigen}) 式で記述される解は，永年問題の古典的な「ラプラス−ラグランジュ永年解」と呼ばれる．
 
+固有値問題の解の導入によって，２つの惑星に関係する物理量と２つの固有モードに関係する物理量を混同しやすくなっている．ここで用いる表記法では，添字 $j$ が常に惑星の番号を指し，一方添字 $i$ は常にモードの番号を指すことにする．
 
+この問題の場合は，行列 ${\rm B}$ の特性方程式は
+\begin{equation}
+\begin{vmatrix}
+B_{11} - f & B_{12} \\
+B_{21} & B_{22} - f \\
+\end{vmatrix}
+= 0
+\end{equation}
+であり，(\ref{eq:B_jj}) 式と (\ref{eq:B_jk}) 式の定義より $B_{11} B_{22} - B_{12} B_{21} = 0$ であるから，
+\begin{equation}
+f \left[ f - (B_{11} + B_{22}) \right] = 0
+\end{equation}
+とまとめられる．したがって，特性方程式の解の一つは $f_1 = 0$ であり，この固有値問題には縮退がある．このことによって $\{ h, k \}$ と $\{ p, q \}$ の解の微妙な違いがはっきりとした．偏心軌道は非対称性と基準線を導入する一方で，球対称または質点の中心天体の場合はもっともらしい基準面を持たない．物理的には相互の軌道傾斜角について議論することに意味があるため，基準面の選び方には任意性がある．例えば，衛星の軌道は慣習的に惑星の赤道面を基準面とする（つまり惑星の自転の回転ベクトルに垂直な平面）．しかし，球対称でない中心天体を導入することで行列 ${\rm B}$ の対角成分に項が足され，縮退する問題はなくなる． 
 
+解に関してもう一つ挙げるとすれば，摂動関数の平均化の際に故意に平均経度を取り除いたので，永年解は平均経度に依存しないことである．したがって，２つの惑星の離心率，軌道傾斜角，近日点経度，昇交点経度は予測できるが，位置についての情報はない．
 
+(\ref{eq:hk_eigen}) 式と (\ref{eq:pq_eigen}) 式の解は，全ての天体は「永久に」安定であることを示している．しかし，次のような仮定の下で導出されたことを覚えておくことが重要である: (i) 平均運動が尽数関係にない，(ii) $r_1 < r_2$，(iii) 摂動関数の２次のオーダーまでの展開が運動を記述するのに有効であるほど $e, I$ が十分小さい．しかし，例えば離心率の固有ベクトルの振幅は，軌道交差を起こすほど大きくなる可能性があり，(ii) と (iii) の条件を破ってしまう．これからみるように，平均運動が尽数関係にないという条件があるかもしれないが，それでもなお「微小分母」項が重要である．これまで，質量の１次までしか正しくない理論を導出してきたため，２次までの理論からの重要な寄与を理解することが大切である．
 
+\subsection{自由要素と強制要素}
+特定の条件下では，相互重力効果の下でケプラー運動する天体の運動に対する永年解を構成することができることを示してきた．そして任意の時間に両方の天体の離心率，軌道傾斜角，近日点経度，昇交点経度を得ることができる．質量を無視でき，中心星の影響下で運動をし，２つの惑星からの摂動を受ける天体（テスト粒子）を追加したときの運動を研究するために，この永年解を利用することができる．\ref{sec:2planet} 節の例のように，テスト粒子の摂動関数 ${\cal R}$ は軌道要素 $a, n, e, I, \varpi, \Omega$ を用いて次のように与えられる．
+\begin{equation}
+\begin{split}
+{\cal R} = n a^2 & \left[ \frac{1}{2} A e^2 + \frac{1}{2} B I^2 \right. \\
+& \left. + \sum_{j = 1}^2  A_j e e_j \cos (\varpi - \varpi_j) + \sum_{j = 1}^2 B_j I I_j \cos (\Omega - \Omega_j) \right]. \\
+\end{split} \label{}
+\end{equation} 
+ここで，
+\begin{eqnarray}
+A & = & + n \frac{1}{4} \sum_{i = 1}^2 \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(1)} (\alpha_j), \\
+A_j & = & - n \frac{1}{4} \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(2)} (\alpha_j), \\
+B & = & - n \frac{1}{4} \sum_{i = 1}^2 \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(1)} (\alpha_j), \\
+B_j & = & + n \frac{1}{4} \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(1)} (\alpha_j). 
+\end{eqnarray}
+そして，
+\begin{equation}
+\alpha_j = \left\{
+\begin{array}{l}
+a_j / a \quad {\rm if} \quad a_j < a, \\
+a / a_j \quad {\rm if} \quad a_j > a,
+\end{array}
+\right.
+\end{equation}
+\begin{equation}
+\bar{\alpha}_j = \left\{
+\begin{array}{l}
+1 \quad {\rm if} \quad a_j < a, \\
+a / a_j \quad {\rm if} \quad a_j > a.
+\end{array}
+\right.
+\end{equation}
 
+ここで新しい変数のセット $h, k, p, q$ に変換すると，
+\begin{equation}
+h = e \sin \varpi, \quad k = e \cos \varpi,
+\end{equation}
+\begin{equation}
+p = I \sin \Omega, \quad q = I \cos \Omega.
+\end{equation}
+すなわち，
+\begin{equation}
+\begin{split}
+{\cal R} = n a^2 & \left[ \frac{1}{2} A (h^2 + k^2) + \frac{1}{2} B (p^2 + q^2) \right. \\
+& \left. + \sum_{j = 1}^2 A_j (h h_j + k k_j) + \sum_{j = 1}^2 B_j (p p_j + q q_j) \right]. \\
+\end{split} \label{eq:cal_R_hkpq_test}
+\end{equation} 
+運動方程式は，
+\begin{equation}
+\dot{h} = + \frac{1}{n a^2} \frac{\partial {\cal R}}{\partial k}, \quad \dot{k} = - \frac{1}{n a^2} \frac{\partial {\cal R}}{\partial h},
+\end{equation}
+\begin{equation}
+\dot{p} = + \frac{1}{n a^2} \frac{\partial {\cal R}}{\partial q}, \quad \dot{q} = - \frac{1}{n a^2} \frac{\partial {\cal R}}{\partial p}.
+\end{equation}
+(\ref{eq:cal_R_hkpq_test}) 式の ${\cal R}$ を代入すると，運動方程式は次のように書ける．
+\begin{equation}
+\dot{h} = + A k + \sum_{j = 1}^2 A_j k_j, \quad \dot{k} = - A h - \sum_{j = 1}^2 A_j h_j,
+\end{equation}
+\begin{equation}
+\dot{p} = + B q + \sum_{j = 1}^2 B_j q_j, \quad \dot{q} = - B p - \sum_{j = 1}^2 B_j p_j.
+\end{equation}
+ここで $h_j, k_j, p_j, q_j$ の値は (\ref{eq:hk_eigen}) 式と (\ref{eq:pq_eigen}) 式の永年解から得られ，これらを代入すると，
+\begin{eqnarray}
+\dot{h} & = & + A k + \sum_{j = 1}^2 A_j \sum_{i = 1}^2 e_{ji} \cos (g_i t + \beta_i), \\
+\dot{k} & = & - A h - \sum_{j = 1}^2 A_j \sum_{i = 1}^2 e_{ji} \sin (g_i t + \beta_i), \\
+\dot{p} & = & + B q + \sum_{j = 1}^2 B_j \sum_{i = 1}^2 I_{ji} \cos (f_i t + \gamma_i), \\
+\dot{q} & = & - B p - \sum_{j = 1}^2 B_j \sum_{i = 1}^2 I_{ji} \sin (f_i t + \gamma_i).
+\end{eqnarray}
+各項をさらに時間微分し整理すると，
+\begin{eqnarray}
+\ddot{h} & = & - A^2 h - \sum_{i = 1}^2 \nu_i (A + g_i) \sin (g_i t + \beta_i), \\
+\ddot{k} & = & - A^2 k - \sum_{i = 1}^2 \nu_i (A + g_i) \cos (g_i t + \beta_i), \\
+\ddot{p} & = & - B^2 p - \sum_{i = 1}^2 \mu_i (B + f_i) \sin (f_i t + \gamma_i), \\
+\ddot{q} & = & - B^2 h - \sum_{i = 1}^2 \mu_i (B + f_i) \cos (f_i t + \gamma_i).
+\end{eqnarray}
+ここで，
+\begin{equation}
+\nu_i = \sum_{j = 1}^2 A_j e_{ji} \quad {\rm and} \quad \mu_i = \sum_{j=1}^2 B_j I_{ji}.
+\end{equation}
+これらの微分方程式の解は，
+\begin{eqnarray}
+h = e_{\rm free} \sin (A t + \beta) + h_0 (t), & \quad & k = e_{\rm free} \cos (A t + \beta) + k_0 (t), \label{eq:hk_solution} \\
+p = I_{\rm free} \sin (B t + \gamma) + p_0 (t), & \quad & q = I_{\rm free} \cos (B t + \gamma) + q_0 (t). \label{eq:pq_solution}
+\end{eqnarray}
+ここで，$e_{\rm free}, I_{\rm free}, \beta, \gamma$ は境界条件から決まる定数であり，
+\begin{eqnarray}
+h_0 (t) & = & - \sum_{i = 1}^2 \frac{\nu_i}{A - g_i} \sin (g_i t + \beta_i), \\
+k_0 (t) & = & - \sum_{i = 1}^2 \frac{\nu_i}{A - g_i} \cos (g_i t + \beta_i), \\
+p_0 (t) & = & - \sum_{i = 1}^2 \frac{\mu_i}{B - f_i} \sin (f_i t + \gamma_i), \\
+h_0 (t) & = & - \sum_{i = 1}^2 \frac{\mu_i}{B - f_i} \cos (f_i t + \gamma_i).
+\end{eqnarray}
+$h_0, k_0, p_0, q_0$ はテスト粒子の軌道長半径（定数）のみの関数であり，他の軌道要素を含まないことに注意する．しかし，$h_0, k_0, p_0, q_0$ の値は２つの摂動源天体の永年解にも依存するため，これらは時間変化する．
 
-
+これらの値を，
+\begin{equation}
+e_{\rm forced} = \sqrt{h_0^2 + k_0^2}, \quad I_{\rm forced} = \sqrt{p_0^2 + q_0^2}
+\end{equation}
+と定義すれば，(\ref{eq:hk_solution}) 式と (\ref{eq:pq_solution}) 式で与えられる解は，簡単な幾何学的解釈をすることができる (図 \ref{fig:geometrical_e}, \ref{fig:geometrical_I} 参照)．$h - k$ 解の場合，粒子の $k$ と $h$ の値は $k - h$ 平面上の一点として定義される．原点からその点までのベクトルは，長さ $e$，$k$ 軸となす角は $\varpi$ である．上で述べた解の観点から，このベクトルは２つの異なるベクトルの足し合わせとみなすことができる．１つ目のベクトルは原点から点 $(k_0, h_0)$ まで，長さ $e_{\rm forced}$，$k$ 軸となす角は $\varpi_{\rm forced}$ である．２つ目のベクトルは点 $(k_0, h_0)$ から点 $(k, h)$ まで，長さ $e_{\rm free}$， $k$ 軸となす角は $\varpi_{\rm free} = A t + \beta$ である．このことから，粒子は点 $(k_0, h_0)$ を中心とし，角速度 $A$ で円運動するとみなすことができる．一方，点 $(k_0, h_0)$ 自身は２つの摂動源天体の永年解によって決定される複雑な軌跡に沿って運動する．このことをイラストにしたのが図 \ref{fig:geometrical_e} である．$e_{\rm forced}, \varpi_{\rm forced}$ は $h_0, k_0$ から導出され，これらは粒子の「強制離心率」，「強制近日点経度」と呼ばれる．これらの値は単に粒子の軌道長半径と２つの摂動源天体の永年解によって決定される．対照的に，$e_{\rm free}, \varpi_{\rm free}$ は粒子の「自由離心率」，「自由近日点経度」と呼ばれ，境界条件から決まり，粒子の基本的な軌道パラメータを示している．これらの物理量は粒子の「固有離心率」，「固有近日点経度」とも呼ばれる．
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{./image/sec7_2.pdf}
-\caption{\label{}}
+\includegraphics[width=8cm]{./image/sec7_2.pdf}
+\caption{\label{fig:geometrical_e}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{./image/sec7_3.pdf}
-\caption{\label{}}
+\includegraphics[width=8cm]{./image/sec7_3.pdf}
+\caption{\label{fig:geometrical_I}}
 \end{figure}
+
+図 \ref{fig:geometrical_e} の円は原点を含む必要がないことに注意することが重要である．
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \section{手法}
 \subsection{4次のエルミート法 \label{sec:Hermite}}

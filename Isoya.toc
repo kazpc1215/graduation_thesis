@@ -18,29 +18,30 @@
 \contentsline {subsubsection}{\numberline {4.5.2}共鳴項 }{31}
 \contentsline {subsubsection}{\numberline {4.5.3}短周期項と微小振幅項}{32}
 \contentsline {section}{\numberline {5}永年摂動}{33}
-\contentsline {subsection}{\numberline {5.1}２つの惑星の永年摂動}{33}
-\contentsline {section}{\numberline {6}手法}{35}
-\contentsline {subsection}{\numberline {6.1}4次のエルミート法 }{35}
-\contentsline {subsubsection}{\numberline {6.1.1}手順}{35}
-\contentsline {subsubsection}{\numberline {6.1.2}予測子を求める }{36}
-\contentsline {subsubsection}{\numberline {6.1.3}予測子から加速度と加速度の時間微分を求める}{36}
-\contentsline {subsubsection}{\numberline {6.1.4}${\bm {a}}^{(2)}, {\bm {a}}^{(3)}$ を求める．}{36}
-\contentsline {subsubsection}{\numberline {6.1.5}予測子の修正}{37}
-\contentsline {subsubsection}{\numberline {6.1.6}修正された予測子を使って加速度および加速度の時間微分を求める}{37}
-\contentsline {subsubsection}{\numberline {6.1.7}次のステップの準備}{37}
-\contentsline {subsection}{\numberline {6.2}中心星重力}{38}
-\contentsline {subsection}{\numberline {6.3}タイムステップ }{39}
-\contentsline {subsubsection}{\numberline {6.3.1}Variable Timestep (可変タイムステップ) }{39}
-\contentsline {subsubsection}{\numberline {6.3.2}Shared Timestep (共有タイムステップ) とその限界}{40}
-\contentsline {subsubsection}{\numberline {6.3.3}Individual Timestep (独立タイムステップ) }{40}
-\contentsline {section}{\numberline {7}重力散乱テスト計算}{41}
-\contentsline {subsection}{\numberline {7.1}1体のケプラー運動 (エネルギー，角運動量とタイムステップの関係)}{41}
-\contentsline {subsection}{\numberline {7.2}円軌道の惑星と微惑星の重力散乱}{41}
-\contentsline {subsection}{\numberline {7.3}ピタゴラス問題}{43}
-\contentsline {section}{\numberline {8}本計算}{46}
-\contentsline {subsection}{\numberline {8.1}Kuiper Belt}{46}
-\contentsline {subsection}{\numberline {8.2}Asteroid Belt}{46}
-\contentsline {subsection}{\numberline {8.3}Secular Resonance}{46}
-\contentsline {subsubsection}{\numberline {8.3.1}巨大惑星の運動}{46}
-\contentsline {subsection}{\numberline {8.4}永年共鳴の位置}{51}
-\contentsline {subsection}{\numberline {8.5}計算コードの見直し}{54}
+\contentsline {subsection}{\numberline {5.1}２つの惑星の永年摂動 }{33}
+\contentsline {subsection}{\numberline {5.2}自由要素と強制要素}{36}
+\contentsline {section}{\numberline {6}手法}{40}
+\contentsline {subsection}{\numberline {6.1}4次のエルミート法 }{40}
+\contentsline {subsubsection}{\numberline {6.1.1}手順}{40}
+\contentsline {subsubsection}{\numberline {6.1.2}予測子を求める }{40}
+\contentsline {subsubsection}{\numberline {6.1.3}予測子から加速度と加速度の時間微分を求める}{40}
+\contentsline {subsubsection}{\numberline {6.1.4}${\bm {a}}^{(2)}, {\bm {a}}^{(3)}$ を求める．}{41}
+\contentsline {subsubsection}{\numberline {6.1.5}予測子の修正}{41}
+\contentsline {subsubsection}{\numberline {6.1.6}修正された予測子を使って加速度および加速度の時間微分を求める}{41}
+\contentsline {subsubsection}{\numberline {6.1.7}次のステップの準備}{41}
+\contentsline {subsection}{\numberline {6.2}中心星重力}{42}
+\contentsline {subsection}{\numberline {6.3}タイムステップ }{43}
+\contentsline {subsubsection}{\numberline {6.3.1}Variable Timestep (可変タイムステップ) }{43}
+\contentsline {subsubsection}{\numberline {6.3.2}Shared Timestep (共有タイムステップ) とその限界}{44}
+\contentsline {subsubsection}{\numberline {6.3.3}Individual Timestep (独立タイムステップ) }{44}
+\contentsline {section}{\numberline {7}重力散乱テスト計算}{45}
+\contentsline {subsection}{\numberline {7.1}1体のケプラー運動 (エネルギー，角運動量とタイムステップの関係)}{45}
+\contentsline {subsection}{\numberline {7.2}円軌道の惑星と微惑星の重力散乱}{46}
+\contentsline {subsection}{\numberline {7.3}ピタゴラス問題}{47}
+\contentsline {section}{\numberline {8}本計算}{50}
+\contentsline {subsection}{\numberline {8.1}Kuiper Belt}{50}
+\contentsline {subsection}{\numberline {8.2}Asteroid Belt}{50}
+\contentsline {subsection}{\numberline {8.3}Secular Resonance}{50}
+\contentsline {subsubsection}{\numberline {8.3.1}巨大惑星の運動}{50}
+\contentsline {subsection}{\numberline {8.4}永年共鳴の位置}{55}
+\contentsline {subsection}{\numberline {8.5}計算コードの見直し}{58}
