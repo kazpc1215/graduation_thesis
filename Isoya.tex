@@ -1,5 +1,7 @@
-\documentclass[11pt,a4paper,oneside,onecolumn]{jarticle}
+%\documentclass[11pt,a4paper,oneside,onecolumn]{jarticle}
 %
+\documentclass[11pt,a4paper,oneside,onecolumn]{jreport}
+
 \usepackage[dvipdfmx]{graphicx,color}
 \usepackage{amsmath,amssymb}
 \usepackage{bm}
@@ -16,6 +18,8 @@
 \usepackage[top=25truemm,bottom=25truemm,left=25truemm,right=25truemm]{geometry}
 \usepackage{indentfirst}
 \usepackage{fancyhdr}
+
+\renewcommand{\bibname}{参考文献}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \makeatletter
@@ -61,16 +65,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-%\maketitle
-
 \abst{
- あいうえお
+あいうえおああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ．
+あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
  }
+\clearpage
 
 \tableofcontents
 \clearpage
 
-\section{背景}
+\chapter{背景}
 現在の太陽系には，小惑星帯やエッジワース$\cdot$カイパーベルト（以下ではカイパーベルトと呼ぶ）のような，小天体が数多く集まっている領域がある．標準的な惑星形成モデルの後期における，微惑星が衝突合体を繰り返して原始惑星，惑星へと成長する過程で，これらの小天体は惑星サイズの大きさになれずに取り残された微惑星，または微惑星同士，原始惑星同士の衝突破壊の際の破片だと考えられている．また，これらの領域で見つかっている小天体は数が多く，統計的に扱うことができる．
 
 これらの小天体の軌道の特徴について，多くの観測事実が存在する．以下に示す観測データは IAU Minor Planet Center から引用し，直径が $50 {\rm km}$ 以上の比較的大きな小天体を選んでいる．
@@ -157,6 +161,7 @@
 \footnote[1]{あいうえお}
 
 
+\chapter{天体力学の基礎}
 \section{2体問題 \label{sec:2body}}
 2体問題とは，万有引力の法則で記述される2つの質点の相互作用による運動を考える問題である．2体問題は太陽系力学の中で最も単純で，かつ解析的に解くことができる．また，太陽系には様々な質量の物体があるが，2体問題に近似して考えることができる場面が多く，通常3体目の天体との相互作用は2体の系に対する摂動として扱う．
 \subsection{運動方程式 \label{sec:EoM}}
@@ -1646,7 +1651,7 @@ f \left[ f - (B_{11} + B_{22}) \right] = 0
 (\ref{eq:hk_eigen}) 式と (\ref{eq:pq_eigen}) 式の解は，全ての天体は「永久に」安定であることを示している．しかし，次のような仮定の下で導出されたことを覚えておくことが重要である: (i) 平均運動が尽数関係にない，(ii) $r_1 < r_2$，(iii) 摂動関数の２次のオーダーまでの展開が運動を記述するのに有効であるほど $e, I$ が十分小さい．しかし，例えば離心率の固有ベクトルの振幅は，軌道交差を起こすほど大きくなる可能性があり，(ii) と (iii) の条件を破ってしまう．これからみるように，平均運動が尽数関係にないという条件があるかもしれないが，それでもなお「微小分母」項が重要である．
 %これまで，質量の１次までしか正しくない理論を導出してきたため，２次までの理論からの重要な寄与を理解することが大切である．
 
-\subsection{自由要素と強制要素}
+\subsection{自由要素と強制要素 \label{sec:free_forced}}
 特定の条件下では，相互重力効果の下でケプラー運動する天体の運動に対する永年解を構成することができることを示してきた．そして任意の時間に両方の天体の離心率，軌道傾斜角，近日点経度，昇交点経度を得ることができる．質量を無視でき，中心星の影響下で運動をし，２つの惑星からの摂動を受ける天体（テスト粒子）を追加したときの運動を研究するために，この永年解を利用することができる．\ref{sec:2planet} 節の例のように，テスト粒子の摂動関数 ${\cal R}$ は軌道要素 $a, n, e, I, \varpi, \Omega$ を用いて次のように与えられる．
 \begin{equation}
 \begin{split}
@@ -1656,9 +1661,9 @@ f \left[ f - (B_{11} + B_{22}) \right] = 0
 \end{equation} 
 ここで，
 \begin{eqnarray}
-A & = & + n \frac{1}{4} \sum_{i = 1}^2 \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(1)} (\alpha_j), \label{eq:A_test} \\
+A & = & + n \frac{1}{4} \sum_{j = 1}^2 \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(1)} (\alpha_j), \label{eq:A_test} \\
 A_j & = & - n \frac{1}{4} \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(2)} (\alpha_j), \label{eq:A_j_test} \\
-B & = & - n \frac{1}{4} \sum_{i = 1}^2 \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(1)} (\alpha_j), \label{eq:B_test} \\
+B & = & - n \frac{1}{4} \sum_{j = 1}^2 \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(1)} (\alpha_j), \label{eq:B_test} \\
 B_j & = & + n \frac{1}{4} \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(1)} (\alpha_j). \label{eq:B_j_test}
 \end{eqnarray}
 そして，
@@ -1798,7 +1803,7 @@ e_{\rm forced} = \sqrt{h_0^2 + k_0^2} \rightarrow \sqrt{h_l^2 + k_l^2} = e_l
 強制離心率と強制軌道傾斜角を考えてきた結果は，$e, I$ が小さい値のときにのみ有効である．
 
 
-
+\chapter{本研究}
 \section{数値計算の方法}
 \subsection{4次のエルミート法 \label{sec:Hermite}}
 \subsubsection{手順}
@@ -1861,8 +1866,7 @@ Taylor 展開により，
 \end{eqnarray}
 ここで，普通にTaylor 展開を考えれば，$\alpha = 1$．ただし，$\alpha \not= 1$ とすることもある．この修正により，$\Delta t$ に対して，${\bm x}_j$ は5次，${\bm v}_j$ は4次の精度になる．積分全体の精度は4次．(${\bm a}_{0,j}^{(3)}$ が与えられているので，${\bm x}_j$ は5次まで書いておくが，係数には自由度がある．)
 
-\subsubsection{修正された予測子を使って加速度および加速度の時間
-微分を求める}
+\subsubsection{修正された予測子を使って加速度および加速度の時間微分を求める}
 ${\bm x}_{c,j}, {\bm v}_{c,j}$ での加速度 (${\bm a}_{1,j}^{\rm new}$) とその時間微分 ($\dot{{\bm a}}_{1,j}^{\rm new}$) を計算する．これらは，式 (\ref{eq:a1j}), (\ref{eq:a2j}) で，
 \begin{eqnarray}
 {\bm r}_{jk} & = & {\bm x}_{c,j} - {\bm x}_{c,k}, \\
@@ -2053,17 +2057,21 @@ xy平面上で完全な円軌道（$e = 0, I = 0 {\rm rad}$）の場合と，３
 
 
 \subsection{ピタゴラス問題}
-
-
-
+ピタゴラス問題とは，質量 3, 4, 5 の質点を辺長 3, 4, 5 の直角三角形の頂点に静止させ，手を離したときの３体問題のことである（図 \ref{fig:pythagoras} 参照）．1913年にC.Burrauによって研究され、1967年にSzebehelyらによって解決された問題であり，これまで詳しい数値計算が行われてきた．近接相互作用をどこまで正確に追えるかをチェックするテスト問題としてよく使われる．
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{./image/pythagoras_1.pdf}
-\caption{\label{}}
+\caption{\label{fig:pythagoras}}
 \end{figure}
 
+初期には３つの質点が静止しているため，重心は静止している．図 \ref{fig:pythagoras} のような配置をすると，原点と重心が一致する．運動方程式を，距離の単位を $L$，質量の単位を $M$，時間の単位を $T$ で無次元化すると，
+\begin{equation}
+\frac{G M T^2}{L^3} = 1
+\end{equation}
+という関係が得られるので，例えば $L = 1 {\rm AU}$，$M = 1 M_{\odot}$ とすると，時間の単位は $T = 1/(2 \pi) 年$ となる．
 
+この計算では，タイムステップは shared timestep を用い，$\eta = 3 \times 10^{-3}$，softning parameter $\epsilon = 0$，iteration は3回とした． 計算時間は文献を参考に70までとし，$t = 10$ごとに各質点の軌道をプロットしたものが図 \ref{fig:pythagoras_orbit} である．
 
 \begin{figure}[H]
 \begin{tabular}{ccc}
@@ -2114,35 +2122,73 @@ xy平面上で完全な円軌道（$e = 0, I = 0 {\rm rad}$）の場合と，３
 \includegraphics[width=8cm]{./image/pythagoras_orbit_60to70.pdf}
 \end{minipage}
 \end{tabular}
-\caption{\label{}}
+\caption{\label{fig:pythagoras_orbit}}
 \end{figure}
+
+また，３つの質点の全エネルギーの相対誤差を計算し，その時間変化をプロットしたものが図 \ref{fig:pythagoras_E_error} である．さらに，$t = 15.83$付近でのエネルギー相対誤差を詳しく見るために拡大したものが図 \ref{fig:pythagoras_E_error_detail} である．
+
+
 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{./image/pythagoras_E_error.pdf}
-\caption{\label{}}
+\caption{\label{fig:pythagoras_E_error}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{./image/pythagoras_E_error_detail.pdf}
-\caption{\label{}}
+\caption{\label{fig:pythagoras_E_error_detail}}
 \end{figure}
 
-\section{惑星移動を考えたときの小天体の軌道計算}
-\subsection{Kuiper Belt}
+\section{惑星移動に伴う小天体の軌道変化の数値計算}
+先行研究で使われた惑星移動モデル（Minton, D. A. \& Malhotra, R. 2009）を模擬し，ケプラー運動をする４つの巨大惑星（木星，土星，天王星，海王星）に，惑星同士の重力相互作用を含めた軌道計算を行った．
+
+この計算では，タイムステップは individual timestep を用い，$\eta = 0.05$，softning parameter $\epsilon = 0$，iteration は3回とした．
+
+惑星の移動のさせ方は，軌道長半径が $\tau$ 程度の時間をかけて，
+\begin{equation}
+a (t) = a_f - \Delta a \exp \left( - \frac{t}{\tau} \right) \label{eq:a(t)}
+\end{equation}
+とゆっくり変化するように，手で加える加速度を
+\begin{equation}
+\Delta \ddot{\bm r} = \frac{\hat{{\bm v}}}{\tau} \left[ \sqrt{\frac{G M_{\odot}}{a_f}} - \sqrt{\frac{G M_{\odot}}{a_i}} \right] \exp \left(- \frac{t}{\tau} \right) \label{eq:delta_rddot}
+\end{equation}
+のように与えた（Malhotra, R. 1995）．ここで，$\hat{{\bm v}}$ は速度方向の単位ベクトル，$\Delta a$ は移動距離，$a_f$ は現在の軌道長半径，$a_i = a_f - \Delta a$ は初期の軌道長半径である．
+
+この加速度を与えたときの軌道長半径の時間変化について詳しく計算する．円軌道 $e = 0$を仮定すると，円柱座標系において速度方向は $\theta$ 方向と平行であるため，上で与える加速度のような微小摂動力は $d {\bm F} = \bar{T} \hat{\bm \theta}$ とおける．ガウスの惑星方程式を用いると，
+\begin{equation}
+\frac{d a}{d t} = 2 \frac{a^{3/2}}{\sqrt{G M_{\odot}}} \bar{T}, \quad \bar{T} = \frac{1}{\tau} \left[ \sqrt{\frac{G M_{\odot}}{a_f}} - \sqrt{\frac{G M_{\odot}}{a_i}} \right] \exp \left(- \frac{t}{\tau} \right)
+\end{equation}
+両辺積分して整理すると，
+\begin{equation}
+a (t) = a_f \left[ 1 - \left( 1 - \frac{1}{\sqrt{1 - \Delta a/ a_f}} \right) \exp \left( - \frac{t}{\tau} \right) \right]^{-2} \label{eq:a(t)_new}
+\end{equation}
+$\Delta a \ll a_f$ である場合，$\Delta a/ a_f$ の1次までの近似を行うと，
+\begin{equation}
+\begin{split}
+a (t) & \approx a_f \left[ 1 + 2 \left( 1 - \frac{1}{\sqrt{1 - \Delta a/ a_f}} \right) \exp \left( - \frac{t}{\tau} \right) \right] \\
+& \approx a_f \left[ 1 - \frac{\Delta a}{a_f} \exp \left( - \frac{t}{\tau} \right) \right] \\
+& = a_f - \Delta a \exp \left( - \frac{t}{\tau} \right)
+\end{split}
+\label{eq:a(t)_approx}
+\end{equation}
+したがって，(\ref{eq:delta_rddot}) 式のような加速度の与え方は，$\Delta a \ll a_f$ である場合にのみ正しく，実際には $\Delta a/ a_f$ は木星 : $0.2 / 5.2 = 0.038$，土星 : $0.8 / 9.5 = 0.084$，天王星 : $3.0 /19.2 = 0.156$，海王星 : $7.0 / 30.1 = 0.233$ であるため，(\ref{eq:a(t)}) 式のような軌道長半径の時間変化を厳密には実現できていない．しかし，本研究では惑星移動の時間 $\tau$ の正確さよりも，惑星やテスト粒子の軌道要素の変化を正確に計算することに重きを置いているため，また初期値を決めたら後は時間にのみ依存する表式がシンプルであるため，(\ref{eq:delta_rddot}) 式を用いた．
+
+惑星移動の時間は $\tau = 0.5 {\rm Myr}$ とし，惑星の質量は，$5 {\rm Myr}$ の時間をかけて線形的に増加させた（Minton, D. A. \& Malhotra, R. 2009）．
+
+太陽は惑星との重力相互作用で動くはずであるが，太陽に比べて惑星の質量が十分小さいとし，太陽は原点に固定されているものと考え，太陽重力は外場として扱った．
+
+テスト粒子が４つのうちいずれかの惑星のヒル圏内に入った場合や，離心率が1を超えて双曲線軌道になる場合には，その粒子は計算をやめ，プログラム中でループから外すようにしている．このようにすることで，タイムステップが小さくなりすぎて計算が遅くなることを防ぎ，また小惑星帯やカイパーベルトの小天体がどの程度減らされるのかを確認することができる．
+
+惑星の軌道要素の初期値として，NASA Planetary Fact Sheets\footnote{http://nssdc.gsfc.nasa.gov/planetary/planetfact.html} の Mean Orbital Elements (J2000) の値を引用した．
 
 
-
-\subsection{Asteroid Belt}
-
-
-
-\subsection{Secular Resonance}
-
-\subsubsection{巨大惑星の運動}
-
+\subsection{４つの巨大惑星の４体シミュレーション}
+「重力相互作用」と「永年共鳴の位置の移動」を確認するため，まずは巨大惑星４つのみの４体計算を行った．
+\subsubsection{重力相互作用}
+比較のため，惑星を動かさない場合と動かした場合の２種類を計算した．以下の図は軌道要素の $5 {\rm Myr}$ 分の時間変化をプロットしたものである．
 
 \begin{figure}[H]
 \begin{tabular}{ccc}
@@ -2174,7 +2220,7 @@ xy平面上で完全な円軌道（$e = 0, I = 0 {\rm rad}$）の場合と，３
 \end{minipage}
 %
 \end{tabular}
-\caption{\label{}}
+\caption{軌道長半径の変化．左が惑星移動なしの場合，右が惑星移動ありの場合，上から順に木星，土星，天王星，海王星である．\label{fig:axis}}
 \end{figure}
 
 
@@ -2208,7 +2254,7 @@ xy平面上で完全な円軌道（$e = 0, I = 0 {\rm rad}$）の場合と，３
 \end{minipage}
 %
 \end{tabular}
-\caption{\label{}}
+\caption{離心率の変化．左が惑星移動なしの場合，右が惑星移動ありの場合，上から順に木星，土星，天王星，海王星である．\label{fig:ecc}}
 \end{figure}
 
 
@@ -2242,7 +2288,7 @@ xy平面上で完全な円軌道（$e = 0, I = 0 {\rm rad}$）の場合と，３
 \end{minipage}
 %
 \end{tabular}
-\caption{\label{}}
+\caption{軌道傾斜角の変化．左が惑星移動なしの場合，右が惑星移動ありの場合，上から順に木星，土星，天王星，海王星である．\label{fig:inc}}
 \end{figure}
 
 
@@ -2276,7 +2322,7 @@ xy平面上で完全な円軌道（$e = 0, I = 0 {\rm rad}$）の場合と，３
 \end{minipage}
 %
 \end{tabular}
-\caption{\label{}}
+\caption{昇交点経度の変化．左が惑星移動なしの場合，右が惑星移動ありの場合，上から順に木星，土星，天王星，海王星である．\label{fig:OMEGA}}
 \end{figure}
 
 
@@ -2310,7 +2356,7 @@ xy平面上で完全な円軌道（$e = 0, I = 0 {\rm rad}$）の場合と，３
 \end{minipage}
 %
 \end{tabular}
-\caption{\label{}}
+\caption{近日点引数の変化．左が惑星移動なしの場合，右が惑星移動ありの場合，上から順に木星，土星，天王星，海王星である．\label{fig:omega}}
 \end{figure}
 
 
@@ -2344,42 +2390,173 @@ xy平面上で完全な円軌道（$e = 0, I = 0 {\rm rad}$）の場合と，３
 \end{minipage}
 %
 \end{tabular}
-\caption{\label{}}
+\caption{近日点経度の変化．左が惑星移動なしの場合，右が惑星移動ありの場合，上から順に木星，土星，天王星，海王星である．\label{fig:varpi}}
 \end{figure}
 
 
 
-\subsection{永年共鳴の位置}
+\subsubsection{永年共鳴の位置}
+\ref{sec:2planet} 節で扱った，２つの惑星の永年摂動を４つの惑星に拡張すると，
+\begin{equation}
+\begin{split}
+{\cal R}_j = n_j^2 a_j^2 & \left[ \frac{1}{2} A_{jj} e_j^2 + \frac{1}{2} B_{jj} I_j^2 \right. \\
+& + \left. \sum_{k = 1, k \not= j}^4 A_{jk} e_j e_k \cos (\varpi_j - \varpi_k) + \sum_{k = 1, k \not= j}^4 B_{jk} I_j I_k \cos (\Omega_j - \Omega_k) \right]. \\
+\end{split} \label{}
+\end{equation}
+ここで，$j = 1, 2, 3, 4 (j \not= k)$ であり，
+\begin{eqnarray}
+A_{jj} & = & + n_j \frac{1}{4} \sum_{k = 1, k \not= j}^4 \frac{m_k}{m_c + m_j} \alpha_{jk} \bar{\alpha}_{jk} b_{3/2}^{(1)} (\alpha_{jk}), \\
+A_{jk} & = & - n_j \frac{1}{4} \frac{m_k}{m_c + m_j} \alpha_{jk} \bar{\alpha}_{jk} b_{3/2}^{(2)} (\alpha_{jk}), \\
+B_{jj} & = & - n_j \frac{1}{4} \sum_{k = 1, k \not= j}^4 \frac{m_k}{m_c + m_j} \alpha_{jk} \bar{\alpha}_{jk} b_{3/2}^{(1)} (\alpha_{jk}), \\
+B_{jk} & = & + n_j \frac{1}{4} \frac{m_k}{m_c + m_j} \alpha_{jk} \bar{\alpha}_{jk} b_{3/2}^{(1)} (\alpha_{jk}). 
+\end{eqnarray}
+\begin{equation}
+\alpha_{jk} = \left\{
+\begin{array}{llll}
+a_k / a_j & {\rm if} & a_j > a_k & \quad ({\rm internal \ perturber}), \\
+a_j / a_k & {\rm if} & a_j < a_k & \quad ({\rm external \ perturber}).
+\end{array}
+\right.
+\end{equation}
+\begin{equation}
+\bar{\alpha}_{jk} = \left\{
+\begin{array}{llll}
+1 & {\rm if} & a_j > a_k & \quad ({\rm internal \ perturber}), \\
+a_j / a_k & {\rm if} & a_j < a_k & \quad ({\rm external \ perturber}).
+\end{array}
+\right.
+\end{equation}
+また，
+\begin{equation}
+h_j = e_j \sin \varpi_j, \quad k_j = e_j \cos \varpi_j,
+\end{equation}
+\begin{equation}
+p_j = I_j \sin \Omega_j, \quad q_j = I_j \cos \Omega_j.
+\end{equation}
+と定義される変数を用いて，
+\begin{equation}
+\begin{split}
+{\cal R}_j = n_j a_j^2 & \left[ \frac{1}{2} A_{jj} (h_j^2 + k_j^2) + \frac{1}{2} B_{jj} (p_j^2 + q_j^2) \right. \\
+& + \left. \sum_{k = 1, k \not= j}^4 A_{jk} (h_j h_k + k_j k_k) + \sum_{k = 1, k \not= j}^4 B_{jk} (p_j p_k + q_j q_k) \right]. \\
+\end{split} \label{}
+\end{equation}
+ラグランジュの惑星方程式の最低次までの近似形を用いると，この問題は４つの固有値問題にまとめられ，その解は，
+\begin{equation}
+h_j = \sum_{i = 1}^4 e_{ji} \sin (g_i t + \beta_i), \quad k_j = \sum_{i=1}^4 e_{ji} \cos (g_i t + \beta_i), \label{}
+\end{equation}
+\begin{equation}
+p_j = \sum_{i = 1}^4 I_{ji} \sin (f_i t + \gamma_i), \quad q_j = \sum_{i=1}^4 I_{ji} \cos (f_i t + \gamma_i). \label{}
+\end{equation}
+ここで，振動数 $g_i (i = 1, 2, 3, 4)$ は行列 ${\rm A}$ の固有値，$e_{ji}$ は固有ベクトルの４つの要素に対応しており，また振動数 $f_i (i = 1, 2, 3, 4)$ は行列 ${\rm B}$ の固有値，$I_{ji}$ は固有ベクトルの４つの要素に対応している．位相 $\beta_i, \gamma_i$ は，固有ベクトルの振幅と同様に，初期条件によって決まる．任意の時間における質量 $m_j$ の惑星の離心率と軌道傾斜角の２乗の値は，
+\begin{eqnarray}
+e_j^2 & = & \left[ \sum_{i = 1}^4 e_{ji} \sin (g_i t + \beta_i) \right]^2 + \left[ \sum_{i = 1}^4 e_{ji} \cos (g_i t + \beta_i) \right]^2, \\
+I_j^2 & = & \left[ \sum_{i = 1}^4 I_{ji} \sin (f_i t + \gamma_i) \right]^2 + \left[ \sum_{i = 1}^4 e_{ji} \cos (f_i t + \gamma_i) \right]^2.
+\end{eqnarray}
+同様に，$h_j, k_j, p_j, q_j$ の値から質量 $m_j$ の惑星の近日点経度や昇交点経度も求められる．
 
+続いて，\ref{sec:free_forced} 節で扱った自由要素と強制要素を，４つの惑星がある場合に拡張すると，
+\begin{equation}
+\begin{split}
+{\cal R} = n a^2 & \left[ \frac{1}{2} A e^2 + \frac{1}{2} B I^2 \right. \\
+& \left. + \sum_{j = 1}^4  A_j e e_j \cos (\varpi - \varpi_j) + \sum_{j = 1}^4 B_j I I_j \cos (\Omega - \Omega_j) \right]. \\
+\end{split} \label{}
+\end{equation} 
+ここで，
+\begin{eqnarray}
+A & = & + n \frac{1}{4} \sum_{j = 1}^4 \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(1)} (\alpha_j), \label{eq:A_test_4planet} \\
+A_j & = & - n \frac{1}{4} \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(2)} (\alpha_j), \label{eq:A_j_test_4planet} \\
+B & = & - n \frac{1}{4} \sum_{j = 1}^4 \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(1)} (\alpha_j), \label{eq:B_test_4planet} \\
+B_j & = & + n \frac{1}{4} \frac{m_j}{m_c} \alpha_j \bar{\alpha}_j b_{3/2}^{(1)} (\alpha_j). \label{eq:B_j_test_4planet}
+\end{eqnarray}
+\begin{equation}
+\alpha_j = \left\{
+\begin{array}{lll}
+a_j / a & {\rm if} & a_j < a, \\
+a / a_j & {\rm if} & a_j > a,
+\end{array}
+\right.
+\end{equation}
+\begin{equation}
+\bar{\alpha}_j = \left\{
+\begin{array}{lll}
+1 & {\rm if} & a_j < a, \\
+a / a_j & {\rm if} & a_j > a.
+\end{array}
+\right.
+\end{equation}
+また，
+\begin{eqnarray}
+h = e \sin \varpi, & \quad & k = e \cos \varpi, \\
+p = I \sin \Omega, & \quad & q = I \cos \Omega.
+\end{eqnarray}
+と定義される変数を用いて，
+\begin{equation}
+\begin{split}
+{\cal R} = n a^2 & \left[ \frac{1}{2} A (h^2 + k^2) + \frac{1}{2} B (p^2 + q^2) \right. \\
+& \left. + \sum_{j = 1}^4 A_j (h h_j + k k_j) + \sum_{j = 1}^4 B_j (p p_j + q q_j) \right]. \\
+\end{split} \label{}
+\end{equation}
+ラグランジュの惑星方程式の最低次までの近似形を用いると，線形微分方程式にまとめられ，その解は，
+\begin{eqnarray}
+h = e_{\rm free} \sin (A t + \beta) + h_0 (t), & \quad & k = e_{\rm free} \cos (A t + \beta) + k_0 (t), \label{eq:hk_solution} \\
+p = I_{\rm free} \sin (B t + \gamma) + p_0 (t), & \quad & q = I_{\rm free} \cos (B t + \gamma) + q_0 (t). \label{eq:pq_solution}
+\end{eqnarray}
+ここで，$e_{\rm free}, I_{\rm free}, \beta, \gamma$ は境界条件から決まる定数であり，
+\begin{eqnarray}
+h_0 (t) & = & - \sum_{i = 1}^4 \frac{\nu_i}{A - g_i} \sin (g_i t + \beta_i), \label{eq:h_0_4planet} \\
+k_0 (t) & = & - \sum_{i = 1}^4 \frac{\nu_i}{A - g_i} \cos (g_i t + \beta_i), \label{eq:k_0_4planet} \\
+p_0 (t) & = & - \sum_{i = 1}^4 \frac{\mu_i}{B - f_i} \sin (f_i t + \gamma_i), \label{eq:p_0_4planet} \\
+q_0 (t) & = & - \sum_{i = 1}^4 \frac{\mu_i}{B - f_i} \cos (f_i t + \gamma_i). \label{eq:q_0_4planet}
+\end{eqnarray}
+\begin{equation}
+\nu_i = \sum_{j = 1}^4 A_j e_{ji} \quad {\rm and} \quad \mu_i = \sum_{j=1}^4 B_j I_{ji}. \label{eq:nu_mu_4planet}
+\end{equation}
+強制離心率と強制軌道傾斜角は，
+\begin{equation}
+e_{\rm forced} = \sqrt{h_0^2 + k_0^2}, \quad I_{\rm forced} = \sqrt{p_0^2 + q_0^2} \label{eq:forced}
+\end{equation}
+と定義される．
+
+(\ref{eq:h_0_4planet}) 式から (\ref{eq:q_0_4planet}) 式より，$A$ の値が $g_i$，$B$ の値が $f_i$ と一致する場合に発散が生じることは明らかである．図 \ref{fig:PrecessionRate} は，それぞれの惑星の固有振動数 $g_i, f_i$と，テスト粒子の $A = g_t, B = f_t$ を軌道長半径の関数としてプロットしたものである．添字については，$t : テスト粒子$，$5 : 木星$，$6 : 土星$，$7 : 天王星$，$8 : 海王星$ としている（太陽系第 $i$ 惑星に対応させている）．(\ref{eq:A_test_4planet}) 式，(\ref{eq:B_test_4planet}) 式の定義より，中心星を質点と扱う場合 $A = - B$ であるから，$g_t, - f_t$ は重なっている．
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{./image/PrecessionRate_logAB.pdf}
-\caption{\label{}}
+\caption{惑星の固有振動数 $g_i, f_i$（定数）と，テスト粒子の $A = g_t, B = f_t$ を軌道長半径の関数としてプロットした．縦軸の歳差率の単位は「秒角／年」である．\label{fig:PrecessionRate}}
 \end{figure}
-
+この図から，$g_t = g_i$ となる交点の軌道長半径は離心率の永年共鳴の位置となることが分かり，その位置を $\nu_i$ と表記する（ (\ref{eq:nu_mu_4planet}) 式の $\nu_i$ と全く異なるので注意）．同様に，$f_t = f_i$ となる交点の軌道長半径は軌道傾斜角の永年共鳴の位置となることが分かり，その位置を $\nu_{1i}$ と表記する．惑星の固有振動数 $g_i, f_i$ とテスト粒子の $A, B$ は軌道長半径に依存するため，惑星の移動に伴いどちらも時間変化し，ゆえに交点の位置 $\nu_i, \nu_{1i}$ も時間変化する．図 \ref{fig:SecularResonanceAxis_ecc}，図 \ref{fig:SecularResonanceAxis_ecc_upto5AU} は離心率の永年共鳴の位置，図 \ref{fig:SecularResonanceAxis_inc}，図 \ref{fig:SecularResonanceAxis_inc_upto5AU} は軌道傾斜角を数値計算で求めた結果である．
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{./image/SecularResonanceAxis_ecc.pdf}
-\caption{\label{}}
+\caption{離心率の永年共鳴の位置の時間変化．添字は $5 : 木星$，$6 : 土星$，$7 : 天王星$，$8 : 海王星$．軌道長半径の範囲は $0 {\rm AU} - 50 {\rm AU}$ である．\label{fig:SecularResonanceAxis_ecc}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{./image/SecularResonanceAxis_ecc_upto5AU.pdf}
-\caption{\label{}}
+\caption{離心率の永年共鳴の位置の時間変化（小惑星帯付近を拡大）．添字は $5 : 木星$，$6 : 土星$，$7 : 天王星$，$8 : 海王星$．軌道長半径の範囲は $0 {\rm AU} - 5 {\rm AU}$ である．\label{fig:SecularResonanceAxis_ecc_upto5AU}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{./image/SecularResonanceAxis_inc.pdf}
-\caption{\label{}}
+\caption{軌道傾斜角の永年共鳴の位置の時間変化．添字は $15 : 木星$，$16 : 土星$，$17 : 天王星$，$18 : 海王星$．軌道長半径の範囲は $0 {\rm AU} - 50 {\rm AU}$ である．\label{fig:SecularResonanceAxis_inc}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{./image/SecularResonanceAxis_inc_upto5AU.pdf}
-\caption{\label{}}
+\caption{軌道傾斜角の永年共鳴の位置の時間変化（小惑星帯付近を拡大）．添字は $15 : 木星$，$16 : 土星$，$17 : 天王星$，$18 : 海王星$．軌道長半径の範囲は $0 {\rm AU} - 5 {\rm AU}$ である．\label{fig:SecularResonanceAxis_inc_upto5AU}}
 \end{figure}
+
+
+\subsection{Kuiper Belt}
+
+
+
+\subsection{Asteroid Belt}
+
+
+
 
 
 

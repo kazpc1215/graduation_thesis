@@ -1,49 +1,51 @@
-\contentsline {section}{\numberline {1}背景}{3}
-\contentsline {section}{\numberline {2}2体問題 }{4}
-\contentsline {subsection}{\numberline {2.1}運動方程式 }{5}
-\contentsline {subsection}{\numberline {2.2}軌道と速度 }{6}
-\contentsline {subsection}{\numberline {2.3}平均近点離角と離心近点離角}{9}
-\contentsline {subsection}{\numberline {2.4}軌道要素 }{11}
-\contentsline {section}{\numberline {3}制限3体問題 }{15}
-\contentsline {subsection}{\numberline {3.1}運動方程式}{15}
-\contentsline {subsection}{\numberline {3.2}ヤコビ積分}{18}
-\contentsline {subsection}{\numberline {3.3}ティスランの関係式}{20}
-\contentsline {section}{\numberline {4}摂動関数 }{21}
-\contentsline {subsection}{\numberline {4.1}摂動関数}{22}
-\contentsline {subsection}{\numberline {4.2}ルジャンドル多項式を用いた展開}{24}
-\contentsline {subsection}{\numberline {4.3}摂動関数の利用}{29}
-\contentsline {subsection}{\numberline {4.4}ラグランジュの惑星方程式}{29}
-\contentsline {subsection}{\numberline {4.5}摂動関数中の偏角の分類}{31}
-\contentsline {subsubsection}{\numberline {4.5.1}永年項}{32}
-\contentsline {subsubsection}{\numberline {4.5.2}共鳴項 }{33}
-\contentsline {subsubsection}{\numberline {4.5.3}短周期項と微小振幅項}{34}
-\contentsline {section}{\numberline {5}永年摂動}{35}
-\contentsline {subsection}{\numberline {5.1}２つの惑星の永年摂動 }{35}
-\contentsline {subsection}{\numberline {5.2}自由要素と強制要素}{38}
-\contentsline {section}{\numberline {6}数値計算の方法}{43}
-\contentsline {subsection}{\numberline {6.1}4次のエルミート法 }{43}
-\contentsline {subsubsection}{\numberline {6.1.1}手順}{43}
-\contentsline {subsubsection}{\numberline {6.1.2}予測子を求める }{43}
-\contentsline {subsubsection}{\numberline {6.1.3}予測子から加速度と加速度の時間微分を求める}{43}
-\contentsline {subsubsection}{\numberline {6.1.4}${\bm {a}}^{(2)}, {\bm {a}}^{(3)}$ を求める．}{44}
-\contentsline {subsubsection}{\numberline {6.1.5}予測子の修正}{44}
-\contentsline {subsubsection}{\numberline {6.1.6}修正された予測子を使って加速度および加速度の時間微分を求める}{44}
-\contentsline {subsubsection}{\numberline {6.1.7}次のステップの準備}{45}
-\contentsline {subsection}{\numberline {6.2}中心星重力}{45}
-\contentsline {subsection}{\numberline {6.3}タイムステップ }{46}
-\contentsline {subsubsection}{\numberline {6.3.1}Variable Timestep (可変タイムステップ) }{46}
-\contentsline {subsubsection}{\numberline {6.3.2}Shared Timestep (共有タイムステップ) とその限界}{47}
-\contentsline {subsubsection}{\numberline {6.3.3}Individual Timestep (独立タイムステップ) }{48}
-\contentsline {section}{\numberline {7}重力散乱テスト計算}{48}
-\contentsline {subsection}{\numberline {7.1}1体のケプラー運動 (エネルギー，角運動量とタイムステップの関係)}{48}
-\contentsline {subsection}{\numberline {7.2}円軌道の惑星と微惑星の重力散乱}{49}
-\contentsline {subsection}{\numberline {7.3}ピタゴラス問題}{51}
-\contentsline {section}{\numberline {8}惑星移動を考えたときの小天体の軌道計算}{54}
-\contentsline {subsection}{\numberline {8.1}Kuiper Belt}{54}
-\contentsline {subsection}{\numberline {8.2}Asteroid Belt}{54}
-\contentsline {subsection}{\numberline {8.3}Secular Resonance}{54}
-\contentsline {subsubsection}{\numberline {8.3.1}巨大惑星の運動}{54}
-\contentsline {subsection}{\numberline {8.4}永年共鳴の位置}{59}
-\contentsline {subsection}{\numberline {8.5}計算コードの見直し}{62}
-\contentsline {section}{\numberline {9}議論}{62}
-\contentsline {section}{\numberline {10}まとめ}{62}
+\contentsline {chapter}{\numberline {第1章}背景}{3}
+\contentsline {chapter}{\numberline {第2章}天体力学の基礎}{5}
+\contentsline {section}{\numberline {2.1}2体問題 }{5}
+\contentsline {subsection}{\numberline {2.1.1}運動方程式 }{5}
+\contentsline {subsection}{\numberline {2.1.2}軌道と速度 }{6}
+\contentsline {subsection}{\numberline {2.1.3}平均近点離角と離心近点離角}{9}
+\contentsline {subsection}{\numberline {2.1.4}軌道要素 }{11}
+\contentsline {section}{\numberline {2.2}制限3体問題 }{15}
+\contentsline {subsection}{\numberline {2.2.1}運動方程式}{15}
+\contentsline {subsection}{\numberline {2.2.2}ヤコビ積分}{18}
+\contentsline {subsection}{\numberline {2.2.3}ティスランの関係式}{20}
+\contentsline {section}{\numberline {2.3}摂動関数 }{21}
+\contentsline {subsection}{\numberline {2.3.1}摂動関数}{22}
+\contentsline {subsection}{\numberline {2.3.2}ルジャンドル多項式を用いた展開}{24}
+\contentsline {subsection}{\numberline {2.3.3}摂動関数の利用}{29}
+\contentsline {subsection}{\numberline {2.3.4}ラグランジュの惑星方程式}{29}
+\contentsline {subsection}{\numberline {2.3.5}摂動関数中の偏角の分類}{31}
+\contentsline {subsubsection}{永年項}{32}
+\contentsline {subsubsection}{共鳴項 }{33}
+\contentsline {subsubsection}{短周期項と微小振幅項}{34}
+\contentsline {section}{\numberline {2.4}永年摂動}{35}
+\contentsline {subsection}{\numberline {2.4.1}２つの惑星の永年摂動 }{35}
+\contentsline {subsection}{\numberline {2.4.2}自由要素と強制要素 }{38}
+\contentsline {chapter}{\numberline {第3章}本研究}{44}
+\contentsline {section}{\numberline {3.1}数値計算の方法}{44}
+\contentsline {subsection}{\numberline {3.1.1}4次のエルミート法 }{44}
+\contentsline {subsubsection}{手順}{44}
+\contentsline {subsubsection}{予測子を求める }{44}
+\contentsline {subsubsection}{予測子から加速度と加速度の時間微分を求める}{44}
+\contentsline {subsubsection}{${\bm {a}}^{(2)}, {\bm {a}}^{(3)}$ を求める．}{45}
+\contentsline {subsubsection}{予測子の修正}{45}
+\contentsline {subsubsection}{修正された予測子を使って加速度および加速度の時間微分を求める}{45}
+\contentsline {subsubsection}{次のステップの準備}{46}
+\contentsline {subsection}{\numberline {3.1.2}中心星重力}{46}
+\contentsline {subsection}{\numberline {3.1.3}タイムステップ }{47}
+\contentsline {subsubsection}{Variable Timestep (可変タイムステップ) }{47}
+\contentsline {subsubsection}{Shared Timestep (共有タイムステップ) とその限界}{48}
+\contentsline {subsubsection}{Individual Timestep (独立タイムステップ) }{49}
+\contentsline {section}{\numberline {3.2}重力散乱テスト計算}{49}
+\contentsline {subsection}{\numberline {3.2.1}1体のケプラー運動 (エネルギー，角運動量とタイムステップの関係)}{49}
+\contentsline {subsection}{\numberline {3.2.2}円軌道の惑星と微惑星の重力散乱}{50}
+\contentsline {subsection}{\numberline {3.2.3}ピタゴラス問題}{51}
+\contentsline {section}{\numberline {3.3}惑星移動に伴う小天体の軌道変化の数値計算}{54}
+\contentsline {subsection}{\numberline {3.3.1}４つの巨大惑星の４体シミュレーション}{55}
+\contentsline {subsubsection}{重力相互作用}{56}
+\contentsline {subsubsection}{永年共鳴の位置}{61}
+\contentsline {subsection}{\numberline {3.3.2}Kuiper Belt}{66}
+\contentsline {subsection}{\numberline {3.3.3}Asteroid Belt}{66}
+\contentsline {subsection}{\numberline {3.3.4}計算コードの見直し}{66}
+\contentsline {section}{\numberline {3.4}議論}{66}
+\contentsline {section}{\numberline {3.5}まとめ}{66}
