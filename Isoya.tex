@@ -103,9 +103,9 @@
 \caption{\label{fig:histogram}}
 \end{figure}
 
-続いて，離心率の分布をみると，小惑星帯は0から0.3まで均等に分布している（図 \ref{fig:ecc} 左参照）．
+続いて，離心率の分布をみると，小惑星帯は0から0.3まで均等に分布している（図 \ref{fig:obs_ecc} 左参照）．
 
-一方カイパーベルトでは，3:2の尽数関係の位置で0.1から0.3までに集中しており，また3:2と2:1の尽数関係の間の領域では0から0.2までに集中している．さらに，大多数の小天体が海王星と軌道交差しない領域にいる中で，3:2の尽数関係の位置には軌道交差しているものが比較的多く存在する（図 \ref{fig:ecc} 右参照）．
+一方カイパーベルトでは，3:2の尽数関係の位置で0.1から0.3までに集中しており，また3:2と2:1の尽数関係の間の領域では0から0.2までに集中している．さらに，大多数の小天体が海王星と軌道交差しない領域にいる中で，3:2の尽数関係の位置には軌道交差しているものが比較的多く存在する（図 \ref{fig:obs_ecc} 右参照）．
 
 \begin{figure}[H]
 \begin{tabular}{ccc}
@@ -124,12 +124,12 @@
 \end{minipage}\\
 %
 \end{tabular}
-\caption{\label{fig:ecc}}
+\caption{\label{fig:obs_ecc}}
 \end{figure}
 
-最後に，軌道傾斜角の分布をみると，先ほどと同様に，小惑星帯は0から0.3radまで均等に分布している（図 \ref{fig:inc} 左参照）．
+最後に，軌道傾斜角の分布をみると，先ほどと同様に，小惑星帯は0から0.3radまで均等に分布している（図 \ref{fig:obs_inc} 左参照）．
 
-一方カイパーベルトでは，3:2の尽数関係の位置では0から0.6radまで均等に分布しているが，42AUから2:1の尽数関係の位置までの領域では0から0.1radに集中している．また，軌道長半径が40AUから42AU，軌道傾斜角が0から0.2radの領域で，明らかに小天体の数が少ない（図 \ref{fig:inc} 右参照）．
+一方カイパーベルトでは，3:2の尽数関係の位置では0から0.6radまで均等に分布しているが，42AUから2:1の尽数関係の位置までの領域では0から0.1radに集中している．また，軌道長半径が40AUから42AU，軌道傾斜角が0から0.2radの領域で，明らかに小天体の数が少ない（図 \ref{fig:obs_inc} 右参照）．
 
 
 
@@ -151,7 +151,7 @@
 \end{minipage}\\
 %
 \end{tabular}
-\caption{\label{fig:inc}}
+\caption{\label{fig:obs_inc}}
 \end{figure}
 
 
@@ -342,7 +342,7 @@ v_{\rm p} = n a \sqrt{\frac{1 + e}{1 - e}} \quad {\rm and} \quad v_{\rm a} = n a
 \dot{x} = - \frac{n a}{\sqrt{1 - e^2}} \sin f \quad {\rm and} \quad  \dot{y} = + \frac{n a}{\sqrt{1 - e^2}} (e^2 + \cos f). \label{eq:xdotydot}
 \end{equation}
 
-(\ref{eq:v2new}) 式と (\ref{eq:energyC}) 式を比較すると，エネルギー積分 C は以下の形で表される．
+(\ref{eq:v2new}) 式と (\ref{eq:energyC}) 式を比較すると，エネルギー積分 $C$ は以下の形で表される．
 \begin{equation}
 C = - \frac{\mu}{2 a}. \label{eq:C}
 \end{equation}
@@ -1431,7 +1431,7 @@ e & = & e_0 - \frac{n \alpha}{\dot{\varpi}} (m' / m_c) C_3 e' [\cos \varpi_0 - \
 \end{equation}
 で正弦関数的に変化することが予測される．また $\varpi$ と $\Omega$ は $C_1, C_2$ の符号に依存して，時間とともに線形的に増加，または減少することが予測される．
 
-\subsubsection{共鳴項 \label{sec:resonant}}
+\subsubsection{共鳴項}
 今度は，例えば，$3.27{\rm AU}$ で木星からの摂動を受ける小惑星の運動に着目する．木星の軌道長半径は $5.20 {\rm AU}$ であるから，ケプラーの第3法則より周期の比は $(3.27/5.20)^{3/2} \approx 0.499$ である．よって，$2 n' \approx n$ という関係が得られ，共鳴項の重要性が予想される．したがって，2:1共鳴の近傍では，上で議論した永年項だけでなく，摂動関数の展開式中の $2 \lambda' - \lambda$ を含む項 (すなわち，この位置における共鳴項) についても考える必要がある．
 
 (\ref{eq:cal_RD(012)}) 式から (\ref{eq:cal_RD(2)}) 式より，二次のオーダーまでの展開式中の $\langle {\cal R} \rangle / a'$ には，ある $j$ の値に対して $2\lambda' - \lambda$ を含む余弦偏角を持つ項が2つある．平均摂動関数の意味のある直接部は，
@@ -1475,7 +1475,7 @@ e & = e_0 + \frac{n \alpha (m' / m_c) C_4}{2 n' - n - \dot{\varpi}} [\cos (2 \la
 \subsubsection{短周期項と微小振幅項}
 摂動関数の形を知ることで，重要そうな永年偏角と共鳴偏角を分離することができる．事実上，平均経度を含む他のすべての項は短周期であり，それらの効果は平均してゼロになるものとしている．これが平均法である．したがって短周期項は存在しているが，その効果は無視できると思われる．
 
-\ref{sec:resonant} 節では，どの項が摂動を受けた小惑星の運動を支配しているのかを知りたいときに，$j_1 n' + j_2 n \approx 0$ を満たす整数 $j_1, j_2$ を見つけなければならなかった．これらは (\ref{eq:Delta_a})，(\ref{eq:Delta_e})，(\ref{eq:Delta_varpi}) 式の分母を小さくするからである．したがって $3.27 {\rm AU}$ の近傍での支配的な項は，$2 n' - n \approx 0$ となる $j_1 = \pm 2$ と $j_2 = \mp 1$ を持つ項だろう．しかし，これは同様に分母を小さくする $j_1 = \pm 4, \pm 6, \cdots$ と $j_2 = \mp 2, \mp 3, \cdots$ を持つ項についても考えなければいけないことを示唆している，  
+共鳴項の場合は，どの項が摂動を受けた小惑星の運動を支配しているのかを知りたいときに，$j_1 n' + j_2 n \approx 0$ を満たす整数 $j_1, j_2$ を見つけなければならなかった．これらは (\ref{eq:Delta_a})，(\ref{eq:Delta_e})，(\ref{eq:Delta_varpi}) 式の分母を小さくするからである．したがって $3.27 {\rm AU}$ の近傍での支配的な項は，$2 n' - n \approx 0$ となる $j_1 = \pm 2$ と $j_2 = \mp 1$ を持つ項だろう．しかし，これは同様に分母を小さくする $j_1 = \pm 4, \pm 6, \cdots$ と $j_2 = \mp 2, \mp 3, \cdots$ を持つ項についても考えなければいけないことを示唆している，  
 この共鳴での運動に寄与する項が無限個あるのだろうか．単純な整数論によると，2つの実数 (この場合は2つの平均運動) の比は常に有理数で任意の精度まで近似できる．どんな軌道長半径での摂動関数に対しても振幅の大きな項をもたらす無限個の共鳴が存在するのだろうか．
 
 これらのパラドックスは，関数 $S$，すなわち摂動関数の「強さ」の表式を考えることで解決できる ((\ref{eq:S}) 式参照)．簡単のため，平面上での円制限3体問題での平均運動が尽数関係に近い場合を考える．共鳴偏角を次のようにおく．
@@ -1819,7 +1819,7 @@ e_{\rm forced} = \sqrt{h_0^2 + k_0^2} \rightarrow \sqrt{h_l^2 + k_l^2} = e_l
 \item 次のステップの準備をする．3. のループの最後の ${\bm a}_{1,j}^{{\rm new}}$, $\dot{{\bm a}}_{1,j}^{{\rm new}}$ を次のステップのための ${\bm a}_{0,j}$ と $\dot{{\bm a}}_{0,j}$ に更新し，次のステップの $\Delta t$ を求める．1. に戻る．
 \end{enumerate}
 
-\subsubsection{予測子を求める \label{sec:predictor}}
+\subsubsection{予測子を求める}
 $t + \Delta t$ での粒子の位置，速度を次のように予測する．
 \begin{eqnarray}
 {\bm x}_{p,j} & = & {\bm x}_{0,j} + \Delta t {\bm v}_{0,j} + \frac{\Delta t ^2}{2} {\bm a}_{0,j} + \frac{\Delta t ^3}{6} \dot{{\bm a}}_{0,j}, \\
@@ -1845,7 +1845,7 @@ $\epsilon$ は計算上の発散を抑えるための softning parameter で，�
 
 ${\bm a}_{1,j}$ は3次精度，$\dot{{\bm a}}_{1,j}$ は2次精度である．
 
-\subsubsection{${\bm a}^{(2)}, {\bm a}^{(3)}$ を求める．\label{sec:corrector}}
+\subsubsection{${\bm a}^{(2)}, {\bm a}^{(3)}$ を求める}
 Taylor 展開により，
 \begin{eqnarray}
 {\bm a}_{1,j} & = & {\bm a}_{0,j} + \Delta t \dot{{\bm a}}_{0,j} + \frac{\Delta t ^2}{2} {\bm a}_{0,j}^{(2)} + \frac{\Delta t ^3}{6} {\bm a}_{0,j}^{(3)}, \\
@@ -1874,7 +1874,7 @@ ${\bm x}_{c,j}, {\bm v}_{c,j}$ での加速度 (${\bm a}_{1,j}^{\rm new}$) と�
 \end{eqnarray}
 とすれば求まる．
 
-${\bm a}_{1,j}^{\rm new}, \dot{{\bm a}}_{1,j}^{\rm new}$ を ${\bm a}_{1,j}, \dot{{\bm a}}_{1,j}$ として，\ref{sec:corrector} に戻る．必要な回数だけこれを繰り返す (iteration)．このループでは ${\bm x}_{p,j}, {\bm v}_{p,j}$ は更新しないことに注意．
+${\bm a}_{1,j}^{\rm new}, \dot{{\bm a}}_{1,j}^{\rm new}$ を ${\bm a}_{1,j}, \dot{{\bm a}}_{1,j}$ として，「${\bm a}^{(2)}, {\bm a}^{(3)}$ を求める」に戻る．必要な回数だけこれを繰り返す (iteration)．このループでは ${\bm x}_{p,j}, {\bm v}_{p,j}$ は更新しないことに注意．
 
 \subsubsection{次のステップの準備}
 ループが終わったら，最後の ${\bm a}_{1,j}^{\rm new}, \dot{{\bm a}}_{1,j}^{\rm new}$ を次のステップのための ${\bm a}_{0,j}, \dot{{\bm a}}_{0,j}$ に更新する．
@@ -1892,7 +1892,7 @@ ${\bm a}_{1,j}^{\rm new}, \dot{{\bm a}}_{1,j}^{\rm new}$ を ${\bm a}_{1,j}, \do
 \end{eqnarray}
 のように見積もる．これは3次の精度で正しい．(Individual timestep ではこのまま進み，Shared timestep では $\Delta t_j$ で最小のものを $\Delta t$ とする．(\ref{sec:timestep} 参照))
 
-そして，\ref{sec:predictor} に戻る．
+そして，「予測子を求める」に戻る．
 
 $t = 0$ では，加速度の2階微分と3階微分は計算できないので，${\bm x}_j,{\bm v}_j$ での加速度 (${\bm a}_{0,j}$) とその時間微分を求め，
 \begin{equation}
@@ -1952,7 +1952,7 @@ N 体問題の場合に拡張して考えると，$i, j = 1, 2, 3, \cdots, N$ �
 以下のテスト計算，本計算では，中心星重力を外場として扱うことにした．
 
 \subsection{タイムステップ \label{sec:timestep}}
-\subsubsection{Variable Timestep (可変タイムステップ) \label{sec:variable}}
+\subsubsection{Variable Timestep (可変タイムステップ)}
 軌道計算の $\Delta t$ が大きすぎると数値的な誤差が大きくなり，逆に小さすぎても計算コストがかかる．したがって，取り扱う問題やその時の状態に合った $\Delta t$ を選ぶ必要がある．特に，時々刻々と状態が大きく変化するような現象 (近接相互作用など) を取り扱う場合は，$\Delta t$ を可変にするべきである．
 
 $\Delta t$ をどのように決めればよいかを考える．ある時刻 $t$ での粒子の位置を $x (t)$ とすると，$t + \Delta t$ での位置は，
@@ -1983,7 +1983,7 @@ $\Delta t$ は常に (\ref{eq:1storder})，(\ref{eq:2ndorder}) 式を満たす�
 効率がよいタイムステップの表式であることが知られている．
 
 \subsubsection{Shared Timestep (共有タイムステップ) とその限界}
-N 体計算では，各粒子 $j$ について，\ref{sec:variable} でやったようにして，$\Delta t_j (j = 1, 2, 3, \cdots , N)$ を計算する．例えば，その最小値
+N 体計算では，各粒子 $j$ について，「Variable Timestep (可変タイムステップ)」でやったようにして，$\Delta t_j (j = 1, 2, 3, \cdots , N)$ を計算する．例えば，その最小値
 \begin{equation}
 \Delta t  =  {\rm min} (\Delta t_j) ; j = 1, \cdots , N
 \end{equation}
@@ -2010,7 +2010,7 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 
 \section{重力散乱テスト計算}
 \subsection{1体のケプラー運動 (エネルギー，角運動量とタイムステップの関係)}
-４次のエルミート法のプログラムコードの計算精度が，本当に４次精度になっているのかをチェックする．質量 $M_c$ の中心星のまわりをテスト粒子がケプラー運動している場合を考える．中心星を原点におくと，テスト粒子の運動方程式は，
+４次のエルミート法のプログラムコードの計算精度が，本当に４次精度になっているのかをチェックする．質量 $M_c$ の中心星のまわりをテスト粒子がケプラー運動している場合を考える．質量 $M_c$ の中心星を原点におくと，テスト粒子の運動方程式は，
 \begin{equation}
 \frac{d^2 {\bm r}}{d t^2} = - \frac{G M_c {\bm r}}{r^3}
 \end{equation}
@@ -2020,16 +2020,16 @@ N 体計算で一番計算時間がかかるのが，$\mathcal{O} (N^2)$ の相�
 \end{equation}
 となる．この単位系では，時間 $2 \pi$ が $1$ 年に対応する．
 
-xy平面上で完全な円軌道（$e = 0, I = 0 {\rm rad}$）の場合と，３次元的に傾いた平面上で円軌道からわずかにずれた軌道（$e = 0.01, I = \pi / 10 {\rm rad}$）の場合の２種類の軌道でテスト計算を行い，全エネルギーと全角運動量の相対誤差を両対数グラフにプロットしたものが図 \ref{fig:relative_error} である．ここでタイムステップ $\Delta t$ は可変ではなく固定とし，全計算時間は $10$，softning parameter $\epsilon = 0$，iterationはしていない．さらに，相対誤差は，最終値と初期値の差の絶対値を初期値の絶対値で割ったものとして計算している．
+xy平面上で完全な円軌道（$a = 1 {\rm AU}, e = 0, I = 0 {\rm rad}$）の場合と，３次元的に傾いた平面上で円軌道からわずかにずれた軌道（$a = 1 {\rm AU}, e = 0.01, I = \pi / 10 {\rm rad}$）の場合の２種類の軌道でテスト計算を行い，全エネルギーと全角運動量の相対誤差を両対数グラフにプロットしたものが図 \ref{fig:relative_error} である．ここでタイムステップ $\Delta t$ は可変ではなく固定とし，全計算時間は $10$，softning parameter $\epsilon = 0$，iterationはしていない．さらに，相対誤差は，その時間での値と初期値の差の絶対値を初期値の絶対値で割ったものとして計算している（正の値のみ）．
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{./image/relative_error.pdf}
-\caption{\label{fig:relative_error}}
+\caption{テスト粒子が中心星のまわりを２種類の軌道（$a = 1 {\rm AU}, e = 0, I = 0 {\rm rad}$ と $a = 1 {\rm AU}, e = 0.01, I = \pi / 10 {\rm rad}$）でケプラー運動するときの，タイムステップを変えたときの全エネルギーと全角運動量の相対誤差．比較のため，$\Delta t^4$ の曲線を並べてプロットしている．\label{fig:relative_error}}
 \end{figure}
 ４次精度であれば，同じステップ数だけ計算したときの相対誤差は $\Delta t^5$ に比例する．また，$\Delta t$ が小さくなるにつれステップ数が $\Delta t^{-1}$ に比例して増えることから，全計算時間 $10$ 後の相対誤差は $\Delta t^4$ に比例するべきである．図 \ref{fig:relative_error} より，用いたプログラムの積分精度は確かに４次精度を保っていることが分かる．また，相対誤差が double 型の打ち切り誤差（$\sim 10^{-16}$）よりも小さくなることはなく，その下限値となる $\Delta t$ よりもタイムステップを小さくしても計算精度が上がることはない．このことも図 \ref{fig:relative_error} から読み取ることができる．
 
 \subsection{円軌道の惑星と微惑星の重力散乱}
-近接相互作用がきちんと計算されるかをチェックする．ここではタイムステップは shared timestep を用い，$\eta = 0.01$，softning parameter $\epsilon = 0$，iterationは3回とした．質量 $M_c$ の質量の中心星のまわりを，半径 $a_1$ の円軌道にある惑星（質量 $m_1 = 3 \times 10^{-6} M_c$）と，半径 $a_2$ の円軌道にある微惑星（質量 $m_2 = 1 \times 10^{-15} M_c$）がまわっているとする（$a_2 > a_1$）．半径が違うため角速度が異なり，いずれ惑星と微惑星は接近する．微惑星が惑星に１回だけ遭遇する場合の軌道変化を計算したいので，初期の配置は微惑星−中心星−惑星の角度が $90^{\circ}$ になるようにし，再びこの角度が $90^{\circ}$ になるとき計算終了とした．衝突パラメータ $b$ を惑星のヒル半径（$r_H = (m_1 / 3 M_c)^{1/3} a_1 = 10^{-2} a_1$）で規格化し，$b = (a_2 - a_1) / r_H = (a_2 - a_1) / a_1 \times 10^2$ とする．
+近接相互作用がきちんと計算されるかをチェックする．ここではタイムステップは shared timestep を用い，$\eta = 0.01$，softning parameter $\epsilon = 0$，iterationは3回とした．質量 $M_c$ の中心星のまわりを，半径 $a_1$ の円軌道にある惑星（質量 $m_1 = 3 \times 10^{-6} M_c$）と，半径 $a_2$ の円軌道にある微惑星（質量 $m_2 = 1 \times 10^{-15} M_c$）がまわっているとする（$a_2 > a_1$）．半径が違うため角速度が異なり，いずれ惑星と微惑星は接近する．微惑星が惑星に１回だけ遭遇する場合の軌道変化を計算したいので，初期の配置は微惑星−中心星−惑星の角度が $90^{\circ}$ になるようにし，再びこの角度が $90^{\circ}$ になるとき計算終了とした．衝突パラメータ $b$ を惑星のヒル半径（$r_H = (m_1 / 3 M_c)^{1/3} a_1 = 10^{-2} a_1$）で規格化し，$b = (a_2 - a_1) / r_H = (a_2 - a_1) / a_1 \times 10^2$ とする．
 
 規格化した衝突パラメータの変化（軌道長半径の変化に対応）を $\Delta b$，微惑星の離心率の変化を $\Delta e$（$(m_1 / 3 M_c)^{1/3} = 10^{-2}$ で規格化，初期は円軌道 $e = 0$ なので散乱後の $e$ と等しい），最接近距離を $r_{\rm min}$（ヒル半径 $r_H = 10^{-2} a_1$ で規格化）とする．
 
@@ -2038,19 +2038,19 @@ xy平面上で完全な円軌道（$e = 0, I = 0 {\rm rad}$）の場合と，３
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{./image/planetesimal_delta_b.pdf}
-\caption{\label{fig:delta_b}}
+\caption{衝突パラメータの変化 $\Delta b$．\label{fig:delta_b}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{./image/planetesimal_delta_e.pdf}
-\caption{\label{fig:delta_e}}
+\caption{離心率の変化 $\Delta e$（$(m_1 / 3 M_c)^{1/3} = 10^{-2}$ で規格化）．\label{fig:delta_e}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{./image/planetesimal_r_min.pdf}
-\caption{\label{fig:r_min}}
+\caption{最接近距離 $r_{\rm min}$（ヒル半径 $r_H = 10^{-2} a_1$ で規格化）．\label{fig:r_min}}
 \end{figure}
 
 
@@ -2062,10 +2062,10 @@ xy平面上で完全な円軌道（$e = 0, I = 0 {\rm rad}$）の場合と，３
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{./image/pythagoras_1.pdf}
-\caption{\label{fig:pythagoras}}
+\caption{ピタゴラス問題の初期配置．質量 3, 4, 5 の質点を辺長 3, 4, 5 の直角三角形の頂点におく．\label{fig:pythagoras}}
 \end{figure}
 
-初期には３つの質点が静止しているため，重心は静止している．図 \ref{fig:pythagoras} のような配置をすると，原点と重心が一致する．運動方程式を，距離の単位を $L$，質量の単位を $M$，時間の単位を $T$ で無次元化すると，
+初期には３つの質点が静止しているため，角運動量は０であり，重心は静止している．図 \ref{fig:pythagoras} のような配置をすると，原点と重心が一致する．運動方程式を，距離の単位を $L$，質量の単位を $M$，時間の単位を $T$ で無次元化すると，
 \begin{equation}
 \frac{G M T^2}{L^3} = 1
 \end{equation}
@@ -2122,28 +2122,24 @@ xy平面上で完全な円軌道（$e = 0, I = 0 {\rm rad}$）の場合と，３
 \includegraphics[width=8cm]{./image/pythagoras_orbit_60to70.pdf}
 \end{minipage}
 \end{tabular}
-\caption{\label{fig:pythagoras_orbit}}
+\caption{$t = 10$ごとの各質点の軌道．$t = 15.83$ 付近で質点 $m_2$ と質点 $m_3$ が最も接近し，$t = 60$ を超えたあたりからはその２つの質点が連星系をなして質点 $m_1$ と離れていく．\label{fig:pythagoras_orbit}}
 \end{figure}
 
-また，３つの質点の全エネルギーの相対誤差を計算し，その時間変化をプロットしたものが図 \ref{fig:pythagoras_E_error} である．さらに，$t = 15.83$付近でのエネルギー相対誤差を詳しく見るために拡大したものが図 \ref{fig:pythagoras_E_error_detail} である．
-
-
-
-
+また，３つの質点の全エネルギーの相対誤差を計算し，その時間変化をプロットしたものが図 \ref{fig:pythagoras_E_error} である．ここで，相対誤差はその時間での値と初期値の差を初期値の絶対値で割ったものとして計算している（負もとりうる）．さらに，$t = 15.83$ 付近でのエネルギー相対誤差を詳しく見るために拡大したものが図 \ref{fig:pythagoras_E_error_detail} である．
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{./image/pythagoras_E_error.pdf}
-\caption{\label{fig:pythagoras_E_error}}
+\includegraphics[width=8cm]{./image/pythagoras_E_error.pdf}
+\caption{全エネルギーの相対誤差の時間変化．\label{fig:pythagoras_E_error}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{./image/pythagoras_E_error_detail.pdf}
-\caption{\label{fig:pythagoras_E_error_detail}}
+\includegraphics[width=8cm]{./image/pythagoras_E_error_detail.pdf}
+\caption{全エネルギーの相対誤差の時間変化のうち，$t = 15.83$ 付近の最接近を拡大．\label{fig:pythagoras_E_error_detail}}
 \end{figure}
 
 \section{惑星移動に伴う小天体の軌道変化の数値計算}
-先行研究で使われた惑星移動モデル（Minton, D. A. \& Malhotra, R. 2009）を模擬し，ケプラー運動をする４つの巨大惑星（木星，土星，天王星，海王星）に，惑星同士の重力相互作用を含めた軌道計算を行った．
+先行研究で使われた惑星移動モデル（Minton, D. A. \& Malhotra, R. 2009）を模擬し，木星を内側へ $0.2 {\rm AU}$，土星を外側へ $0.8 {\rm AU}$，天王星を外側へ $3.0 {\rm AU}$，海王星を外側へ $7.0 {\rm AU}$ 移動させたときの，惑星や小天体の軌道要素の時間変化を数値計算によって求めた．
 
 この計算では，タイムステップは individual timestep を用い，$\eta = 0.05$，softning parameter $\epsilon = 0$，iteration は3回とした．
 
@@ -2520,53 +2516,397 @@ e_{\rm forced} = \sqrt{h_0^2 + k_0^2}, \quad I_{\rm forced} = \sqrt{p_0^2 + q_0^
 (\ref{eq:h_0_4planet}) 式から (\ref{eq:q_0_4planet}) 式より，$A$ の値が $g_i$，$B$ の値が $f_i$ と一致する場合に発散が生じることは明らかである．図 \ref{fig:PrecessionRate} は，それぞれの惑星の固有振動数 $g_i, f_i$と，テスト粒子の $A = g_t, B = f_t$ を軌道長半径の関数としてプロットしたものである．添字については，$t : テスト粒子$，$5 : 木星$，$6 : 土星$，$7 : 天王星$，$8 : 海王星$ としている（太陽系第 $i$ 惑星に対応させている）．(\ref{eq:A_test_4planet}) 式，(\ref{eq:B_test_4planet}) 式の定義より，中心星を質点と扱う場合 $A = - B$ であるから，$g_t, - f_t$ は重なっている．
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{./image/PrecessionRate_logAB.pdf}
+\includegraphics[width=8cm]{./image/PrecessionRate_logAB.pdf}
 \caption{惑星の固有振動数 $g_i, f_i$（定数）と，テスト粒子の $A = g_t, B = f_t$ を軌道長半径の関数としてプロットした．縦軸の歳差率の単位は「秒角／年」である．\label{fig:PrecessionRate}}
 \end{figure}
 この図から，$g_t = g_i$ となる交点の軌道長半径は離心率の永年共鳴の位置となることが分かり，その位置を $\nu_i$ と表記する（ (\ref{eq:nu_mu_4planet}) 式の $\nu_i$ と全く異なるので注意）．同様に，$f_t = f_i$ となる交点の軌道長半径は軌道傾斜角の永年共鳴の位置となることが分かり，その位置を $\nu_{1i}$ と表記する．惑星の固有振動数 $g_i, f_i$ とテスト粒子の $A, B$ は軌道長半径に依存するため，惑星の移動に伴いどちらも時間変化し，ゆえに交点の位置 $\nu_i, \nu_{1i}$ も時間変化する．図 \ref{fig:SecularResonanceAxis_ecc}，図 \ref{fig:SecularResonanceAxis_ecc_upto5AU} は離心率の永年共鳴の位置，図 \ref{fig:SecularResonanceAxis_inc}，図 \ref{fig:SecularResonanceAxis_inc_upto5AU} は軌道傾斜角を数値計算で求めた結果である．
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{./image/SecularResonanceAxis_ecc.pdf}
+\includegraphics[width=8cm]{./image/SecularResonanceAxis_ecc.pdf}
 \caption{離心率の永年共鳴の位置の時間変化．添字は $5 : 木星$，$6 : 土星$，$7 : 天王星$，$8 : 海王星$．軌道長半径の範囲は $0 {\rm AU} - 50 {\rm AU}$ である．\label{fig:SecularResonanceAxis_ecc}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{./image/SecularResonanceAxis_ecc_upto5AU.pdf}
+\includegraphics[width=8cm]{./image/SecularResonanceAxis_ecc_upto5AU.pdf}
 \caption{離心率の永年共鳴の位置の時間変化（小惑星帯付近を拡大）．添字は $5 : 木星$，$6 : 土星$，$7 : 天王星$，$8 : 海王星$．軌道長半径の範囲は $0 {\rm AU} - 5 {\rm AU}$ である．\label{fig:SecularResonanceAxis_ecc_upto5AU}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{./image/SecularResonanceAxis_inc.pdf}
+\includegraphics[width=8cm]{./image/SecularResonanceAxis_inc.pdf}
 \caption{軌道傾斜角の永年共鳴の位置の時間変化．添字は $15 : 木星$，$16 : 土星$，$17 : 天王星$，$18 : 海王星$．軌道長半径の範囲は $0 {\rm AU} - 50 {\rm AU}$ である．\label{fig:SecularResonanceAxis_inc}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{./image/SecularResonanceAxis_inc_upto5AU.pdf}
+\includegraphics[width=8cm]{./image/SecularResonanceAxis_inc_upto5AU.pdf}
 \caption{軌道傾斜角の永年共鳴の位置の時間変化（小惑星帯付近を拡大）．添字は $15 : 木星$，$16 : 土星$，$17 : 天王星$，$18 : 海王星$．軌道長半径の範囲は $0 {\rm AU} - 5 {\rm AU}$ である．\label{fig:SecularResonanceAxis_inc_upto5AU}}
 \end{figure}
 
 
-\subsection{Kuiper Belt}
+\subsection{カイパーベルト}
+今度は，カイパーベルトについて詳しく見るために，小天体の代わりにテスト粒子を1000個用意してカイパーベルト領域においた計算を行った．初期条件は，軌道長半径 $a = 28.0 {\rm AU} - 52.0 {\rm AU}$，離心率 $e = 0 - 0.05$，軌道傾斜角 $I = 0 {\rm rad} - 0.05 {\rm rad}$，その他の角度に関する軌道要素はすべてランダム
+
+
+\begin{figure}[H]
+\begin{tabular}{ccc}
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/kuiper_ecc_0yr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/kuiper_inc_0yr.pdf}
+\end{minipage}\\
+%
+\end{tabular}
+\caption{\label{fig:kuiper_ecc_inc_0yr}}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tabular}{ccc}
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/kuiper_ecc_1kyr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/kuiper_inc_1kyr.pdf}
+\end{minipage}\\
+%
+\end{tabular}
+\caption{\label{fig:kuiper_ecc_inc_1kyr}}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tabular}{ccc}
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/kuiper_ecc_10kyr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/kuiper_inc_10kyr.pdf}
+\end{minipage}\\
+%
+\end{tabular}
+\caption{\label{fig:kuiper_ecc_inc_10kyr}}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tabular}{ccc}
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/kuiper_ecc_100kyr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/kuiper_inc_100kyr.pdf}
+\end{minipage}\\
+%
+\end{tabular}
+\caption{\label{fig:kuiper_ecc_inc_100kyr}}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tabular}{ccc}
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/kuiper_ecc_1Myr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/kuiper_inc_1Myr.pdf}
+\end{minipage}\\
+%
+\end{tabular}
+\caption{\label{fig:kuiper_ecc_inc_1Myr}}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tabular}{ccc}
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/kuiper_ecc_10Myr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/kuiper_inc_10Myr.pdf}
+\end{minipage}\\
+%
+\end{tabular}
+\caption{\label{fig:kuiper_ecc_inc_10Myr}}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tabular}{ccc}
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/kuiper_ecc_20Myr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/kuiper_inc_20Myr.pdf}
+\end{minipage}\\
+%
+\end{tabular}
+\caption{\label{fig:kuiper_ecc_inc_20Myr}}
+\end{figure}
 
 
 
-\subsection{Asteroid Belt}
 
 
-
-
-
-
-
-
-
-\subsection{計算コードの見直し}
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{./image/Nbody_test.pdf}
+\includegraphics[width=8cm]{./image/kuiper_histogram_0yr.pdf}
+\caption{\label{}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{./image/kuiper_histogram_1kyr.pdf}
+\caption{\label{}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{./image/kuiper_histogram_10kyr.pdf}
+\caption{\label{}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{./image/kuiper_histogram_100kyr.pdf}
+\caption{\label{}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{./image/kuiper_histogram_1Myr.pdf}
+\caption{\label{}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{./image/kuiper_histogram_10Myr.pdf}
+\caption{\label{}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{./image/kuiper_histogram_20Myr.pdf}
+\caption{\label{}}
+\end{figure}
+
+\subsection{小惑星帯}
+続いて小惑星帯領域の小天体について
+
+
+\begin{figure}[H]
+\begin{tabular}{ccc}
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/asteroid_ecc_0yr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/asteroid_inc_0yr.pdf}
+\end{minipage}\\
+%
+\end{tabular}
+\caption{\label{fig:asteroid_ecc_inc_0yr}}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tabular}{ccc}
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/asteroid_ecc_1kyr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/asteroid_inc_1kyr.pdf}
+\end{minipage}\\
+%
+\end{tabular}
+\caption{\label{fig:asteroid_ecc_inc_1kyr}}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tabular}{ccc}
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/asteroid_ecc_10kyr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/asteroid_inc_10kyr.pdf}
+\end{minipage}\\
+%
+\end{tabular}
+\caption{\label{fig:asteroid_ecc_inc_10kyr}}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tabular}{ccc}
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/asteroid_ecc_100kyr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/asteroid_inc_100kyr.pdf}
+\end{minipage}\\
+%
+\end{tabular}
+\caption{\label{fig:asteroid_ecc_inc_100kyr}}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tabular}{ccc}
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/asteroid_ecc_1Myr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/asteroid_inc_1Myr.pdf}
+\end{minipage}\\
+%
+\end{tabular}
+\caption{\label{fig:asteroid_ecc_inc_1Myr}}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tabular}{ccc}
+%左
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/asteroid_ecc_5Myr.pdf}
+\end{minipage} &
+%調整
+\begin{minipage}[t]{0.1\hsize}
+\end{minipage} &
+%右
+\begin{minipage}[t]{0.45\hsize}
+\centering
+\includegraphics[width=8cm]{./image/asteroid_inc_5Myr.pdf}
+\end{minipage}\\
+%
+\end{tabular}
+\caption{\label{fig:asteroid_ecc_inc_5Myr}}
+\end{figure}
+
+
+
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{./image/asteroid_histogram_0yr.pdf}
+\caption{\label{}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{./image/asteroid_histogram_1kyr.pdf}
+\caption{\label{}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{./image/asteroid_histogram_10kyr.pdf}
+\caption{\label{}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{./image/asteroid_histogram_100kyr.pdf}
+\caption{\label{}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{./image/asteroid_histogram_1Myr.pdf}
+\caption{\label{}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{./image/asteroid_histogram_5Myr.pdf}
+\caption{\label{}}
+\end{figure}
+
+
+
+
+\section{計算コードの見直し}
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{./image/Nbody_test.pdf}
 \caption{\label{}}
 \end{figure}
 
