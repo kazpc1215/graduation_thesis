@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.11.21)  26 FEB 2017 23:26
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.11.21)  27 FEB 2017 00:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1061,14 +1061,14 @@ File: ./image/asteroid_histogram_5Myr.pdf Graphic file (type pdf)
 File: ./image/Nbody_test.pdf Graphic file (type pdf)
 
 <./image/Nbody_test.pdf> [74] [75]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2962.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2966.
  [76
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2962.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2966.
  (./Isoya.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2962.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2962.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2966.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2966.
 
 Package rerunfilecheck Info: File `Isoya.out' has not changed.
 (rerunfilecheck)             Checksum: 6B26759E9B07A583613D1B8380C05084;2965.
@@ -1079,15 +1079,15 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2962.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2966.
  ) 
 Here is how much of TeX's memory you used:
- 8651 strings out of 493693
- 133135 string characters out of 6149786
- 239152 words of memory out of 5000000
- 11965 multiletter control sequences out of 15000+600000
+ 8653 strings out of 493693
+ 133174 string characters out of 6149786
+ 239268 words of memory out of 5000000
+ 11967 multiletter control sequences out of 15000+600000
  30284 words of font info for 118 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 36i,22n,43p,1404b,498s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,22n,47p,1404b,508s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Isoya.dvi (76 pages, 401972 bytes).
+Output written on Isoya.dvi (76 pages, 402256 bytes).

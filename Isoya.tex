@@ -1,5 +1,5 @@
 %\documentclass[11pt,a4paper,oneside,onecolumn]{jarticle}
-%
+
 \documentclass[11pt,a4paper,oneside,onecolumn]{jreport}
 
 \usepackage[dvipdfmx]{graphicx,color}
@@ -31,12 +31,12 @@ bookmarksopen=false,     % /true   しおりのツリーを開くか、否か（
 bookmarksopenlevel=3,    % しおりの深さ
 %
 colorlinks=true,         % /true リンクに色をつけるか、否か（デフォルトはfalse）
-anchorcolor=pink,        % アンカーテキストの色指定（デフォルトはblack）
-citecolor=red,           % 参考文献リンクの色指定（デフォルトはgreen）
+anchorcolor=black,        % アンカーテキストの色指定（デフォルトはblack）
+citecolor=cyan,           % 参考文献リンクの色指定（デフォルトはgreen）
 filecolor=magenta,       % ローカルファイルリンクの色指定（デフォルトはmagenta）
-linkcolor=purple,        % 作成しているpdfファイルのリンクの色（デフォルトはred）
+linkcolor=magenta,        % 作成しているpdfファイルのリンクの色（デフォルトはred）
 linkbordercolor={1 0 0}, % R G B リンクを囲むボックスの色（デフォルトは1 0 0）
-urlcolor=red,         % 外部参照しているurlの色（デフォルトはmagenta）
+urlcolor=blue,         % 外部参照しているurlの色（デフォルトはmagenta）
 %
 pdfborder={1 1 1},       % 枠なし({0 0 1}デフォルト)
 pdftitle={巨大惑星の移動に伴う小天体の力学的進化},             % pdfのタイトル
@@ -187,7 +187,7 @@ pdfpagemode=UseThumbs,   % サムネイル表示
 \section{2体問題 \label{sec:2body}}
 2体問題とは，万有引力の法則で記述される2つの質点の相互作用による運動を考える問題である．2体問題は太陽系力学の中で最も単純で，かつ解析的に解くことができる．また，太陽系には様々な質量の物体があるが，2体問題に近似して考えることができる場面が多く，通常3体目の天体との相互作用は2体の系に対する摂動として扱う．
 \subsection{運動方程式 \label{sec:EoM}}
-2体問題の例として，質量がそれぞれ $m_1, m_2$ の2つの質点を考える．各点の位置ベクトルは ${\bm r}_1, {\bm r}_2$ である．また，$m_1$ を基準とした $m_2$ の相対ベクトルは ${\bm r} = {\bm r}_2 - {\bm r}_1$ と書ける (図 \ref{fig:A})．2つの質点の運動方程式は以下のように書ける．
+2体問題の例として，質量がそれぞれ $m_1, m_2$ の2つの質点を考える．各点の位置ベクトルは ${\bm r}_1, {\bm r}_2$ である．また，$m_1$ を基準とした $m_2$ の相対ベクトルは ${\bm r} = {\bm r}_2 - {\bm r}_1$ と書ける (図 \ref{fig:2body})．2つの質点の運動方程式は以下のように書ける．
 \begin{equation}
 {\bm F}_1 = + G \frac{m_1 m_2}{r^3} {\bm r} = m_1 \ddot{{\bm r}}_1 \quad {\rm and} \quad {\bm F}_2 = - G \frac{m_1 m_2}{r^3} {\bm r} = m_2 \ddot{{\bm r}}_2. \label{eq:F}
 \end{equation}
@@ -200,7 +200,7 @@ m_1 \ddot{{\bm r}}_1 + m_2 \ddot{{\bm r}}_2 = 0. \label{eq:mr}
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{./image/sec2_1.pdf}
-\caption{\label{fig:A}}
+\caption{Solar System Dynamics\cite{SSD} より引用 \label{fig:2body}}
 \end{figure}
 
 (\ref{eq:mr}) 式を両辺2階積分する．
@@ -1237,7 +1237,7 @@ ${\cal R'}$ の展開も考えると，
 {\cal R}_{\rm E} & = & - \left( \frac{r}{a} \right) \left( \frac{a'}{r'} \right)^2 \cos \psi, \label{eq:cal_RE} \\
 {\cal R}_{\rm I} & = & - \left( \frac{r'}{a'} \right) \left( \frac{a}{r} \right)^2 \cos \psi. \label{eq:cal_RI}
 \end{eqnarray}
-${\cal R}_{\rm D}$ は直接部，${\cal R}_{\rm E}$ は外側の摂動源による間接部，${\cal R}_{\rm I}$ は内側の摂動源による間接部から得られるものである．(\ref{eq:cal_R3})，(\ref{eq:cal_R3})，(\ref{eq:cal_RD}) 式から明らかなように，${\cal R}_{\rm D}$ の表式を用いて ${\cal R}, {\cal R'}$ の直接部を得ることができる．
+${\cal R}_{\rm D}$ は直接部，${\cal R}_{\rm E}$ は外側の摂動源による間接部，${\cal R}_{\rm I}$ は内側の摂動源による間接部から得られるものである．(\ref{eq:cal_R3})，(\ref{eq:cal_R'3})，(\ref{eq:cal_RD}) 式から明らかなように，${\cal R}_{\rm D}$ の表式を用いて ${\cal R}, {\cal R'}$ の直接部を得ることができる．
 
 (\ref{eq:cal_R_varphi})，(\ref{eq:varphi}) 式から，これらは角変数 $\varphi$ のオーダー，すなわち $\lambda$ と $\lambda'$ の係数の和によって分類できる．
 
@@ -2163,7 +2163,7 @@ xy平面上で完全な円軌道（$a = 1 {\rm AU}, e = 0, I = 0 {\rm rad}$）�
 \end{figure}
 
 \section{惑星移動に伴う小天体の軌道変化の数値計算}
-先行研究で使われた惑星移動モデル（Minton, D. A. \& Malhotra, R. 2009）を模擬し，木星を内側へ $0.2 {\rm AU}$，土星を外側へ $0.8 {\rm AU}$，天王星を外側へ $3.0 {\rm AU}$，海王星を外側へ $7.0 {\rm AU}$ 移動させたときの，惑星や小天体の軌道要素の時間変化を数値計算によって求めた．
+先行研究で使われた惑星移動モデル（Minton, D. A. \& Malhotra, R. 2009\cite{Minton}）を模擬し，木星を内側へ $0.2 {\rm AU}$，土星を外側へ $0.8 {\rm AU}$，天王星を外側へ $3.0 {\rm AU}$，海王星を外側へ $7.0 {\rm AU}$ 移動させたときの，惑星や小天体の軌道要素の時間変化を数値計算によって求めた．
 
 この計算では，タイムステップは individual timestep を用い，$\eta = 0.05$，softning parameter $\epsilon = 0$，iteration は3回とした．
 
@@ -2175,7 +2175,7 @@ a (t) = a_f - \Delta a \exp \left( - \frac{t}{\tau} \right) \label{eq:a(t)}
 \begin{equation}
 \Delta \ddot{\bm r} = \frac{\hat{{\bm v}}}{\tau} \left[ \sqrt{\frac{G M_{\odot}}{a_f}} - \sqrt{\frac{G M_{\odot}}{a_i}} \right] \exp \left(- \frac{t}{\tau} \right) \label{eq:delta_rddot}
 \end{equation}
-のように与えた（Malhotra, R. 1995）．ここで，$\hat{{\bm v}}$ は速度方向の単位ベクトル，$\Delta a$ は移動距離，$a_f$ は現在の軌道長半径，$a_i = a_f - \Delta a$ は初期の軌道長半径である．
+のように与えた（Malhotra, R. 1995\cite{Malhotra}）．ここで，$\hat{{\bm v}}$ は速度方向の単位ベクトル，$\Delta a$ は移動距離，$a_f$ は現在の軌道長半径，$a_i = a_f - \Delta a$ は初期の軌道長半径である．
 
 この加速度を与えたときの軌道長半径の時間変化について詳しく計算する．円軌道 $e = 0$を仮定すると，円柱座標系において速度方向は $\theta$ 方向と平行であるため，上で与える加速度のような微小摂動力は $d {\bm F} = \bar{T} \hat{\bm \theta}$ とおける．ガウスの惑星方程式を用いると，
 \begin{equation}
@@ -2196,7 +2196,7 @@ a (t) & \approx a_f \left[ 1 + 2 \left( 1 - \frac{1}{\sqrt{1 - \Delta a/ a_f}} \
 \end{equation}
 したがって，(\ref{eq:delta_rddot}) 式のような加速度の与え方は，$\Delta a \ll a_f$ である場合にのみ正しく，実際には $\Delta a/ a_f$ は木星 : $0.2 / 5.2 = 0.038$，土星 : $0.8 / 9.5 = 0.084$，天王星 : $3.0 /19.2 = 0.156$，海王星 : $7.0 / 30.1 = 0.233$ であるため，(\ref{eq:a(t)}) 式のような軌道長半径の時間変化を厳密には実現できていない．しかし，本研究では惑星移動の時間 $\tau$ の正確さよりも，惑星やテスト粒子の軌道要素の変化を正確に計算することに重きを置いているため，また初期値を決めたら後は時間にのみ依存する表式がシンプルであるため，(\ref{eq:delta_rddot}) 式を用いた．
 
-惑星移動の時間は $\tau = 0.5 {\rm Myr}$ とし，惑星の質量は，$5 {\rm Myr}$ の時間をかけて線形的に増加させた（Minton, D. A. \& Malhotra, R. 2009）．
+惑星移動の時間は $\tau = 0.5 {\rm Myr}$ とし，惑星の質量は，$5 {\rm Myr}$ の時間をかけて線形的に増加させた（Minton, D. A. \& Malhotra, R. 2009\cite{Minton}）．
 
 太陽は惑星との重力相互作用で動くはずであるが，太陽に比べて惑星の質量が十分小さいとし，太陽は原点に固定されているものと考え，太陽重力は外場として扱った．
 
@@ -2953,9 +2953,13 @@ e_{\rm forced} = \sqrt{h_0^2 + k_0^2}, \quad I_{\rm forced} = \sqrt{p_0^2 + q_0^
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{thebibliography}{9}
-  \bibitem{1} Carl D. Murray and Stanley F. Dermott 1999, Solar System Dynamics
-  \bibitem{2} 富坂幸治, 花輪知幸, 牧野淳一郎 2007, シリーズ現代の天文学 14 シミュレーション天文学
-  \bibitem{3} 木下宙, 天体と軌道の力学
+  \bibitem{Minton} Minton, D. A. and Malhotra, R. 2009, A record of planet migration in the main asteroid belt
+  \bibitem{Malhotra} Malhotra, R. 1995, The Origin of Pluto's Orbit: Implications for the Solar System Beyond Neptune
+  \bibitem{SSD} Carl D. Murray and Stanley F. Dermott 1999, Solar System Dynamics
+  \bibitem{simulation} 富坂幸治, 花輪知幸, 牧野淳一郎 2007, シリーズ現代の天文学 14 シミュレーション天文学
+  \bibitem{tenntai} 木下宙 1998, 天体と軌道の力学
+
+  
 \end{thebibliography}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
