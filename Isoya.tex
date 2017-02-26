@@ -154,6 +154,7 @@
 上で述べたような小天体の軌道の特徴を説明するために，巨大惑星（木星，土星，天王星，海王星）が現在の軌道長半径とは異なる場所で生まれ，時間をかけて移動し，現在の軌道長半径になったとするモデルが提唱され，惑星移動に関する研究が行われてきた．すなわち，小惑星帯やカイパーベルトには太陽系の惑星移動の痕跡が残されており，小天体の特徴的な分布がどのように作られたのかについて理解することは，太陽系の歴史を探ることにつながると考えられる．
 
 
+
 \chapter{天体力学の基礎}
 \section{2体問題 \label{sec:2body}}
 2体問題とは，万有引力の法則で記述される2つの質点の相互作用による運動を考える問題である．2体問題は太陽系力学の中で最も単純で，かつ解析的に解くことができる．また，太陽系には様々な質量の物体があるが，2体問題に近似して考えることができる場面が多く，通常3体目の天体との相互作用は2体の系に対する摂動として扱う．
@@ -1795,8 +1796,10 @@ e_{\rm forced} = \sqrt{h_0^2 + k_0^2} \rightarrow \sqrt{h_l^2 + k_l^2} = e_l
 %しかし，摂動源天体の軌道付近における粒子の軌道の性質について，一般化をしすぎることに注意する必要がある．
 強制離心率と強制軌道傾斜角を考えてきた結果は，$e, I$ が小さい値のときにのみ有効である．
 
-
 \chapter{本研究}
+\section{目的}
+
+
 \section{数値計算の方法}
 \subsection{4次のエルミート法 \label{sec:Hermite}}
 \subsubsection{手順}
@@ -2522,10 +2525,10 @@ e_{\rm forced} = \sqrt{h_0^2 + k_0^2}, \quad I_{\rm forced} = \sqrt{p_0^2 + q_0^
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{./image/SecularResonanceAxis_ecc_upto5AU.pdf}
-\caption{離心率の永年共鳴の位置の時間変化（小惑星帯付近を拡大）．添字は $5 : 木星$，$6 : 土星$，$7 : 天王星$，$8 : 海王星$．軌道長半径の範囲は0AU - 50AUである．\label{fig:SecularResonanceAxis_ecc_upto5AU}}
+\caption{離心率の永年共鳴の位置の時間変化（小惑星帯付近を拡大）．添字は $5 : 木星$，$6 : 土星$，$7 : 天王星$，$8 : 海王星$．軌道長半径の範囲は0AU - 5AUである．\label{fig:SecularResonanceAxis_ecc_upto5AU}}
 \end{figure}
 
-土星による離心率の永年共鳴の位置 $\nu_6$ が小惑星帯領域（2AU - 4AU）を通過していることが分かる．
+土星による離心率の永年共鳴の位置 $\nu_6$ が小惑星帯領域（2AU - 4AU）の一部を通過していることが分かる．
 
 続いて，図 \ref{fig:SecularResonanceAxis_inc}，図 \ref{fig:SecularResonanceAxis_inc_upto5AU} は軌道傾斜角の永年共鳴の位置を数値計算で求めた結果である．
 
@@ -2538,10 +2541,10 @@ e_{\rm forced} = \sqrt{h_0^2 + k_0^2}, \quad I_{\rm forced} = \sqrt{p_0^2 + q_0^
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{./image/SecularResonanceAxis_inc_upto5AU.pdf}
-\caption{軌道傾斜角の永年共鳴の位置の時間変化（小惑星帯付近を拡大）．添字は $15 : 木星$，$16 : 土星$，$17 : 天王星$，$18 : 海王星$．軌道長半径の範囲は0AU - 50AUである．\label{fig:SecularResonanceAxis_inc_upto5AU}}
+\caption{軌道傾斜角の永年共鳴の位置の時間変化（小惑星帯付近を拡大）．添字は $15 : 木星$，$16 : 土星$，$17 : 天王星$，$18 : 海王星$．軌道長半径の範囲は0AU - 5AUである．\label{fig:SecularResonanceAxis_inc_upto5AU}}
 \end{figure}
 
-土星による軌道傾斜角の永年共鳴の位置 $\nu_{16}$ が小惑星帯領域（2AU - 4AU）を通過していることが分かる．
+土星による軌道傾斜角の永年共鳴の位置 $\nu_{16}$ が小惑星帯領域（2AU - 4AU）の一部を通過していることが分かる．
 
 \subsection{カイパーベルト}
 今度は，カイパーベルトについて詳しく見るために，小天体の代わりにテスト粒子を1000個用意してカイパーベルト領域においた計算を20\ Myr行った．テスト粒子の初期条件は，軌道長半径 $a = 28.0 {\rm AU} - 52.0 {\rm AU}$，離心率 $e = 0 - 0.05$，軌道傾斜角 $I = 0\ {\rm rad} - 0.05\ {\rm rad}$，その他の角度に関する軌道要素 $0\ {\rm rad} - 2 \pi\ {\rm rad}$ の範囲の中でランダムに決めた．
@@ -2688,9 +2691,10 @@ e_{\rm forced} = \sqrt{h_0^2 + k_0^2}, \quad I_{\rm forced} = \sqrt{p_0^2 + q_0^
 \caption{$t = 2 \times 10^7\ {\rm yr}$ におけるテスト粒子と海王星の離心率（左）と軌道傾斜角（右）．\label{fig:kuiper_ecc_inc_20Myr}}
 \end{figure}
 
+これらの図から，平均運動共鳴の位置で確かに離心率と軌道傾斜角が上がることが分かる．そして，海王星と軌道交差する離心率まで上げられた場合，海王星と近接遭遇してヒル圏内に入るか双曲線軌道になる粒子がほとんどである．軌道交差をしているにも関わらず軌道が安定化している粒子は，少ない数ではあるが存在しており，これは観測データの特徴と一致する．
 
 
-
+以下の図は時間 $t = 0\ {\rm yr}, 1 \times 10^3\ {\rm yr}, 1 \times 10^4\ {\rm yr}, 1 \times 10^5\ {\rm yr}, 1 \times 10^6\ {\rm yr}, 1 \times 10^7\ {\rm yr}, 2 \times 10^7\ {\rm yr}$ におけるテスト粒子の軌道長半径に対する個数分布をプロットしたものである．
 
 \begin{figure}[H]
 \centering
@@ -2738,7 +2742,9 @@ e_{\rm forced} = \sqrt{h_0^2 + k_0^2}, \quad I_{\rm forced} = \sqrt{p_0^2 + q_0^
 
 
 \subsection{小惑星帯}
-続いて小惑星帯領域の小天体について
+続いて，小惑星帯について詳しく見るために，小天体の代わりにテスト粒子を800個用意して小惑星帯領域においた計算を5\ Myr行った．テスト粒子の初期条件は，軌道長半径 $a = 2.00 {\rm AU} - 3.75 {\rm AU}$，離心率 $e = 0 - 0.05$，軌道傾斜角 $I = 0\ {\rm rad} - 0.05\ {\rm rad}$，その他の角度に関する軌道要素 $0\ {\rm rad} - 2 \pi\ {\rm rad}$ の範囲の中でランダムに決めた．
+
+以下の図は時間 $t = 0\ {\rm yr}, 1 \times 10^3\ {\rm yr}, 1 \times 10^4\ {\rm yr}, 1 \times 10^5\ {\rm yr}, 1 \times 10^6\ {\rm yr}, 5 \times 10^6\ {\rm yr}$ におけるテスト粒子と木星の離心率と軌道傾斜角をプロットしたものである．整数比が上に書かれている破線は木星との平均運動共鳴の位置であり，$\nu_i, \nu_{1i}$ が上に書かれている破線は永年共鳴の位置を表している．また曲線は，遠日点距離が木星の軌道長半径と一致するときの，軌道長半径と離心率の関係を表している．木星の円について，横軸方向の半径の大きさは木星のヒル半径（AU）と等しい．初期に惑星の質量が０としたため，$t = 0\ {\rm yr}$ での木星の円と永年共鳴の位置は定義できない．
 
 
 \begin{figure}[H]
@@ -2758,7 +2764,7 @@ e_{\rm forced} = \sqrt{h_0^2 + k_0^2}, \quad I_{\rm forced} = \sqrt{p_0^2 + q_0^
 \end{minipage}\\
 %
 \end{tabular}
-\caption{\label{fig:asteroid_ecc_inc_0yr}}
+\caption{$t = 0\ {\rm yr}$ におけるテスト粒子と木星の離心率（左）と軌道傾斜角（右）．\label{fig:asteroid_ecc_inc_0yr}}
 \end{figure}
 
 \begin{figure}[H]
@@ -2778,7 +2784,7 @@ e_{\rm forced} = \sqrt{h_0^2 + k_0^2}, \quad I_{\rm forced} = \sqrt{p_0^2 + q_0^
 \end{minipage}\\
 %
 \end{tabular}
-\caption{\label{fig:asteroid_ecc_inc_1kyr}}
+\caption{$t = 1 \times 10^3\ {\rm yr}$ におけるテスト粒子と木星の離心率（左）と軌道傾斜角（右）．\label{fig:asteroid_ecc_inc_1kyr}}
 \end{figure}
 
 \begin{figure}[H]
@@ -2798,7 +2804,7 @@ e_{\rm forced} = \sqrt{h_0^2 + k_0^2}, \quad I_{\rm forced} = \sqrt{p_0^2 + q_0^
 \end{minipage}\\
 %
 \end{tabular}
-\caption{\label{fig:asteroid_ecc_inc_10kyr}}
+\caption{$t = 1 \times 10^4\ {\rm yr}$ におけるテスト粒子と木星の離心率（左）と軌道傾斜角（右）．\label{fig:asteroid_ecc_inc_10kyr}}
 \end{figure}
 
 \begin{figure}[H]
@@ -2818,7 +2824,7 @@ e_{\rm forced} = \sqrt{h_0^2 + k_0^2}, \quad I_{\rm forced} = \sqrt{p_0^2 + q_0^
 \end{minipage}\\
 %
 \end{tabular}
-\caption{\label{fig:asteroid_ecc_inc_100kyr}}
+\caption{$t = 1 \times 10^5\ {\rm yr}$ におけるテスト粒子と木星の離心率（左）と軌道傾斜角（右）．\label{fig:asteroid_ecc_inc_100kyr}}
 \end{figure}
 
 \begin{figure}[H]
@@ -2838,7 +2844,7 @@ e_{\rm forced} = \sqrt{h_0^2 + k_0^2}, \quad I_{\rm forced} = \sqrt{p_0^2 + q_0^
 \end{minipage}\\
 %
 \end{tabular}
-\caption{\label{fig:asteroid_ecc_inc_1Myr}}
+\caption{$t = 1 \times 10^6\ {\rm yr}$ におけるテスト粒子と木星の離心率（左）と軌道傾斜角（右）．\label{fig:asteroid_ecc_inc_1Myr}}
 \end{figure}
 
 \begin{figure}[H]
@@ -2858,48 +2864,48 @@ e_{\rm forced} = \sqrt{h_0^2 + k_0^2}, \quad I_{\rm forced} = \sqrt{p_0^2 + q_0^
 \end{minipage}\\
 %
 \end{tabular}
-\caption{\label{fig:asteroid_ecc_inc_5Myr}}
+\caption{$t = 5 \times 10^6\ {\rm yr}$ におけるテスト粒子と木星の離心率（左）と軌道傾斜角（右）．\label{fig:asteroid_ecc_inc_5Myr}}
 \end{figure}
 
 
 
 
-
+以下の図は時間 $t = 0\ {\rm yr}, 1 \times 10^3\ {\rm yr}, 1 \times 10^4\ {\rm yr}, 1 \times 10^5\ {\rm yr}, 1 \times 10^6\ {\rm yr}, 5 \times 10^6\ {\rm yr}$ におけるテスト粒子の軌道長半径に対する個数分布をプロットしたものである．
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{./image/asteroid_histogram_0yr.pdf}
-\caption{\label{}}
+\caption{$t = 0\ {\rm yr}$ におけるテスト粒子の軌道長半径に対する個数分布．\label{fig:asteroid_histogram_0yr}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{./image/asteroid_histogram_1kyr.pdf}
-\caption{\label{}}
+\caption{$t = 1 \times 10^3\ {\rm yr}$ におけるテスト粒子の軌道長半径に対する個数分布．\label{fig:asteroid_histogram_1kyr}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{./image/asteroid_histogram_10kyr.pdf}
-\caption{\label{}}
+\caption{$t = 1 \times 10^4\ {\rm yr}$ におけるテスト粒子の軌道長半径に対する個数分布．\label{fig:asteroid_histogram_10kyr}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{./image/asteroid_histogram_100kyr.pdf}
-\caption{\label{}}
+\caption{$t = 1 \times 10^5\ {\rm yr}$ におけるテスト粒子の軌道長半径に対する個数分布．\label{fig:asteroid_histogram_100kyr}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{./image/asteroid_histogram_1Myr.pdf}
-\caption{\label{}}
+\caption{$t = 1 \times 10^6\ {\rm yr}$ におけるテスト粒子の軌道長半径に対する個数分布．\label{fig:asteroid_histogram_1Myr}}
 \end{figure}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{./image/asteroid_histogram_5Myr.pdf}
-\caption{\label{}}
+\caption{$t = 5 \times 10^6\ {\rm yr}$ におけるテスト粒子の軌道長半径に対する個数分布．\label{fig:asteroid_histogram_5Myr}}
 \end{figure}
 
 
@@ -2915,6 +2921,7 @@ e_{\rm forced} = \sqrt{h_0^2 + k_0^2}, \quad I_{\rm forced} = \sqrt{p_0^2 + q_0^
 \section{議論}
 
 \section{まとめ}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{thebibliography}{9}
