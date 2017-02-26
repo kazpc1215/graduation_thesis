@@ -19,6 +19,35 @@
 \usepackage{indentfirst}
 \usepackage{fancyhdr}
 
+
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage[dvipdfmx,
+draft=false,             % /true   hyperrefの全ての機能を無効にする（デフォルトはfalse）
+%
+bookmarks=true,          % /false  しおりを作るか、否か（デフォルトはtrue）
+bookmarksnumbered=true, % /true   しおりに節番号などを付けるか、否か（デフォルトはfalse）
+bookmarksopen=false,     % /true   しおりのツリーを開くか、否か（デフォルトはfalse）
+bookmarksopenlevel=3,    % しおりの深さ
+%
+colorlinks=true,         % /true リンクに色をつけるか、否か（デフォルトはfalse）
+anchorcolor=pink,        % アンカーテキストの色指定（デフォルトはblack）
+citecolor=red,           % 参考文献リンクの色指定（デフォルトはgreen）
+filecolor=magenta,       % ローカルファイルリンクの色指定（デフォルトはmagenta）
+linkcolor=purple,        % 作成しているpdfファイルのリンクの色（デフォルトはred）
+linkbordercolor={1 0 0}, % R G B リンクを囲むボックスの色（デフォルトは1 0 0）
+urlcolor=red,         % 外部参照しているurlの色（デフォルトはmagenta）
+%
+pdfborder={1 1 1},       % 枠なし({0 0 1}デフォルト)
+pdftitle={巨大惑星の移動に伴う小天体の力学的進化},             % pdfのタイトル
+pdfauthor={Kazuhide Isoya},            % pdfの著者名
+pdfsubject={共鳴現象から太陽系の歴史を探る},           % pdfのサブタイトル
+pdfkeywords={卒論},          % pdfのキーワード
+pdfpagemode=UseThumbs,   % サムネイル表示
+]{hyperref}
+\usepackage{pxjahyper}%日本語目次
+
+
 \renewcommand{\bibname}{参考文献}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -77,7 +106,7 @@
 \chapter{背景}
 現在の太陽系には，小惑星帯やエッジワース$\cdot$カイパーベルト（以下ではカイパーベルトと呼ぶ）のような，小天体が数多く集まっている領域がある．標準的な惑星形成モデルの後期における，微惑星が衝突合体を繰り返して原始惑星，惑星へと成長する過程で，これらの小天体は惑星サイズの大きさになれずに取り残された微惑星，または微惑星同士，原始惑星同士の衝突破壊の際の破片だと考えられている．また，これらの領域で見つかっている小天体は数が多く，統計的に扱うことができる．
 
-これらの小天体の軌道の特徴について，多くの観測事実が存在する．以下に示す観測データは IAU Minor Planet Center から引用し，直径が50\ km以上の比較的大きな小天体を選んでいる．
+これらの小天体の軌道の特徴について，多くの観測事実が存在する．以下に示す観測データは IAU Minor Planet Center - MPC Database Search\footnote{\url{http://www.minorplanetcenter.net/db_search}}から引用し，直径が50\ km以上の比較的大きな小天体を選んでいる．
 
 軌道長半径がおよそ2AUから4AUまでの範囲を小惑星帯と呼び，火星と木星の軌道の間に存在する．軌道長半径に対する個数分布は，小天体の周期と木星の周期が尽数関係になる位置で大きなギャップが存在する（図 \ref{fig:obs_histogram} 左参照）．この周期が尽数関係になるとき，後に紹介する「平均運動共鳴」が起こる．
 
@@ -152,7 +181,6 @@
 \end{figure}
 
 上で述べたような小天体の軌道の特徴を説明するために，巨大惑星（木星，土星，天王星，海王星）が現在の軌道長半径とは異なる場所で生まれ，時間をかけて移動し，現在の軌道長半径になったとするモデルが提唱され，惑星移動に関する研究が行われてきた．すなわち，小惑星帯やカイパーベルトには太陽系の惑星移動の痕跡が残されており，小天体の特徴的な分布がどのように作られたのかについて理解することは，太陽系の歴史を探ることにつながると考えられる．
-
 
 
 \chapter{天体力学の基礎}
@@ -2174,7 +2202,7 @@ a (t) & \approx a_f \left[ 1 + 2 \left( 1 - \frac{1}{\sqrt{1 - \Delta a/ a_f}} \
 
 テスト粒子が４つのうちいずれかの惑星のヒル圏内に入った場合や，離心率が1を超えて双曲線軌道になる場合には，その粒子は計算をやめ，プログラム中でループから外すようにしている．このようにすることで，タイムステップが小さくなりすぎて計算が遅くなることを防ぎ，また小惑星帯やカイパーベルトの小天体がどの程度減らされるのかを確認することができる．
 
-惑星の軌道要素の初期値として，NASA Planetary Fact Sheets\footnote{http://nssdc.gsfc.nasa.gov/planetary/planetfact.html} の Mean Orbital Elements (J2000) の値を引用した．
+惑星の軌道要素の初期値として，NASA Planetary Fact Sheets\footnote{\url{http://nssdc.gsfc.nasa.gov/planetary/planetfact.html}} の Mean Orbital Elements (J2000) の値を引用した．
 
 
 \subsection{４つの巨大惑星の４体シミュレーション}

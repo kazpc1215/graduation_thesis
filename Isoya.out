@@ -1,0 +1,37 @@
+\BOOKMARK [0][-]{chapter.1}{第1章 背景}{}% 1
+\BOOKMARK [0][-]{chapter.2}{第2章 天体力学の基礎}{}% 2
+\BOOKMARK [1][-]{section.2.1}{2.1 2体問題 }{chapter.2}% 3
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 運動方程式 }{section.2.1}% 4
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 軌道と速度 }{section.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 平均近点離角と離心近点離角}{section.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.1.4}{2.1.4 軌道要素 }{section.2.1}% 7
+\BOOKMARK [1][-]{section.2.2}{2.2 制限3体問題 }{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 運動方程式}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 ヤコビ積分}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 ティスランの関係式}{section.2.2}% 11
+\BOOKMARK [1][-]{section.2.3}{2.3 摂動関数 }{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 摂動関数}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 ルジャンドル多項式を用いた展開}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 摂動関数の利用}{section.2.3}% 15
+\BOOKMARK [2][-]{subsection.2.3.4}{2.3.4 ラグランジュの惑星方程式}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.5}{2.3.5 摂動関数中の偏角の分類}{section.2.3}% 17
+\BOOKMARK [1][-]{section.2.4}{2.4 永年摂動}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 ２つの惑星の永年摂動 }{section.2.4}% 19
+\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2 自由要素と強制要素 }{section.2.4}% 20
+\BOOKMARK [0][-]{chapter.3}{第3章 本研究}{}% 21
+\BOOKMARK [1][-]{section.3.1}{3.1 目的}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.2}{3.2 数値計算の方法}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 4次のエルミート法 }{section.3.2}% 24
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 中心星重力}{section.3.2}% 25
+\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 タイムステップ }{section.3.2}% 26
+\BOOKMARK [1][-]{section.3.3}{3.3 重力散乱テスト計算}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 1体のケプラー運動 \(エネルギー，角運動量とタイムステップの関係\)}{section.3.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 円軌道の惑星と微惑星の重力散乱}{section.3.3}% 29
+\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3 ピタゴラス問題}{section.3.3}% 30
+\BOOKMARK [1][-]{section.3.4}{3.4 惑星移動に伴う小天体の軌道変化の数値計算}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 ４つの巨大惑星の４体シミュレーション}{section.3.4}% 32
+\BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 カイパーベルト}{section.3.4}% 33
+\BOOKMARK [2][-]{subsection.3.4.3}{3.4.3 小惑星帯}{section.3.4}% 34
+\BOOKMARK [1][-]{section.3.5}{3.5 計算コードの見直し}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.6}{3.6 議論}{chapter.3}% 36
+\BOOKMARK [1][-]{section.3.7}{3.7 まとめ}{chapter.3}% 37
