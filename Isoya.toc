@@ -46,7 +46,6 @@
 \contentsline {subsubsection}{重力相互作用}{57}{section*.38}
 \contentsline {subsubsection}{永年共鳴の位置}{62}{section*.45}
 \contentsline {subsection}{\numberline {3.4.2}カイパーベルト}{67}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}小惑星帯}{71}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}計算コードの見直し}{76}{section.3.5}
-\contentsline {section}{\numberline {3.6}議論}{76}{section.3.6}
-\contentsline {section}{\numberline {3.7}まとめ}{76}{section.3.7}
+\contentsline {subsection}{\numberline {3.4.3}小惑星帯}{72}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}今後の課題}{76}{section.3.5}
+\contentsline {section}{\numberline {3.6}まとめと議論}{77}{section.3.6}
