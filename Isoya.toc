@@ -21,6 +21,12 @@
 \contentsline {section}{\numberline {1.4}永年摂動}{37}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}２つの惑星の永年摂動 }{37}{subsection.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}自由要素と強制要素 }{40}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}共鳴摂動}{45}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}共鳴の幾何　（工事中）}{45}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}共鳴の物理　（工事中）}{45}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}軌道要素の変化　（工事中）}{45}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}円制限3体問題における共鳴　（工事中）}{45}{subsection.1.5.4}
+\contentsline {subsection}{\numberline {1.5.5}共鳴の幅　（工事中）}{45}{subsection.1.5.5}
 \contentsline {chapter}{\numberline {第2章}本研究}{46}{chapter.2}
 \contentsline {section}{\numberline {2.1}目的}{46}{section.2.1}
 \contentsline {section}{\numberline {2.2}数値計算の方法}{46}{section.2.2}
@@ -47,6 +53,6 @@
 \contentsline {subsubsection}{永年共鳴の位置}{63}{section*.46}
 \contentsline {subsection}{\numberline {2.4.2}カイパーベルト}{68}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}小惑星帯}{73}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}今後の課題}{77}{section.2.5}
-\contentsline {section}{\numberline {2.6}まとめと議論}{78}{section.2.6}
-\contentsline {chapter}{謝辞}{79}{chapter*.79}
+\contentsline {section}{\numberline {2.5}今後の課題}{78}{section.2.5}
+\contentsline {section}{\numberline {2.6}まとめと議論}{79}{section.2.6}
+\contentsline {chapter}{謝辞}{80}{chapter*.79}

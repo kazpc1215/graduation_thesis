@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.11.21)  28 FEB 2017 00:07
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.11.21)  28 FEB 2017 20:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -422,24 +422,24 @@ LaTeX Warning: Label `eq:forced' multiply defined.
 )
 \openout1 = `Isoya.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -462,7 +462,7 @@ Package caption Info: End \AtBeginDocument code.
 * \oddsidemargin=-1.1381pt
 * \evensidemargin=-1.1381pt
 * \topmargin=-38.1381pt
-* \headheight=12.0pt
+* \headheight=16.0pt
 * \headsep=25.0pt
 * \topskip=8.51457pt
 * \footskip=30.0pt
@@ -480,7 +480,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box53
-Package hyperref Info: Link coloring ON on input line 95.
+Package hyperref Info: Link coloring ON on input line 100.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -489,33 +489,33 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count122
 )
-LaTeX Info: Redefining \ref on input line 95.
-LaTeX Info: Redefining \pageref on input line 95.
-LaTeX Info: Redefining \nameref on input line 95.
+LaTeX Info: Redefining \ref on input line 100.
+LaTeX Info: Redefining \pageref on input line 100.
+LaTeX Info: Redefining \nameref on input line 100.
 
 (./Isoya.out) (./Isoya.out)
 \@outlinefile=\write3
 \openout3 = `Isoya.out'.
 
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 100.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 100.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 100.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 100.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 100.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 100.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 105.
  [1
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <20.74> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 103.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 108.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <20.74> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 103.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 108.
  (./Isoya.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 3.
 
@@ -533,17 +533,25 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write4
 \openout4 = `Isoya.toc'.
 
- [3]
-File: ./image/mainbelt_histogram.pdf Graphic file (type pdf)
 
-<./image/mainbelt_histogram.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 121--122
+
+LaTeX Font Warning: Font shape `JT1/mc/m/sl' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 109.
+
+
+LaTeX Font Warning: Font shape `JY1/mc/m/sl' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 109.
+
+[3]
+File: ./image/mainbelt_histogram.pdf Graphic file (type pdf)
+ <./image/mainbelt_histogram.pdf>
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 126--127
  [][] 
  []
 
 File: ./image/kuiperbelt_histogram.pdf Graphic file (type pdf)
 <./image/kuiperbelt_histogram.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 129--130
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 134--135
  [][] 
  []
 
@@ -553,34 +561,34 @@ Overfull \hbox (22.76358pt too wide) in paragraph at lines 129--130
 ]
 File: ./image/mainbelt_ecc.pdf Graphic file (type pdf)
  <./image/mainbelt_ecc.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 148--149
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 153--154
  [][] 
  []
 
 File: ./image/kuiperbelt_ecc.pdf Graphic file (type pdf)
 <./image/kuiperbelt_ecc.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 156--157
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 161--162
  [][] 
  []
 
 File: ./image/mainbelt_inc.pdf Graphic file (type pdf)
 <./image/mainbelt_inc.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 175--176
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 180--181
  [][] 
  []
 
 File: ./image/kuiperbelt_inc.pdf Graphic file (type pdf)
 <./image/kuiperbelt_inc.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 183--184
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 188--189
  [][] 
  []
 
 [5] [6]
 第 1 章
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 205.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 211.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 205.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 211.
 File: ./image/sec2_1.pdf Graphic file (type pdf)
 <./image/sec2_1.pdf> [7
 
@@ -626,11 +634,11 @@ File: ./image/sec7_3.pdf Graphic file (type pdf)
 ] [47] [48]
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 1966.
+(amsmath)                trying to recover with `aligned' on input line 1986.
 
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 1972.
+(amsmath)                trying to recover with `aligned' on input line 1992.
 
 [49] [50] [51]
 File: ./image/relative_error.pdf Graphic file (type pdf)
@@ -648,43 +656,43 @@ File: ./image/pythagoras_1.pdf Graphic file (type pdf)
 File: ./image/pythagoras_orbit_0to10.pdf Graphic file (type pdf)
 
 <./image/pythagoras_orbit_0to10.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2124--2125
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2144--2145
  [][] 
  []
 
 File: ./image/pythagoras_orbit_10to20.pdf Graphic file (type pdf)
 <./image/pythagoras_orbit_10to20.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2132--2133
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2152--2153
  [][] 
  []
 
 File: ./image/pythagoras_orbit_20to30.pdf Graphic file (type pdf)
 <./image/pythagoras_orbit_20to30.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2138--2139
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2158--2159
  [][] 
  []
 
 File: ./image/pythagoras_orbit_30to40.pdf Graphic file (type pdf)
 <./image/pythagoras_orbit_30to40.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2146--2147
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2166--2167
  [][] 
  []
 
 File: ./image/pythagoras_orbit_40to50.pdf Graphic file (type pdf)
 <./image/pythagoras_orbit_40to50.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2152--2153
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2172--2173
  [][] 
  []
 
 File: ./image/pythagoras_orbit_50to60.pdf Graphic file (type pdf)
 <./image/pythagoras_orbit_50to60.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2160--2161
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2180--2181
  [][] 
  []
 
 File: ./image/pythagoras_orbit_60to70.pdf Graphic file (type pdf)
 <./image/pythagoras_orbit_60to70.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2165--2166
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2185--2186
  [][] 
  []
 
@@ -697,150 +705,150 @@ File: ./image/pythagoras_E_error_detail.pdf Graphic file (type pdf)
 File: ./image/NoMove_axis_5Myr_JUPSAT.pdf Graphic file (type pdf)
 
 <./image/NoMove_axis_5Myr_JUPSAT.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2237--2238
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2257--2258
  [][] 
  []
 
 File: ./image/Move500kyr_axis_5Myr_JUPSAT.pdf Graphic file (type pdf)
 <./image/Move500kyr_axis_5Myr_JUPSAT.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2245--2246
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2265--2266
  [][] 
  []
 
 File: ./image/NoMove_axis_5Myr_URANEP.pdf Graphic file (type pdf)
 <./image/NoMove_axis_5Myr_URANEP.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2250--2251
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2270--2271
  [][] 
  []
 
 File: ./image/Move500kyr_axis_5Myr_URANEP.pdf Graphic file (type pdf)
 <./image/Move500kyr_axis_5Myr_URANEP.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2258--2259
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2278--2279
  [][] 
  []
 
 [57]
 File: ./image/NoMove_ecc_5Myr_JUPSAT.pdf Graphic file (type pdf)
  <./image/NoMove_ecc_5Myr_JUPSAT.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2271--2272
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2291--2292
  [][] 
  []
 
 File: ./image/Move500kyr_ecc_5Myr_JUPSAT.pdf Graphic file (type pdf)
 <./image/Move500kyr_ecc_5Myr_JUPSAT.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2279--2280
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2299--2300
  [][] 
  []
 
 File: ./image/NoMove_ecc_5Myr_URANEP.pdf Graphic file (type pdf)
 <./image/NoMove_ecc_5Myr_URANEP.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2284--2285
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2304--2305
  [][] 
  []
 
 File: ./image/Move500kyr_ecc_5Myr_URANEP.pdf Graphic file (type pdf)
 <./image/Move500kyr_ecc_5Myr_URANEP.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2292--2293
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2312--2313
  [][] 
  []
 
 [58]
 File: ./image/NoMove_inc_5Myr_JUPSAT.pdf Graphic file (type pdf)
  <./image/NoMove_inc_5Myr_JUPSAT.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2305--2306
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2325--2326
  [][] 
  []
 
 File: ./image/Move500kyr_inc_5Myr_JUPSAT.pdf Graphic file (type pdf)
 <./image/Move500kyr_inc_5Myr_JUPSAT.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2313--2314
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2333--2334
  [][] 
  []
 
 File: ./image/NoMove_inc_5Myr_URANEP.pdf Graphic file (type pdf)
 <./image/NoMove_inc_5Myr_URANEP.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2318--2319
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2338--2339
  [][] 
  []
 
 File: ./image/Move500kyr_inc_5Myr_URANEP.pdf Graphic file (type pdf)
 <./image/Move500kyr_inc_5Myr_URANEP.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2326--2327
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2346--2347
  [][] 
  []
 
 [59]
 File: ./image/NoMove_capitalOMEGA_5Myr_JUPSAT.pdf Graphic file (type pdf)
  <./image/NoMove_capitalOMEGA_5Myr_JUPSAT.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2339--2340
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2359--2360
  [][] 
  []
 
 File: ./image/Move500kyr_capitalOMEGA_5Myr_JUPSAT.pdf Graphic file (type pdf)
 <./image/Move500kyr_capitalOMEGA_5Myr_JUPSAT.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2347--2348
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2367--2368
  [][] 
  []
 
 File: ./image/NoMove_capitalOMEGA_5Myr_URANEP.pdf Graphic file (type pdf)
 <./image/NoMove_capitalOMEGA_5Myr_URANEP.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2352--2353
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2372--2373
  [][] 
  []
 
 File: ./image/Move500kyr_capitalOMEGA_5Myr_URANEP.pdf Graphic file (type pdf)
 <./image/Move500kyr_capitalOMEGA_5Myr_URANEP.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2360--2361
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2380--2381
  [][] 
  []
 
 [60]
 File: ./image/NoMove_smallomega_5Myr_JUPSAT.pdf Graphic file (type pdf)
  <./image/NoMove_smallomega_5Myr_JUPSAT.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2373--2374
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2393--2394
  [][] 
  []
 
 File: ./image/Move500kyr_smallomega_5Myr_JUPSAT.pdf Graphic file (type pdf)
 <./image/Move500kyr_smallomega_5Myr_JUPSAT.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2381--2382
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2401--2402
  [][] 
  []
 
 File: ./image/NoMove_smallomega_5Myr_URANEP.pdf Graphic file (type pdf)
 <./image/NoMove_smallomega_5Myr_URANEP.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2386--2387
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2406--2407
  [][] 
  []
 
 File: ./image/Move500kyr_smallomega_5Myr_URANEP.pdf Graphic file (type pdf)
 <./image/Move500kyr_smallomega_5Myr_URANEP.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2394--2395
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2414--2415
  [][] 
  []
 
 [61]
 File: ./image/NoMove_curlypi_5Myr_JUPSAT.pdf Graphic file (type pdf)
  <./image/NoMove_curlypi_5Myr_JUPSAT.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2407--2408
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2427--2428
  [][] 
  []
 
 File: ./image/Move500kyr_curlypi_5Myr_JUPSAT.pdf Graphic file (type pdf)
 <./image/Move500kyr_curlypi_5Myr_JUPSAT.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2415--2416
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2435--2436
  [][] 
  []
 
 File: ./image/NoMove_curlypi_5Myr_URANEP.pdf Graphic file (type pdf)
 <./image/NoMove_curlypi_5Myr_URANEP.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2420--2421
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2440--2441
  [][] 
  []
 
 File: ./image/Move500kyr_curlypi_5Myr_URANEP.pdf Graphic file (type pdf)
 <./image/Move500kyr_curlypi_5Myr_URANEP.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2428--2429
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2448--2449
  [][] 
  []
 
@@ -862,87 +870,87 @@ File: ./image/SecularResonanceAxis_inc_upto5AU.pdf Graphic file (type pdf)
 File: ./image/kuiper_ecc_0yr.pdf Graphic file (type pdf)
 
 <./image/kuiper_ecc_0yr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2606--2607
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2626--2627
  [][] 
  []
 
 File: ./image/kuiper_inc_0yr.pdf Graphic file (type pdf)
 <./image/kuiper_inc_0yr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2614--2615
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2634--2635
  [][] 
  []
 
 File: ./image/kuiper_ecc_1kyr.pdf Graphic file (type pdf)
 <./image/kuiper_ecc_1kyr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2626--2627
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2646--2647
  [][] 
  []
 
 File: ./image/kuiper_inc_1kyr.pdf Graphic file (type pdf)
 <./image/kuiper_inc_1kyr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2634--2635
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2654--2655
  [][] 
  []
 
 File: ./image/kuiper_ecc_10kyr.pdf Graphic file (type pdf)
 <./image/kuiper_ecc_10kyr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2646--2647
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2666--2667
  [][] 
  []
 
 File: ./image/kuiper_inc_10kyr.pdf Graphic file (type pdf)
 <./image/kuiper_inc_10kyr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2654--2655
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2674--2675
  [][] 
  []
 
 [68]
 File: ./image/kuiper_ecc_100kyr.pdf Graphic file (type pdf)
  <./image/kuiper_ecc_100kyr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2666--2667
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2686--2687
  [][] 
  []
 
 File: ./image/kuiper_inc_100kyr.pdf Graphic file (type pdf)
 <./image/kuiper_inc_100kyr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2674--2675
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2694--2695
  [][] 
  []
 
 File: ./image/kuiper_ecc_1Myr.pdf Graphic file (type pdf)
 <./image/kuiper_ecc_1Myr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2686--2687
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2706--2707
  [][] 
  []
 
 File: ./image/kuiper_inc_1Myr.pdf Graphic file (type pdf)
 <./image/kuiper_inc_1Myr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2694--2695
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2714--2715
  [][] 
  []
 
 File: ./image/kuiper_ecc_10Myr.pdf Graphic file (type pdf)
 <./image/kuiper_ecc_10Myr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2706--2707
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2726--2727
  [][] 
  []
 
 File: ./image/kuiper_inc_10Myr.pdf Graphic file (type pdf)
 <./image/kuiper_inc_10Myr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2714--2715
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2734--2735
  [][] 
  []
 
 [69]
 File: ./image/kuiper_ecc_20Myr.pdf Graphic file (type pdf)
  <./image/kuiper_ecc_20Myr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2726--2727
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2746--2747
  [][] 
  []
 
 File: ./image/kuiper_inc_20Myr.pdf Graphic file (type pdf)
 <./image/kuiper_inc_20Myr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2734--2735
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2754--2755
  [][] 
  []
 
@@ -965,117 +973,110 @@ File: ./image/kuiper_histogram_20Myr.pdf Graphic file (type pdf)
 <./image/kuiper_histogram_20Myr.pdf> [72]
 File: ./image/asteroid_ecc_0yr.pdf Graphic file (type pdf)
  <./image/asteroid_ecc_0yr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2805--2806
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2834--2835
  [][] 
  []
 
 File: ./image/asteroid_inc_0yr.pdf Graphic file (type pdf)
 <./image/asteroid_inc_0yr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2813--2814
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2842--2843
  [][] 
  []
 
+[73]
 File: ./image/asteroid_ecc_1kyr.pdf Graphic file (type pdf)
-<./image/asteroid_ecc_1kyr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2825--2826
+ <./image/asteroid_ecc_1kyr.pdf>
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2854--2855
  [][] 
  []
 
 File: ./image/asteroid_inc_1kyr.pdf Graphic file (type pdf)
 <./image/asteroid_inc_1kyr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2833--2834
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2862--2863
  [][] 
  []
 
-[73]
 File: ./image/asteroid_ecc_10kyr.pdf Graphic file (type pdf)
- <./image/asteroid_ecc_10kyr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2845--2846
+<./image/asteroid_ecc_10kyr.pdf>
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2874--2875
  [][] 
  []
 
 File: ./image/asteroid_inc_10kyr.pdf Graphic file (type pdf)
 <./image/asteroid_inc_10kyr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2853--2854
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2882--2883
  [][] 
  []
 
 File: ./image/asteroid_ecc_100kyr.pdf Graphic file (type pdf)
 <./image/asteroid_ecc_100kyr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2865--2866
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2894--2895
  [][] 
  []
 
 File: ./image/asteroid_inc_100kyr.pdf Graphic file (type pdf)
 <./image/asteroid_inc_100kyr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2873--2874
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2902--2903
  [][] 
  []
 
+[74]
 File: ./image/asteroid_ecc_1Myr.pdf Graphic file (type pdf)
-<./image/asteroid_ecc_1Myr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2885--2886
+ <./image/asteroid_ecc_1Myr.pdf>
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2914--2915
  [][] 
  []
 
 File: ./image/asteroid_inc_1Myr.pdf Graphic file (type pdf)
 <./image/asteroid_inc_1Myr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2893--2894
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2922--2923
  [][] 
  []
 
-[74]
 File: ./image/asteroid_ecc_5Myr.pdf Graphic file (type pdf)
- <./image/asteroid_ecc_5Myr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2905--2906
+<./image/asteroid_ecc_5Myr.pdf>
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2934--2935
  [][] 
  []
 
 File: ./image/asteroid_inc_5Myr.pdf Graphic file (type pdf)
 <./image/asteroid_inc_5Myr.pdf>
-Overfull \hbox (22.76358pt too wide) in paragraph at lines 2913--2914
+Overfull \hbox (22.76358pt too wide) in paragraph at lines 2942--2943
  [][] 
  []
 
-File: ./image/asteroid_histogram_0yr.pdf Graphic file (type pdf)
-<./image/asteroid_histogram_0yr.pdf>
-File: ./image/asteroid_histogram_1kyr.pdf Graphic file (type pdf)
- <./image/asteroid_histogram_1kyr.pdf>
 [75]
+File: ./image/asteroid_histogram_0yr.pdf Graphic file (type pdf)
+ <./image/asteroid_histogram_0yr.pdf>
+File: ./image/asteroid_histogram_1kyr.pdf Graphic file (type pdf)
+
+<./image/asteroid_histogram_1kyr.pdf>
 File: ./image/asteroid_histogram_10kyr.pdf Graphic file (type pdf)
  <./image/asteroid_histogram_10kyr.pdf>
-File: ./image/asteroid_histogram_100kyr.pdf Graphic file (type pdf)
-
-<./image/asteroid_histogram_100kyr.pdf>
-File: ./image/asteroid_histogram_1Myr.pdf Graphic file (type pdf)
- <./image/asteroid_histogram_1Myr.pdf>
 [76]
+File: ./image/asteroid_histogram_100kyr.pdf Graphic file (type pdf)
+ <./image/asteroid_histogram_100kyr.pdf>
+File: ./image/asteroid_histogram_1Myr.pdf Graphic file (type pdf)
+
+<./image/asteroid_histogram_1Myr.pdf>
 File: ./image/asteroid_histogram_5Myr.pdf Graphic file (type pdf)
  <./image/asteroid_histogram_5Myr.pdf>
+[77]
 File: ./image/Nbody_test.pdf Graphic file (type pdf)
- <./image/Nbody_test.pdf> [77]
-[78] [79
+ <./image/Nbody_test.pdf> [78] [79] [80
 
 ]
-
-LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 2991.
-
-
-LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 2991.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3005.
-[80
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3038.
+ [81
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3005.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3038.
  (./Isoya.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3005.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3005.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3038.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3038.
 
 Package rerunfilecheck Info: File `Isoya.out' has not changed.
-(rerunfilecheck)             Checksum: 3E86F276AF1B25843DA2E48431AC1A49;2942.
+(rerunfilecheck)             Checksum: A87A3339FFCEA609CA28BE1FB7E0A191;3495.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1083,15 +1084,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3005.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3038.
  ) 
 Here is how much of TeX's memory you used:
- 8663 strings out of 493693
- 133294 string characters out of 6149786
- 242815 words of memory out of 5000000
- 11976 multiletter control sequences out of 15000+600000
- 30630 words of font info for 119 fonts, out of 8000000 for 9000
+ 8664 strings out of 493693
+ 133307 string characters out of 6149786
+ 243818 words of memory out of 5000000
+ 11977 multiletter control sequences out of 15000+600000
+ 30637 words of font info for 119 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  36i,22n,47p,1399b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Isoya.dvi (80 pages, 426036 bytes).
+Output written on Isoya.dvi (81 pages, 446196 bytes).
